@@ -1,0 +1,1 @@
+{"version":3,"file":"verifySession.js","sourceRoot":"","sources":["../../../src/srp/client/verifySession.ts"],"names":[],"mappings":";;;AAAA,qDAAqD;AAQ9C,MAAM,aAAa,GAAG,CAC3B,qBAA6B,EAC7B,aAA0B,EAC1B,kBAA0B,EACpB,EAAE;IACR,GAAG,CAAC,aAAa,CAAC,qBAAqB,EAAE,aAAa,EAAE,kBAAkB,CAAC,CAAC;AAC9E,CAAC,CAAC;AANW,QAAA,aAAa,iBAMxB;AAEF,kBAAe,qBAAa,CAAC"}

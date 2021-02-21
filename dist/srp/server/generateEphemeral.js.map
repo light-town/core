@@ -1,0 +1,1 @@
+{"version":3,"file":"generateEphemeral.js","sourceRoot":"","sources":["../../../src/srp/server/generateEphemeral.ts"],"names":[],"mappings":";;;AAAA,qDAAqD;AAM9C,MAAM,iBAAiB,GAAG,CAAC,QAAgB,EAAE,EAAE;IACpD,OAAO,GAAG,CAAC,iBAAiB,CAAC,QAAQ,CAAC,CAAC;AACzC,CAAC,CAAC;AAFW,QAAA,iBAAiB,qBAE5B;AAEF,kBAAe,yBAAiB,CAAC"}
