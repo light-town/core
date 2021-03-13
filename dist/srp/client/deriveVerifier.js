@@ -9,6 +9,7 @@ const deriveVerifier = (secretKey, password) => {
     return {
         verifier,
         salt,
+        privateKey,
     };
 };
 exports.deriveVerifier = deriveVerifier;
