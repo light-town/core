@@ -2,12 +2,14 @@ import * as srp from 'secure-remote-password/client';
 
 export interface Verifier {
   verifier: string;
+  privateKey: string;
   salt: string;
 }
 
 /**
  * @param {String} secretKey
  * @param {String} password
+ * @returns {String} verifier
  */
 export const deriveVerifier = (
   secretKey: string,
@@ -20,6 +22,7 @@ export const deriveVerifier = (
   return {
     verifier,
     salt,
+    privateKey,
   };
 };
 
