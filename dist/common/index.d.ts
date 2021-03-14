@@ -1,9 +1,9 @@
 import { genCryptoRandomString } from './genCryptoRandomString';
-import { genAccountId } from './genAccountId';
+import { genAccountKey } from './genAccountKey';
 import { genSalt } from './genSalt';
-export { genAccountId, genCryptoRandomString, genSalt };
+export { genAccountKey, genCryptoRandomString, genSalt };
 declare const _default: {
-    genAccountId: ({ versionCode, userId }: import("./genAccountId").Options) => string;
+    genAccountKey: ({ versionCode, userId }: import("./genAccountKey").Options) => string;
     genCryptoRandomString: (length: number) => string;
     genSalt: () => string;
 };

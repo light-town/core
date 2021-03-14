@@ -326,9 +326,9 @@
         "signature": "5152414205a2b2c4954a8efaa6719c4c55f09a334cff40963149eea5fb922721",
         "affectsGlobalScope": false
       },
-      "../src/common/genaccountid.ts": {
-        "version": "149ae4abd0e55df9ac2a4eafb2dd04225debc6b10d4e5388d627e51a5ab06b83",
-        "signature": "03ea69b2aa527036e22f0d94c5676bfc8acb9d335f52eb7d964c8b6f24a71061",
+      "../src/common/genaccountkey.ts": {
+        "version": "772eefb8701eecc489b5ed521fc949d46ebdae203e1eaf915c54b1acc17941af",
+        "signature": "7bb9b98bc5a55d95ab215cf834a07566a8b19b24e9c3f2e803224458bac4b33d",
         "affectsGlobalScope": false
       },
       "../src/common/gensalt.ts": {
@@ -337,8 +337,8 @@
         "affectsGlobalScope": false
       },
       "../src/common/index.ts": {
-        "version": "536aa045d20fe209483035af8d0561d70a53655491ad543be177e6f6a5c6073b",
-        "signature": "e86d9dcc1ff266b911b592c261efa4465b6998c8d2bc6c6c3af107b516675034",
+        "version": "456b67fb553de2030388a64c6db05fae32c45af7b36714e7c2e3cbac953c894e",
+        "signature": "01f7daa40322e062dae4b0af852df8c77f5bdbc8843a9a4dc8950de32a196e97",
         "affectsGlobalScope": false
       },
       "../node_modules/secure-remote-password/client.d.ts": {
@@ -398,7 +398,7 @@
       },
       "../src/index.ts": {
         "version": "0f08f401b20d4c1850d6393635d17e13e590b41fc4330f77a2592a77704a93fc",
-        "signature": "bda73f0e5e1c4dd6974d7c81c6f89f0b0f7419feb933bf5de3b68c5127d22599",
+        "signature": "452d6c95c7108d379d4f0dc502880ec10f789212cf963fb1212c4efb41a44b12",
         "affectsGlobalScope": false
       },
       "../node_modules/@babel/types/lib/index.d.ts": {
@@ -1133,7 +1133,7 @@
       "../node_modules/pretty-format/build/index.d.ts": [
         "../node_modules/pretty-format/build/types.d.ts"
       ],
-      "../src/common/genaccountid.ts": [
+      "../src/common/genaccountkey.ts": [
         "../src/common/gencryptorandomstring.ts"
       ],
       "../src/common/gencryptorandomstring.ts": [
@@ -1143,7 +1143,7 @@
         "../node_modules/crypto-random-string/index.d.ts"
       ],
       "../src/common/index.ts": [
-        "../src/common/genaccountid.ts",
+        "../src/common/genaccountkey.ts",
         "../src/common/gencryptorandomstring.ts",
         "../src/common/gensalt.ts"
       ],
@@ -1515,14 +1515,14 @@
         "../node_modules/pretty-format/build/types.d.ts"
       ],
       "../src/common/index.ts": [
-        "../src/common/genaccountid.ts",
+        "../src/common/genaccountkey.ts",
         "../src/common/gencryptorandomstring.ts",
         "../src/common/gensalt.ts"
       ],
       "../src/index.ts": [
         "../node_modules/secure-remote-password/client.d.ts",
         "../node_modules/secure-remote-password/server.d.ts",
-        "../src/common/genaccountid.ts",
+        "../src/common/genaccountkey.ts",
         "../src/common/index.ts",
         "../src/srp/client/deriveverifier.ts",
         "../src/srp/index.ts"
@@ -1705,7 +1705,7 @@
       "../node_modules/typescript/lib/lib.esnext.weakref.d.ts",
       "../node_modules/typescript/lib/lib.scripthost.d.ts",
       "../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
-      "../src/common/genaccountid.ts",
+      "../src/common/genaccountkey.ts",
       "../src/common/gencryptorandomstring.ts",
       "../src/common/gensalt.ts",
       "../src/common/index.ts",

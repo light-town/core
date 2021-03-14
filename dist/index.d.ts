@@ -3,7 +3,7 @@ import srp from './srp';
 export { common, srp };
 declare const _default: {
     common: {
-        genAccountId: ({ versionCode, userId }: import("./common/genAccountId").Options) => string;
+        genAccountKey: ({ versionCode, userId }: import("./common/genAccountKey").Options) => string;
         genCryptoRandomString: (length: number) => string;
         genSalt: () => string;
     };

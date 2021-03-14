@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/light-town/core#readme",
   "dependencies": {
+    "@light-town/core": "^0.0.3",
     "crypto-random-string": "^3.3.1",
     "faker": "^5.4.0",
     "node-forge": "^0.10.0",
