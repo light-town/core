@@ -1,7 +1,7 @@
 import { genCryptoRandomString } from './genCryptoRandomString';
-import { genAccountId } from './genAccountId';
+import { genAccountKey } from './genAccountKey';
 import { genSalt } from './genSalt';
 
-export { genAccountId, genCryptoRandomString, genSalt };
+export { genAccountKey, genCryptoRandomString, genSalt };
 
-export default { genAccountId, genCryptoRandomString, genSalt };
+export default { genAccountKey, genCryptoRandomString, genSalt };
