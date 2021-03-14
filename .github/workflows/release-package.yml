@@ -1,4 +1,4 @@
-name: @light-town/core
+name: LightTown Core Package
 
 on:
   release:
