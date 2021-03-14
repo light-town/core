@@ -18,20 +18,20 @@
     "type": "git",
     "url": "git+https://github.com/light-town/core.git"
   },
-  "author": "",
+  "author": "MichailShcherbakov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/light-town/core/issues"
   },
   "homepage": "https://github.com/light-town/core#readme",
   "dependencies": {
-    "@types/faker": "^5.1.7",
     "crypto-random-string": "^3.3.1",
     "faker": "^5.4.0",
     "node-forge": "^0.10.0",
     "secure-remote-password": "^0.3.1"
   },
   "devDependencies": {
+    "@types/faker": "^5.1.7",
     "@types/jest": "^26.0.20",
     "@typescript-eslint/eslint-plugin": "^4.17.0",
     "@typescript-eslint/parser": "^4.17.0",
