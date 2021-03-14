@@ -1,13 +1,13 @@
 import SRPClient from '~/srp/client';
 import SRPServer from '~/srp/server';
 import * as faker from 'faker';
-import { genAccountId } from '~/common';
+import { genAccountKey } from '~/common';
 
 describe('[SRP] ...', () => {
   it('should correct generate verifier in the client', () => {
     const TEST_USER_ID = faker.random.uuid();
     const ACCOUNT_VERSION = 'A1';
-    const TEST_ACCOUNT_ID = genAccountId({
+    const TEST_ACCOUNT_ID = genAccountKey({
       versionCode: ACCOUNT_VERSION,
       userId: TEST_USER_ID,
     });
@@ -32,7 +32,7 @@ describe('[SRP] ...', () => {
     // client
     const USER_ID = faker.random.uuid();
     const ACCOUNT_VERSION = 'A1';
-    const TEST_ACCOUNT_ID = genAccountId({
+    const TEST_ACCOUNT_ID = genAccountKey({
       versionCode: ACCOUNT_VERSION,
       userId: USER_ID,
     });
@@ -95,7 +95,7 @@ describe('[SRP] ...', () => {
     // client
     const USER_ID = faker.random.uuid();
     const ACCOUNT_VERSION = 'A1';
-    const TEST_ACCOUNT_ID = genAccountId({
+    const TEST_ACCOUNT_ID = genAccountKey({
       versionCode: ACCOUNT_VERSION,
       userId: USER_ID,
     });
