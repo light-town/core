@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.deriveVerifier = void 0;
 const srp = require("secure-remote-password/client");
-const generateSalt_1 = require("~/common/generateSalt");
+const generateRandomSalt_1 = require("~/common/generateRandomSalt");
 const deriveVerifier = (secretKey, password) => {
-    const salt = generateSalt_1.generateSalt();
+    const salt = generateRandomSalt_1.generateRandomSalt(32);
     const privateKey = srp.derivePrivateKey(salt, secretKey, password);
     const verifier = srp.deriveVerifier(privateKey);
     return {

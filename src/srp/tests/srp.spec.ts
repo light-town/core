@@ -5,11 +5,11 @@ import { generateAccountKey } from '~/common';
 
 describe('[SRP] ...', () => {
   it('should correct generate verifier in the client', () => {
-    const TEST_USER_ID = faker.random.uuid();
+    const TEST_USER_ID = faker.random.uuid().split('-').join('').toUpperCase();
     const ACCOUNT_VERSION = 'A1';
     const TEST_ACCOUNT_ID = generateAccountKey({
       versionCode: ACCOUNT_VERSION,
-      userId: TEST_USER_ID,
+      secret: TEST_USER_ID,
     });
     const TEST_PASSWORD = faker.internet.password();
 
@@ -30,11 +30,11 @@ describe('[SRP] ...', () => {
 
   it('should correct generate verifier in the server', () => {
     // client
-    const USER_ID = faker.random.uuid();
+    const USER_ID = faker.random.uuid().split('-').join('').toUpperCase();
     const ACCOUNT_VERSION = 'A1';
     const TEST_ACCOUNT_ID = generateAccountKey({
       versionCode: ACCOUNT_VERSION,
-      userId: USER_ID,
+      secret: USER_ID,
     });
     const TEST_PASSWORD = faker.internet.password();
 
@@ -93,11 +93,11 @@ describe('[SRP] ...', () => {
 
   it('should throw error while verifying session with invalid proof key', () => {
     // client
-    const USER_ID = faker.random.uuid();
+    const USER_ID = faker.random.uuid().split('-').join('').toUpperCase();
     const ACCOUNT_VERSION = 'A1';
     const TEST_ACCOUNT_ID = generateAccountKey({
       versionCode: ACCOUNT_VERSION,
-      userId: USER_ID,
+      secret: USER_ID,
     });
     const TEST_PASSWORD = faker.internet.password();
 

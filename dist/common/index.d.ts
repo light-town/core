@@ -1,10 +1,10 @@
 import { generateCryptoRandomString } from './generateCryptoRandomString';
 import { generateAccountKey } from './generateAccountKey';
-import { generateSalt } from './generateSalt';
-export { generateAccountKey, generateCryptoRandomString, generateSalt };
+import { generateRandomSalt } from './generateRandomSalt';
+export { generateAccountKey, generateCryptoRandomString, generateRandomSalt };
 declare const _default: {
-    generateAccountKey: ({ versionCode, userId }: import("./generateAccountKey").Options) => string;
+    generateAccountKey: (options: import("./generateAccountKey").Options) => string;
     generateCryptoRandomString: (length: number) => string;
-    generateSalt: () => string;
+    generateRandomSalt: (length: number) => string;
 };
 export default _default;

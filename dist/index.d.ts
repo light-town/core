@@ -1,13 +1,13 @@
 /// <reference types="node-forge" />
 import common from './common';
 import srp from './srp';
-import forge from './forge';
-export { common, srp, forge };
+import vaults from './vaults';
+export { common, srp, vaults };
 declare const _default: {
     common: {
-        generateAccountKey: ({ versionCode, userId }: import("./common/generateAccountKey").Options) => string;
+        generateAccountKey: (options: import("./common/generateAccountKey").Options) => string;
         generateCryptoRandomString: (length: number) => string;
-        generateSalt: () => string;
+        generateRandomSalt: (length: number) => string;
     };
     srp: {
         client: {
@@ -21,15 +21,44 @@ declare const _default: {
             generateEphemeral: (verifier: string) => import("secure-remote-password/server").Ephemeral;
         };
     };
-    forge: {
-        certificates: {
-            generateKeyPair: () => {
-                publicKey: import("node-forge").pki.ed25519.NativeBuffer;
-                privateKey: import("node-forge").pki.ed25519.NativeBuffer;
-            };
-            signCertificate: (privateKey: import("node-forge").pki.ed25519.BinaryBuffer, message: string, options?: import("./forge/certificates/signCertificate").Options) => import("node-forge").pki.ed25519.NativeBuffer;
-            verifyCertificate: (publicKey: import("node-forge").pki.ed25519.NativeBuffer, signature: import("node-forge").pki.ed25519.BinaryBuffer, message: string, options?: import("./forge/certificates/verifyCertificate").Options) => boolean;
+    vaults: {
+        decryptPrivateKey: (encryptedPrivateKey: string, symmetricKey: string) => import("node-forge").pki.rsa.PrivateKey;
+        decryptSymmetricKey: (options: import("./vaults/decryptSymmetricKey").Options) => Promise<string>;
+        decryptVaultItem: (options: import("./vaults/decryptVaultItem").Options) => Promise<any>;
+        decryptVaultKey: (encryptedVaultKey: string, privateKey: import("node-forge").pki.rsa.PrivateKey) => string;
+        encryptPrivateKey: (privateKey: import("node-forge").pki.PrivateKey, symmetricKey: string) => {
+            enc: string;
+            key: string;
         };
+        encryptSymmetricKey: (options: import("./vaults/encryptSymmetricKey").Options) => {
+            enc: string;
+            tagLength: number;
+            tag: string;
+            key: string;
+            iv: string;
+            iterations: number;
+            salt: string;
+        };
+        encryptVaultItem: ({ details, overview, vaultKey }: {
+            details: any;
+            overview: any;
+            vaultKey: any;
+        }) => Promise<{
+            encDetails: {
+                tag: string;
+                data: string;
+                tagLength: number;
+                iv: string;
+            };
+            encOverview: {
+                tag: string;
+                data: string;
+                tagLength: number;
+                iv: string;
+            };
+        }>;
+        encryptVaultKey: (vaultKey: string, publicKey: import("node-forge").pki.rsa.PublicKey) => import("./vaults/encryptVaultKey").EncryptedVaultKey;
+        generateKeyPair: () => Promise<import("node-forge").pki.rsa.KeyPair>;
     };
 };
 export default _default;
