@@ -2,9 +2,23 @@
 import common from './common';
 import srp from './srp';
 import vaults from './vaults';
-export { common, srp, vaults };
+import certificates from './certificates';
+export { common, srp, vaults, certificates };
 declare const _default: {
     common: {
+        hkdf: {
+            computeHKDF: ({ uint8MasterSecret, uint8Salt }: {
+                uint8MasterSecret: any;
+                uint8Salt: any;
+            }) => Promise<Uint8Array>;
+        };
+        pbkdf2: {
+            computeHash: ({ uint8MasterPassword, encryptionKeySalt, iterations, }: {
+                uint8MasterPassword: any;
+                encryptionKeySalt: any;
+                iterations?: number;
+            }) => Uint8Array;
+        };
         generateAccountKey: (options: import("./common/generateAccountKey").Options) => string;
         generateCryptoRandomString: (length: number) => string;
         generateRandomSalt: (length: number) => string;
@@ -59,6 +73,14 @@ declare const _default: {
         }>;
         encryptVaultKey: (vaultKey: string, publicKey: import("node-forge").pki.rsa.PublicKey) => import("./vaults/encryptVaultKey").EncryptedVaultKey;
         generateKeyPair: () => Promise<import("node-forge").pki.rsa.KeyPair>;
+    };
+    certificates: {
+        generateKeyPair: () => {
+            publicKey: import("node-forge").pki.ed25519.NativeBuffer;
+            privateKey: import("node-forge").pki.ed25519.NativeBuffer;
+        };
+        signCertificate: (privateKey: import("node-forge").pki.ed25519.BinaryBuffer, message: string, options?: import("./certificates/signCertificate").Options) => import("node-forge").pki.ed25519.NativeBuffer;
+        verifyCertificate: (publicKey: import("node-forge").pki.ed25519.NativeBuffer, signature: import("node-forge").pki.ed25519.BinaryBuffer, message: string, options?: import("./certificates/verifyCertificate").Options) => boolean;
     };
 };
 export default _default;
