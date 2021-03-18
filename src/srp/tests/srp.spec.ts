@@ -1,7 +1,7 @@
-import SRPClient from '~/srp/client';
-import SRPServer from '~/srp/server';
+import SRPClient from '../../srp/client';
+import SRPServer from '../../srp/server';
 import * as faker from 'faker';
-import { generateAccountKey } from '~/common';
+import { generateAccountKey } from '../../common';
 
 describe('[SRP] ...', () => {
   it('should correct generate verifier in the client', () => {

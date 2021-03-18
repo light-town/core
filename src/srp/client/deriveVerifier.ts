@@ -1,5 +1,5 @@
 import * as srp from 'secure-remote-password/client';
-import { generateRandomSalt } from '~/common/generateRandomSalt';
+import { generateRandomSalt } from '../../common';
 
 export interface Verifier {
   verifier: string;

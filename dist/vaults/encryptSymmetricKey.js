@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.encryptSymmetricKey = exports.EncryptedSymmetricKey = exports.Options = void 0;
 const forge = require("node-forge");
-const common_1 = require("~/common");
+const common_1 = require("../common");
 class Options {
 }
 exports.Options = Options;

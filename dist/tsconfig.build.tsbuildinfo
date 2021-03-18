@@ -382,7 +382,7 @@
         "affectsGlobalScope": false
       },
       "../src/srp/client/deriveverifier.ts": {
-        "version": "83d349e827501e08f7debff2331be89497d61d8f97a4e078a499e4f6bdf11429",
+        "version": "846645705e39d11799fdc5c7343b9729006fdb40e5a86f0b1ba91ea0f27567dd",
         "signature": "1e2656471e43459cbf0ea24eb3c7616e5c261e427e68130089b9f1b0f83253fe",
         "affectsGlobalScope": false
       },
@@ -692,12 +692,12 @@
         "affectsGlobalScope": false
       },
       "../src/vaults/encryptsymmetrickey.ts": {
-        "version": "cd191ebbd56b9d8cf296a35ab6d6d1ef7b41ec3f8c9e5c218315155593496723",
+        "version": "ac931a79182c4ba276d111455f28ee716d84e74fa5ccda2d9585f64b2f1d16d0",
         "signature": "5595c7681b9f00499560f14d3770fc7f8b51baeead97446a4e6c7eca7be9d96c",
         "affectsGlobalScope": false
       },
       "../src/vaults/encryptvaultitem.ts": {
-        "version": "612a633b93b7249dfa267b577f964cf1129f64cd40faa8344387368f58cfa970",
+        "version": "ff62d5c36a62d0ac5f8a1d3fbd5d81589ad9b55d664e09cf94cef664de8f1c37",
         "signature": "584a97769d0c3cc4cd46d48493352af7c23cb480dd0b2eaa177923316a2192be",
         "affectsGlobalScope": false
       },
@@ -717,7 +717,7 @@
         "affectsGlobalScope": false
       },
       "../src/certificates/generatekeypair.ts": {
-        "version": "732baf5f2c090d705df096bafd43d924d1ef6b4ae341d29166a764d326c6e8a7",
+        "version": "44a2781a5fe84679552803cf1e847b70838a19aef4b1a5727a263eecd0978e94",
         "signature": "9f626bd9e4ecebb691b32410b0f9a5cb8588e38030230ee54e4bb33a8c045df9",
         "affectsGlobalScope": false
       },
@@ -904,12 +904,6 @@
       "outDir": "./",
       "baseUrl": "..",
       "incremental": true,
-      "paths": {
-        "~/*": [
-          "src/*"
-        ]
-      },
-      "pathsBasePath": "D:/Development/light-town/core",
       "project": "../tsconfig.build.json",
       "configFilePath": "../tsconfig.build.json"
     },
@@ -1303,7 +1297,7 @@
       ],
       "../src/srp/client/deriveverifier.ts": [
         "../node_modules/secure-remote-password/client.d.ts",
-        "../src/common/generaterandomsalt.ts"
+        "../src/common/index.ts"
       ],
       "../src/srp/client/generateephemeral.ts": [
         "../node_modules/secure-remote-password/client.d.ts"

@@ -1,5 +1,5 @@
 import * as forge from 'node-forge';
-import { generateRandomSalt } from '~/common';
+import { generateRandomSalt } from '../common';
 
 export const generateKeyPair = () => {
   const seed = generateRandomSalt(32);
