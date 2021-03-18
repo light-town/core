@@ -236,82 +236,82 @@
         "signature": "d2f31f19e1ba6ed59be9259d660a239d9a3fcbbc8e038c6b2009bde34b175fed",
         "affectsGlobalScope": false
       },
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/basic.d.ts": {
+      "../node_modules/type-fest/source/basic.d.ts": {
         "version": "fda9e5c2afd0920ead6baed40f164229ec8f93188b5c8df196594a54bb8fb5e3",
         "signature": "fda9e5c2afd0920ead6baed40f164229ec8f93188b5c8df196594a54bb8fb5e3",
         "affectsGlobalScope": true
       },
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/except.d.ts": {
+      "../node_modules/type-fest/source/except.d.ts": {
         "version": "c58be3e560989a877531d3ff7c9e5db41c5dd9282480ccf197abfcc708a95b8d",
         "signature": "c58be3e560989a877531d3ff7c9e5db41c5dd9282480ccf197abfcc708a95b8d",
         "affectsGlobalScope": false
       },
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/mutable.d.ts": {
+      "../node_modules/type-fest/source/mutable.d.ts": {
         "version": "91f23ddc3971b1c8938c638fb55601a339483953e1eb800675fa5b5e8113db72",
         "signature": "91f23ddc3971b1c8938c638fb55601a339483953e1eb800675fa5b5e8113db72",
         "affectsGlobalScope": false
       },
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/merge.d.ts": {
+      "../node_modules/type-fest/source/merge.d.ts": {
         "version": "50d22844db90a0dcd359afeb59dd1e9a384d977b4b363c880b4e65047237a29e",
         "signature": "50d22844db90a0dcd359afeb59dd1e9a384d977b4b363c880b4e65047237a29e",
         "affectsGlobalScope": false
       },
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/merge-exclusive.d.ts": {
+      "../node_modules/type-fest/source/merge-exclusive.d.ts": {
         "version": "d33782b82eea0ee17b99ca563bd19b38259a3aaf096d306ceaf59cd4422629be",
         "signature": "d33782b82eea0ee17b99ca563bd19b38259a3aaf096d306ceaf59cd4422629be",
         "affectsGlobalScope": false
       },
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/require-at-least-one.d.ts": {
+      "../node_modules/type-fest/source/require-at-least-one.d.ts": {
         "version": "7f7f1420c69806e268ab7820cbe31a2dcb2f836f28b3d09132a2a95b4a454b80",
         "signature": "7f7f1420c69806e268ab7820cbe31a2dcb2f836f28b3d09132a2a95b4a454b80",
         "affectsGlobalScope": false
       },
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/require-exactly-one.d.ts": {
+      "../node_modules/type-fest/source/require-exactly-one.d.ts": {
         "version": "f9ecf72f3842ae35faf3aa122a9c87a486446cb9084601695f9e6a2cdf0d3e4b",
         "signature": "f9ecf72f3842ae35faf3aa122a9c87a486446cb9084601695f9e6a2cdf0d3e4b",
         "affectsGlobalScope": false
       },
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/partial-deep.d.ts": {
+      "../node_modules/type-fest/source/partial-deep.d.ts": {
         "version": "61046f12c3cfafd353d2d03febc96b441c1a0e3bb82a5a88de78cc1be9e10520",
         "signature": "61046f12c3cfafd353d2d03febc96b441c1a0e3bb82a5a88de78cc1be9e10520",
         "affectsGlobalScope": false
       },
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/readonly-deep.d.ts": {
+      "../node_modules/type-fest/source/readonly-deep.d.ts": {
         "version": "f4e7f5824ac7b35539efc3bef36b3e6be89603b88224cb5c0ad3526a454fc895",
         "signature": "f4e7f5824ac7b35539efc3bef36b3e6be89603b88224cb5c0ad3526a454fc895",
         "affectsGlobalScope": false
       },
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/literal-union.d.ts": {
+      "../node_modules/type-fest/source/literal-union.d.ts": {
         "version": "091af8276fbc70609a00e296840bd284a2fe29df282f0e8dae2de9f0a706685f",
         "signature": "091af8276fbc70609a00e296840bd284a2fe29df282f0e8dae2de9f0a706685f",
         "affectsGlobalScope": false
       },
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/promisable.d.ts": {
+      "../node_modules/type-fest/source/promisable.d.ts": {
         "version": "537aff717746703d2157ec563b5de4f6393ce9f69a84ae62b49e9b6c80b6e587",
         "signature": "537aff717746703d2157ec563b5de4f6393ce9f69a84ae62b49e9b6c80b6e587",
         "affectsGlobalScope": false
       },
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/opaque.d.ts": {
+      "../node_modules/type-fest/source/opaque.d.ts": {
         "version": "5a0c23174f822edd4a0c5f52308fd6cbdfcc5ef9c4279286cf7da548fd46cb1b",
         "signature": "5a0c23174f822edd4a0c5f52308fd6cbdfcc5ef9c4279286cf7da548fd46cb1b",
         "affectsGlobalScope": false
       },
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/set-optional.d.ts": {
+      "../node_modules/type-fest/source/set-optional.d.ts": {
         "version": "5d007514c3876ecc7326b898d1738eed7b77d6a3611d73f5c99fe37801dd48e6",
         "signature": "5d007514c3876ecc7326b898d1738eed7b77d6a3611d73f5c99fe37801dd48e6",
         "affectsGlobalScope": false
       },
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/set-required.d.ts": {
+      "../node_modules/type-fest/source/set-required.d.ts": {
         "version": "85dff77bf599bd57135b34169d8f80914bbcdb52dfa9fb5fa2204b366363d519",
         "signature": "85dff77bf599bd57135b34169d8f80914bbcdb52dfa9fb5fa2204b366363d519",
         "affectsGlobalScope": false
       },
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/package-json.d.ts": {
+      "../node_modules/type-fest/source/package-json.d.ts": {
         "version": "8b108d831999b4c6b1df9c39cdcc57c059ef19219c441e5b61bca20aabb9f411",
         "signature": "8b108d831999b4c6b1df9c39cdcc57c059ef19219c441e5b61bca20aabb9f411",
         "affectsGlobalScope": false
       },
-      "../node_modules/crypto-random-string/node_modules/type-fest/index.d.ts": {
+      "../node_modules/type-fest/index.d.ts": {
         "version": "04c593214be9083f51ed93751bd556bfdc0737b0a4cdaf225b12a525df7fa0dc",
         "signature": "04c593214be9083f51ed93751bd556bfdc0737b0a4cdaf225b12a525df7fa0dc",
         "affectsGlobalScope": false
@@ -347,7 +347,7 @@
         "affectsGlobalScope": false
       },
       "../src/srp/client/deriveverifier.ts": {
-        "version": "83da539148c9f8947f9b6db2a4772ea80103d0eeccba961152a2af7e9a6358b4",
+        "version": "b04947d86b4202e97593f837a78654abfb6b9835b492e1c58e2c96925d4596aa",
         "signature": "1e2656471e43459cbf0ea24eb3c7616e5c261e427e68130089b9f1b0f83253fe",
         "affectsGlobalScope": false
       },
@@ -395,71 +395,6 @@
         "version": "f5b366f4ea9cec731bf53bc85f44d3f5b7f59fbcdde2bd27ce9b679786ee0889",
         "signature": "5f7f5d3c2c5c43ee0b930b5693ebe6fe9867342f300a0412b674d3640d4c4b63",
         "affectsGlobalScope": false
-      },
-      "../src/index.ts": {
-        "version": "0f08f401b20d4c1850d6393635d17e13e590b41fc4330f77a2592a77704a93fc",
-        "signature": "452d6c95c7108d379d4f0dc502880ec10f789212cf963fb1212c4efb41a44b12",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@babel/types/lib/index.d.ts": {
-        "version": "368d98ad7e5cb65c247aa95c97e86b3812b4d91a74bafa6b0d4420d1ce91557c",
-        "signature": "368d98ad7e5cb65c247aa95c97e86b3812b4d91a74bafa6b0d4420d1ce91557c",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/babel__generator/index.d.ts": {
-        "version": "b25c5f2970d06c729f464c0aeaa64b1a5b5f1355aa93554bb5f9c199b8624b1e",
-        "signature": "b25c5f2970d06c729f464c0aeaa64b1a5b5f1355aa93554bb5f9c199b8624b1e",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/babel__traverse/index.d.ts": {
-        "version": "691aea9772797ca98334eb743e7686e29325b02c6931391bcee4cc7bf27a9f3b",
-        "signature": "691aea9772797ca98334eb743e7686e29325b02c6931391bcee4cc7bf27a9f3b",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@babel/parser/typings/babel-parser.d.ts": {
-        "version": "6da9e714516d081abaa435946d77c8d74dba888530412dc71601e83d2c8a512e",
-        "signature": "6da9e714516d081abaa435946d77c8d74dba888530412dc71601e83d2c8a512e",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/babel__template/index.d.ts": {
-        "version": "3051751533eee92572241b3cef28333212401408c4e7aa21718714b793c0f4ed",
-        "signature": "3051751533eee92572241b3cef28333212401408c4e7aa21718714b793c0f4ed",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/babel__core/index.d.ts": {
-        "version": "a66e700ed470a0cb52d14f3376c1605c70fec8e9659e45f7e22ad07fcd06ae04",
-        "signature": "a66e700ed470a0cb52d14f3376c1605c70fec8e9659e45f7e22ad07fcd06ae04",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/eslint/helpers.d.ts": {
-        "version": "f345b0888d003fd69cb32bad3a0aa04c615ccafc572019e4bd86a52bd5e49e46",
-        "signature": "f345b0888d003fd69cb32bad3a0aa04c615ccafc572019e4bd86a52bd5e49e46",
-        "affectsGlobalScope": true
-      },
-      "../node_modules/@types/json-schema/index.d.ts": {
-        "version": "3a1e165b22a1cb8df82c44c9a09502fd2b33f160cd277de2cd3a055d8e5c6b27",
-        "signature": "3a1e165b22a1cb8df82c44c9a09502fd2b33f160cd277de2cd3a055d8e5c6b27",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/estree/index.d.ts": {
-        "version": "745a853d60bf782583a58584f59e202cae5c7a898b0c92696442602a3ef17a87",
-        "signature": "745a853d60bf782583a58584f59e202cae5c7a898b0c92696442602a3ef17a87",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/eslint/index.d.ts": {
-        "version": "ffa048767a32a0f6354e611b15d8b53d882da1a9a35455c35c3f6811f2416d17",
-        "signature": "ffa048767a32a0f6354e611b15d8b53d882da1a9a35455c35c3f6811f2416d17",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/eslint-scope/index.d.ts": {
-        "version": "274bda283ef15f4205603ca9967313fc013aa77ae89f2cbeab5fbd51439e96ed",
-        "signature": "274bda283ef15f4205603ca9967313fc013aa77ae89f2cbeab5fbd51439e96ed",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/faker/index.d.ts": {
-        "version": "ca7294ac2e695949d037f2a0dc72198bddf1a916c9256cf4d84c678ba9ba7136",
-        "signature": "ca7294ac2e695949d037f2a0dc72198bddf1a916c9256cf4d84c678ba9ba7136",
-        "affectsGlobalScope": true
       },
       "../node_modules/@types/node/globals.d.ts": {
         "version": "25b4a0c4fab47c373ee49df4c239826ee3430019fc0c1b5e59edc3e398b7468d",
@@ -537,8 +472,8 @@
         "affectsGlobalScope": false
       },
       "../node_modules/@types/node/http2.d.ts": {
-        "version": "4c260129d649d69f0608cd123e7016e61364b553a5ca2de9b66b0398594959cf",
-        "signature": "4c260129d649d69f0608cd123e7016e61364b553a5ca2de9b66b0398594959cf",
+        "version": "9aff68f1b847b846d3d50a58c9f8f99389bedd0258d1b1c201f11b97ecfd36f8",
+        "signature": "9aff68f1b847b846d3d50a58c9f8f99389bedd0258d1b1c201f11b97ecfd36f8",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/node/https.d.ts": {
@@ -691,6 +626,101 @@
         "signature": "9c4c395e927045b324877acdc4bfb95f128f36bc9f073266a2f0342495075a4f",
         "affectsGlobalScope": false
       },
+      "../node_modules/@types/node-forge/index.d.ts": {
+        "version": "d55a6417fc4ff3af715099d426991a9b6b20ad136a238fe7cfebe4069990e064",
+        "signature": "d55a6417fc4ff3af715099d426991a9b6b20ad136a238fe7cfebe4069990e064",
+        "affectsGlobalScope": false
+      },
+      "../src/forge/certificates/generatekeypair.ts": {
+        "version": "89f233592dca10d3488e80fc9142c30de43173f5276a257e59d8ce0ed4cae789",
+        "signature": "9f626bd9e4ecebb691b32410b0f9a5cb8588e38030230ee54e4bb33a8c045df9",
+        "affectsGlobalScope": false
+      },
+      "../src/forge/certificates/signcertificate.ts": {
+        "version": "f9f7a6ff7436892e957c1c9165c29c0816d64bd1d80df748ab98e831e014008a",
+        "signature": "a7a33a49601c0fe58dae05fc3648b6d550ec1c6580065fb222821611d1883fc9",
+        "affectsGlobalScope": false
+      },
+      "../src/forge/certificates/verifycertificate.ts": {
+        "version": "c89e2c73eab044241b7c0ad79b1f76c9ebdd0ec6663a027e4ccb716506f961ac",
+        "signature": "d8ab4f2067347c0b8d102ee7c188fc33362205d11a0529d071b7403dd9fcad0c",
+        "affectsGlobalScope": false
+      },
+      "../src/forge/certificates/index.ts": {
+        "version": "c1006d20facea0bce930997bc0fba4bfb72621299c4376fbee928ec98f6e75ce",
+        "signature": "a2ed125cf9047acafe17b83fa467ac73b41c606660463dd9e83db4251ddc0c48",
+        "affectsGlobalScope": false
+      },
+      "../src/forge/index.ts": {
+        "version": "416909a23f9dc5eed7cab172030a381f4560f23d480034b675680d04b5f0bf5d",
+        "signature": "aa698eaae664d5653316c59a527de00189b1175117e2d29aca8e3590da4e3d91",
+        "affectsGlobalScope": false
+      },
+      "../src/index.ts": {
+        "version": "a7473ab6bfa2d136c50ed7dcc0308661d96786963636057c11734d1a30296779",
+        "signature": "3ec9829146bbae8a982bfd676b573b7c443ed9497c25a8cc94e6e2330e85a1c9",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@babel/types/lib/index.d.ts": {
+        "version": "368d98ad7e5cb65c247aa95c97e86b3812b4d91a74bafa6b0d4420d1ce91557c",
+        "signature": "368d98ad7e5cb65c247aa95c97e86b3812b4d91a74bafa6b0d4420d1ce91557c",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/babel__generator/index.d.ts": {
+        "version": "b25c5f2970d06c729f464c0aeaa64b1a5b5f1355aa93554bb5f9c199b8624b1e",
+        "signature": "b25c5f2970d06c729f464c0aeaa64b1a5b5f1355aa93554bb5f9c199b8624b1e",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/babel__traverse/index.d.ts": {
+        "version": "691aea9772797ca98334eb743e7686e29325b02c6931391bcee4cc7bf27a9f3b",
+        "signature": "691aea9772797ca98334eb743e7686e29325b02c6931391bcee4cc7bf27a9f3b",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@babel/parser/typings/babel-parser.d.ts": {
+        "version": "6da9e714516d081abaa435946d77c8d74dba888530412dc71601e83d2c8a512e",
+        "signature": "6da9e714516d081abaa435946d77c8d74dba888530412dc71601e83d2c8a512e",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/babel__template/index.d.ts": {
+        "version": "3051751533eee92572241b3cef28333212401408c4e7aa21718714b793c0f4ed",
+        "signature": "3051751533eee92572241b3cef28333212401408c4e7aa21718714b793c0f4ed",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/babel__core/index.d.ts": {
+        "version": "f90b5f1a70d869ed6e275628b7483352d4b344e8d99155d5252b45d17fa9cd13",
+        "signature": "f90b5f1a70d869ed6e275628b7483352d4b344e8d99155d5252b45d17fa9cd13",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/eslint/helpers.d.ts": {
+        "version": "f345b0888d003fd69cb32bad3a0aa04c615ccafc572019e4bd86a52bd5e49e46",
+        "signature": "f345b0888d003fd69cb32bad3a0aa04c615ccafc572019e4bd86a52bd5e49e46",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/@types/json-schema/index.d.ts": {
+        "version": "3a1e165b22a1cb8df82c44c9a09502fd2b33f160cd277de2cd3a055d8e5c6b27",
+        "signature": "3a1e165b22a1cb8df82c44c9a09502fd2b33f160cd277de2cd3a055d8e5c6b27",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/estree/index.d.ts": {
+        "version": "745a853d60bf782583a58584f59e202cae5c7a898b0c92696442602a3ef17a87",
+        "signature": "745a853d60bf782583a58584f59e202cae5c7a898b0c92696442602a3ef17a87",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/eslint/index.d.ts": {
+        "version": "ffa048767a32a0f6354e611b15d8b53d882da1a9a35455c35c3f6811f2416d17",
+        "signature": "ffa048767a32a0f6354e611b15d8b53d882da1a9a35455c35c3f6811f2416d17",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/eslint-scope/index.d.ts": {
+        "version": "274bda283ef15f4205603ca9967313fc013aa77ae89f2cbeab5fbd51439e96ed",
+        "signature": "274bda283ef15f4205603ca9967313fc013aa77ae89f2cbeab5fbd51439e96ed",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/faker/index.d.ts": {
+        "version": "ca7294ac2e695949d037f2a0dc72198bddf1a916c9256cf4d84c678ba9ba7136",
+        "signature": "ca7294ac2e695949d037f2a0dc72198bddf1a916c9256cf4d84c678ba9ba7136",
+        "affectsGlobalScope": true
+      },
       "../node_modules/@types/graceful-fs/index.d.ts": {
         "version": "3ebae8c00411116a66fca65b08228ea0cf0b72724701f9b854442100aab55aba",
         "signature": "3ebae8c00411116a66fca65b08228ea0cf0b72724701f9b854442100aab55aba",
@@ -747,8 +777,8 @@
         "affectsGlobalScope": false
       },
       "../node_modules/@types/jest/index.d.ts": {
-        "version": "71f30fba971582dc744373cbc8b06c1eb64dc24a6ccbc9b457f94fb68c67cb4e",
-        "signature": "71f30fba971582dc744373cbc8b06c1eb64dc24a6ccbc9b457f94fb68c67cb4e",
+        "version": "650f66071a829bfef85d892b6c41abeb6ffda45956c0c38ebf564e543dcc371c",
+        "signature": "650f66071a829bfef85d892b6c41abeb6ffda45956c0c38ebf564e543dcc371c",
         "affectsGlobalScope": true
       },
       "../node_modules/@types/json5/index.d.ts": {
@@ -762,8 +792,8 @@
         "affectsGlobalScope": false
       },
       "../node_modules/@types/prettier/index.d.ts": {
-        "version": "a0ff15c451ab2827c785924230942fa2ab13141530688b824948d6b43bdb2e07",
-        "signature": "a0ff15c451ab2827c785924230942fa2ab13141530688b824948d6b43bdb2e07",
+        "version": "08b428a44bc98005536a12456518797e9afe2a08e8b5d9785641713a54475881",
+        "signature": "08b428a44bc98005536a12456518797e9afe2a08e8b5d9785641713a54475881",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/stack-utils/index.d.ts": {
@@ -847,6 +877,9 @@
         "../node_modules/jest-diff/build/index.d.ts",
         "../node_modules/pretty-format/build/index.d.ts"
       ],
+      "../node_modules/@types/node-forge/index.d.ts": [
+        "../node_modules/@types/node/index.d.ts"
+      ],
       "../node_modules/@types/node/assert.d.ts": [
         "../node_modules/@types/node/assert.d.ts"
       ],
@@ -1079,42 +1112,7 @@
         "../node_modules/@types/yargs-parser/index.d.ts"
       ],
       "../node_modules/crypto-random-string/index.d.ts": [
-        "../node_modules/crypto-random-string/node_modules/type-fest/index.d.ts"
-      ],
-      "../node_modules/crypto-random-string/node_modules/type-fest/index.d.ts": [
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/basic.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/except.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/literal-union.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/merge-exclusive.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/merge.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/mutable.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/opaque.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/package-json.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/partial-deep.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/promisable.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/readonly-deep.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/require-at-least-one.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/require-exactly-one.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/set-optional.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/set-required.d.ts"
-      ],
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/literal-union.d.ts": [
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/basic.d.ts"
-      ],
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/merge.d.ts": [
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/except.d.ts"
-      ],
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/package-json.d.ts": [
-        "../node_modules/crypto-random-string/node_modules/type-fest/index.d.ts"
-      ],
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/partial-deep.d.ts": [
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/basic.d.ts"
-      ],
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/readonly-deep.d.ts": [
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/basic.d.ts"
-      ],
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/require-at-least-one.d.ts": [
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/except.d.ts"
+        "../node_modules/type-fest/index.d.ts"
       ],
       "../node_modules/jest-diff/build/difflines.d.ts": [
         "../node_modules/jest-diff/build/cleanupsemantic.d.ts",
@@ -1133,6 +1131,41 @@
       "../node_modules/pretty-format/build/index.d.ts": [
         "../node_modules/pretty-format/build/types.d.ts"
       ],
+      "../node_modules/type-fest/index.d.ts": [
+        "../node_modules/type-fest/source/basic.d.ts",
+        "../node_modules/type-fest/source/except.d.ts",
+        "../node_modules/type-fest/source/literal-union.d.ts",
+        "../node_modules/type-fest/source/merge-exclusive.d.ts",
+        "../node_modules/type-fest/source/merge.d.ts",
+        "../node_modules/type-fest/source/mutable.d.ts",
+        "../node_modules/type-fest/source/opaque.d.ts",
+        "../node_modules/type-fest/source/package-json.d.ts",
+        "../node_modules/type-fest/source/partial-deep.d.ts",
+        "../node_modules/type-fest/source/promisable.d.ts",
+        "../node_modules/type-fest/source/readonly-deep.d.ts",
+        "../node_modules/type-fest/source/require-at-least-one.d.ts",
+        "../node_modules/type-fest/source/require-exactly-one.d.ts",
+        "../node_modules/type-fest/source/set-optional.d.ts",
+        "../node_modules/type-fest/source/set-required.d.ts"
+      ],
+      "../node_modules/type-fest/source/literal-union.d.ts": [
+        "../node_modules/type-fest/source/basic.d.ts"
+      ],
+      "../node_modules/type-fest/source/merge.d.ts": [
+        "../node_modules/type-fest/source/except.d.ts"
+      ],
+      "../node_modules/type-fest/source/package-json.d.ts": [
+        "../node_modules/type-fest/index.d.ts"
+      ],
+      "../node_modules/type-fest/source/partial-deep.d.ts": [
+        "../node_modules/type-fest/source/basic.d.ts"
+      ],
+      "../node_modules/type-fest/source/readonly-deep.d.ts": [
+        "../node_modules/type-fest/source/basic.d.ts"
+      ],
+      "../node_modules/type-fest/source/require-at-least-one.d.ts": [
+        "../node_modules/type-fest/source/except.d.ts"
+      ],
       "../src/common/genaccountkey.ts": [
         "../src/common/gencryptorandomstring.ts"
       ],
@@ -1147,15 +1180,34 @@
         "../src/common/gencryptorandomstring.ts",
         "../src/common/gensalt.ts"
       ],
+      "../src/forge/certificates/generatekeypair.ts": [
+        "../node_modules/@types/node-forge/index.d.ts"
+      ],
+      "../src/forge/certificates/index.ts": [
+        "../src/forge/certificates/generatekeypair.ts",
+        "../src/forge/certificates/signcertificate.ts",
+        "../src/forge/certificates/verifycertificate.ts"
+      ],
+      "../src/forge/certificates/signcertificate.ts": [
+        "../node_modules/@types/node-forge/index.d.ts"
+      ],
+      "../src/forge/certificates/verifycertificate.ts": [
+        "../node_modules/@types/node-forge/index.d.ts"
+      ],
+      "../src/forge/index.ts": [
+        "../src/forge/certificates/index.ts"
+      ],
       "../src/index.ts": [
         "../src/common/index.ts",
+        "../src/forge/index.ts",
         "../src/srp/index.ts"
       ],
       "../src/srp/client/derivesession.ts": [
         "../node_modules/secure-remote-password/client.d.ts"
       ],
       "../src/srp/client/deriveverifier.ts": [
-        "../node_modules/secure-remote-password/client.d.ts"
+        "../node_modules/secure-remote-password/client.d.ts",
+        "../src/common/gensalt.ts"
       ],
       "../src/srp/client/generateephemeral.ts": [
         "../node_modules/secure-remote-password/client.d.ts"
@@ -1228,6 +1280,9 @@
         "../node_modules/jest-diff/build/index.d.ts",
         "../node_modules/pretty-format/build/index.d.ts"
       ],
+      "../node_modules/@types/node-forge/index.d.ts": [
+        "../node_modules/@types/node/index.d.ts"
+      ],
       "../node_modules/@types/node/assert.d.ts": [
         "../node_modules/@types/node/assert.d.ts"
       ],
@@ -1460,42 +1515,7 @@
         "../node_modules/@types/yargs-parser/index.d.ts"
       ],
       "../node_modules/crypto-random-string/index.d.ts": [
-        "../node_modules/crypto-random-string/node_modules/type-fest/index.d.ts"
-      ],
-      "../node_modules/crypto-random-string/node_modules/type-fest/index.d.ts": [
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/basic.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/except.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/literal-union.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/merge-exclusive.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/merge.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/mutable.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/opaque.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/package-json.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/partial-deep.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/promisable.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/readonly-deep.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/require-at-least-one.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/require-exactly-one.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/set-optional.d.ts",
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/set-required.d.ts"
-      ],
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/literal-union.d.ts": [
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/basic.d.ts"
-      ],
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/merge.d.ts": [
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/except.d.ts"
-      ],
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/package-json.d.ts": [
-        "../node_modules/crypto-random-string/node_modules/type-fest/index.d.ts"
-      ],
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/partial-deep.d.ts": [
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/basic.d.ts"
-      ],
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/readonly-deep.d.ts": [
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/basic.d.ts"
-      ],
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/require-at-least-one.d.ts": [
-        "../node_modules/crypto-random-string/node_modules/type-fest/source/except.d.ts"
+        "../node_modules/type-fest/index.d.ts"
       ],
       "../node_modules/jest-diff/build/difflines.d.ts": [
         "../node_modules/jest-diff/build/cleanupsemantic.d.ts",
@@ -1514,16 +1534,76 @@
       "../node_modules/pretty-format/build/index.d.ts": [
         "../node_modules/pretty-format/build/types.d.ts"
       ],
+      "../node_modules/type-fest/index.d.ts": [
+        "../node_modules/type-fest/source/basic.d.ts",
+        "../node_modules/type-fest/source/except.d.ts",
+        "../node_modules/type-fest/source/literal-union.d.ts",
+        "../node_modules/type-fest/source/merge-exclusive.d.ts",
+        "../node_modules/type-fest/source/merge.d.ts",
+        "../node_modules/type-fest/source/mutable.d.ts",
+        "../node_modules/type-fest/source/opaque.d.ts",
+        "../node_modules/type-fest/source/package-json.d.ts",
+        "../node_modules/type-fest/source/partial-deep.d.ts",
+        "../node_modules/type-fest/source/promisable.d.ts",
+        "../node_modules/type-fest/source/readonly-deep.d.ts",
+        "../node_modules/type-fest/source/require-at-least-one.d.ts",
+        "../node_modules/type-fest/source/require-exactly-one.d.ts",
+        "../node_modules/type-fest/source/set-optional.d.ts",
+        "../node_modules/type-fest/source/set-required.d.ts"
+      ],
+      "../node_modules/type-fest/source/literal-union.d.ts": [
+        "../node_modules/type-fest/source/basic.d.ts"
+      ],
+      "../node_modules/type-fest/source/merge.d.ts": [
+        "../node_modules/type-fest/source/except.d.ts"
+      ],
+      "../node_modules/type-fest/source/package-json.d.ts": [
+        "../node_modules/type-fest/index.d.ts"
+      ],
+      "../node_modules/type-fest/source/partial-deep.d.ts": [
+        "../node_modules/type-fest/source/basic.d.ts"
+      ],
+      "../node_modules/type-fest/source/readonly-deep.d.ts": [
+        "../node_modules/type-fest/source/basic.d.ts"
+      ],
+      "../node_modules/type-fest/source/require-at-least-one.d.ts": [
+        "../node_modules/type-fest/source/except.d.ts"
+      ],
       "../src/common/index.ts": [
         "../src/common/genaccountkey.ts",
         "../src/common/gencryptorandomstring.ts",
         "../src/common/gensalt.ts"
       ],
+      "../src/forge/certificates/generatekeypair.ts": [
+        "../node_modules/@types/node-forge/index.d.ts"
+      ],
+      "../src/forge/certificates/index.ts": [
+        "../node_modules/@types/node-forge/index.d.ts",
+        "../src/forge/certificates/generatekeypair.ts",
+        "../src/forge/certificates/signcertificate.ts",
+        "../src/forge/certificates/verifycertificate.ts"
+      ],
+      "../src/forge/certificates/signcertificate.ts": [
+        "../node_modules/@types/node-forge/index.d.ts"
+      ],
+      "../src/forge/certificates/verifycertificate.ts": [
+        "../node_modules/@types/node-forge/index.d.ts"
+      ],
+      "../src/forge/index.ts": [
+        "../node_modules/@types/node-forge/index.d.ts",
+        "../src/forge/certificates/index.ts",
+        "../src/forge/certificates/signcertificate.ts",
+        "../src/forge/certificates/verifycertificate.ts"
+      ],
       "../src/index.ts": [
+        "../node_modules/@types/node-forge/index.d.ts",
         "../node_modules/secure-remote-password/client.d.ts",
         "../node_modules/secure-remote-password/server.d.ts",
         "../src/common/genaccountkey.ts",
         "../src/common/index.ts",
+        "../src/forge/certificates/signcertificate.ts",
+        "../src/forge/certificates/verifycertificate.ts",
+        "../src/forge/index.ts",
         "../src/srp/client/deriveverifier.ts",
         "../src/srp/index.ts"
       ],
@@ -1581,6 +1661,7 @@
       "../node_modules/@types/jest/index.d.ts",
       "../node_modules/@types/json-schema/index.d.ts",
       "../node_modules/@types/json5/index.d.ts",
+      "../node_modules/@types/node-forge/index.d.ts",
       "../node_modules/@types/node/assert.d.ts",
       "../node_modules/@types/node/async_hooks.d.ts",
       "../node_modules/@types/node/base.d.ts",
@@ -1633,22 +1714,6 @@
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
       "../node_modules/crypto-random-string/index.d.ts",
-      "../node_modules/crypto-random-string/node_modules/type-fest/index.d.ts",
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/basic.d.ts",
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/except.d.ts",
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/literal-union.d.ts",
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/merge-exclusive.d.ts",
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/merge.d.ts",
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/mutable.d.ts",
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/opaque.d.ts",
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/package-json.d.ts",
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/partial-deep.d.ts",
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/promisable.d.ts",
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/readonly-deep.d.ts",
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/require-at-least-one.d.ts",
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/require-exactly-one.d.ts",
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/set-optional.d.ts",
-      "../node_modules/crypto-random-string/node_modules/type-fest/source/set-required.d.ts",
       "../node_modules/jest-diff/build/cleanupsemantic.d.ts",
       "../node_modules/jest-diff/build/difflines.d.ts",
       "../node_modules/jest-diff/build/index.d.ts",
@@ -1658,6 +1723,22 @@
       "../node_modules/pretty-format/build/types.d.ts",
       "../node_modules/secure-remote-password/client.d.ts",
       "../node_modules/secure-remote-password/server.d.ts",
+      "../node_modules/type-fest/index.d.ts",
+      "../node_modules/type-fest/source/basic.d.ts",
+      "../node_modules/type-fest/source/except.d.ts",
+      "../node_modules/type-fest/source/literal-union.d.ts",
+      "../node_modules/type-fest/source/merge-exclusive.d.ts",
+      "../node_modules/type-fest/source/merge.d.ts",
+      "../node_modules/type-fest/source/mutable.d.ts",
+      "../node_modules/type-fest/source/opaque.d.ts",
+      "../node_modules/type-fest/source/package-json.d.ts",
+      "../node_modules/type-fest/source/partial-deep.d.ts",
+      "../node_modules/type-fest/source/promisable.d.ts",
+      "../node_modules/type-fest/source/readonly-deep.d.ts",
+      "../node_modules/type-fest/source/require-at-least-one.d.ts",
+      "../node_modules/type-fest/source/require-exactly-one.d.ts",
+      "../node_modules/type-fest/source/set-optional.d.ts",
+      "../node_modules/type-fest/source/set-required.d.ts",
       "../node_modules/typescript/lib/lib.dom.d.ts",
       "../node_modules/typescript/lib/lib.dom.iterable.d.ts",
       "../node_modules/typescript/lib/lib.es2015.collection.d.ts",
@@ -1709,6 +1790,11 @@
       "../src/common/gencryptorandomstring.ts",
       "../src/common/gensalt.ts",
       "../src/common/index.ts",
+      "../src/forge/certificates/generatekeypair.ts",
+      "../src/forge/certificates/index.ts",
+      "../src/forge/certificates/signcertificate.ts",
+      "../src/forge/certificates/verifycertificate.ts",
+      "../src/forge/index.ts",
       "../src/index.ts",
       "../src/srp/client/derivesession.ts",
       "../src/srp/client/deriveverifier.ts",

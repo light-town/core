@@ -1,6 +1,8 @@
+/// <reference types="node-forge" />
 import common from './common';
 import srp from './srp';
-export { common, srp };
+import forge from './forge';
+export { common, srp, forge };
 declare const _default: {
     common: {
         genAccountKey: ({ versionCode, userId }: import("./common/genAccountKey").Options) => string;
@@ -17,6 +19,16 @@ declare const _default: {
         server: {
             deriveSession: (serverSecretEphemeral: string, clientPublicEphemeral: string, salt: string, secretKey: string, verifier: string, clientSessionProof: string) => import("secure-remote-password/server").Session;
             generateEphemeral: (verifier: string) => import("secure-remote-password/server").Ephemeral;
+        };
+    };
+    forge: {
+        certificates: {
+            generateKeyPair: () => {
+                publicKey: import("node-forge").pki.ed25519.NativeBuffer;
+                privateKey: import("node-forge").pki.ed25519.NativeBuffer;
+            };
+            signCertificate: (privateKey: import("node-forge").pki.ed25519.BinaryBuffer, message: string, options?: import("./forge/certificates/signCertificate").Options) => import("node-forge").pki.ed25519.NativeBuffer;
+            verifyCertificate: (publicKey: import("node-forge").pki.ed25519.NativeBuffer, signature: import("node-forge").pki.ed25519.BinaryBuffer, message: string, options?: import("./forge/certificates/verifyCertificate").Options) => boolean;
         };
     };
 };
