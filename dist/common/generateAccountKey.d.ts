@@ -3,4 +3,4 @@ export interface Options {
     userId: string;
 }
 export declare const toFormatKey: (key: string) => string;
-export declare const genAccountKey: ({ versionCode, userId }: Options) => string;
+export declare const generateAccountKey: ({ versionCode, userId }: Options) => string;

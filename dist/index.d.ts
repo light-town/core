@@ -5,9 +5,9 @@ import forge from './forge';
 export { common, srp, forge };
 declare const _default: {
     common: {
-        genAccountKey: ({ versionCode, userId }: import("./common/genAccountKey").Options) => string;
-        genCryptoRandomString: (length: number) => string;
-        genSalt: () => string;
+        generateAccountKey: ({ versionCode, userId }: import("./common/generateAccountKey").Options) => string;
+        generateCryptoRandomString: (length: number) => string;
+        generateSalt: () => string;
     };
     srp: {
         client: {

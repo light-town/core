@@ -1,11 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.genSalt = exports.genCryptoRandomString = exports.genAccountKey = void 0;
-const genCryptoRandomString_1 = require("./genCryptoRandomString");
-Object.defineProperty(exports, "genCryptoRandomString", { enumerable: true, get: function () { return genCryptoRandomString_1.genCryptoRandomString; } });
-const genAccountKey_1 = require("./genAccountKey");
-Object.defineProperty(exports, "genAccountKey", { enumerable: true, get: function () { return genAccountKey_1.genAccountKey; } });
-const genSalt_1 = require("./genSalt");
-Object.defineProperty(exports, "genSalt", { enumerable: true, get: function () { return genSalt_1.genSalt; } });
-exports.default = { genAccountKey: genAccountKey_1.genAccountKey, genCryptoRandomString: genCryptoRandomString_1.genCryptoRandomString, genSalt: genSalt_1.genSalt };
+exports.generateSalt = exports.generateCryptoRandomString = exports.generateAccountKey = void 0;
+const generateCryptoRandomString_1 = require("./generateCryptoRandomString");
+Object.defineProperty(exports, "generateCryptoRandomString", { enumerable: true, get: function () { return generateCryptoRandomString_1.generateCryptoRandomString; } });
+const generateAccountKey_1 = require("./generateAccountKey");
+Object.defineProperty(exports, "generateAccountKey", { enumerable: true, get: function () { return generateAccountKey_1.generateAccountKey; } });
+const generateSalt_1 = require("./generateSalt");
+Object.defineProperty(exports, "generateSalt", { enumerable: true, get: function () { return generateSalt_1.generateSalt; } });
+exports.default = { generateAccountKey: generateAccountKey_1.generateAccountKey, generateCryptoRandomString: generateCryptoRandomString_1.generateCryptoRandomString, generateSalt: generateSalt_1.generateSalt };
 //# sourceMappingURL=index.js.map

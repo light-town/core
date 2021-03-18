@@ -1,66 +1,69 @@
 import certificates from '../index';
-import * as forge from 'node-forge';
 
 describe('[Certificates] ...', () => {
   it('should sign and verify certificate', () => {
+    const TEST_MESSAGE = 'test';
     // 1. generate keys on device
     const keyPair = certificates.generateKeyPair();
 
     // 2. send public ket to server
     // 3. on push notification send to device a public key and generated randomly transaction key
     // 4. sing certificate on device
-    const signature = forge.pki.ed25519.sign({
-      message: 'test',
-      encoding: 'utf8',
-      privateKey: keyPair.privateKey,
-    });
+    const signature = certificates.signCertificate(
+      keyPair.privateKey,
+      TEST_MESSAGE,
+      { encoding: 'utf8' },
+    );
 
     // 5. send signature and transaction key to the server
     // 6. verify signature with public key
-    const verified = forge.pki.ed25519.verify({
-      message: 'test',
-      encoding: 'utf8',
-      signature: signature,
-      publicKey: keyPair.publicKey,
-    });
+    const verified = certificates.verifyCertificate(
+      keyPair.publicKey,
+      signature,
+      TEST_MESSAGE,
+      { encoding: 'utf8' },
+    );
 
     expect(verified).toBeTruthy();
   });
 
   it('should fail verifying when private key was not correct', () => {
+    const TEST_MESSAGE = 'test';
+
     const keyPair = certificates.generateKeyPair();
 
-    const signature = forge.pki.ed25519.sign({
-      message: 'test',
-      encoding: 'utf8',
-      privateKey: certificates.generateKeyPair().privateKey,
-    });
+    const signature = certificates.signCertificate(
+      certificates.generateKeyPair().privateKey,
+      TEST_MESSAGE,
+      { encoding: 'utf8' },
+    );
 
-    const verified = forge.pki.ed25519.verify({
-      message: 'test',
-      encoding: 'utf8',
-      signature: signature,
-      publicKey: keyPair.publicKey,
-    });
+    const verified = certificates.verifyCertificate(
+      keyPair.publicKey,
+      signature,
+      TEST_MESSAGE,
+      { encoding: 'utf8' },
+    );
 
     expect(verified).toBeFalsy();
   });
 
   it('should fail verifying when public key was not correct', () => {
+    const TEST_MESSAGE = 'test';
     const keyPair = certificates.generateKeyPair();
 
-    const signature = forge.pki.ed25519.sign({
-      message: 'test',
-      encoding: 'utf8',
-      privateKey: keyPair.privateKey,
-    });
+    const signature = certificates.signCertificate(
+      keyPair.privateKey,
+      TEST_MESSAGE,
+      { encoding: 'utf8' },
+    );
 
-    const verified = forge.pki.ed25519.verify({
-      message: 'test',
-      encoding: 'utf8',
-      signature: signature,
-      publicKey: certificates.generateKeyPair().publicKey,
-    });
+    const verified = certificates.verifyCertificate(
+      certificates.generateKeyPair().publicKey,
+      signature,
+      TEST_MESSAGE,
+      { encoding: 'utf8' },
+    );
 
     expect(verified).toBeFalsy();
   });

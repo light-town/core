@@ -4,10 +4,11 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "prebuild": "rimraf dist",
+    "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "start": "ts-node ./src/",
-    "build": "tsc --project tsconfig.build.json",
+    "build": "npm run prebuild && tsc --project tsconfig.build.json",
     "test": "jest --config ./jest.config.unit.js",
     "test:watch": "npm run test -- --watch",
     "test:watch:cov": "npm run test:watch -- --coverage",

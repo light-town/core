@@ -321,24 +321,24 @@
         "signature": "0183712b42a220aafe667fca70ec1892a9aed217d3a755e52ebe8544e5978b8f",
         "affectsGlobalScope": false
       },
-      "../src/common/gencryptorandomstring.ts": {
-        "version": "793c45af2495bb826b485f9421bf592ceb716989bf57b58009d0b7945b84d4a4",
-        "signature": "5152414205a2b2c4954a8efaa6719c4c55f09a334cff40963149eea5fb922721",
+      "../src/common/generatecryptorandomstring.ts": {
+        "version": "c4be6fb71cb83468ce61911bf72a64df2199f4389fd986ce049e191e80f50d64",
+        "signature": "6ba1b4983ffb6dfc8dd3f5f216e183836108961f5b48028810aafa2646246bb8",
         "affectsGlobalScope": false
       },
-      "../src/common/genaccountkey.ts": {
-        "version": "772eefb8701eecc489b5ed521fc949d46ebdae203e1eaf915c54b1acc17941af",
-        "signature": "7bb9b98bc5a55d95ab215cf834a07566a8b19b24e9c3f2e803224458bac4b33d",
+      "../src/common/generateaccountkey.ts": {
+        "version": "2d162e4a0be15d7555598059ebe088201ef41f51f235754c3ee4ac8dd1fcd754",
+        "signature": "14389b2d830ae3e90893d6d47fbbc28ed2e3d8ef4f61788d58073c5d40837f01",
         "affectsGlobalScope": false
       },
-      "../src/common/gensalt.ts": {
-        "version": "954ae43a6accc89d3479d4883e3e89dcaec6ce6e014fc01aa7a92d077960f610",
-        "signature": "4ce051f9591854721bceadace840585dc1bae8ea98aea566a5128a0df1446ec4",
+      "../src/common/generatesalt.ts": {
+        "version": "d33425bc5e07ff473def1e3a294478f327c2bd36c90129ecb9397c0233235045",
+        "signature": "d5734a7f0628b6c68e71ded1f721fd25db16ddf6345b8970a2b3ce5a64be9d7e",
         "affectsGlobalScope": false
       },
       "../src/common/index.ts": {
-        "version": "456b67fb553de2030388a64c6db05fae32c45af7b36714e7c2e3cbac953c894e",
-        "signature": "01f7daa40322e062dae4b0af852df8c77f5bdbc8843a9a4dc8950de32a196e97",
+        "version": "937efb4762793de52979ae8ee040fd5e84f110dc19962141868b3e0ded416997",
+        "signature": "52e371959ade094cae6a08c2a3084c3c96bdebfd8e638d814dde96d7b5e0a8f1",
         "affectsGlobalScope": false
       },
       "../node_modules/secure-remote-password/client.d.ts": {
@@ -347,27 +347,27 @@
         "affectsGlobalScope": false
       },
       "../src/srp/client/deriveverifier.ts": {
-        "version": "b04947d86b4202e97593f837a78654abfb6b9835b492e1c58e2c96925d4596aa",
+        "version": "61f2bd8de9dcbbe0fe5b145c2c0143bef63bb8360b11662f190a0957ce1b742e",
         "signature": "1e2656471e43459cbf0ea24eb3c7616e5c261e427e68130089b9f1b0f83253fe",
         "affectsGlobalScope": false
       },
       "../src/srp/client/derivesession.ts": {
-        "version": "e4cad5b209f51bf5403f208a420828132a549bca6d1345bcd0b05c698fbe9179",
+        "version": "3a8d3ac56cd477b5c204ee4c358e9e28604fc8dff53bfe30880db5efb3dd401b",
         "signature": "583bd2043aa9f948e25b35626ba57b9248a91a6230910b92c520bb2878e8f721",
         "affectsGlobalScope": false
       },
       "../src/srp/client/verifysession.ts": {
-        "version": "136b64f624eb4d84f2859098553fa5bf19f0ff5339ce0cb285f1dc8c383eac44",
+        "version": "6f7cc2bc15d0ed2e6e59e44027038d306df2ca616e21f9d62f96bbdb66a1c80c",
         "signature": "01e9832ad0120376bf2031d3250f340abee03ab7f18e34f11e63515745ce7254",
         "affectsGlobalScope": false
       },
       "../src/srp/client/generateephemeral.ts": {
-        "version": "a89d620e0dd830d0e4304d95dd6cd8e36780ebcc457e9b7260a56f48c5ab133a",
+        "version": "757ca7f2eb3f9c68642b0a00a26c9047f33c0ec6997b4133660235562cf9a008",
         "signature": "6d00c97d82f49e3f147a5a7725004f1f95627d59e42a52d89009edc24951bec6",
         "affectsGlobalScope": false
       },
       "../src/srp/client/index.ts": {
-        "version": "d314322e82b9fcd1bd28be52215731a4b9d4eca3ff20a1f0b0cb3d224f45a3ec",
+        "version": "6dfe2803fbe830db3815568eb87a9460a25dad3391182fca9d29535cf0c12720",
         "signature": "be77484cf6d6bbc93b291fc01cb609e765f46408a37b2fe898507bf95fa79f03",
         "affectsGlobalScope": false
       },
@@ -377,22 +377,22 @@
         "affectsGlobalScope": false
       },
       "../src/srp/server/derivesession.ts": {
-        "version": "ad4ffd183975b157df0eeb237ec508d8bbe7fe4f8fc2861bf8c482c9225ca2d8",
+        "version": "452471c37e4ada0a34c9a893957dba7ee9141acf2c3787009115d386410fd730",
         "signature": "58a685ae09b0e5d60fbf28675a206fa9af17a9efd0db0e5ba2c1b8344264047b",
         "affectsGlobalScope": false
       },
       "../src/srp/server/generateephemeral.ts": {
-        "version": "75da357d927a59f93c36582fae0b4e327ba418dc4da68f9f1be9ff88ab5bfa05",
+        "version": "0790f83c0b37d66bdbd8208965ac6ab888f1e94e87d6170afbdc93fd2112fe97",
         "signature": "36e37604a22e760b69362f02bdf1f69c9974f44d117963988225566f7bb510b0",
         "affectsGlobalScope": false
       },
       "../src/srp/server/index.ts": {
-        "version": "75006c8d5b649994e6537867fe01a35e9fdc129677b555490880b8def403cb16",
+        "version": "56e8c40f1da01bf2d8795fb5bfe7c2c6400f78ddf96849a05a7f91996342b05e",
         "signature": "58756ce3f27b7edd3d34b4dff980294e07bab156d155f22a6abd8ad338f0a8f1",
         "affectsGlobalScope": false
       },
       "../src/srp/index.ts": {
-        "version": "f5b366f4ea9cec731bf53bc85f44d3f5b7f59fbcdde2bd27ce9b679786ee0889",
+        "version": "da72231548310d4ffa50064cb8e97fb88012068987024474eb9d2f38eaa2fef5",
         "signature": "5f7f5d3c2c5c43ee0b930b5693ebe6fe9867342f300a0412b674d3640d4c4b63",
         "affectsGlobalScope": false
       },
@@ -632,33 +632,33 @@
         "affectsGlobalScope": false
       },
       "../src/forge/certificates/generatekeypair.ts": {
-        "version": "89f233592dca10d3488e80fc9142c30de43173f5276a257e59d8ce0ed4cae789",
+        "version": "154052115b5571db3d8f10a92ac66fe5f2002456b4d3b4e17273c3dcd51ed319",
         "signature": "9f626bd9e4ecebb691b32410b0f9a5cb8588e38030230ee54e4bb33a8c045df9",
         "affectsGlobalScope": false
       },
       "../src/forge/certificates/signcertificate.ts": {
-        "version": "f9f7a6ff7436892e957c1c9165c29c0816d64bd1d80df748ab98e831e014008a",
+        "version": "d15b15c07581830412c1cfe11de0d6345e17bdde657e4ba402651a30630dc1f3",
         "signature": "a7a33a49601c0fe58dae05fc3648b6d550ec1c6580065fb222821611d1883fc9",
         "affectsGlobalScope": false
       },
       "../src/forge/certificates/verifycertificate.ts": {
-        "version": "c89e2c73eab044241b7c0ad79b1f76c9ebdd0ec6663a027e4ccb716506f961ac",
+        "version": "7a66f331fe5fd45c904249146821a78077e505536ab927880ff5376b1c456455",
         "signature": "d8ab4f2067347c0b8d102ee7c188fc33362205d11a0529d071b7403dd9fcad0c",
         "affectsGlobalScope": false
       },
       "../src/forge/certificates/index.ts": {
-        "version": "c1006d20facea0bce930997bc0fba4bfb72621299c4376fbee928ec98f6e75ce",
+        "version": "0e37aa3cbab70a83020731accef31a3ca9ab1da2dc82b620fba88766e31f35a9",
         "signature": "a2ed125cf9047acafe17b83fa467ac73b41c606660463dd9e83db4251ddc0c48",
         "affectsGlobalScope": false
       },
       "../src/forge/index.ts": {
-        "version": "416909a23f9dc5eed7cab172030a381f4560f23d480034b675680d04b5f0bf5d",
+        "version": "a1cd96c84530d6dd5ccd23b8027718537dcedad8fa5b1eacae52ca6d94200ba3",
         "signature": "aa698eaae664d5653316c59a527de00189b1175117e2d29aca8e3590da4e3d91",
         "affectsGlobalScope": false
       },
       "../src/index.ts": {
-        "version": "a7473ab6bfa2d136c50ed7dcc0308661d96786963636057c11734d1a30296779",
-        "signature": "3ec9829146bbae8a982bfd676b573b7c443ed9497c25a8cc94e6e2330e85a1c9",
+        "version": "a66b2883e89f75816422b5d16d8129a21d56a85f45ea63d06a6c15be41b77304",
+        "signature": "4509485ec15792a3e45d002cc1c677d9f9da2ae1bbf29bd58a6ebd80e3b50d43",
         "affectsGlobalScope": false
       },
       "../node_modules/@babel/types/lib/index.d.ts": {
@@ -1166,19 +1166,19 @@
       "../node_modules/type-fest/source/require-at-least-one.d.ts": [
         "../node_modules/type-fest/source/except.d.ts"
       ],
-      "../src/common/genaccountkey.ts": [
-        "../src/common/gencryptorandomstring.ts"
+      "../src/common/generateaccountkey.ts": [
+        "../src/common/generatecryptorandomstring.ts"
       ],
-      "../src/common/gencryptorandomstring.ts": [
+      "../src/common/generatecryptorandomstring.ts": [
         "../node_modules/crypto-random-string/index.d.ts"
       ],
-      "../src/common/gensalt.ts": [
+      "../src/common/generatesalt.ts": [
         "../node_modules/crypto-random-string/index.d.ts"
       ],
       "../src/common/index.ts": [
-        "../src/common/genaccountkey.ts",
-        "../src/common/gencryptorandomstring.ts",
-        "../src/common/gensalt.ts"
+        "../src/common/generateaccountkey.ts",
+        "../src/common/generatecryptorandomstring.ts",
+        "../src/common/generatesalt.ts"
       ],
       "../src/forge/certificates/generatekeypair.ts": [
         "../node_modules/@types/node-forge/index.d.ts"
@@ -1207,7 +1207,7 @@
       ],
       "../src/srp/client/deriveverifier.ts": [
         "../node_modules/secure-remote-password/client.d.ts",
-        "../src/common/gensalt.ts"
+        "../src/common/generatesalt.ts"
       ],
       "../src/srp/client/generateephemeral.ts": [
         "../node_modules/secure-remote-password/client.d.ts"
@@ -1570,9 +1570,9 @@
         "../node_modules/type-fest/source/except.d.ts"
       ],
       "../src/common/index.ts": [
-        "../src/common/genaccountkey.ts",
-        "../src/common/gencryptorandomstring.ts",
-        "../src/common/gensalt.ts"
+        "../src/common/generateaccountkey.ts",
+        "../src/common/generatecryptorandomstring.ts",
+        "../src/common/generatesalt.ts"
       ],
       "../src/forge/certificates/generatekeypair.ts": [
         "../node_modules/@types/node-forge/index.d.ts"
@@ -1599,7 +1599,7 @@
         "../node_modules/@types/node-forge/index.d.ts",
         "../node_modules/secure-remote-password/client.d.ts",
         "../node_modules/secure-remote-password/server.d.ts",
-        "../src/common/genaccountkey.ts",
+        "../src/common/generateaccountkey.ts",
         "../src/common/index.ts",
         "../src/forge/certificates/signcertificate.ts",
         "../src/forge/certificates/verifycertificate.ts",
@@ -1786,9 +1786,9 @@
       "../node_modules/typescript/lib/lib.esnext.weakref.d.ts",
       "../node_modules/typescript/lib/lib.scripthost.d.ts",
       "../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
-      "../src/common/genaccountkey.ts",
-      "../src/common/gencryptorandomstring.ts",
-      "../src/common/gensalt.ts",
+      "../src/common/generateaccountkey.ts",
+      "../src/common/generatecryptorandomstring.ts",
+      "../src/common/generatesalt.ts",
       "../src/common/index.ts",
       "../src/forge/certificates/generatekeypair.ts",
       "../src/forge/certificates/index.ts",

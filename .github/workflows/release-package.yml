@@ -1,9 +1,9 @@
 name: Node.js Package
 
 on:
-   push:
+  push:
     branches:
-    - master
+      - master
 
 jobs:
   build:
@@ -15,6 +15,12 @@ jobs:
           node-version: 12
       - run: npm ci
       - run: npm test
+
+      - name: Run prettier
+        run: npm run format
+
+      - name: Run linter
+        run: npm run lint
 
   publish-gpr:
     needs: build

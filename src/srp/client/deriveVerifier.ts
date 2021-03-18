@@ -1,5 +1,5 @@
 import * as srp from 'secure-remote-password/client';
-import { genSalt } from '~/common/genSalt';
+import { generateSalt } from '~/common/generateSalt';
 
 export interface Verifier {
   verifier: string;
@@ -16,7 +16,7 @@ export const deriveVerifier = (
   secretKey: string,
   password: string,
 ): Verifier => {
-  const salt = genSalt();
+  const salt = generateSalt();
   const privateKey = srp.derivePrivateKey(salt, secretKey, password);
   const verifier = srp.deriveVerifier(privateKey);
 
