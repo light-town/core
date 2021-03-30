@@ -26,21 +26,6 @@
         "signature": "5f4e733ced4e129482ae2186aae29fde948ab7182844c3a5a51dd346182c7b06",
         "affectsGlobalScope": false
       },
-      "../node_modules/typescript/lib/lib.es2019.d.ts": {
-        "version": "e6b724280c694a9f588847f754198fb96c43d805f065c3a5b28bbc9594541c84",
-        "signature": "e6b724280c694a9f588847f754198fb96c43d805f065c3a5b28bbc9594541c84",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/typescript/lib/lib.es2020.d.ts": {
-        "version": "e21c071ca3e1b4a815d5f04a7475adcaeea5d64367e840dd0154096d705c3940",
-        "signature": "e21c071ca3e1b4a815d5f04a7475adcaeea5d64367e840dd0154096d705c3940",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/typescript/lib/lib.esnext.d.ts": {
-        "version": "fc7a21dd3ee27fd0a9ff1c46534efcd9c3cec51a445b479bb326d871c0aa8302",
-        "signature": "fc7a21dd3ee27fd0a9ff1c46534efcd9c3cec51a445b479bb326d871c0aa8302",
-        "affectsGlobalScope": false
-      },
       "../node_modules/typescript/lib/lib.dom.d.ts": {
         "version": "feeeb1dd8a80fb76be42b0426e8f3ffa9bdef3c2f3c12c147e7660b1c5ba8b3b",
         "signature": "feeeb1dd8a80fb76be42b0426e8f3ffa9bdef3c2f3c12c147e7660b1c5ba8b3b",
@@ -161,54 +146,9 @@
         "signature": "c80df75850fea5caa2afe43b9949338ce4e2de086f91713e9af1a06f973872b8",
         "affectsGlobalScope": true
       },
-      "../node_modules/typescript/lib/lib.es2019.array.d.ts": {
-        "version": "9d57b2b5d15838ed094aa9ff1299eecef40b190722eb619bac4616657a05f951",
-        "signature": "9d57b2b5d15838ed094aa9ff1299eecef40b190722eb619bac4616657a05f951",
-        "affectsGlobalScope": true
-      },
-      "../node_modules/typescript/lib/lib.es2019.object.d.ts": {
-        "version": "6c51b5dd26a2c31dbf37f00cfc32b2aa6a92e19c995aefb5b97a3a64f1ac99de",
-        "signature": "6c51b5dd26a2c31dbf37f00cfc32b2aa6a92e19c995aefb5b97a3a64f1ac99de",
-        "affectsGlobalScope": true
-      },
-      "../node_modules/typescript/lib/lib.es2019.string.d.ts": {
-        "version": "93544ca2f26a48716c1b6c5091842cad63129daac422dfa4bc52460465f22bb1",
-        "signature": "93544ca2f26a48716c1b6c5091842cad63129daac422dfa4bc52460465f22bb1",
-        "affectsGlobalScope": true
-      },
-      "../node_modules/typescript/lib/lib.es2019.symbol.d.ts": {
-        "version": "2ad234885a4240522efccd77de6c7d99eecf9b4de0914adb9a35c0c22433f993",
-        "signature": "2ad234885a4240522efccd77de6c7d99eecf9b4de0914adb9a35c0c22433f993",
-        "affectsGlobalScope": true
-      },
       "../node_modules/typescript/lib/lib.es2020.bigint.d.ts": {
         "version": "7b5a10e3c897fabece5a51aa85b4111727d7adb53c2734b5d37230ff96802a09",
         "signature": "7b5a10e3c897fabece5a51aa85b4111727d7adb53c2734b5d37230ff96802a09",
-        "affectsGlobalScope": true
-      },
-      "../node_modules/typescript/lib/lib.es2020.promise.d.ts": {
-        "version": "7435b75fdf3509622e79622dbe5091cf4b09688410ee2034e4fc17d0c99d0862",
-        "signature": "7435b75fdf3509622e79622dbe5091cf4b09688410ee2034e4fc17d0c99d0862",
-        "affectsGlobalScope": true
-      },
-      "../node_modules/typescript/lib/lib.es2020.sharedmemory.d.ts": {
-        "version": "e7e8e1d368290e9295ef18ca23f405cf40d5456fa9f20db6373a61ca45f75f40",
-        "signature": "e7e8e1d368290e9295ef18ca23f405cf40d5456fa9f20db6373a61ca45f75f40",
-        "affectsGlobalScope": true
-      },
-      "../node_modules/typescript/lib/lib.es2020.string.d.ts": {
-        "version": "faf0221ae0465363c842ce6aa8a0cbda5d9296940a8e26c86e04cc4081eea21e",
-        "signature": "faf0221ae0465363c842ce6aa8a0cbda5d9296940a8e26c86e04cc4081eea21e",
-        "affectsGlobalScope": true
-      },
-      "../node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts": {
-        "version": "936d7d2e8851af9ccfa5333b15e877a824417d352b1d7fd06388639dc69ef80a",
-        "signature": "936d7d2e8851af9ccfa5333b15e877a824417d352b1d7fd06388639dc69ef80a",
-        "affectsGlobalScope": true
-      },
-      "../node_modules/typescript/lib/lib.es2020.intl.d.ts": {
-        "version": "e79ca55569f09a5dc3354be04dba4ae85865b1dce98bf46738ffe231c669621f",
-        "signature": "e79ca55569f09a5dc3354be04dba4ae85865b1dce98bf46738ffe231c669621f",
         "affectsGlobalScope": true
       },
       "../node_modules/typescript/lib/lib.esnext.intl.d.ts": {
@@ -216,219 +156,9 @@
         "signature": "506b80b9951c9381dc5f11897b31fca5e2a65731d96ddefa19687fbc26b23c6e",
         "affectsGlobalScope": true
       },
-      "../node_modules/typescript/lib/lib.esnext.string.d.ts": {
-        "version": "fb4416144c1bf0323ccbc9afb0ab289c07312214e8820ad17d709498c865a3fe",
-        "signature": "fb4416144c1bf0323ccbc9afb0ab289c07312214e8820ad17d709498c865a3fe",
-        "affectsGlobalScope": true
-      },
-      "../node_modules/typescript/lib/lib.esnext.promise.d.ts": {
-        "version": "cd6efb9467a8b6338ece2e2855e37765700f2cd061ca54b01b33878cf5c7677e",
-        "signature": "cd6efb9467a8b6338ece2e2855e37765700f2cd061ca54b01b33878cf5c7677e",
-        "affectsGlobalScope": true
-      },
-      "../node_modules/typescript/lib/lib.esnext.weakref.d.ts": {
-        "version": "1e61418f41d404e744b6536af9f8c6f6674dd4d54c12335cd0c4f7eded69cf3f",
-        "signature": "1e61418f41d404e744b6536af9f8c6f6674dd4d54c12335cd0c4f7eded69cf3f",
-        "affectsGlobalScope": true
-      },
       "../node_modules/typescript/lib/lib.es2017.full.d.ts": {
         "version": "d2f31f19e1ba6ed59be9259d660a239d9a3fcbbc8e038c6b2009bde34b175fed",
         "signature": "d2f31f19e1ba6ed59be9259d660a239d9a3fcbbc8e038c6b2009bde34b175fed",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/type-fest/source/basic.d.ts": {
-        "version": "fda9e5c2afd0920ead6baed40f164229ec8f93188b5c8df196594a54bb8fb5e3",
-        "signature": "fda9e5c2afd0920ead6baed40f164229ec8f93188b5c8df196594a54bb8fb5e3",
-        "affectsGlobalScope": true
-      },
-      "../node_modules/type-fest/source/except.d.ts": {
-        "version": "c58be3e560989a877531d3ff7c9e5db41c5dd9282480ccf197abfcc708a95b8d",
-        "signature": "c58be3e560989a877531d3ff7c9e5db41c5dd9282480ccf197abfcc708a95b8d",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/type-fest/source/mutable.d.ts": {
-        "version": "91f23ddc3971b1c8938c638fb55601a339483953e1eb800675fa5b5e8113db72",
-        "signature": "91f23ddc3971b1c8938c638fb55601a339483953e1eb800675fa5b5e8113db72",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/type-fest/source/merge.d.ts": {
-        "version": "50d22844db90a0dcd359afeb59dd1e9a384d977b4b363c880b4e65047237a29e",
-        "signature": "50d22844db90a0dcd359afeb59dd1e9a384d977b4b363c880b4e65047237a29e",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/type-fest/source/merge-exclusive.d.ts": {
-        "version": "d33782b82eea0ee17b99ca563bd19b38259a3aaf096d306ceaf59cd4422629be",
-        "signature": "d33782b82eea0ee17b99ca563bd19b38259a3aaf096d306ceaf59cd4422629be",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/type-fest/source/require-at-least-one.d.ts": {
-        "version": "7f7f1420c69806e268ab7820cbe31a2dcb2f836f28b3d09132a2a95b4a454b80",
-        "signature": "7f7f1420c69806e268ab7820cbe31a2dcb2f836f28b3d09132a2a95b4a454b80",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/type-fest/source/require-exactly-one.d.ts": {
-        "version": "f9ecf72f3842ae35faf3aa122a9c87a486446cb9084601695f9e6a2cdf0d3e4b",
-        "signature": "f9ecf72f3842ae35faf3aa122a9c87a486446cb9084601695f9e6a2cdf0d3e4b",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/type-fest/source/partial-deep.d.ts": {
-        "version": "61046f12c3cfafd353d2d03febc96b441c1a0e3bb82a5a88de78cc1be9e10520",
-        "signature": "61046f12c3cfafd353d2d03febc96b441c1a0e3bb82a5a88de78cc1be9e10520",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/type-fest/source/readonly-deep.d.ts": {
-        "version": "f4e7f5824ac7b35539efc3bef36b3e6be89603b88224cb5c0ad3526a454fc895",
-        "signature": "f4e7f5824ac7b35539efc3bef36b3e6be89603b88224cb5c0ad3526a454fc895",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/type-fest/source/literal-union.d.ts": {
-        "version": "091af8276fbc70609a00e296840bd284a2fe29df282f0e8dae2de9f0a706685f",
-        "signature": "091af8276fbc70609a00e296840bd284a2fe29df282f0e8dae2de9f0a706685f",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/type-fest/source/promisable.d.ts": {
-        "version": "537aff717746703d2157ec563b5de4f6393ce9f69a84ae62b49e9b6c80b6e587",
-        "signature": "537aff717746703d2157ec563b5de4f6393ce9f69a84ae62b49e9b6c80b6e587",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/type-fest/source/opaque.d.ts": {
-        "version": "5a0c23174f822edd4a0c5f52308fd6cbdfcc5ef9c4279286cf7da548fd46cb1b",
-        "signature": "5a0c23174f822edd4a0c5f52308fd6cbdfcc5ef9c4279286cf7da548fd46cb1b",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/type-fest/source/set-optional.d.ts": {
-        "version": "5d007514c3876ecc7326b898d1738eed7b77d6a3611d73f5c99fe37801dd48e6",
-        "signature": "5d007514c3876ecc7326b898d1738eed7b77d6a3611d73f5c99fe37801dd48e6",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/type-fest/source/set-required.d.ts": {
-        "version": "85dff77bf599bd57135b34169d8f80914bbcdb52dfa9fb5fa2204b366363d519",
-        "signature": "85dff77bf599bd57135b34169d8f80914bbcdb52dfa9fb5fa2204b366363d519",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/type-fest/source/package-json.d.ts": {
-        "version": "8b108d831999b4c6b1df9c39cdcc57c059ef19219c441e5b61bca20aabb9f411",
-        "signature": "8b108d831999b4c6b1df9c39cdcc57c059ef19219c441e5b61bca20aabb9f411",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/type-fest/index.d.ts": {
-        "version": "04c593214be9083f51ed93751bd556bfdc0737b0a4cdaf225b12a525df7fa0dc",
-        "signature": "04c593214be9083f51ed93751bd556bfdc0737b0a4cdaf225b12a525df7fa0dc",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/crypto-random-string/index.d.ts": {
-        "version": "0183712b42a220aafe667fca70ec1892a9aed217d3a755e52ebe8544e5978b8f",
-        "signature": "0183712b42a220aafe667fca70ec1892a9aed217d3a755e52ebe8544e5978b8f",
-        "affectsGlobalScope": false
-      },
-      "../src/common/generatecryptorandomstring.ts": {
-        "version": "c4be6fb71cb83468ce61911bf72a64df2199f4389fd986ce049e191e80f50d64",
-        "signature": "6ba1b4983ffb6dfc8dd3f5f216e183836108961f5b48028810aafa2646246bb8",
-        "affectsGlobalScope": false
-      },
-      "../src/common/generateaccountkey.ts": {
-        "version": "1fc52b6ee3c24c6d2c4baffe5cc05731452013fcf178c0478d65e7bcef7dade4",
-        "signature": "69465a21726abec411a252bc4c6066ba0c662b665f5c72c29068da06a75404e6",
-        "affectsGlobalScope": false
-      },
-      "../src/common/generaterandomsalt.ts": {
-        "version": "385f40b5a4c693b5ba6ebe783c51d3a001cab7498b59d39916fba4d43b2558cc",
-        "signature": "63c0e3489164e606238e32cac56d1617eef67a04dede11c169ac736d9cbe954a",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/fast-sha256/sha256.d.ts": {
-        "version": "4c754320a6ff1e7ab0214c7ce852d236f33ed7b8540d611094f1ba663bfd1ef1",
-        "signature": "4c754320a6ff1e7ab0214c7ce852d236f33ed7b8540d611094f1ba663bfd1ef1",
-        "affectsGlobalScope": false
-      },
-      "../src/common/pbkdf2/computehash.ts": {
-        "version": "4ae1efc54f41bc0ace727c0705af55e2e797be472d68c214a45088e14aca2493",
-        "signature": "36c2381090ea0b5b1ef8f1d87c7e483b14010f450d1a70798b8ccb8641aa39c6",
-        "affectsGlobalScope": false
-      },
-      "../src/common/pbkdf2/index.ts": {
-        "version": "d846df076eeab0c6dfd1eea14c89c01f5945fa5edd64360cce9a345f78b1329a",
-        "signature": "46cf2441b65153ac685f96e6c3f84ded7a5c46b0ffdc61d52c6b6c8b4f2acd25",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/js-crypto-hkdf/dist/params.d.ts": {
-        "version": "1e54b39b68b4a270fb8623f727f058e99b24ea0e275585c917dc02b4db99d2ce",
-        "signature": "1e54b39b68b4a270fb8623f727f058e99b24ea0e275585c917dc02b4db99d2ce",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/js-crypto-hkdf/dist/index.d.ts": {
-        "version": "ad7fa19423309817fac378c470410c31c6097083d79ba6d2ad520bc0fb77ae57",
-        "signature": "ad7fa19423309817fac378c470410c31c6097083d79ba6d2ad520bc0fb77ae57",
-        "affectsGlobalScope": false
-      },
-      "../src/common/hkdf/computehkdf.ts": {
-        "version": "5b369038bbf541999e606e490c3b072e438e8239069b98a52c0b2f4929d12484",
-        "signature": "64fce57c0361fbfd526bbf43a71697e2fcb24a616e27ca7509c4b328a77635d6",
-        "affectsGlobalScope": false
-      },
-      "../src/common/hkdf/index.ts": {
-        "version": "73d27515a27f498a75dca510bda09fdca47936aefbf48f339d2fba2b5b9fdd08",
-        "signature": "961a822a50cf436724510b587ea61f7543706ef931b588a8986016ce91108ee5",
-        "affectsGlobalScope": false
-      },
-      "../src/common/index.ts": {
-        "version": "1fc47dc2791d617e512e2365b10f3e9ecb5bf719509eba6a6c6f9184af8085e3",
-        "signature": "ff175cfea5b5de5aa617298bb11dde79b844c34e83650d11bb11ce6a5dae210a",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/secure-remote-password/client.d.ts": {
-        "version": "748b3375738d4e558483208780f63fc1e65cf870fb112157803a08767e46b8d4",
-        "signature": "748b3375738d4e558483208780f63fc1e65cf870fb112157803a08767e46b8d4",
-        "affectsGlobalScope": false
-      },
-      "../src/srp/client/deriveverifier.ts": {
-        "version": "846645705e39d11799fdc5c7343b9729006fdb40e5a86f0b1ba91ea0f27567dd",
-        "signature": "1e2656471e43459cbf0ea24eb3c7616e5c261e427e68130089b9f1b0f83253fe",
-        "affectsGlobalScope": false
-      },
-      "../src/srp/client/derivesession.ts": {
-        "version": "3a8d3ac56cd477b5c204ee4c358e9e28604fc8dff53bfe30880db5efb3dd401b",
-        "signature": "583bd2043aa9f948e25b35626ba57b9248a91a6230910b92c520bb2878e8f721",
-        "affectsGlobalScope": false
-      },
-      "../src/srp/client/verifysession.ts": {
-        "version": "6f7cc2bc15d0ed2e6e59e44027038d306df2ca616e21f9d62f96bbdb66a1c80c",
-        "signature": "01e9832ad0120376bf2031d3250f340abee03ab7f18e34f11e63515745ce7254",
-        "affectsGlobalScope": false
-      },
-      "../src/srp/client/generateephemeral.ts": {
-        "version": "757ca7f2eb3f9c68642b0a00a26c9047f33c0ec6997b4133660235562cf9a008",
-        "signature": "6d00c97d82f49e3f147a5a7725004f1f95627d59e42a52d89009edc24951bec6",
-        "affectsGlobalScope": false
-      },
-      "../src/srp/client/index.ts": {
-        "version": "6dfe2803fbe830db3815568eb87a9460a25dad3391182fca9d29535cf0c12720",
-        "signature": "be77484cf6d6bbc93b291fc01cb609e765f46408a37b2fe898507bf95fa79f03",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/secure-remote-password/server.d.ts": {
-        "version": "f5eae05c0298686a141ae3220342d7df78ccda510819e9cdd2020c1f45dd31fe",
-        "signature": "f5eae05c0298686a141ae3220342d7df78ccda510819e9cdd2020c1f45dd31fe",
-        "affectsGlobalScope": false
-      },
-      "../src/srp/server/derivesession.ts": {
-        "version": "452471c37e4ada0a34c9a893957dba7ee9141acf2c3787009115d386410fd730",
-        "signature": "58a685ae09b0e5d60fbf28675a206fa9af17a9efd0db0e5ba2c1b8344264047b",
-        "affectsGlobalScope": false
-      },
-      "../src/srp/server/generateephemeral.ts": {
-        "version": "0790f83c0b37d66bdbd8208965ac6ab888f1e94e87d6170afbdc93fd2112fe97",
-        "signature": "36e37604a22e760b69362f02bdf1f69c9974f44d117963988225566f7bb510b0",
-        "affectsGlobalScope": false
-      },
-      "../src/srp/server/index.ts": {
-        "version": "56e8c40f1da01bf2d8795fb5bfe7c2c6400f78ddf96849a05a7f91996342b05e",
-        "signature": "58756ce3f27b7edd3d34b4dff980294e07bab156d155f22a6abd8ad338f0a8f1",
-        "affectsGlobalScope": false
-      },
-      "../src/srp/index.ts": {
-        "version": "da72231548310d4ffa50064cb8e97fb88012068987024474eb9d2f38eaa2fef5",
-        "signature": "5f7f5d3c2c5c43ee0b930b5693ebe6fe9867342f300a0412b674d3640d4c4b63",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/node/globals.d.ts": {
@@ -666,6 +396,116 @@
         "signature": "d55a6417fc4ff3af715099d426991a9b6b20ad136a238fe7cfebe4069990e064",
         "affectsGlobalScope": false
       },
+      "../src/common/generatecryptorandomstring.ts": {
+        "version": "66b9fe26edd83f7e8a14e57f3e232c5091bf88a592e6f3999e97ec83d64cae9f",
+        "signature": "6ba1b4983ffb6dfc8dd3f5f216e183836108961f5b48028810aafa2646246bb8",
+        "affectsGlobalScope": false
+      },
+      "../src/common/generateaccountkey.ts": {
+        "version": "1fc52b6ee3c24c6d2c4baffe5cc05731452013fcf178c0478d65e7bcef7dade4",
+        "signature": "69465a21726abec411a252bc4c6066ba0c662b665f5c72c29068da06a75404e6",
+        "affectsGlobalScope": false
+      },
+      "../src/common/generaterandomsalt.ts": {
+        "version": "9c96bc210e330fcb1097a92621debc85d170e9c178079ca8f7b5628239123b61",
+        "signature": "63c0e3489164e606238e32cac56d1617eef67a04dede11c169ac736d9cbe954a",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/fast-sha256/sha256.d.ts": {
+        "version": "4c754320a6ff1e7ab0214c7ce852d236f33ed7b8540d611094f1ba663bfd1ef1",
+        "signature": "4c754320a6ff1e7ab0214c7ce852d236f33ed7b8540d611094f1ba663bfd1ef1",
+        "affectsGlobalScope": false
+      },
+      "../src/common/pbkdf2/computehash.ts": {
+        "version": "4ae1efc54f41bc0ace727c0705af55e2e797be472d68c214a45088e14aca2493",
+        "signature": "36c2381090ea0b5b1ef8f1d87c7e483b14010f450d1a70798b8ccb8641aa39c6",
+        "affectsGlobalScope": false
+      },
+      "../src/common/pbkdf2/index.ts": {
+        "version": "d846df076eeab0c6dfd1eea14c89c01f5945fa5edd64360cce9a345f78b1329a",
+        "signature": "46cf2441b65153ac685f96e6c3f84ded7a5c46b0ffdc61d52c6b6c8b4f2acd25",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/js-crypto-hkdf/dist/params.d.ts": {
+        "version": "1e54b39b68b4a270fb8623f727f058e99b24ea0e275585c917dc02b4db99d2ce",
+        "signature": "1e54b39b68b4a270fb8623f727f058e99b24ea0e275585c917dc02b4db99d2ce",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/js-crypto-hkdf/dist/index.d.ts": {
+        "version": "ad7fa19423309817fac378c470410c31c6097083d79ba6d2ad520bc0fb77ae57",
+        "signature": "ad7fa19423309817fac378c470410c31c6097083d79ba6d2ad520bc0fb77ae57",
+        "affectsGlobalScope": false
+      },
+      "../src/common/hkdf/computehkdf.ts": {
+        "version": "5b369038bbf541999e606e490c3b072e438e8239069b98a52c0b2f4929d12484",
+        "signature": "64fce57c0361fbfd526bbf43a71697e2fcb24a616e27ca7509c4b328a77635d6",
+        "affectsGlobalScope": false
+      },
+      "../src/common/hkdf/index.ts": {
+        "version": "73d27515a27f498a75dca510bda09fdca47936aefbf48f339d2fba2b5b9fdd08",
+        "signature": "961a822a50cf436724510b587ea61f7543706ef931b588a8986016ce91108ee5",
+        "affectsGlobalScope": false
+      },
+      "../src/common/index.ts": {
+        "version": "0a0483e25b32af33b0ed7d845e6d55399c14be9ed7117fd238f4fa65f9c779a3",
+        "signature": "ff175cfea5b5de5aa617298bb11dde79b844c34e83650d11bb11ce6a5dae210a",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/secure-remote-password/client.d.ts": {
+        "version": "748b3375738d4e558483208780f63fc1e65cf870fb112157803a08767e46b8d4",
+        "signature": "748b3375738d4e558483208780f63fc1e65cf870fb112157803a08767e46b8d4",
+        "affectsGlobalScope": false
+      },
+      "../src/srp/client/deriveverifier.ts": {
+        "version": "435de458db900b5794442a34f5425593a300dd609b10da8bbc213a550cd40bad",
+        "signature": "1e2656471e43459cbf0ea24eb3c7616e5c261e427e68130089b9f1b0f83253fe",
+        "affectsGlobalScope": false
+      },
+      "../src/srp/client/derivesession.ts": {
+        "version": "3a8d3ac56cd477b5c204ee4c358e9e28604fc8dff53bfe30880db5efb3dd401b",
+        "signature": "583bd2043aa9f948e25b35626ba57b9248a91a6230910b92c520bb2878e8f721",
+        "affectsGlobalScope": false
+      },
+      "../src/srp/client/verifysession.ts": {
+        "version": "6f7cc2bc15d0ed2e6e59e44027038d306df2ca616e21f9d62f96bbdb66a1c80c",
+        "signature": "01e9832ad0120376bf2031d3250f340abee03ab7f18e34f11e63515745ce7254",
+        "affectsGlobalScope": false
+      },
+      "../src/srp/client/generateephemeral.ts": {
+        "version": "757ca7f2eb3f9c68642b0a00a26c9047f33c0ec6997b4133660235562cf9a008",
+        "signature": "6d00c97d82f49e3f147a5a7725004f1f95627d59e42a52d89009edc24951bec6",
+        "affectsGlobalScope": false
+      },
+      "../src/srp/client/index.ts": {
+        "version": "6dfe2803fbe830db3815568eb87a9460a25dad3391182fca9d29535cf0c12720",
+        "signature": "be77484cf6d6bbc93b291fc01cb609e765f46408a37b2fe898507bf95fa79f03",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/secure-remote-password/server.d.ts": {
+        "version": "f5eae05c0298686a141ae3220342d7df78ccda510819e9cdd2020c1f45dd31fe",
+        "signature": "f5eae05c0298686a141ae3220342d7df78ccda510819e9cdd2020c1f45dd31fe",
+        "affectsGlobalScope": false
+      },
+      "../src/srp/server/derivesession.ts": {
+        "version": "452471c37e4ada0a34c9a893957dba7ee9141acf2c3787009115d386410fd730",
+        "signature": "58a685ae09b0e5d60fbf28675a206fa9af17a9efd0db0e5ba2c1b8344264047b",
+        "affectsGlobalScope": false
+      },
+      "../src/srp/server/generateephemeral.ts": {
+        "version": "0790f83c0b37d66bdbd8208965ac6ab888f1e94e87d6170afbdc93fd2112fe97",
+        "signature": "36e37604a22e760b69362f02bdf1f69c9974f44d117963988225566f7bb510b0",
+        "affectsGlobalScope": false
+      },
+      "../src/srp/server/index.ts": {
+        "version": "56e8c40f1da01bf2d8795fb5bfe7c2c6400f78ddf96849a05a7f91996342b05e",
+        "signature": "58756ce3f27b7edd3d34b4dff980294e07bab156d155f22a6abd8ad338f0a8f1",
+        "affectsGlobalScope": false
+      },
+      "../src/srp/index.ts": {
+        "version": "da72231548310d4ffa50064cb8e97fb88012068987024474eb9d2f38eaa2fef5",
+        "signature": "5f7f5d3c2c5c43ee0b930b5693ebe6fe9867342f300a0412b674d3640d4c4b63",
+        "affectsGlobalScope": false
+      },
       "../src/vaults/decryptprivatekey.ts": {
         "version": "1aeed96740c80fef9b1f8e76e775afab39226e050e42c752af3f054d18b72f05",
         "signature": "f9c663c4838ce7be32247835fa21f08df63c31abc764582ce307e29653e3e81a",
@@ -692,12 +532,12 @@
         "affectsGlobalScope": false
       },
       "../src/vaults/encryptsymmetrickey.ts": {
-        "version": "ac931a79182c4ba276d111455f28ee716d84e74fa5ccda2d9585f64b2f1d16d0",
+        "version": "6083ebdc9b3f4fb3867183c1aa40cebdf8497270ac5c585f104598a429b907c6",
         "signature": "5595c7681b9f00499560f14d3770fc7f8b51baeead97446a4e6c7eca7be9d96c",
         "affectsGlobalScope": false
       },
       "../src/vaults/encryptvaultitem.ts": {
-        "version": "ff62d5c36a62d0ac5f8a1d3fbd5d81589ad9b55d664e09cf94cef664de8f1c37",
+        "version": "a36ef74cbd5e7edf2da0049651c15f8f046fb2c292dd48337762d1734279e829",
         "signature": "584a97769d0c3cc4cd46d48493352af7c23cb480dd0b2eaa177923316a2192be",
         "affectsGlobalScope": false
       },
@@ -717,7 +557,7 @@
         "affectsGlobalScope": false
       },
       "../src/certificates/generatekeypair.ts": {
-        "version": "44a2781a5fe84679552803cf1e847b70838a19aef4b1a5727a263eecd0978e94",
+        "version": "109a4e25e6b8e2aa3a7c4923170423317c0e6d6954df635fd46f15a37fd09568",
         "signature": "9f626bd9e4ecebb691b32410b0f9a5cb8588e38030230ee54e4bb33a8c045df9",
         "affectsGlobalScope": false
       },
@@ -737,7 +577,7 @@
         "affectsGlobalScope": false
       },
       "../src/index.ts": {
-        "version": "14ca303197956aee40450b0b9d39326c1bb1df1cf559da3ba04a2f4f8c37e365",
+        "version": "48f600bc8deb02e75055ee134e081b0ca8166bfdd1c9e0efe5027377dba7793d",
         "signature": "d108abb4a20ddd2aeb94f7762656a1ea9f31cddbd4898069bd86a9594a0c5f50",
         "affectsGlobalScope": false
       },
@@ -889,6 +729,161 @@
       "../node_modules/@types/yargs/index.d.ts": {
         "version": "5a2a25feca554a8f289ed62114771b8c63d89f2b58325e2f8b7043e4e0160d11",
         "signature": "5a2a25feca554a8f289ed62114771b8c63d89f2b58325e2f8b7043e4e0160d11",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/anymatch/index.d.ts": {
+        "version": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
+        "signature": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/keyv/index.d.ts": {
+        "version": "9e7f7ac4d964992cf1b77612ca07e5695821881aa1a9acb0ef0509f192a5ea23",
+        "signature": "9e7f7ac4d964992cf1b77612ca07e5695821881aa1a9acb0ef0509f192a5ea23",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/http-cache-semantics/index.d.ts": {
+        "version": "0bf440ab914e79e890cb15e5ffacb5e18bec678338b3eab069a5829d3d5c96e3",
+        "signature": "0bf440ab914e79e890cb15e5ffacb5e18bec678338b3eab069a5829d3d5c96e3",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/responselike/index.d.ts": {
+        "version": "3cfb0cb51cc2c2e1b313d7c4df04dbf7e5bda0a133c6b309bf6af77cf614b971",
+        "signature": "3cfb0cb51cc2c2e1b313d7c4df04dbf7e5bda0a133c6b309bf6af77cf614b971",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/cacheable-request/index.d.ts": {
+        "version": "73c05cca1bb5aa8e93efd089af51643b7ff005e47064a0e624a74ee20480a2eb",
+        "signature": "73c05cca1bb5aa8e93efd089af51643b7ff005e47064a0e624a74ee20480a2eb",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/minimatch/index.d.ts": {
+        "version": "1d1e6bd176eee5970968423d7e215bfd66828b6db8d54d17afec05a831322633",
+        "signature": "1d1e6bd176eee5970968423d7e215bfd66828b6db8d54d17afec05a831322633",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/glob/index.d.ts": {
+        "version": "393137c76bd922ba70a2f8bf1ade4f59a16171a02fb25918c168d48875b0cfb0",
+        "signature": "393137c76bd922ba70a2f8bf1ade4f59a16171a02fb25918c168d48875b0cfb0",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/html-minifier-terser/index.d.ts": {
+        "version": "6767cce098e1e6369c26258b7a1f9e569c5467d501a47a090136d5ea6e80ae6d",
+        "signature": "6767cce098e1e6369c26258b7a1f9e569c5467d501a47a090136d5ea6e80ae6d",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/q/index.d.ts": {
+        "version": "f9a2dd6a6084665f093ed0e9664b8e673be2a45e342a59dd4e0e4e552e68a9ad",
+        "signature": "f9a2dd6a6084665f093ed0e9664b8e673be2a45e342a59dd4e0e4e552e68a9ad",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/retry/index.d.ts": {
+        "version": "199f9ead0daf25ae4c5632e3d1f42570af59685294a38123eef457407e13f365",
+        "signature": "199f9ead0daf25ae4c5632e3d1f42570af59685294a38123eef457407e13f365",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/source-list-map/index.d.ts": {
+        "version": "67fc055eb86a0632e2e072838f889ffe1754083cb13c8c80a06a7d895d877aae",
+        "signature": "67fc055eb86a0632e2e072838f889ffe1754083cb13c8c80a06a7d895d877aae",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/tapable/index.d.ts": {
+        "version": "d558a0fe921ebcc88d3212c2c42108abf9f0d694d67ebdeba37d7728c044f579",
+        "signature": "d558a0fe921ebcc88d3212c2c42108abf9f0d694d67ebdeba37d7728c044f579",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/text-table/index.d.ts": {
+        "version": "8ae98a64dd018781b5b47ff16b48153d1c15e22a49e2cc9391c1efd1b59e1ecf",
+        "signature": "8ae98a64dd018781b5b47ff16b48153d1c15e22a49e2cc9391c1efd1b59e1ecf",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/uglify-js/node_modules/source-map/source-map.d.ts": {
+        "version": "2887592574fcdfd087647c539dcb0fbe5af2521270dad4a37f9d17c16190d579",
+        "signature": "2887592574fcdfd087647c539dcb0fbe5af2521270dad4a37f9d17c16190d579",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/uglify-js/index.d.ts": {
+        "version": "bee79f5862fe1278d2ba275298862bce3f7abf1e59d9c669c4b9a4b2bba96956",
+        "signature": "bee79f5862fe1278d2ba275298862bce3f7abf1e59d9c669c4b9a4b2bba96956",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/anymatch/index.d.ts": {
+        "version": "4fb0b7d532aa6fb850b6cd2f1ee4f00802d877b5c66a51903bc1fb0624126349",
+        "signature": "4fb0b7d532aa6fb850b6cd2f1ee4f00802d877b5c66a51903bc1fb0624126349",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/webpack/node_modules/source-map/source-map.d.ts": {
+        "version": "2887592574fcdfd087647c539dcb0fbe5af2521270dad4a37f9d17c16190d579",
+        "signature": "2887592574fcdfd087647c539dcb0fbe5af2521270dad4a37f9d17c16190d579",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/webpack-sources/node_modules/source-map/source-map.d.ts": {
+        "version": "b90c59ac4682368a01c83881b814738eb151de8a58f52eb7edadea2bcffb11b9",
+        "signature": "b90c59ac4682368a01c83881b814738eb151de8a58f52eb7edadea2bcffb11b9",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/webpack-sources/lib/source.d.ts": {
+        "version": "8560a87b2e9f8e2c3808c8f6172c9b7eb6c9b08cb9f937db71c285ecf292c81d",
+        "signature": "8560a87b2e9f8e2c3808c8f6172c9b7eb6c9b08cb9f937db71c285ecf292c81d",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/webpack-sources/lib/compatsource.d.ts": {
+        "version": "ffe3931ff864f28d80ae2f33bd11123ad3d7bad9896b910a1e61504cc093e1f5",
+        "signature": "ffe3931ff864f28d80ae2f33bd11123ad3d7bad9896b910a1e61504cc093e1f5",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/webpack-sources/lib/concatsource.d.ts": {
+        "version": "083c1bd82f8dc3a1ed6fc9e8eaddf141f7c05df418eca386598821e045253af9",
+        "signature": "083c1bd82f8dc3a1ed6fc9e8eaddf141f7c05df418eca386598821e045253af9",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/webpack-sources/lib/originalsource.d.ts": {
+        "version": "274ebe605bd7f71ce161f9f5328febc7d547a2929f803f04b44ec4a7d8729517",
+        "signature": "274ebe605bd7f71ce161f9f5328febc7d547a2929f803f04b44ec4a7d8729517",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/webpack-sources/lib/prefixsource.d.ts": {
+        "version": "6ca0207e70d985a24396583f55836b10dc181063ab6069733561bfde404d1bad",
+        "signature": "6ca0207e70d985a24396583f55836b10dc181063ab6069733561bfde404d1bad",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/webpack-sources/lib/rawsource.d.ts": {
+        "version": "5908142efeaab38ffdf43927ee0af681ae77e0d7672b956dfb8b6c705dbfe106",
+        "signature": "5908142efeaab38ffdf43927ee0af681ae77e0d7672b956dfb8b6c705dbfe106",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/webpack-sources/lib/replacesource.d.ts": {
+        "version": "f772b188b943549b5c5eb803133314b8aa7689eced80eed0b70e2f30ca07ab9c",
+        "signature": "f772b188b943549b5c5eb803133314b8aa7689eced80eed0b70e2f30ca07ab9c",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/webpack-sources/lib/sizeonlysource.d.ts": {
+        "version": "0026b816ef05cfbf290e8585820eef0f13250438669107dfc44482bac007b14f",
+        "signature": "0026b816ef05cfbf290e8585820eef0f13250438669107dfc44482bac007b14f",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/webpack-sources/lib/sourcemapsource.d.ts": {
+        "version": "8ef5aad624890acfe0fa48230edce255f00934016d16acb8de0edac0ea5b21bb",
+        "signature": "8ef5aad624890acfe0fa48230edce255f00934016d16acb8de0edac0ea5b21bb",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/webpack-sources/lib/index.d.ts": {
+        "version": "9af6248ff4baf0c1ddc62bb0bc43197437bd5fb2c95ff8e10e4cf2e699ea45c1",
+        "signature": "9af6248ff4baf0c1ddc62bb0bc43197437bd5fb2c95ff8e10e4cf2e699ea45c1",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/webpack-sources/lib/cachedsource.d.ts": {
+        "version": "d84398556ba4595ee6be554671da142cfe964cbdebb2f0c517a10f76f2b016c0",
+        "signature": "d84398556ba4595ee6be554671da142cfe964cbdebb2f0c517a10f76f2b016c0",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/webpack-sources/index.d.ts": {
+        "version": "89b42f8ee5d387a39db85ee2c7123a391c3ede266a2bcd502c85ad55626c3b2b",
+        "signature": "89b42f8ee5d387a39db85ee2c7123a391c3ede266a2bcd502c85ad55626c3b2b",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/webpack/index.d.ts": {
+        "version": "f7391eb1cb10ab561aa3ce7c610ea97aa4ab33fc709ee5e2adde541defde882f",
+        "signature": "f7391eb1cb10ab561aa3ce7c610ea97aa4ab33fc709ee5e2adde541defde882f",
         "affectsGlobalScope": false
       }
     },
@@ -1185,9 +1180,6 @@
       "../node_modules/@types/yargs/index.d.ts": [
         "../node_modules/@types/yargs-parser/index.d.ts"
       ],
-      "../node_modules/crypto-random-string/index.d.ts": [
-        "../node_modules/type-fest/index.d.ts"
-      ],
       "../node_modules/jest-diff/build/difflines.d.ts": [
         "../node_modules/jest-diff/build/cleanupsemantic.d.ts",
         "../node_modules/jest-diff/build/types.d.ts"
@@ -1208,41 +1200,6 @@
       "../node_modules/pretty-format/build/index.d.ts": [
         "../node_modules/pretty-format/build/types.d.ts"
       ],
-      "../node_modules/type-fest/index.d.ts": [
-        "../node_modules/type-fest/source/basic.d.ts",
-        "../node_modules/type-fest/source/except.d.ts",
-        "../node_modules/type-fest/source/literal-union.d.ts",
-        "../node_modules/type-fest/source/merge-exclusive.d.ts",
-        "../node_modules/type-fest/source/merge.d.ts",
-        "../node_modules/type-fest/source/mutable.d.ts",
-        "../node_modules/type-fest/source/opaque.d.ts",
-        "../node_modules/type-fest/source/package-json.d.ts",
-        "../node_modules/type-fest/source/partial-deep.d.ts",
-        "../node_modules/type-fest/source/promisable.d.ts",
-        "../node_modules/type-fest/source/readonly-deep.d.ts",
-        "../node_modules/type-fest/source/require-at-least-one.d.ts",
-        "../node_modules/type-fest/source/require-exactly-one.d.ts",
-        "../node_modules/type-fest/source/set-optional.d.ts",
-        "../node_modules/type-fest/source/set-required.d.ts"
-      ],
-      "../node_modules/type-fest/source/literal-union.d.ts": [
-        "../node_modules/type-fest/source/basic.d.ts"
-      ],
-      "../node_modules/type-fest/source/merge.d.ts": [
-        "../node_modules/type-fest/source/except.d.ts"
-      ],
-      "../node_modules/type-fest/source/package-json.d.ts": [
-        "../node_modules/type-fest/index.d.ts"
-      ],
-      "../node_modules/type-fest/source/partial-deep.d.ts": [
-        "../node_modules/type-fest/source/basic.d.ts"
-      ],
-      "../node_modules/type-fest/source/readonly-deep.d.ts": [
-        "../node_modules/type-fest/source/basic.d.ts"
-      ],
-      "../node_modules/type-fest/source/require-at-least-one.d.ts": [
-        "../node_modules/type-fest/source/except.d.ts"
-      ],
       "../src/certificates/generatekeypair.ts": [
         "../node_modules/@types/node-forge/index.d.ts",
         "../src/common/index.ts"
@@ -1262,10 +1219,10 @@
         "../src/common/generatecryptorandomstring.ts"
       ],
       "../src/common/generatecryptorandomstring.ts": [
-        "../node_modules/crypto-random-string/index.d.ts"
+        "../node_modules/@types/node-forge/index.d.ts"
       ],
       "../src/common/generaterandomsalt.ts": [
-        "../node_modules/crypto-random-string/index.d.ts"
+        "../node_modules/@types/node-forge/index.d.ts"
       ],
       "../src/common/hkdf/computehkdf.ts": [
         "../node_modules/js-crypto-hkdf/dist/index.d.ts"
@@ -1364,6 +1321,114 @@
         "../src/vaults/encryptvaultitem.ts",
         "../src/vaults/encryptvaultkey.ts",
         "../src/vaults/generatekeypair.ts"
+      ],
+      "../../node_modules/@types/cacheable-request/index.d.ts": [
+        "../../node_modules/@types/http-cache-semantics/index.d.ts",
+        "../../node_modules/@types/keyv/index.d.ts",
+        "../../node_modules/@types/responselike/index.d.ts",
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/http.d.ts",
+        "../node_modules/@types/node/index.d.ts",
+        "../node_modules/@types/node/url.d.ts"
+      ],
+      "../../node_modules/@types/glob/index.d.ts": [
+        "../../node_modules/@types/minimatch/index.d.ts",
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/keyv/index.d.ts": [
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/responselike/index.d.ts": [
+        "../node_modules/@types/node/http.d.ts",
+        "../node_modules/@types/node/index.d.ts",
+        "../node_modules/@types/node/stream.d.ts"
+      ],
+      "../../node_modules/@types/uglify-js/index.d.ts": [
+        "../../node_modules/@types/uglify-js/node_modules/source-map/source-map.d.ts"
+      ],
+      "../../node_modules/@types/webpack-sources/index.d.ts": [
+        "../../node_modules/@types/webpack-sources/lib/cachedsource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/compatsource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/concatsource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/index.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/originalsource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/prefixsource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/rawsource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/replacesource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/sizeonlysource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/source.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/sourcemapsource.d.ts",
+        "../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/webpack-sources/lib/cachedsource.d.ts": [
+        "../../node_modules/@types/webpack-sources/lib/index.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/source.d.ts",
+        "../../node_modules/@types/webpack-sources/node_modules/source-map/source-map.d.ts"
+      ],
+      "../../node_modules/@types/webpack-sources/lib/compatsource.d.ts": [
+        "../../node_modules/@types/webpack-sources/lib/index.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/source.d.ts"
+      ],
+      "../../node_modules/@types/webpack-sources/lib/concatsource.d.ts": [
+        "../../node_modules/@types/source-list-map/index.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/index.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/source.d.ts",
+        "../../node_modules/@types/webpack-sources/node_modules/source-map/source-map.d.ts"
+      ],
+      "../../node_modules/@types/webpack-sources/lib/index.d.ts": [
+        "../../node_modules/@types/webpack-sources/lib/cachedsource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/compatsource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/concatsource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/originalsource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/prefixsource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/rawsource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/replacesource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/sizeonlysource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/source.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/sourcemapsource.d.ts",
+        "../../node_modules/@types/webpack-sources/node_modules/source-map/source-map.d.ts"
+      ],
+      "../../node_modules/@types/webpack-sources/lib/originalsource.d.ts": [
+        "../../node_modules/@types/source-list-map/index.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/index.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/source.d.ts",
+        "../../node_modules/@types/webpack-sources/node_modules/source-map/source-map.d.ts"
+      ],
+      "../../node_modules/@types/webpack-sources/lib/prefixsource.d.ts": [
+        "../../node_modules/@types/webpack-sources/lib/index.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/source.d.ts"
+      ],
+      "../../node_modules/@types/webpack-sources/lib/rawsource.d.ts": [
+        "../../node_modules/@types/webpack-sources/lib/index.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/source.d.ts"
+      ],
+      "../../node_modules/@types/webpack-sources/lib/replacesource.d.ts": [
+        "../../node_modules/@types/webpack-sources/lib/index.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/source.d.ts"
+      ],
+      "../../node_modules/@types/webpack-sources/lib/sizeonlysource.d.ts": [
+        "../../node_modules/@types/webpack-sources/lib/source.d.ts"
+      ],
+      "../../node_modules/@types/webpack-sources/lib/source.d.ts": [
+        "../../node_modules/@types/webpack-sources/lib/index.d.ts",
+        "../../node_modules/@types/webpack-sources/node_modules/source-map/source-map.d.ts",
+        "../node_modules/@types/node/crypto.d.ts"
+      ],
+      "../../node_modules/@types/webpack-sources/lib/sourcemapsource.d.ts": [
+        "../../node_modules/@types/webpack-sources/lib/index.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/source.d.ts",
+        "../../node_modules/@types/webpack-sources/node_modules/source-map/source-map.d.ts"
+      ],
+      "../../node_modules/@types/webpack/index.d.ts": [
+        "../../node_modules/@types/tapable/index.d.ts",
+        "../../node_modules/@types/uglify-js/index.d.ts",
+        "../../node_modules/@types/uglify-js/node_modules/source-map/source-map.d.ts",
+        "../../node_modules/@types/webpack-sources/index.d.ts",
+        "../../node_modules/anymatch/index.d.ts",
+        "../node_modules/@types/node/crypto.d.ts",
+        "../node_modules/@types/node/index.d.ts"
       ]
     },
     "exportedModulesMap": {
@@ -1644,9 +1709,6 @@
       "../node_modules/@types/yargs/index.d.ts": [
         "../node_modules/@types/yargs-parser/index.d.ts"
       ],
-      "../node_modules/crypto-random-string/index.d.ts": [
-        "../node_modules/type-fest/index.d.ts"
-      ],
       "../node_modules/jest-diff/build/difflines.d.ts": [
         "../node_modules/jest-diff/build/cleanupsemantic.d.ts",
         "../node_modules/jest-diff/build/types.d.ts"
@@ -1666,41 +1728,6 @@
       ],
       "../node_modules/pretty-format/build/index.d.ts": [
         "../node_modules/pretty-format/build/types.d.ts"
-      ],
-      "../node_modules/type-fest/index.d.ts": [
-        "../node_modules/type-fest/source/basic.d.ts",
-        "../node_modules/type-fest/source/except.d.ts",
-        "../node_modules/type-fest/source/literal-union.d.ts",
-        "../node_modules/type-fest/source/merge-exclusive.d.ts",
-        "../node_modules/type-fest/source/merge.d.ts",
-        "../node_modules/type-fest/source/mutable.d.ts",
-        "../node_modules/type-fest/source/opaque.d.ts",
-        "../node_modules/type-fest/source/package-json.d.ts",
-        "../node_modules/type-fest/source/partial-deep.d.ts",
-        "../node_modules/type-fest/source/promisable.d.ts",
-        "../node_modules/type-fest/source/readonly-deep.d.ts",
-        "../node_modules/type-fest/source/require-at-least-one.d.ts",
-        "../node_modules/type-fest/source/require-exactly-one.d.ts",
-        "../node_modules/type-fest/source/set-optional.d.ts",
-        "../node_modules/type-fest/source/set-required.d.ts"
-      ],
-      "../node_modules/type-fest/source/literal-union.d.ts": [
-        "../node_modules/type-fest/source/basic.d.ts"
-      ],
-      "../node_modules/type-fest/source/merge.d.ts": [
-        "../node_modules/type-fest/source/except.d.ts"
-      ],
-      "../node_modules/type-fest/source/package-json.d.ts": [
-        "../node_modules/type-fest/index.d.ts"
-      ],
-      "../node_modules/type-fest/source/partial-deep.d.ts": [
-        "../node_modules/type-fest/source/basic.d.ts"
-      ],
-      "../node_modules/type-fest/source/readonly-deep.d.ts": [
-        "../node_modules/type-fest/source/basic.d.ts"
-      ],
-      "../node_modules/type-fest/source/require-at-least-one.d.ts": [
-        "../node_modules/type-fest/source/except.d.ts"
       ],
       "../src/certificates/generatekeypair.ts": [
         "../node_modules/@types/node-forge/index.d.ts"
@@ -1813,6 +1840,114 @@
         "../src/vaults/encryptvaultitem.ts",
         "../src/vaults/encryptvaultkey.ts",
         "../src/vaults/generatekeypair.ts"
+      ],
+      "../../node_modules/@types/cacheable-request/index.d.ts": [
+        "../../node_modules/@types/http-cache-semantics/index.d.ts",
+        "../../node_modules/@types/keyv/index.d.ts",
+        "../../node_modules/@types/responselike/index.d.ts",
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/http.d.ts",
+        "../node_modules/@types/node/index.d.ts",
+        "../node_modules/@types/node/url.d.ts"
+      ],
+      "../../node_modules/@types/glob/index.d.ts": [
+        "../../node_modules/@types/minimatch/index.d.ts",
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/keyv/index.d.ts": [
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/responselike/index.d.ts": [
+        "../node_modules/@types/node/http.d.ts",
+        "../node_modules/@types/node/index.d.ts",
+        "../node_modules/@types/node/stream.d.ts"
+      ],
+      "../../node_modules/@types/uglify-js/index.d.ts": [
+        "../../node_modules/@types/uglify-js/node_modules/source-map/source-map.d.ts"
+      ],
+      "../../node_modules/@types/webpack-sources/index.d.ts": [
+        "../../node_modules/@types/webpack-sources/lib/cachedsource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/compatsource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/concatsource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/index.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/originalsource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/prefixsource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/rawsource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/replacesource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/sizeonlysource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/source.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/sourcemapsource.d.ts",
+        "../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/webpack-sources/lib/cachedsource.d.ts": [
+        "../../node_modules/@types/webpack-sources/lib/index.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/source.d.ts",
+        "../../node_modules/@types/webpack-sources/node_modules/source-map/source-map.d.ts"
+      ],
+      "../../node_modules/@types/webpack-sources/lib/compatsource.d.ts": [
+        "../../node_modules/@types/webpack-sources/lib/index.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/source.d.ts"
+      ],
+      "../../node_modules/@types/webpack-sources/lib/concatsource.d.ts": [
+        "../../node_modules/@types/source-list-map/index.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/index.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/source.d.ts",
+        "../../node_modules/@types/webpack-sources/node_modules/source-map/source-map.d.ts"
+      ],
+      "../../node_modules/@types/webpack-sources/lib/index.d.ts": [
+        "../../node_modules/@types/webpack-sources/lib/cachedsource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/compatsource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/concatsource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/originalsource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/prefixsource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/rawsource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/replacesource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/sizeonlysource.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/source.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/sourcemapsource.d.ts",
+        "../../node_modules/@types/webpack-sources/node_modules/source-map/source-map.d.ts"
+      ],
+      "../../node_modules/@types/webpack-sources/lib/originalsource.d.ts": [
+        "../../node_modules/@types/source-list-map/index.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/index.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/source.d.ts",
+        "../../node_modules/@types/webpack-sources/node_modules/source-map/source-map.d.ts"
+      ],
+      "../../node_modules/@types/webpack-sources/lib/prefixsource.d.ts": [
+        "../../node_modules/@types/webpack-sources/lib/index.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/source.d.ts"
+      ],
+      "../../node_modules/@types/webpack-sources/lib/rawsource.d.ts": [
+        "../../node_modules/@types/webpack-sources/lib/index.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/source.d.ts"
+      ],
+      "../../node_modules/@types/webpack-sources/lib/replacesource.d.ts": [
+        "../../node_modules/@types/webpack-sources/lib/index.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/source.d.ts"
+      ],
+      "../../node_modules/@types/webpack-sources/lib/sizeonlysource.d.ts": [
+        "../../node_modules/@types/webpack-sources/lib/source.d.ts"
+      ],
+      "../../node_modules/@types/webpack-sources/lib/source.d.ts": [
+        "../../node_modules/@types/webpack-sources/lib/index.d.ts",
+        "../../node_modules/@types/webpack-sources/node_modules/source-map/source-map.d.ts",
+        "../node_modules/@types/node/crypto.d.ts"
+      ],
+      "../../node_modules/@types/webpack-sources/lib/sourcemapsource.d.ts": [
+        "../../node_modules/@types/webpack-sources/lib/index.d.ts",
+        "../../node_modules/@types/webpack-sources/lib/source.d.ts",
+        "../../node_modules/@types/webpack-sources/node_modules/source-map/source-map.d.ts"
+      ],
+      "../../node_modules/@types/webpack/index.d.ts": [
+        "../../node_modules/@types/tapable/index.d.ts",
+        "../../node_modules/@types/uglify-js/index.d.ts",
+        "../../node_modules/@types/uglify-js/node_modules/source-map/source-map.d.ts",
+        "../../node_modules/@types/webpack-sources/index.d.ts",
+        "../../node_modules/anymatch/index.d.ts",
+        "../node_modules/@types/node/crypto.d.ts",
+        "../node_modules/@types/node/index.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -1886,7 +2021,6 @@
       "../node_modules/@types/stack-utils/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../node_modules/crypto-random-string/index.d.ts",
       "../node_modules/fast-sha256/sha256.d.ts",
       "../node_modules/jest-diff/build/cleanupsemantic.d.ts",
       "../node_modules/jest-diff/build/difflines.d.ts",
@@ -1899,22 +2033,6 @@
       "../node_modules/pretty-format/build/types.d.ts",
       "../node_modules/secure-remote-password/client.d.ts",
       "../node_modules/secure-remote-password/server.d.ts",
-      "../node_modules/type-fest/index.d.ts",
-      "../node_modules/type-fest/source/basic.d.ts",
-      "../node_modules/type-fest/source/except.d.ts",
-      "../node_modules/type-fest/source/literal-union.d.ts",
-      "../node_modules/type-fest/source/merge-exclusive.d.ts",
-      "../node_modules/type-fest/source/merge.d.ts",
-      "../node_modules/type-fest/source/mutable.d.ts",
-      "../node_modules/type-fest/source/opaque.d.ts",
-      "../node_modules/type-fest/source/package-json.d.ts",
-      "../node_modules/type-fest/source/partial-deep.d.ts",
-      "../node_modules/type-fest/source/promisable.d.ts",
-      "../node_modules/type-fest/source/readonly-deep.d.ts",
-      "../node_modules/type-fest/source/require-at-least-one.d.ts",
-      "../node_modules/type-fest/source/require-exactly-one.d.ts",
-      "../node_modules/type-fest/source/set-optional.d.ts",
-      "../node_modules/type-fest/source/set-required.d.ts",
       "../node_modules/typescript/lib/lib.dom.d.ts",
       "../node_modules/typescript/lib/lib.dom.iterable.d.ts",
       "../node_modules/typescript/lib/lib.es2015.collection.d.ts",
@@ -1942,24 +2060,9 @@
       "../node_modules/typescript/lib/lib.es2018.intl.d.ts",
       "../node_modules/typescript/lib/lib.es2018.promise.d.ts",
       "../node_modules/typescript/lib/lib.es2018.regexp.d.ts",
-      "../node_modules/typescript/lib/lib.es2019.array.d.ts",
-      "../node_modules/typescript/lib/lib.es2019.d.ts",
-      "../node_modules/typescript/lib/lib.es2019.object.d.ts",
-      "../node_modules/typescript/lib/lib.es2019.string.d.ts",
-      "../node_modules/typescript/lib/lib.es2019.symbol.d.ts",
       "../node_modules/typescript/lib/lib.es2020.bigint.d.ts",
-      "../node_modules/typescript/lib/lib.es2020.d.ts",
-      "../node_modules/typescript/lib/lib.es2020.intl.d.ts",
-      "../node_modules/typescript/lib/lib.es2020.promise.d.ts",
-      "../node_modules/typescript/lib/lib.es2020.sharedmemory.d.ts",
-      "../node_modules/typescript/lib/lib.es2020.string.d.ts",
-      "../node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts",
       "../node_modules/typescript/lib/lib.es5.d.ts",
-      "../node_modules/typescript/lib/lib.esnext.d.ts",
       "../node_modules/typescript/lib/lib.esnext.intl.d.ts",
-      "../node_modules/typescript/lib/lib.esnext.promise.d.ts",
-      "../node_modules/typescript/lib/lib.esnext.string.d.ts",
-      "../node_modules/typescript/lib/lib.esnext.weakref.d.ts",
       "../node_modules/typescript/lib/lib.scripthost.d.ts",
       "../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
       "../src/certificates/generatekeypair.ts",
@@ -1993,7 +2096,38 @@
       "../src/vaults/encryptvaultitem.ts",
       "../src/vaults/encryptvaultkey.ts",
       "../src/vaults/generatekeypair.ts",
-      "../src/vaults/index.ts"
+      "../src/vaults/index.ts",
+      "../../node_modules/@types/anymatch/index.d.ts",
+      "../../node_modules/@types/cacheable-request/index.d.ts",
+      "../../node_modules/@types/glob/index.d.ts",
+      "../../node_modules/@types/html-minifier-terser/index.d.ts",
+      "../../node_modules/@types/http-cache-semantics/index.d.ts",
+      "../../node_modules/@types/keyv/index.d.ts",
+      "../../node_modules/@types/minimatch/index.d.ts",
+      "../../node_modules/@types/q/index.d.ts",
+      "../../node_modules/@types/responselike/index.d.ts",
+      "../../node_modules/@types/retry/index.d.ts",
+      "../../node_modules/@types/source-list-map/index.d.ts",
+      "../../node_modules/@types/tapable/index.d.ts",
+      "../../node_modules/@types/text-table/index.d.ts",
+      "../../node_modules/@types/uglify-js/index.d.ts",
+      "../../node_modules/@types/uglify-js/node_modules/source-map/source-map.d.ts",
+      "../../node_modules/@types/webpack-sources/index.d.ts",
+      "../../node_modules/@types/webpack-sources/lib/cachedsource.d.ts",
+      "../../node_modules/@types/webpack-sources/lib/compatsource.d.ts",
+      "../../node_modules/@types/webpack-sources/lib/concatsource.d.ts",
+      "../../node_modules/@types/webpack-sources/lib/index.d.ts",
+      "../../node_modules/@types/webpack-sources/lib/originalsource.d.ts",
+      "../../node_modules/@types/webpack-sources/lib/prefixsource.d.ts",
+      "../../node_modules/@types/webpack-sources/lib/rawsource.d.ts",
+      "../../node_modules/@types/webpack-sources/lib/replacesource.d.ts",
+      "../../node_modules/@types/webpack-sources/lib/sizeonlysource.d.ts",
+      "../../node_modules/@types/webpack-sources/lib/source.d.ts",
+      "../../node_modules/@types/webpack-sources/lib/sourcemapsource.d.ts",
+      "../../node_modules/@types/webpack-sources/node_modules/source-map/source-map.d.ts",
+      "../../node_modules/@types/webpack/index.d.ts",
+      "../../node_modules/@types/webpack/node_modules/source-map/source-map.d.ts",
+      "../../node_modules/anymatch/index.d.ts"
     ]
   },
   "version": "4.2.3"

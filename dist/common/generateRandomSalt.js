@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.generateRandomSalt = void 0;
-const cryptoRandomString = require("crypto-random-string");
+const forge = require("node-forge");
 const generateRandomSalt = (length) => {
-    return cryptoRandomString({ length });
+    return forge.util.bytesToHex(forge.random.getBytesSync(length));
 };
 exports.generateRandomSalt = generateRandomSalt;
 exports.default = exports.generateRandomSalt;
