@@ -6,10 +6,10 @@ import hkdf from './hkdf';
 export { hkdf, pbkdf2, generateAccountKey, generateCryptoRandomString, generateRandomSalt, };
 declare const _default: {
     hkdf: {
-        computeHKDF: ({ uint8MasterSecret, uint8Salt }: {
-            uint8MasterSecret: any;
-            uint8Salt: any;
-        }) => Promise<Uint8Array>;
+        computeHKDF: ({ secret, salt }: {
+            secret: any;
+            salt: any;
+        }) => string;
     };
     pbkdf2: {
         computeHash: ({ uint8MasterPassword, encryptionKeySalt, iterations, }: {

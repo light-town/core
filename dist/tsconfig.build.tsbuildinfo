@@ -407,7 +407,7 @@
         "affectsGlobalScope": false
       },
       "../src/common/generaterandomsalt.ts": {
-        "version": "9c96bc210e330fcb1097a92621debc85d170e9c178079ca8f7b5628239123b61",
+        "version": "f41237cf44f65172d4e5dc1bbbfa8dd434b68dbaa79b7f53ebc1564d303e320c",
         "signature": "63c0e3489164e606238e32cac56d1617eef67a04dede11c169ac736d9cbe954a",
         "affectsGlobalScope": false
       },
@@ -426,29 +426,19 @@
         "signature": "46cf2441b65153ac685f96e6c3f84ded7a5c46b0ffdc61d52c6b6c8b4f2acd25",
         "affectsGlobalScope": false
       },
-      "../node_modules/js-crypto-hkdf/dist/params.d.ts": {
-        "version": "1e54b39b68b4a270fb8623f727f058e99b24ea0e275585c917dc02b4db99d2ce",
-        "signature": "1e54b39b68b4a270fb8623f727f058e99b24ea0e275585c917dc02b4db99d2ce",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/js-crypto-hkdf/dist/index.d.ts": {
-        "version": "ad7fa19423309817fac378c470410c31c6097083d79ba6d2ad520bc0fb77ae57",
-        "signature": "ad7fa19423309817fac378c470410c31c6097083d79ba6d2ad520bc0fb77ae57",
-        "affectsGlobalScope": false
-      },
       "../src/common/hkdf/computehkdf.ts": {
-        "version": "5b369038bbf541999e606e490c3b072e438e8239069b98a52c0b2f4929d12484",
-        "signature": "64fce57c0361fbfd526bbf43a71697e2fcb24a616e27ca7509c4b328a77635d6",
+        "version": "5cbb586185405c2ad3d125925acb60188ad466898533e41f080b990ecd52255c",
+        "signature": "7fc8575092892e665dd0f27e211f58a454830dfeaf245397d5896b708c3e5407",
         "affectsGlobalScope": false
       },
       "../src/common/hkdf/index.ts": {
         "version": "73d27515a27f498a75dca510bda09fdca47936aefbf48f339d2fba2b5b9fdd08",
-        "signature": "961a822a50cf436724510b587ea61f7543706ef931b588a8986016ce91108ee5",
+        "signature": "859b014f33063af944d349e7ca3e76a5d46b3c11df5f54fcf4d1f7e7145333fe",
         "affectsGlobalScope": false
       },
       "../src/common/index.ts": {
-        "version": "0a0483e25b32af33b0ed7d845e6d55399c14be9ed7117fd238f4fa65f9c779a3",
-        "signature": "ff175cfea5b5de5aa617298bb11dde79b844c34e83650d11bb11ce6a5dae210a",
+        "version": "1fc47dc2791d617e512e2365b10f3e9ecb5bf719509eba6a6c6f9184af8085e3",
+        "signature": "b63bc74b5f0791b306b51860113d0a719afb7661c8d7514147386409c742e2f4",
         "affectsGlobalScope": false
       },
       "../node_modules/secure-remote-password/client.d.ts": {
@@ -457,7 +447,7 @@
         "affectsGlobalScope": false
       },
       "../src/srp/client/deriveverifier.ts": {
-        "version": "435de458db900b5794442a34f5425593a300dd609b10da8bbc213a550cd40bad",
+        "version": "846645705e39d11799fdc5c7343b9729006fdb40e5a86f0b1ba91ea0f27567dd",
         "signature": "1e2656471e43459cbf0ea24eb3c7616e5c261e427e68130089b9f1b0f83253fe",
         "affectsGlobalScope": false
       },
@@ -532,12 +522,12 @@
         "affectsGlobalScope": false
       },
       "../src/vaults/encryptsymmetrickey.ts": {
-        "version": "6083ebdc9b3f4fb3867183c1aa40cebdf8497270ac5c585f104598a429b907c6",
+        "version": "ac931a79182c4ba276d111455f28ee716d84e74fa5ccda2d9585f64b2f1d16d0",
         "signature": "5595c7681b9f00499560f14d3770fc7f8b51baeead97446a4e6c7eca7be9d96c",
         "affectsGlobalScope": false
       },
       "../src/vaults/encryptvaultitem.ts": {
-        "version": "a36ef74cbd5e7edf2da0049651c15f8f046fb2c292dd48337762d1734279e829",
+        "version": "ff62d5c36a62d0ac5f8a1d3fbd5d81589ad9b55d664e09cf94cef664de8f1c37",
         "signature": "584a97769d0c3cc4cd46d48493352af7c23cb480dd0b2eaa177923316a2192be",
         "affectsGlobalScope": false
       },
@@ -557,7 +547,7 @@
         "affectsGlobalScope": false
       },
       "../src/certificates/generatekeypair.ts": {
-        "version": "109a4e25e6b8e2aa3a7c4923170423317c0e6d6954df635fd46f15a37fd09568",
+        "version": "44a2781a5fe84679552803cf1e847b70838a19aef4b1a5727a263eecd0978e94",
         "signature": "9f626bd9e4ecebb691b32410b0f9a5cb8588e38030230ee54e4bb33a8c045df9",
         "affectsGlobalScope": false
       },
@@ -577,8 +567,8 @@
         "affectsGlobalScope": false
       },
       "../src/index.ts": {
-        "version": "48f600bc8deb02e75055ee134e081b0ca8166bfdd1c9e0efe5027377dba7793d",
-        "signature": "d108abb4a20ddd2aeb94f7762656a1ea9f31cddbd4898069bd86a9594a0c5f50",
+        "version": "14ca303197956aee40450b0b9d39326c1bb1df1cf559da3ba04a2f4f8c37e365",
+        "signature": "6c5508cff34afe9fae0468b2593ed5245e4706d2f515cf98af8ee0dcbcc3bf18",
         "affectsGlobalScope": false
       },
       "../node_modules/@babel/types/lib/index.d.ts": {
@@ -1194,9 +1184,6 @@
         "../node_modules/jest-diff/build/cleanupsemantic.d.ts",
         "../node_modules/jest-diff/build/types.d.ts"
       ],
-      "../node_modules/js-crypto-hkdf/dist/index.d.ts": [
-        "../node_modules/js-crypto-hkdf/dist/params.d.ts"
-      ],
       "../node_modules/pretty-format/build/index.d.ts": [
         "../node_modules/pretty-format/build/types.d.ts"
       ],
@@ -1225,7 +1212,7 @@
         "../node_modules/@types/node-forge/index.d.ts"
       ],
       "../src/common/hkdf/computehkdf.ts": [
-        "../node_modules/js-crypto-hkdf/dist/index.d.ts"
+        "../node_modules/@types/node-forge/index.d.ts"
       ],
       "../src/common/hkdf/index.ts": [
         "../src/common/hkdf/computehkdf.ts"
@@ -1723,9 +1710,6 @@
         "../node_modules/jest-diff/build/cleanupsemantic.d.ts",
         "../node_modules/jest-diff/build/types.d.ts"
       ],
-      "../node_modules/js-crypto-hkdf/dist/index.d.ts": [
-        "../node_modules/js-crypto-hkdf/dist/params.d.ts"
-      ],
       "../node_modules/pretty-format/build/index.d.ts": [
         "../node_modules/pretty-format/build/types.d.ts"
       ],
@@ -2027,8 +2011,6 @@
       "../node_modules/jest-diff/build/index.d.ts",
       "../node_modules/jest-diff/build/printdiffs.d.ts",
       "../node_modules/jest-diff/build/types.d.ts",
-      "../node_modules/js-crypto-hkdf/dist/index.d.ts",
-      "../node_modules/js-crypto-hkdf/dist/params.d.ts",
       "../node_modules/pretty-format/build/index.d.ts",
       "../node_modules/pretty-format/build/types.d.ts",
       "../node_modules/secure-remote-password/client.d.ts",
