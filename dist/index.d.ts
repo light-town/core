@@ -24,13 +24,13 @@ declare const _default: {
         generateRandomSalt: (length: number) => string;
     };
     srp: {
-        Client: {
+        client: {
             generateEphemeralKeyPair(): import("./srp/types").Ephemeral;
             deriveVerifier(secretKey: string, password: string): import("./srp/types").Verifier;
             deriveSession(clientSecretEphemeralKey: string, serverPublicEphemeralKey: string, salt: string, secretKey: string, privateKey: string): import("./srp/types").Session;
             verifySession(clientPublicEphemeral: string, clientSession: import("./srp/types").Session, serverSessionProof: string): void;
         };
-        Server: {
+        server: {
             generateEphemeralKeyPair(verifier: string): import("./srp/types").Ephemeral;
             deriveSession(serverSecretEphemeralKey: string, clientPublicEphemeralKey: string, salt: string, secretKey: string, verifier: string, clientSessionProofKey: string): import("./srp/types").Session;
         };

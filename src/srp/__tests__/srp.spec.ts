@@ -1,4 +1,4 @@
-import SRP from '../index';
+import srp from '../index';
 import * as faker from 'faker';
 import { generateAccountKey } from '../../common';
 
@@ -12,7 +12,7 @@ describe('[SRP] ...', () => {
     });
     const TEST_PASSWORD = faker.internet.password();
 
-    const verifier = SRP.Client.deriveVerifier(TEST_ACCOUNT_ID, TEST_PASSWORD);
+    const verifier = srp.client.deriveVerifier(TEST_ACCOUNT_ID, TEST_PASSWORD);
 
     expect(typeof verifier.salt).toEqual('string');
     expect(typeof verifier.verifier).toEqual('string');
@@ -37,26 +37,26 @@ describe('[SRP] ...', () => {
     });
     const TEST_PASSWORD = faker.internet.password();
 
-    const { salt, verifier, privateKey } = SRP.Client.deriveVerifier(
+    const { salt, verifier, privateKey } = srp.client.deriveVerifier(
       TEST_ACCOUNT_ID,
       TEST_PASSWORD,
     );
 
-    const clientEphemeral = SRP.Client.generateEphemeralKeyPair();
+    const clientEphemeral = srp.client.generateEphemeralKeyPair();
 
     expect(typeof clientEphemeral.public).toEqual('string');
     expect(typeof clientEphemeral.secret).toEqual('string');
 
     // server
 
-    const serverEphemeral = SRP.Server.generateEphemeralKeyPair(verifier);
+    const serverEphemeral = srp.server.generateEphemeralKeyPair(verifier);
 
     expect(typeof serverEphemeral.public).toEqual('string');
     expect(typeof serverEphemeral.secret).toEqual('string');
 
     // client
 
-    const clientSession = SRP.Client.deriveSession(
+    const clientSession = srp.client.deriveSession(
       clientEphemeral.secret,
       serverEphemeral.public,
       salt,
@@ -69,7 +69,7 @@ describe('[SRP] ...', () => {
 
     // server
 
-    const serverSession = SRP.Server.deriveSession(
+    const serverSession = srp.server.deriveSession(
       serverEphemeral.secret,
       clientEphemeral.public,
       salt,
@@ -83,7 +83,7 @@ describe('[SRP] ...', () => {
 
     // client
 
-    SRP.Client.verifySession(
+    srp.client.verifySession(
       clientEphemeral.public,
       clientSession,
       serverSession.proof,
@@ -100,26 +100,26 @@ describe('[SRP] ...', () => {
     });
     const TEST_PASSWORD = faker.internet.password();
 
-    const { salt, verifier, privateKey } = SRP.Client.deriveVerifier(
+    const { salt, verifier, privateKey } = srp.client.deriveVerifier(
       TEST_ACCOUNT_ID,
       TEST_PASSWORD,
     );
 
-    const clientEphemeral = SRP.Client.generateEphemeralKeyPair();
+    const clientEphemeral = srp.client.generateEphemeralKeyPair();
 
     expect(typeof clientEphemeral.public).toEqual('string');
     expect(typeof clientEphemeral.secret).toEqual('string');
 
     // server
 
-    const serverEphemeral = SRP.Server.generateEphemeralKeyPair(verifier);
+    const serverEphemeral = srp.server.generateEphemeralKeyPair(verifier);
 
     expect(typeof serverEphemeral.public).toEqual('string');
     expect(typeof serverEphemeral.secret).toEqual('string');
 
     // client
 
-    const clientSession = SRP.Client.deriveSession(
+    const clientSession = srp.client.deriveSession(
       clientEphemeral.secret,
       serverEphemeral.public,
       salt,
@@ -132,7 +132,7 @@ describe('[SRP] ...', () => {
 
     // server
 
-    const serverSession = SRP.Server.deriveSession(
+    const serverSession = srp.server.deriveSession(
       serverEphemeral.secret,
       clientEphemeral.public,
       salt,
@@ -147,7 +147,7 @@ describe('[SRP] ...', () => {
     // client
 
     expect(() =>
-      SRP.Client.verifySession(
+      srp.client.verifySession(
         faker.random.uuid(),
         clientSession,
         serverSession.proof,
