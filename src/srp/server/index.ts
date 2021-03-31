@@ -1,9 +1,9 @@
 import { deriveSession } from './deriveSession';
-import { generateEphemeral } from './generateEphemeral';
+import { generateEphemeralKeyPair } from './generateEphemeralKeyPair';
 
-export { deriveSession, generateEphemeral };
+export { deriveSession, generateEphemeralKeyPair };
 
 export default {
   deriveSession,
-  generateEphemeral,
+  generateEphemeralKeyPair,
 };

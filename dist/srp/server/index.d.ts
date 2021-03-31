@@ -1,8 +1,8 @@
 import { deriveSession } from './deriveSession';
-import { generateEphemeral } from './generateEphemeral';
-export { deriveSession, generateEphemeral };
+import { generateEphemeralKeyPair } from './generateEphemeralKeyPair';
+export { deriveSession, generateEphemeralKeyPair };
 declare const _default: {
-    deriveSession: (serverSecretEphemeral: string, clientPublicEphemeral: string, salt: string, secretKey: string, verifier: string, clientSessionProof: string) => import("secure-remote-password/server").Session;
-    generateEphemeral: (verifier: string) => import("secure-remote-password/server").Ephemeral;
+    deriveSession: (serverSecretEphemeralKey: string, clientPublicEphemeralKey: string, salt: string, secretKey: string, verifier: string, clientSessionProofKey: string) => import("../types").Session;
+    generateEphemeralKeyPair: (verifier: string) => import("../types").Ephemeral;
 };
 export default _default;

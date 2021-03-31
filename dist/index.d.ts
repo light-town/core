@@ -24,15 +24,15 @@ declare const _default: {
         generateRandomSalt: (length: number) => string;
     };
     srp: {
-        client: {
-            deriveVerifier: (secretKey: string, password: string) => import("./srp/client/deriveVerifier").Verifier;
-            deriveSession: (salt: string, secretKey: string, password: string, clientSecretEphemeral: string, serverPublicEphemeral: string) => import("secure-remote-password/client").Session;
-            verifySession: (clientPublicEphemeral: string, clientSession: import("secure-remote-password/client").Session, serverSessionProof: string) => void;
-            generateEphemeral: () => import("secure-remote-password/client").Ephemeral;
+        Client: {
+            generateEphemeralKeyPair(): import("./srp/types").Ephemeral;
+            deriveVerifier(secretKey: string, password: string): import("./srp/types").Verifier;
+            deriveSession(clientSecretEphemeralKey: string, serverPublicEphemeralKey: string, salt: string, secretKey: string, privateKey: string): import("./srp/types").Session;
+            verifySession(clientPublicEphemeral: string, clientSession: import("./srp/types").Session, serverSessionProof: string): void;
         };
-        server: {
-            deriveSession: (serverSecretEphemeral: string, clientPublicEphemeral: string, salt: string, secretKey: string, verifier: string, clientSessionProof: string) => import("secure-remote-password/server").Session;
-            generateEphemeral: (verifier: string) => import("secure-remote-password/server").Ephemeral;
+        Server: {
+            generateEphemeralKeyPair(verifier: string): import("./srp/types").Ephemeral;
+            deriveSession(serverSecretEphemeralKey: string, clientPublicEphemeralKey: string, salt: string, secretKey: string, verifier: string, clientSessionProofKey: string): import("./srp/types").Session;
         };
     };
     vaults: {

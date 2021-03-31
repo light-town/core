@@ -1,30 +1,15 @@
-import * as srp from 'secure-remote-password/client';
-import { generateRandomSalt } from '../../common';
-
-export interface Verifier {
-  verifier: string;
-  privateKey: string;
-  salt: string;
-}
+import { N, g } from '../params';
+import BigNumber from '../big-number';
 
 /**
- * @param {String} secretKey
- * @param {String} password
+ * @description Derive verifier
+ * @param {String} privateKey
  * @returns {String} verifier
  */
-export const deriveVerifier = (
-  secretKey: string,
-  password: string,
-): Verifier => {
-  const salt = generateRandomSalt(32);
-  const privateKey = srp.derivePrivateKey(salt, secretKey, password);
-  const verifier = srp.deriveVerifier(privateKey);
-
-  return {
-    verifier,
-    salt,
-    privateKey,
-  };
+export const deriveVerifier = (privateKey: string): string => {
+  const x = BigNumber.fromHex(privateKey);
+  const v = g.modPow(x, N);
+  return v.toHex();
 };
 
 export default deriveVerifier;

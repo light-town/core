@@ -1,17 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.deriveVerifier = void 0;
-const srp = require("secure-remote-password/client");
-const common_1 = require("../../common");
-const deriveVerifier = (secretKey, password) => {
-    const salt = common_1.generateRandomSalt(32);
-    const privateKey = srp.derivePrivateKey(salt, secretKey, password);
-    const verifier = srp.deriveVerifier(privateKey);
-    return {
-        verifier,
-        salt,
-        privateKey,
-    };
+const params_1 = require("../params");
+const big_number_1 = require("../big-number");
+const deriveVerifier = (privateKey) => {
+    const x = big_number_1.default.fromHex(privateKey);
+    const v = params_1.g.modPow(x, params_1.N);
+    return v.toHex();
 };
 exports.deriveVerifier = deriveVerifier;
 exports.default = exports.deriveVerifier;

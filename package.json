@@ -27,8 +27,7 @@
   "homepage": "https://github.com/light-town/core#readme",
   "dependencies": {
     "fast-sha256": "^1.3.0",
-    "node-forge": "^0.10.0",
-    "secure-remote-password": "^0.3.1"
+    "node-forge": "^0.10.0"
   },
   "devDependencies": {
     "@types/faker": "^5.1.7",

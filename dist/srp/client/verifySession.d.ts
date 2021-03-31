@@ -1,3 +1,3 @@
-import * as srp from 'secure-remote-password/client';
-export declare const verifySession: (clientPublicEphemeral: string, clientSession: srp.Session, serverSessionProof: string) => void;
+import * as Types from '../types';
+export declare const verifySession: (clientPublicEphemeral: string, clientSession: Types.Session, serverSessionProof: string) => void;
 export default verifySession;

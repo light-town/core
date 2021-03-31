@@ -1,13 +1,21 @@
 import { deriveVerifier } from './deriveVerifier';
 import { deriveSession } from './deriveSession';
 import { verifySession } from './verifySession';
-import { generateEphemeral } from './generateEphemeral';
+import { generateEphemeralKeyPair } from './generateEphemeralKeyPair';
+import { derivePrivateKey } from './derivePrivateKey';
 
-export { deriveVerifier, deriveSession, verifySession, generateEphemeral };
+export {
+  deriveVerifier,
+  deriveSession,
+  verifySession,
+  generateEphemeralKeyPair,
+  derivePrivateKey,
+};
 
 export default {
   deriveVerifier,
   deriveSession,
   verifySession,
-  generateEphemeral,
+  generateEphemeralKeyPair,
+  derivePrivateKey,
 };
