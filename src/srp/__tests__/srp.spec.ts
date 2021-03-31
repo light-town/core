@@ -4,7 +4,11 @@ import { generateAccountKey } from '../../common';
 
 describe('[SRP] ...', () => {
   it('should correct generate verifier in the client', () => {
-    const TEST_USER_ID = faker.random.uuid().split('-').join('').toUpperCase();
+    const TEST_USER_ID = faker.datatype
+      .uuid()
+      .split('-')
+      .join('')
+      .toUpperCase();
     const ACCOUNT_VERSION = 'A1';
     const TEST_ACCOUNT_ID = generateAccountKey({
       versionCode: ACCOUNT_VERSION,
@@ -29,7 +33,7 @@ describe('[SRP] ...', () => {
 
   it('should correct generate verifier in the server', () => {
     // client
-    const USER_ID = faker.random.uuid().split('-').join('').toUpperCase();
+    const USER_ID = faker.datatype.uuid().split('-').join('').toUpperCase();
     const ACCOUNT_VERSION = 'A1';
     const TEST_ACCOUNT_ID = generateAccountKey({
       versionCode: ACCOUNT_VERSION,
@@ -92,7 +96,7 @@ describe('[SRP] ...', () => {
 
   it('should throw error while verifying session with invalid proof key', () => {
     // client
-    const USER_ID = faker.random.uuid().split('-').join('').toUpperCase();
+    const USER_ID = faker.datatype.uuid().split('-').join('').toUpperCase();
     const ACCOUNT_VERSION = 'A1';
     const TEST_ACCOUNT_ID = generateAccountKey({
       versionCode: ACCOUNT_VERSION,
@@ -148,7 +152,7 @@ describe('[SRP] ...', () => {
 
     expect(() =>
       srp.client.verifySession(
-        faker.random.uuid(),
+        faker.datatype.uuid(),
         clientSession,
         serverSession.proof,
       ),
