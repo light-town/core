@@ -507,8 +507,8 @@
         "affectsGlobalScope": false
       },
       "../src/srp/index.ts": {
-        "version": "0378dfcb2299931074cb1c99cbb615b5529bf1d29cc8f65e3e1e9c6a3db547ff",
-        "signature": "cf74690de5d5273c73e2c8e8309574dd8b26480acf055df8933d93f82f296b8e",
+        "version": "a42ce905dd1bf57a438afb24cfb705ba42cf44edbd6c0f7f87d0e9693dde83de",
+        "signature": "df65f94bec10e82460f1f09cf9147aabc2c9b6f791dc870f32cd2d8710da7ffa",
         "affectsGlobalScope": false
       },
       "../src/vaults/decryptprivatekey.ts": {
@@ -583,7 +583,7 @@
       },
       "../src/index.ts": {
         "version": "14ca303197956aee40450b0b9d39326c1bb1df1cf559da3ba04a2f4f8c37e365",
-        "signature": "70d3f4c4a8a97b77282526722c0c3c533fd1147aa30d07f2fbb0b4f092c15acd",
+        "signature": "2a5e0a37d556e20b4eed4b3f8f9d49bf0056894ab0f3257e50f9b5d31230ca30",
         "affectsGlobalScope": false
       },
       "../node_modules/@babel/types/lib/index.d.ts": {

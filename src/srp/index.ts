@@ -6,6 +6,21 @@ import BigNumber from './big-number';
 export default {
   client: {
     /**
+     * @description Derive private key
+     * @param {String} secretKey
+     * @param {String} password
+     * @param {String} salt
+     * @returns {String} private key
+     */
+    derivePrivateKey(
+      secretKey: string,
+      password: string,
+      salt: string,
+    ): string {
+      return client.derivePrivateKey(secretKey, password, salt);
+    },
+
+    /**
      * @description Generates public and secret ephemeral key pair
      * @return {Types.Ephemeral} ephemeral key pair
      */

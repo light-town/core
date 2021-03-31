@@ -25,6 +25,7 @@ declare const _default: {
     };
     srp: {
         client: {
+            derivePrivateKey(secretKey: string, password: string, salt: string): string;
             generateEphemeralKeyPair(): import("./srp/types").Ephemeral;
             deriveVerifier(secretKey: string, password: string): import("./srp/types").Verifier;
             deriveSession(clientSecretEphemeralKey: string, serverPublicEphemeralKey: string, salt: string, secretKey: string, privateKey: string): import("./srp/types").Session;

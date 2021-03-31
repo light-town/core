@@ -5,6 +5,9 @@ const server_1 = require("./server");
 const big_number_1 = require("./big-number");
 exports.default = {
     client: {
+        derivePrivateKey(secretKey, password, salt) {
+            return client_1.default.derivePrivateKey(secretKey, password, salt);
+        },
         generateEphemeralKeyPair() {
             return client_1.default.generateEphemeralKeyPair();
         },
