@@ -10,8 +10,8 @@ const encryptVaultKey = (vaultKey, publicKey) => {
         md: forge.md.sha256.create(),
     });
     return {
-        alg: 'RSA-OAEP-256',
         kty: 'RSA',
+        alg: 'RSA-OAEP-256',
         key: forge.util.encode64(encryptedVaultKey),
     };
 };

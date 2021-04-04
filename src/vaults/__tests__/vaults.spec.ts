@@ -17,7 +17,8 @@ describe('[Vaults] ...', () => {
       symmetricKey,
     );
 
-    expect(encryptedPrivateKeyInfo.enc).toStrictEqual('A256GCM');
+    expect(encryptedPrivateKeyInfo.kty).toStrictEqual('AES');
+    expect(encryptedPrivateKeyInfo.alg).toStrictEqual('AES-GCM-256');
     expect(encryptedPrivateKeyInfo.key).toBeDefined();
 
     const decryptedPrivateKey = vaults.decryptPrivateKey(
@@ -35,12 +36,16 @@ describe('[Vaults] ...', () => {
   it('should encrypt and decrypt symmetric key', async () => {
     const symmetricKey = common.generateCryptoRandomString(32);
     const masterUnlockKey = common.generateCryptoRandomString(32);
+    const masterUnlockSalt = common.generateRandomSalt(32);
 
     const encryptedSymmetricKeyInfo = vaults.encryptSymmetricKey({
       symmetricKey,
       secretKey: masterUnlockKey,
+      salt: masterUnlockSalt,
     });
 
+    expect(encryptedSymmetricKeyInfo.kty).toStrictEqual('AES');
+    expect(encryptedSymmetricKeyInfo.alg).toStrictEqual('AES-GCM-256');
     expect(encryptedSymmetricKeyInfo.iv).toBeDefined();
     expect(typeof encryptedSymmetricKeyInfo.tagLength).toStrictEqual('number');
     expect(encryptedSymmetricKeyInfo.tag).toBeDefined();
@@ -61,8 +66,8 @@ describe('[Vaults] ...', () => {
     const vaultKey = common.generateCryptoRandomString(32);
 
     const encryptVaultKeyInfo = vaults.encryptVaultKey(vaultKey, publicKey);
-    expect(encryptVaultKeyInfo.alg).toStrictEqual('RSA-OAEP-256');
     expect(encryptVaultKeyInfo.kty).toStrictEqual('RSA');
+    expect(encryptVaultKeyInfo.alg).toStrictEqual('RSA-OAEP-256');
     expect(encryptVaultKeyInfo.key).toBeDefined();
 
     const decryptedVaultKey = vaults.decryptVaultKey(
@@ -85,7 +90,10 @@ describe('[Vaults] ...', () => {
     });
 
     const salt = common.generateRandomSalt(32);
-    const { key: masterUnlockKey } = common.deriveMasterUnlockKey(
+    const {
+      key: masterUnlockKey,
+      salt: masterUnlockSalt,
+    } = common.deriveMasterUnlockKey(
       accountKey,
       normalizedMasterPassword,
       salt,
@@ -102,6 +110,7 @@ describe('[Vaults] ...', () => {
     const encryptedSymmetricKey = vaults.encryptSymmetricKey({
       symmetricKey,
       secretKey: masterUnlockKey,
+      salt: masterUnlockSalt,
     });
 
     expect(

@@ -20,7 +20,8 @@ export const encryptPrivateKey = (
   );
 
   return {
-    enc: 'A256GCM',
+    kty: 'AES',
+    alg: 'AES-GCM-256',
     key: forge.pki.encryptedPrivateKeyToPem(encryptedPrivateKey),
   };
 };

@@ -1,8 +1,8 @@
 import * as forge from 'node-forge';
 
 export class EncryptedVaultKey {
-  alg: 'RSA-OAEP-256';
   kty: 'RSA';
+  alg: 'RSA-OAEP-256';
   key: string;
 }
 
@@ -21,8 +21,8 @@ export const encryptVaultKey = (
   });
 
   return {
-    alg: 'RSA-OAEP-256',
     kty: 'RSA',
+    alg: 'RSA-OAEP-256',
     key: forge.util.encode64(encryptedVaultKey),
   };
 };

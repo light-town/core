@@ -4,15 +4,16 @@ import { generateRandomSalt } from '../common';
 export class Options {
   symmetricKey: string;
   secretKey: string;
+  salt: string;
 }
 
 export class EncryptedSymmetricKey {
-  enc: string;
-  tag: string;
-  iv: string;
-  tagLength: number;
+  kty: string;
+  alg: string;
   key: string;
-  iterations: number;
+  tag: string;
+  tagLength: number;
+  iv: string;
   salt: string;
 }
 
@@ -21,7 +22,9 @@ export class EncryptedSymmetricKey {
  * @param {Options} options
  * @returns {EncryptedSymmetricKey}
  */
-export const encryptSymmetricKey = (options: Options) => {
+export const encryptSymmetricKey = (
+  options: Options,
+): EncryptedSymmetricKey => {
   const iv = generateRandomSalt(12);
   const tagLength = 128;
 
@@ -39,11 +42,13 @@ export const encryptSymmetricKey = (options: Options) => {
 
   const encryptedSymmetricKey = cipher.output;
   const encSymKey = {
-    enc: 'A256GCM',
+    kty: 'AES',
+    alg: 'AES-GCM-256',
     tagLength,
     tag: forge.util.encode64(cipher.mode.tag.getBytes()),
     key: forge.util.encode64(encryptedSymmetricKey.getBytes()),
     iv: forge.util.bytesToHex(iv),
+    salt: options.salt,
   };
   return encSymKey;
 };

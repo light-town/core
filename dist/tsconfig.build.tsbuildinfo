@@ -542,13 +542,13 @@
         "affectsGlobalScope": false
       },
       "../src/vaults/encryptprivatekey.ts": {
-        "version": "b6c023d6f01cc19c4b4a053fd70eff703943eb11fee362dbad8861eb9d76ac60",
-        "signature": "75f6c094cdeb9a588ee0d190de05d69277508266368d7d972085c1f611de04ce",
+        "version": "437827e9aff879f38bbe5862a2255c9df9968229cf147af1e9d697362f2659fd",
+        "signature": "3e002b030b32e2f53cf7536f97fcabfefd679f0542d47d588fe4bdf303da35c9",
         "affectsGlobalScope": false
       },
       "../src/vaults/encryptsymmetrickey.ts": {
-        "version": "6df6be2c8295dd93ad4c6807156a75d0b8927b64886426dfe2d3628485271f84",
-        "signature": "6430ddf7185fb35ecb9c4c5110210f6b8f4052b15cc2b6a56a276883fd5ecbbc",
+        "version": "40ae3d68297558153773cb83cdb2db0c5db79ed5c6ec53d9d1db78dd5ac6ed85",
+        "signature": "317cf52ac9f77a78caf5591584bbb97efc61ab0b1129d3a19ec33af64f1c0185",
         "affectsGlobalScope": false
       },
       "../src/vaults/encryptvaultitem.ts": {
@@ -557,8 +557,8 @@
         "affectsGlobalScope": false
       },
       "../src/vaults/encryptvaultkey.ts": {
-        "version": "d0644d011dc35fd67e4467702887c33b08e8ac11032a1aad68f16cf8aca1c03f",
-        "signature": "b32a67beeffde43c6143128b43b3dd4f957fad2f08ebe71e477383325574613c",
+        "version": "b2bc27595e76c2961574f1e1934d553f5aa2855fdadedc81bc484087d58fb1a3",
+        "signature": "385f34cacc03a3dc03891a799cb94163e3ddfe1f75312b9bdf485e1bff9f33bd",
         "affectsGlobalScope": false
       },
       "../src/vaults/generatekeypair.ts": {
@@ -568,7 +568,7 @@
       },
       "../src/vaults/index.ts": {
         "version": "060e0d3e1e900cb361cd099278511844b4bc1d52a13fd502d85fc467edf6da4d",
-        "signature": "4f9831ad61df7bd814c30d1e535d75395e38b1f92cd28dd1161d91db2099afb5",
+        "signature": "e35a0c3d72821cf0909dac92ff3daef788a3ee08a791bbb273f5855e3feb0a29",
         "affectsGlobalScope": false
       },
       "../src/certificates/generatekeypair.ts": {
@@ -593,7 +593,7 @@
       },
       "../src/index.ts": {
         "version": "14ca303197956aee40450b0b9d39326c1bb1df1cf559da3ba04a2f4f8c37e365",
-        "signature": "23f466da6d3cdef66c17301ab7d3736196a754190e34c14d001e632b863e5d33",
+        "signature": "a1ceb45c7d17dca7fd7f7fcba298b654f654185f8992c128e872d4208074aefe",
         "affectsGlobalScope": false
       },
       "../node_modules/@babel/types/lib/index.d.ts": {

@@ -48,16 +48,11 @@ declare const _default: {
         decryptVaultItem: (options: import("./vaults/decryptVaultItem").Options) => Promise<any>;
         decryptVaultKey: (encryptedVaultKey: string, privateKey: import("node-forge").pki.rsa.PrivateKey) => string;
         encryptPrivateKey: (privateKey: import("node-forge").pki.PrivateKey, symmetricKey: string) => {
-            enc: string;
+            kty: string;
+            alg: string;
             key: string;
         };
-        encryptSymmetricKey: (options: import("./vaults/encryptSymmetricKey").Options) => {
-            enc: string;
-            tagLength: number;
-            tag: string;
-            key: string;
-            iv: string;
-        };
+        encryptSymmetricKey: (options: import("./vaults/encryptSymmetricKey").Options) => import("./vaults/encryptSymmetricKey").EncryptedSymmetricKey;
         encryptVaultItem: ({ details, overview, vaultKey }: {
             details: any;
             overview: any;

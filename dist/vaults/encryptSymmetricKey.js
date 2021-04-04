@@ -21,11 +21,13 @@ const encryptSymmetricKey = (options) => {
     cipher.finish();
     const encryptedSymmetricKey = cipher.output;
     const encSymKey = {
-        enc: 'A256GCM',
+        kty: 'AES',
+        alg: 'AES-GCM-256',
         tagLength,
         tag: forge.util.encode64(cipher.mode.tag.getBytes()),
         key: forge.util.encode64(encryptedSymmetricKey.getBytes()),
         iv: forge.util.bytesToHex(iv),
+        salt: options.salt,
     };
     return encSymKey;
 };
