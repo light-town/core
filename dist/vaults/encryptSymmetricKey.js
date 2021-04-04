@@ -12,7 +12,7 @@ exports.EncryptedSymmetricKey = EncryptedSymmetricKey;
 const encryptSymmetricKey = (options) => {
     const iv = common_1.generateRandomSalt(12);
     const tagLength = 128;
-    const cipher = forge.cipher.createCipher('AES-GCM', forge.util.createBuffer(options.masterUnlockKey));
+    const cipher = forge.cipher.createCipher('AES-GCM', forge.util.createBuffer(forge.util.hexToBytes(options.secretKey)));
     cipher.start({
         iv,
         tagLength,
@@ -26,8 +26,6 @@ const encryptSymmetricKey = (options) => {
         tag: forge.util.encode64(cipher.mode.tag.getBytes()),
         key: forge.util.encode64(encryptedSymmetricKey.getBytes()),
         iv: forge.util.bytesToHex(iv),
-        iterations: options.iterations,
-        salt: options.salt,
     };
     return encSymKey;
 };

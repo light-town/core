@@ -13,15 +13,21 @@ declare const _default: {
             }) => string;
         };
         pbkdf2: {
-            computeHash: ({ uint8MasterPassword, encryptionKeySalt, iterations, }: {
-                uint8MasterPassword: any;
-                encryptionKeySalt: any;
-                iterations?: number;
+            computeHash: ({ secretKey, salt, iterations }: {
+                secretKey: any;
+                salt: any;
+                iterations: any;
             }) => Uint8Array;
         };
         generateAccountKey: (options: import("./common/generateAccountKey").Options) => string;
         generateCryptoRandomString: (length: number) => string;
         generateRandomSalt: (length: number) => string;
+        normalizeMasterPassword: (password: string) => string;
+        deriveMasterUnlockKey: (accountKey: string, normalizedMasterPassword: string, salt: string) => {
+            key: string;
+            iterations: number;
+            salt: string;
+        };
     };
     srp: {
         client: {
@@ -51,8 +57,6 @@ declare const _default: {
             tag: string;
             key: string;
             iv: string;
-            iterations: number;
-            salt: string;
         };
         encryptVaultItem: ({ details, overview, vaultKey }: {
             details: any;

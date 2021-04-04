@@ -1,10 +1,10 @@
 import { computeHash } from './computeHash';
 export { computeHash };
 declare const _default: {
-    computeHash: ({ uint8MasterPassword, encryptionKeySalt, iterations, }: {
-        uint8MasterPassword: any;
-        encryptionKeySalt: any;
-        iterations?: number;
+    computeHash: ({ secretKey, salt, iterations }: {
+        secretKey: any;
+        salt: any;
+        iterations: any;
     }) => Uint8Array;
 };
 export default _default;

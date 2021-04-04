@@ -1,7 +1,7 @@
 import * as forge from 'node-forge';
 export declare class Options {
     encryptedSymmetricKey: string;
-    masterUnlockKey: string;
+    secretKey: string;
     iv: string;
     tag: string;
     tagLength: number;

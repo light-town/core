@@ -12,4 +12,5 @@ const generateAccountKey = (options) => {
     return exports.toFormatKey(accountId);
 };
 exports.generateAccountKey = generateAccountKey;
+exports.default = exports.generateAccountKey;
 //# sourceMappingURL=generateAccountKey.js.map

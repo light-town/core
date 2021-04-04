@@ -1,6 +1,6 @@
-export declare const computeHash: ({ uint8MasterPassword, encryptionKeySalt, iterations, }: {
-    uint8MasterPassword: any;
-    encryptionKeySalt: any;
-    iterations?: number;
+export declare const computeHash: ({ secretKey, salt, iterations }: {
+    secretKey: any;
+    salt: any;
+    iterations: any;
 }) => Uint8Array;
 export default computeHash;

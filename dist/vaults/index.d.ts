@@ -24,8 +24,6 @@ declare const _default: {
         tag: string;
         key: string;
         iv: string;
-        iterations: number;
-        salt: string;
     };
     encryptVaultItem: ({ details, overview, vaultKey }: {
         details: any;

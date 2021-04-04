@@ -1,8 +1,6 @@
 export declare class Options {
     symmetricKey: string;
-    masterUnlockKey: string;
-    iterations: number;
-    salt: string;
+    secretKey: string;
 }
 export declare class EncryptedSymmetricKey {
     enc: string;
@@ -19,6 +17,4 @@ export declare const encryptSymmetricKey: (options: Options) => {
     tag: string;
     key: string;
     iv: string;
-    iterations: number;
-    salt: string;
 };

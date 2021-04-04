@@ -8,7 +8,7 @@ exports.Options = Options;
 const retrieveBufferFromBase64 = (base64Value) => forge.util.createBuffer(forge.util.decode64(base64Value));
 exports.retrieveBufferFromBase64 = retrieveBufferFromBase64;
 const decryptSymmetricKey = (options) => {
-    const key = forge.util.createBuffer(options.masterUnlockKey);
+    const key = forge.util.createBuffer(forge.util.hexToBytes(options.secretKey));
     const decipher = forge.cipher.createDecipher('AES-GCM', key);
     decipher.start({
         iv: forge.util.hexToBytes(options.iv),

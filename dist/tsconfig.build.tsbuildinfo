@@ -402,13 +402,18 @@
         "affectsGlobalScope": false
       },
       "../src/common/generateaccountkey.ts": {
-        "version": "1fc52b6ee3c24c6d2c4baffe5cc05731452013fcf178c0478d65e7bcef7dade4",
-        "signature": "69465a21726abec411a252bc4c6066ba0c662b665f5c72c29068da06a75404e6",
+        "version": "40d7d6e66497c6c000528466ea943f95d92059fd259ee68c705bff5f56ff2d33",
+        "signature": "9a28daeecf09bb79eb3be932b6e84b40c0206f3b8009a9629e55c32eb6a2269c",
         "affectsGlobalScope": false
       },
       "../src/common/generaterandomsalt.ts": {
         "version": "87531213f9a52b77f008c3fe4c3595388f4ab63efa0c2f027f42a5a503dcf99e",
         "signature": "63c0e3489164e606238e32cac56d1617eef67a04dede11c169ac736d9cbe954a",
+        "affectsGlobalScope": false
+      },
+      "../src/common/normalizemasterpassword.ts": {
+        "version": "83002427addc63d3e16b4d31054dc05536dd181289e2d5972728620f43d19d9b",
+        "signature": "74ffbda74470ecec2c5dada2e7c56c7b35935ba3113f2fb813b0b7960497547c",
         "affectsGlobalScope": false
       },
       "../node_modules/fast-sha256/sha256.d.ts": {
@@ -417,13 +422,8 @@
         "affectsGlobalScope": false
       },
       "../src/common/pbkdf2/computehash.ts": {
-        "version": "4ae1efc54f41bc0ace727c0705af55e2e797be472d68c214a45088e14aca2493",
-        "signature": "36c2381090ea0b5b1ef8f1d87c7e483b14010f450d1a70798b8ccb8641aa39c6",
-        "affectsGlobalScope": false
-      },
-      "../src/common/pbkdf2/index.ts": {
-        "version": "d846df076eeab0c6dfd1eea14c89c01f5945fa5edd64360cce9a345f78b1329a",
-        "signature": "46cf2441b65153ac685f96e6c3f84ded7a5c46b0ffdc61d52c6b6c8b4f2acd25",
+        "version": "46f77711ba85b1833d9cae6f0e8f09636d8460df89a41a9f7052eac4702f62da",
+        "signature": "d56939be65fc2960f5f460aeaee4aecbaf02b0fffe5075401bb5febc2d0b1aee",
         "affectsGlobalScope": false
       },
       "../src/common/hkdf/computehkdf.ts": {
@@ -436,9 +436,19 @@
         "signature": "859b014f33063af944d349e7ca3e76a5d46b3c11df5f54fcf4d1f7e7145333fe",
         "affectsGlobalScope": false
       },
+      "../src/common/derivemasterunlockkey.ts": {
+        "version": "0f16d5a643fc4e63396edb45c15912b85079999f323d90f01327c426c6d855fa",
+        "signature": "80aa92422d159137a6e2d15563a329efd775559d979d767511eacfc667e47a8e",
+        "affectsGlobalScope": false
+      },
+      "../src/common/pbkdf2/index.ts": {
+        "version": "d846df076eeab0c6dfd1eea14c89c01f5945fa5edd64360cce9a345f78b1329a",
+        "signature": "88e1519611dc7f0c05de8a900112e3dc2668f4faa86410fc5a63e11814c2adb5",
+        "affectsGlobalScope": false
+      },
       "../src/common/index.ts": {
-        "version": "1fc47dc2791d617e512e2365b10f3e9ecb5bf719509eba6a6c6f9184af8085e3",
-        "signature": "b63bc74b5f0791b306b51860113d0a719afb7661c8d7514147386409c742e2f4",
+        "version": "0acdf4bbd812c20f0b3c578fb76e28c22659eb8dae5de60369e5896f4a25b076",
+        "signature": "0ab3e8b5eff430dad172a48c0219329d2698cf434c92aa48b03f1380ed665381",
         "affectsGlobalScope": false
       },
       "../src/srp/big-number.ts": {
@@ -517,8 +527,8 @@
         "affectsGlobalScope": false
       },
       "../src/vaults/decryptsymmetrickey.ts": {
-        "version": "d4f8bebfb4bd6e7301af6f8a2f1b1cc2c2664c7bb1e78f8d9c595a4282601d09",
-        "signature": "6d563adef946d2dada50cfa77f40c73a4515d23788736c554898cd8ebd8c7338",
+        "version": "fce8467b083c618404ad8487ef33cf4a15752707dd4f9a999623c26f5802892a",
+        "signature": "5ed8e8c6f56750a0b5f5b412b2841856255e7b2858d4588e39265fc0ecfce7d3",
         "affectsGlobalScope": false
       },
       "../src/vaults/decryptvaultitem.ts": {
@@ -537,8 +547,8 @@
         "affectsGlobalScope": false
       },
       "../src/vaults/encryptsymmetrickey.ts": {
-        "version": "ac931a79182c4ba276d111455f28ee716d84e74fa5ccda2d9585f64b2f1d16d0",
-        "signature": "5595c7681b9f00499560f14d3770fc7f8b51baeead97446a4e6c7eca7be9d96c",
+        "version": "6df6be2c8295dd93ad4c6807156a75d0b8927b64886426dfe2d3628485271f84",
+        "signature": "6430ddf7185fb35ecb9c4c5110210f6b8f4052b15cc2b6a56a276883fd5ecbbc",
         "affectsGlobalScope": false
       },
       "../src/vaults/encryptvaultitem.ts": {
@@ -558,7 +568,7 @@
       },
       "../src/vaults/index.ts": {
         "version": "060e0d3e1e900cb361cd099278511844b4bc1d52a13fd502d85fc467edf6da4d",
-        "signature": "998a1e4133bee677ac93da8021ae2e3ebb4657acda8b511f74e498efb2f29719",
+        "signature": "4f9831ad61df7bd814c30d1e535d75395e38b1f92cd28dd1161d91db2099afb5",
         "affectsGlobalScope": false
       },
       "../src/certificates/generatekeypair.ts": {
@@ -583,7 +593,7 @@
       },
       "../src/index.ts": {
         "version": "14ca303197956aee40450b0b9d39326c1bb1df1cf559da3ba04a2f4f8c37e365",
-        "signature": "2a5e0a37d556e20b4eed4b3f8f9d49bf0056894ab0f3257e50f9b5d31230ca30",
+        "signature": "23f466da6d3cdef66c17301ab7d3736196a754190e34c14d001e632b863e5d33",
         "affectsGlobalScope": false
       },
       "../node_modules/@babel/types/lib/index.d.ts": {
@@ -1226,6 +1236,11 @@
       "../src/certificates/verifycertificate.ts": [
         "../node_modules/@types/node-forge/index.d.ts"
       ],
+      "../src/common/derivemasterunlockkey.ts": [
+        "../node_modules/@types/node-forge/index.d.ts",
+        "../src/common/hkdf/index.ts",
+        "../src/common/pbkdf2/computehash.ts"
+      ],
       "../src/common/generateaccountkey.ts": [
         "../src/common/generatecryptorandomstring.ts"
       ],
@@ -1242,10 +1257,12 @@
         "../src/common/hkdf/computehkdf.ts"
       ],
       "../src/common/index.ts": [
+        "../src/common/derivemasterunlockkey.ts",
         "../src/common/generateaccountkey.ts",
         "../src/common/generatecryptorandomstring.ts",
         "../src/common/generaterandomsalt.ts",
         "../src/common/hkdf/index.ts",
+        "../src/common/normalizemasterpassword.ts",
         "../src/common/pbkdf2/index.ts"
       ],
       "../src/common/pbkdf2/computehash.ts": [
@@ -1787,10 +1804,12 @@
         "../src/common/hkdf/computehkdf.ts"
       ],
       "../src/common/index.ts": [
+        "../src/common/derivemasterunlockkey.ts",
         "../src/common/generateaccountkey.ts",
         "../src/common/generatecryptorandomstring.ts",
         "../src/common/generaterandomsalt.ts",
         "../src/common/hkdf/index.ts",
+        "../src/common/normalizemasterpassword.ts",
         "../src/common/pbkdf2/index.ts"
       ],
       "../src/common/pbkdf2/index.ts": [
@@ -2106,12 +2125,14 @@
       "../src/certificates/index.ts",
       "../src/certificates/signcertificate.ts",
       "../src/certificates/verifycertificate.ts",
+      "../src/common/derivemasterunlockkey.ts",
       "../src/common/generateaccountkey.ts",
       "../src/common/generatecryptorandomstring.ts",
       "../src/common/generaterandomsalt.ts",
       "../src/common/hkdf/computehkdf.ts",
       "../src/common/hkdf/index.ts",
       "../src/common/index.ts",
+      "../src/common/normalizemasterpassword.ts",
       "../src/common/pbkdf2/computehash.ts",
       "../src/common/pbkdf2/index.ts",
       "../src/index.ts",
