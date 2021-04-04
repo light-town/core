@@ -26,3 +26,5 @@ export const generateAccountKey = (options: Options) => {
   const accountId = options.versionCode.concat(trimmedUserId, randomString);
   return toFormatKey(accountId);
 };
+
+export default generateAccountKey;

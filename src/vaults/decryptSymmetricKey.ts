@@ -2,7 +2,7 @@ import * as forge from 'node-forge';
 
 export class Options {
   encryptedSymmetricKey: string;
-  masterUnlockKey: string;
+  secretKey: string;
   iv: string;
   tag: string;
   tagLength: number;
@@ -18,7 +18,7 @@ export const retrieveBufferFromBase64 = (base64Value) =>
  * @throws Fail to decrypt symmetric key
  */
 export const decryptSymmetricKey = (options: Options): Promise<string> => {
-  const key = forge.util.createBuffer(options.masterUnlockKey);
+  const key = forge.util.createBuffer(forge.util.hexToBytes(options.secretKey));
 
   const decipher = forge.cipher.createDecipher('AES-GCM', key);
   decipher.start({

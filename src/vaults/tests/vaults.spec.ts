@@ -1,23 +1,23 @@
 import * as forge from 'node-forge';
-import { generateRandomSalt } from '../../common';
+import common from '../../common';
 import vaults from '../index';
+import * as faker from 'faker';
 
 describe('[Vaults] ...', () => {
   it('should encrypt and decrypt private key of primary key set', async () => {
-    const keyPair = await vaults.generateKeyPair();
-    const privateKey = keyPair.privateKey;
+    const { publicKey, privateKey } = await vaults.generateKeyPair();
 
     const data = JSON.stringify({ msg: 'test' });
-    const encryptedData = keyPair.publicKey.encrypt(data);
+    const encryptedData = publicKey.encrypt(data);
 
-    const symmetricKey = generateRandomSalt(32);
+    const symmetricKey = common.generateCryptoRandomString(32);
 
     const encryptedPrivateKeyInfo = vaults.encryptPrivateKey(
       privateKey,
       symmetricKey,
     );
 
-    expect(encryptedPrivateKeyInfo.enc).toEqual('A256GCM');
+    expect(encryptedPrivateKeyInfo.enc).toStrictEqual('A256GCM');
     expect(encryptedPrivateKeyInfo.key).toBeDefined();
 
     const decryptedPrivateKey = vaults.decryptPrivateKey(
@@ -25,7 +25,7 @@ describe('[Vaults] ...', () => {
       symmetricKey,
     );
 
-    expect(forge.pki.privateKeyToPem(decryptedPrivateKey)).toEqual(
+    expect(forge.pki.privateKeyToPem(decryptedPrivateKey)).toStrictEqual(
       forge.pki.privateKeyToPem(privateKey),
     );
 
@@ -33,53 +33,95 @@ describe('[Vaults] ...', () => {
   });
 
   it('should encrypt and decrypt symmetric key', async () => {
-    const symmetricKey = generateRandomSalt(32);
-    const masterUnlockKey = generateRandomSalt(32);
-    const iterations = 100000; // 100 000 times
-    const salt = generateRandomSalt(32);
+    const symmetricKey = common.generateCryptoRandomString(32);
+    const masterUnlockKey = common.generateCryptoRandomString(32);
 
     const encryptedSymmetricKeyInfo = vaults.encryptSymmetricKey({
       symmetricKey,
-      masterUnlockKey,
-      iterations,
-      salt,
+      secretKey: masterUnlockKey,
     });
 
     expect(encryptedSymmetricKeyInfo.iv).toBeDefined();
-    expect(encryptedSymmetricKeyInfo.iterations).toEqual(iterations);
-    expect(encryptedSymmetricKeyInfo.salt).toEqual(salt);
-    expect(typeof encryptedSymmetricKeyInfo.tagLength).toEqual('number');
+    expect(typeof encryptedSymmetricKeyInfo.tagLength).toStrictEqual('number');
     expect(encryptedSymmetricKeyInfo.tag).toBeDefined();
 
     const decryptedSymmetricKey = await vaults.decryptSymmetricKey({
       encryptedSymmetricKey: encryptedSymmetricKeyInfo.key,
-      masterUnlockKey,
+      secretKey: masterUnlockKey,
       iv: encryptedSymmetricKeyInfo.iv,
       tag: encryptedSymmetricKeyInfo.tag,
       tagLength: encryptedSymmetricKeyInfo.tagLength,
     });
 
-    expect(decryptedSymmetricKey).toEqual(symmetricKey);
+    expect(decryptedSymmetricKey).toStrictEqual(symmetricKey);
   });
 
   it('should encrypt and decrypt vault key', async () => {
-    const keyPair = await vaults.generateKeyPair();
-    const vaultKey = generateRandomSalt(32);
+    const { publicKey, privateKey } = await vaults.generateKeyPair();
+    const vaultKey = common.generateCryptoRandomString(32);
 
-    const encryptPrivateKeyInfo = vaults.encryptVaultKey(
-      vaultKey,
-      keyPair.publicKey,
-    );
-
-    expect(encryptPrivateKeyInfo.alg).toEqual('RSA-OAEP-256');
-    expect(encryptPrivateKeyInfo.kty).toEqual('RSA');
-    expect(encryptPrivateKeyInfo.key).toBeDefined();
+    const encryptVaultKeyInfo = vaults.encryptVaultKey(vaultKey, publicKey);
+    expect(encryptVaultKeyInfo.alg).toStrictEqual('RSA-OAEP-256');
+    expect(encryptVaultKeyInfo.kty).toStrictEqual('RSA');
+    expect(encryptVaultKeyInfo.key).toBeDefined();
 
     const decryptedVaultKey = vaults.decryptVaultKey(
-      encryptPrivateKeyInfo.key,
-      keyPair.privateKey,
+      encryptVaultKeyInfo.key,
+      privateKey,
     );
 
-    expect(decryptedVaultKey).toEqual(vaultKey);
+    expect(decryptedVaultKey).toStrictEqual(vaultKey);
+  });
+
+  it('should generate Master Unlock Key and Vault Key and encrypt them', async () => {
+    const masterPassword = faker.random.word();
+    const normalizedMasterPassword = common.normalizeMasterPassword(
+      masterPassword,
+    );
+
+    const accountKey = common.generateAccountKey({
+      versionCode: 'A3',
+      secret: common.generateCryptoRandomString(32),
+    });
+
+    const salt = common.generateRandomSalt(32);
+    const { key: masterUnlockKey } = common.deriveMasterUnlockKey(
+      accountKey,
+      normalizedMasterPassword,
+      salt,
+    );
+
+    const symmetricKey = common.generateCryptoRandomString(32);
+    const vaultKey = common.generateCryptoRandomString(32);
+    const { publicKey, privateKey } = await vaults.generateKeyPair();
+    const encryptedVaultKey = vaults.encryptVaultKey(vaultKey, publicKey);
+    const encryptedPrivateKey = vaults.encryptPrivateKey(
+      privateKey,
+      symmetricKey,
+    );
+    const encryptedSymmetricKey = vaults.encryptSymmetricKey({
+      symmetricKey,
+      secretKey: masterUnlockKey,
+    });
+
+    expect(
+      await vaults.decryptSymmetricKey({
+        encryptedSymmetricKey: encryptedSymmetricKey.key,
+        secretKey: masterUnlockKey,
+        iv: encryptedSymmetricKey.iv,
+        tag: encryptedSymmetricKey.tag,
+        tagLength: encryptedSymmetricKey.tagLength,
+      }),
+    ).toStrictEqual(symmetricKey);
+
+    expect(
+      forge.pki.privateKeyToPem(
+        vaults.decryptPrivateKey(encryptedPrivateKey.key, symmetricKey),
+      ),
+    ).toStrictEqual(forge.pki.privateKeyToPem(privateKey));
+
+    expect(
+      vaults.decryptVaultKey(encryptedVaultKey.key, privateKey),
+    ).toStrictEqual(vaultKey);
   });
 });

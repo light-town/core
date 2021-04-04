@@ -3,9 +3,7 @@ import { generateRandomSalt } from '../common';
 
 export class Options {
   symmetricKey: string;
-  masterUnlockKey: string;
-  iterations: number;
-  salt: string;
+  secretKey: string;
 }
 
 export class EncryptedSymmetricKey {
@@ -29,7 +27,7 @@ export const encryptSymmetricKey = (options: Options) => {
 
   const cipher = forge.cipher.createCipher(
     'AES-GCM',
-    forge.util.createBuffer(options.masterUnlockKey),
+    forge.util.createBuffer(forge.util.hexToBytes(options.secretKey)),
   );
 
   cipher.start({
@@ -46,8 +44,6 @@ export const encryptSymmetricKey = (options: Options) => {
     tag: forge.util.encode64(cipher.mode.tag.getBytes()),
     key: forge.util.encode64(encryptedSymmetricKey.getBytes()),
     iv: forge.util.bytesToHex(iv),
-    iterations: options.iterations,
-    salt: options.salt,
   };
   return encSymKey;
 };
