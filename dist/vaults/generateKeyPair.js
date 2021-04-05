@@ -12,7 +12,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.generateKeyPair = void 0;
 const forge = require("node-forge");
 const generateKeyPair = () => __awaiter(void 0, void 0, void 0, function* () {
-    return yield forge.pki.rsa.generateKeyPair({ bits: 2048, workers: 2 });
+    return new Promise((res, rej) => {
+        forge.pki.rsa.generateKeyPair({ bits: 2048, workers: 2 }, function (err, keyPair) {
+            if (err) {
+                rej(err);
+                return;
+            }
+            res(keyPair);
+        });
+    });
 });
 exports.generateKeyPair = generateKeyPair;
 exports.default = exports.generateKeyPair;

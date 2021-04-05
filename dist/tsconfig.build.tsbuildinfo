@@ -562,7 +562,7 @@
         "affectsGlobalScope": false
       },
       "../src/vaults/generatekeypair.ts": {
-        "version": "6f0d9f15239387ed8b19d96d4f7c956c1c046893f4700b7f9cd44dda9634c30c",
+        "version": "fef5c5ebb8e51661d45323e36f48b8e2569798868877eb85ec692fd38320a78a",
         "signature": "65f8141578d2be451a41684607ec0318509416a73fbd4186526953e0bd286628",
         "affectsGlobalScope": false
       },
