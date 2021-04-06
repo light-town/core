@@ -1,17 +1,21 @@
 import { computeHash } from './pbkdf2/computeHash';
 import hkdf from './hkdf';
 import * as forge from 'node-forge';
+import base64 from './base64';
+import generateRandomSalt from './generateRandomSalt';
 
-const ITERACTIONS = 100000; /// 100.000
+export const ITERACTIONS = 100000; /// 100.000
 
 export const deriveMasterUnlockKey = (
   accountKey: string,
   normalizedMasterPassword: string,
-  salt: string,
+  salt?: string,
 ) => {
+  const s = salt ? base64.decode(salt) : generateRandomSalt(32);
+
   const encryptSalt = hkdf.computeHKDF({
     secret: accountKey,
-    salt,
+    salt: s,
   });
   const intermediateKey = hkdf.computeHKDF({
     secret: normalizedMasterPassword,
@@ -28,7 +32,7 @@ export const deriveMasterUnlockKey = (
       )
       .toHex(),
     iterations: ITERACTIONS,
-    salt,
+    salt: base64.encode(s),
   };
 };
 

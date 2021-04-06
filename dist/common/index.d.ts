@@ -5,7 +5,8 @@ import normalizeMasterPassword from './normalizeMasterPassword';
 import deriveMasterUnlockKey from './deriveMasterUnlockKey';
 import pbkdf2 from './pbkdf2';
 import hkdf from './hkdf';
-export { hkdf, pbkdf2, generateAccountKey, generateCryptoRandomString, generateRandomSalt, normalizeMasterPassword, deriveMasterUnlockKey, };
+import base64 from './base64';
+export { hkdf, pbkdf2, base64, generateAccountKey, generateCryptoRandomString, generateRandomSalt, normalizeMasterPassword, deriveMasterUnlockKey, };
 declare const _default: {
     hkdf: {
         computeHKDF: ({ secret, salt }: {
@@ -20,11 +21,15 @@ declare const _default: {
             iterations: any;
         }) => Uint8Array;
     };
+    base64: {
+        encode: (bytes: string) => string;
+        decode: (bytes: string) => string;
+    };
     generateAccountKey: (options: import("./generateAccountKey").Options) => string;
     generateCryptoRandomString: (length: number) => string;
     generateRandomSalt: (length: number) => string;
     normalizeMasterPassword: (password: string) => string;
-    deriveMasterUnlockKey: (accountKey: string, normalizedMasterPassword: string, salt: string) => {
+    deriveMasterUnlockKey: (accountKey: string, normalizedMasterPassword: string, salt?: string) => {
         key: string;
         iterations: number;
         salt: string;

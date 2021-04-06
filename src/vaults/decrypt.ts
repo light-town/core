@@ -1,4 +1,5 @@
 import * as forge from 'node-forge';
+import base64 from '../common/base64';
 import { EncryptedData } from './encrypt';
 
 export const retrieveBufferFromBase64 = (base64Value) =>
@@ -12,7 +13,7 @@ export const decrypt = (
 
   const decipher = forge.cipher.createDecipher('AES-GCM', encryptionKey);
   decipher.start({
-    iv: forge.util.hexToBytes(data.iv),
+    iv: base64.decode(data.iv),
     tagLength: data.tagLength,
     tag: retrieveBufferFromBase64(data.tag),
   });

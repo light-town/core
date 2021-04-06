@@ -19,11 +19,15 @@ declare const _default: {
                 iterations: any;
             }) => Uint8Array;
         };
+        base64: {
+            encode: (bytes: string) => string;
+            decode: (bytes: string) => string;
+        };
         generateAccountKey: (options: import("./common/generateAccountKey").Options) => string;
         generateCryptoRandomString: (length: number) => string;
         generateRandomSalt: (length: number) => string;
         normalizeMasterPassword: (password: string) => string;
-        deriveMasterUnlockKey: (accountKey: string, normalizedMasterPassword: string, salt: string) => {
+        deriveMasterUnlockKey: (accountKey: string, normalizedMasterPassword: string, salt?: string) => {
             key: string;
             iterations: number;
             salt: string;

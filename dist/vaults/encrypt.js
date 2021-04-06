@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.encrypt = exports.EncryptedData = void 0;
 const forge = require("node-forge");
+const base64_1 = require("../common/base64");
 const common_1 = require("../common");
 class EncryptedData {
 }
@@ -19,9 +20,9 @@ const encrypt = (key, data) => {
     return Promise.resolve({
         kty: 'AES',
         alg: 'AES-GCM-256',
-        data: forge.util.encode64(cipher.output.getBytes()),
-        iv: forge.util.bytesToHex(iv),
-        tag: forge.util.encode64(cipher.mode.tag.getBytes()),
+        data: base64_1.default.encode(cipher.output.getBytes()),
+        iv: base64_1.default.encode(iv),
+        tag: base64_1.default.encode(cipher.mode.tag.getBytes()),
         tagLength,
     });
 };

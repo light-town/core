@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.encryptVaultKey = exports.EncryptedVaultKey = void 0;
 const forge = require("node-forge");
+const base64_1 = require("../common/base64");
 class EncryptedVaultKey {
 }
 exports.EncryptedVaultKey = EncryptedVaultKey;
@@ -12,7 +13,7 @@ const encryptVaultKey = (vaultKey, publicKey) => {
     return {
         kty: 'RSA',
         alg: 'RSA-OAEP-256',
-        key: forge.util.encode64(encryptedVaultKey),
+        key: base64_1.default.encode(encryptedVaultKey),
     };
 };
 exports.encryptVaultKey = encryptVaultKey;

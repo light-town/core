@@ -1,4 +1,5 @@
 import * as forge from 'node-forge';
+import base64 from '../common/base64';
 
 /**
  * @description Transform public key to pem format string
@@ -8,7 +9,7 @@ import * as forge from 'node-forge';
 export const publicKeyToString = (
   publicKey: forge.pki.rsa.PublicKey,
 ): string => {
-  return forge.pki.publicKeyToPem(publicKey);
+  return base64.encode(forge.pki.publicKeyToPem(publicKey));
 };
 
 export default publicKeyToString;

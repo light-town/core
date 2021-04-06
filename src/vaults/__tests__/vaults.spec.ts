@@ -89,15 +89,10 @@ describe('[Vaults] ...', () => {
       secret: common.generateCryptoRandomString(32),
     });
 
-    const salt = common.generateRandomSalt(32);
     const {
       key: masterUnlockKey,
       salt: masterUnlockSalt,
-    } = common.deriveMasterUnlockKey(
-      accountKey,
-      normalizedMasterPassword,
-      salt,
-    );
+    } = common.deriveMasterUnlockKey(accountKey, normalizedMasterPassword);
 
     const symmetricKey = common.generateCryptoRandomString(32);
     const vaultKey = common.generateCryptoRandomString(32);
@@ -111,6 +106,18 @@ describe('[Vaults] ...', () => {
       symmetricKey,
       secretKey: masterUnlockKey,
       salt: masterUnlockSalt,
+    });
+
+    expect(
+      common.deriveMasterUnlockKey(
+        accountKey,
+        normalizedMasterPassword,
+        encryptedSymmetricKey.salt,
+      ),
+    ).toStrictEqual({
+      key: masterUnlockKey,
+      salt: masterUnlockSalt,
+      iterations: 100000,
     });
 
     expect(

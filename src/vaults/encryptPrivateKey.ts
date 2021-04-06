@@ -1,4 +1,5 @@
 import * as forge from 'node-forge';
+import base64 from '../common/base64';
 
 /**
  * @description Encrypt Private Key With Symmetric Key
@@ -22,6 +23,6 @@ export const encryptPrivateKey = (
   return {
     kty: 'AES',
     alg: 'AES-GCM-256',
-    key: forge.pki.encryptedPrivateKeyToPem(encryptedPrivateKey),
+    key: base64.encode(forge.pki.encryptedPrivateKeyToPem(encryptedPrivateKey)),
   };
 };

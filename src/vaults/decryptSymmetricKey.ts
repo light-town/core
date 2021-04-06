@@ -1,4 +1,5 @@
 import * as forge from 'node-forge';
+import base64 from '../common/base64';
 
 export class Options {
   encryptedSymmetricKey: string;
@@ -9,7 +10,7 @@ export class Options {
 }
 
 export const retrieveBufferFromBase64 = (base64Value) =>
-  forge.util.createBuffer(forge.util.decode64(base64Value));
+  forge.util.createBuffer(base64.decode(base64Value));
 
 /**
  *
@@ -22,7 +23,7 @@ export const decryptSymmetricKey = (options: Options): Promise<string> => {
 
   const decipher = forge.cipher.createDecipher('AES-GCM', key);
   decipher.start({
-    iv: forge.util.hexToBytes(options.iv),
+    iv: base64.decode(options.iv),
     tagLength: options.tagLength,
     tag: retrieveBufferFromBase64(options.tag),
   });

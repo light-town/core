@@ -1,4 +1,5 @@
-export declare const deriveMasterUnlockKey: (accountKey: string, normalizedMasterPassword: string, salt: string) => {
+export declare const ITERACTIONS = 100000;
+export declare const deriveMasterUnlockKey: (accountKey: string, normalizedMasterPassword: string, salt?: string) => {
     key: string;
     iterations: number;
     salt: string;

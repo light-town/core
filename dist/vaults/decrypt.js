@@ -2,13 +2,14 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.decrypt = exports.retrieveBufferFromBase64 = void 0;
 const forge = require("node-forge");
+const base64_1 = require("../common/base64");
 const retrieveBufferFromBase64 = (base64Value) => forge.util.createBuffer(forge.util.decode64(base64Value));
 exports.retrieveBufferFromBase64 = retrieveBufferFromBase64;
 const decrypt = (key, data) => {
     const encryptionKey = forge.util.createBuffer(forge.util.hexToBytes(key));
     const decipher = forge.cipher.createDecipher('AES-GCM', encryptionKey);
     decipher.start({
-        iv: forge.util.hexToBytes(data.iv),
+        iv: base64_1.default.decode(data.iv),
         tagLength: data.tagLength,
         tag: exports.retrieveBufferFromBase64(data.tag),
     });

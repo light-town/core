@@ -3,7 +3,7 @@ import { generateRandomSalt } from '../common';
 
 export const generateKeyPair = () => {
   const seed = generateRandomSalt(32);
-  return forge.pki.ed25519.generateKeyPair({ seed: seed });
+  return forge.pki.ed25519.generateKeyPair({ seed });
 };
 
 export default generateKeyPair;

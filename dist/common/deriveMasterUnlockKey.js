@@ -1,14 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.deriveMasterUnlockKey = void 0;
+exports.deriveMasterUnlockKey = exports.ITERACTIONS = void 0;
 const computeHash_1 = require("./pbkdf2/computeHash");
 const hkdf_1 = require("./hkdf");
 const forge = require("node-forge");
-const ITERACTIONS = 100000;
+const base64_1 = require("./base64");
+const generateRandomSalt_1 = require("./generateRandomSalt");
+exports.ITERACTIONS = 100000;
 const deriveMasterUnlockKey = (accountKey, normalizedMasterPassword, salt) => {
+    const s = salt ? base64_1.default.decode(salt) : generateRandomSalt_1.default(32);
     const encryptSalt = hkdf_1.default.computeHKDF({
         secret: accountKey,
-        salt,
+        salt: s,
     });
     const intermediateKey = hkdf_1.default.computeHKDF({
         secret: normalizedMasterPassword,
@@ -19,11 +22,11 @@ const deriveMasterUnlockKey = (accountKey, normalizedMasterPassword, salt) => {
             .createBuffer(computeHash_1.computeHash({
             secretKey: intermediateKey,
             salt: encryptSalt,
-            iterations: ITERACTIONS,
+            iterations: exports.ITERACTIONS,
         }))
             .toHex(),
-        iterations: ITERACTIONS,
-        salt,
+        iterations: exports.ITERACTIONS,
+        salt: base64_1.default.encode(s),
     };
 };
 exports.deriveMasterUnlockKey = deriveMasterUnlockKey;

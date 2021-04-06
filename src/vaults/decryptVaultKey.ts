@@ -1,4 +1,5 @@
 import * as forge from 'node-forge';
+import base64 from '../common/base64';
 
 /**
  * @description Decrypt Vault Key with Private Key
@@ -11,9 +12,7 @@ export const decryptVaultKey = (
   encryptedVaultKey: string,
   privateKey: forge.pki.rsa.PrivateKey,
 ): string => {
-  const decodedKey = forge.util.decode64(encryptedVaultKey);
-
-  return privateKey.decrypt(decodedKey, 'RSA-OAEP', {
+  return privateKey.decrypt(base64.decode(encryptedVaultKey), 'RSA-OAEP', {
     md: forge.md.sha256.create(),
   });
 };

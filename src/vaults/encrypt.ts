@@ -1,4 +1,5 @@
 import * as forge from 'node-forge';
+import base64 from '../common/base64';
 import { generateRandomSalt } from '../common';
 
 export class EncryptedData {
@@ -31,9 +32,9 @@ export const encrypt = (
   return Promise.resolve({
     kty: 'AES',
     alg: 'AES-GCM-256',
-    data: forge.util.encode64(cipher.output.getBytes()),
-    iv: forge.util.bytesToHex(iv),
-    tag: forge.util.encode64(cipher.mode.tag.getBytes()),
+    data: base64.encode(cipher.output.getBytes()),
+    iv: base64.encode(iv),
+    tag: base64.encode(cipher.mode.tag.getBytes()),
     tagLength,
   });
 };

@@ -1,4 +1,5 @@
 import * as forge from 'node-forge';
+import base64 from '../common/base64';
 import { generateRandomSalt } from '../common';
 
 export class Options {
@@ -40,15 +41,13 @@ export const encryptSymmetricKey = (
   cipher.update(forge.util.createBuffer(options.symmetricKey));
   cipher.finish();
 
-  const encryptedSymmetricKey = cipher.output;
-  const encSymKey = {
+  return {
     kty: 'AES',
     alg: 'AES-GCM-256',
     tagLength,
-    tag: forge.util.encode64(cipher.mode.tag.getBytes()),
-    key: forge.util.encode64(encryptedSymmetricKey.getBytes()),
-    iv: forge.util.bytesToHex(iv),
+    tag: base64.encode(cipher.mode.tag.getBytes()),
+    key: base64.encode(cipher.output.getBytes()),
+    iv: base64.encode(iv),
     salt: options.salt,
   };
-  return encSymKey;
 };
