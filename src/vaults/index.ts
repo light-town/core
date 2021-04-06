@@ -7,6 +7,10 @@ import { encryptSymmetricKey } from './encryptSymmetricKey';
 import { encryptVaultItem } from './encryptVaultItem';
 import { encryptVaultKey } from './encryptVaultKey';
 import { generateKeyPair } from './generateKeyPair';
+import { publicKeyToString } from './publicKeyToString';
+import { publicKeyFromString } from './publicKeyFromString';
+import { encryptVaultMetadata } from './encryptVaultMetadata';
+import { decryptVaultMetadata } from './decryptVaultMetadata';
 
 export {
   decryptPrivateKey,
@@ -18,6 +22,10 @@ export {
   encryptVaultItem,
   encryptVaultKey,
   generateKeyPair,
+  publicKeyToString,
+  publicKeyFromString,
+  encryptVaultMetadata,
+  decryptVaultMetadata,
 };
 export default {
   decryptPrivateKey,
@@ -29,4 +37,8 @@ export default {
   encryptVaultItem,
   encryptVaultKey,
   generateKeyPair,
+  publicKeyToString,
+  publicKeyFromString,
+  encryptVaultMetadata,
+  decryptVaultMetadata,
 };

@@ -10,7 +10,7 @@ import * as forge from 'node-forge';
 export const decryptVaultKey = (
   encryptedVaultKey: string,
   privateKey: forge.pki.rsa.PrivateKey,
-) => {
+): string => {
   const decodedKey = forge.util.decode64(encryptedVaultKey);
 
   return privateKey.decrypt(decodedKey, 'RSA-OAEP', {

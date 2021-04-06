@@ -133,4 +133,37 @@ describe('[Vaults] ...', () => {
       vaults.decryptVaultKey(encryptedVaultKey.key, privateKey),
     ).toStrictEqual(vaultKey);
   });
+
+  it('should transform public key to pem string and vice versa', async () => {
+    const { publicKey, privateKey } = await vaults.generateKeyPair();
+
+    const pem = vaults.publicKeyToString(publicKey);
+
+    expect(typeof pem).toStrictEqual('string');
+
+    const data = faker.random.word();
+    const encData = vaults.publicKeyFromString(pem).encrypt(data);
+
+    expect(privateKey.decrypt(encData)).toStrictEqual(data);
+  });
+
+  it('should encrypt and decrypt vault metadata', async () => {
+    const TEST_VAULT_KEY = common.generateCryptoRandomString(32);
+    const TEST_METADATA = {
+      title: faker.random.word(),
+      description: faker.random.words(),
+    };
+
+    const encryptedData = await vaults.encryptVaultMetadata(
+      TEST_VAULT_KEY,
+      TEST_METADATA,
+    );
+
+    const decryptedData = await vaults.decryptVaultMetadata(
+      TEST_VAULT_KEY,
+      encryptedData,
+    );
+
+    expect(decryptedData).toStrictEqual(TEST_METADATA);
+  });
 });
