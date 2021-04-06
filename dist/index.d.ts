@@ -73,6 +73,10 @@ declare const _default: {
         }>;
         encryptVaultKey: (vaultKey: string, publicKey: import("node-forge").pki.rsa.PublicKey) => import("./vaults/encryptVaultKey").EncryptedVaultKey;
         generateKeyPair: () => Promise<import("node-forge").pki.rsa.KeyPair>;
+        publicKeyToString: (publicKey: import("node-forge").pki.rsa.PublicKey) => string;
+        publicKeyFromString: (pem: string) => import("node-forge").pki.rsa.PublicKey;
+        encryptVaultMetadata: (vaultKey: string, metadata: Record<string, any>) => Promise<import("./vaults/encrypt").EncryptedData>;
+        decryptVaultMetadata: (vaultKey: string, metadata: import("./vaults/encrypt").EncryptedData) => Promise<Record<string, any>>;
     };
     certificates: {
         generateKeyPair: () => {

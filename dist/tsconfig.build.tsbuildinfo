@@ -537,7 +537,7 @@
         "affectsGlobalScope": false
       },
       "../src/vaults/decryptvaultkey.ts": {
-        "version": "db49d26a2a574394ddaeb212a34711c9946e53c367452da57a953744a540fd83",
+        "version": "ab15722281ab201cee2e8f8dd5628abf3e18e3ada3aa15edec65ae04ca66f90d",
         "signature": "662e1dc8f8a421123262440a0385b4146c6b7878408129a4076a738111af81e6",
         "affectsGlobalScope": false
       },
@@ -566,9 +566,39 @@
         "signature": "65f8141578d2be451a41684607ec0318509416a73fbd4186526953e0bd286628",
         "affectsGlobalScope": false
       },
+      "../src/vaults/publickeytostring.ts": {
+        "version": "6a1bf29789e0385358d1eb87984ea4ce6ccb3beedccc66508239678d92ce4a1c",
+        "signature": "c26d567fb8ce4781e6a08bee9aa6ca175ed7171e8f452aa0e043133f08394905",
+        "affectsGlobalScope": false
+      },
+      "../src/vaults/publickeyfromstring.ts": {
+        "version": "2dbe8c73caab8ceea88d83af49468ae964b44090fed76ce1c5f35d504dc3c50b",
+        "signature": "beccd44faa0333351a7827c2ac7cf0ca56069b7baf5e9e48065b166bb68b6c59",
+        "affectsGlobalScope": false
+      },
+      "../src/vaults/encrypt.ts": {
+        "version": "3801b85bee6910b140633fd31c35ba695f8bf11ab79ddc7bb58a81aebbf1f546",
+        "signature": "462627a7761bfa97f2355a7d456eeed2f38f2690a6488d1d958f0afeda2a0e23",
+        "affectsGlobalScope": false
+      },
+      "../src/vaults/encryptvaultmetadata.ts": {
+        "version": "54350632e679f2359ddb1969c2aa61c128b4f263aa60471136f2757d6aff5b07",
+        "signature": "e7c264c92b63e9d0e0c254b71d2ada6beab9697a8bfd27d0b3329db517496828",
+        "affectsGlobalScope": false
+      },
+      "../src/vaults/decrypt.ts": {
+        "version": "a3568f6badb4820ebe4b8df12acdfb344479fac7f6b306ef37968401186de9b6",
+        "signature": "2594e362a3cb138207eb0afc226e29690ebc685c43b608ded257b4c256e249f9",
+        "affectsGlobalScope": false
+      },
+      "../src/vaults/decryptvaultmetadata.ts": {
+        "version": "bd9984c3ea51e7c5e04ab381745575013016245aeb1ebe968685bf33b02004ac",
+        "signature": "d8d2b39c1bbaa737ad8646567f17a1b6742b9077e28c7f41e8fb9934585489d1",
+        "affectsGlobalScope": false
+      },
       "../src/vaults/index.ts": {
-        "version": "060e0d3e1e900cb361cd099278511844b4bc1d52a13fd502d85fc467edf6da4d",
-        "signature": "e35a0c3d72821cf0909dac92ff3daef788a3ee08a791bbb273f5855e3feb0a29",
+        "version": "112bbe07c8831c439f7955d42b18ac4c40e322e7330b5725ef28d5d9c9ed1022",
+        "signature": "40373a3104e0280380d658ceca4db95aad89b3894b8ac71fa64f5552ff0ff6ba",
         "affectsGlobalScope": false
       },
       "../src/certificates/generatekeypair.ts": {
@@ -593,7 +623,7 @@
       },
       "../src/index.ts": {
         "version": "14ca303197956aee40450b0b9d39326c1bb1df1cf559da3ba04a2f4f8c37e365",
-        "signature": "a1ceb45c7d17dca7fd7f7fcba298b654f654185f8992c128e872d4208074aefe",
+        "signature": "8998ce2a7e8596ae85e0afc60c9548341ca6def136f51da7afed99c8306c7c97",
         "affectsGlobalScope": false
       },
       "../node_modules/@babel/types/lib/index.d.ts": {
@@ -1337,6 +1367,10 @@
         "../node_modules/@types/node-forge/index.d.ts",
         "../src/srp/big-number.ts"
       ],
+      "../src/vaults/decrypt.ts": [
+        "../node_modules/@types/node-forge/index.d.ts",
+        "../src/vaults/encrypt.ts"
+      ],
       "../src/vaults/decryptprivatekey.ts": [
         "../node_modules/@types/node-forge/index.d.ts"
       ],
@@ -1348,6 +1382,14 @@
       ],
       "../src/vaults/decryptvaultkey.ts": [
         "../node_modules/@types/node-forge/index.d.ts"
+      ],
+      "../src/vaults/decryptvaultmetadata.ts": [
+        "../src/vaults/decrypt.ts",
+        "../src/vaults/encrypt.ts"
+      ],
+      "../src/vaults/encrypt.ts": [
+        "../node_modules/@types/node-forge/index.d.ts",
+        "../src/common/index.ts"
       ],
       "../src/vaults/encryptprivatekey.ts": [
         "../node_modules/@types/node-forge/index.d.ts"
@@ -1363,6 +1405,9 @@
       "../src/vaults/encryptvaultkey.ts": [
         "../node_modules/@types/node-forge/index.d.ts"
       ],
+      "../src/vaults/encryptvaultmetadata.ts": [
+        "../src/vaults/encrypt.ts"
+      ],
       "../src/vaults/generatekeypair.ts": [
         "../node_modules/@types/node-forge/index.d.ts"
       ],
@@ -1371,11 +1416,21 @@
         "../src/vaults/decryptsymmetrickey.ts",
         "../src/vaults/decryptvaultitem.ts",
         "../src/vaults/decryptvaultkey.ts",
+        "../src/vaults/decryptvaultmetadata.ts",
         "../src/vaults/encryptprivatekey.ts",
         "../src/vaults/encryptsymmetrickey.ts",
         "../src/vaults/encryptvaultitem.ts",
         "../src/vaults/encryptvaultkey.ts",
-        "../src/vaults/generatekeypair.ts"
+        "../src/vaults/encryptvaultmetadata.ts",
+        "../src/vaults/generatekeypair.ts",
+        "../src/vaults/publickeyfromstring.ts",
+        "../src/vaults/publickeytostring.ts"
+      ],
+      "../src/vaults/publickeyfromstring.ts": [
+        "../node_modules/@types/node-forge/index.d.ts"
+      ],
+      "../src/vaults/publickeytostring.ts": [
+        "../node_modules/@types/node-forge/index.d.ts"
       ],
       "../../node_modules/@types/cacheable-request/index.d.ts": [
         "../../node_modules/@types/http-cache-semantics/index.d.ts",
@@ -1826,6 +1881,7 @@
         "../src/srp/types.ts",
         "../src/vaults/decryptsymmetrickey.ts",
         "../src/vaults/decryptvaultitem.ts",
+        "../src/vaults/encrypt.ts",
         "../src/vaults/encryptsymmetrickey.ts",
         "../src/vaults/encryptvaultkey.ts",
         "../src/vaults/index.ts"
@@ -1867,6 +1923,10 @@
       "../src/srp/sha256.ts": [
         "../src/srp/big-number.ts"
       ],
+      "../src/vaults/decrypt.ts": [
+        "../node_modules/@types/node-forge/index.d.ts",
+        "../src/vaults/encrypt.ts"
+      ],
       "../src/vaults/decryptprivatekey.ts": [
         "../node_modules/@types/node-forge/index.d.ts"
       ],
@@ -1879,11 +1939,17 @@
       "../src/vaults/decryptvaultkey.ts": [
         "../node_modules/@types/node-forge/index.d.ts"
       ],
+      "../src/vaults/decryptvaultmetadata.ts": [
+        "../src/vaults/encrypt.ts"
+      ],
       "../src/vaults/encryptprivatekey.ts": [
         "../node_modules/@types/node-forge/index.d.ts"
       ],
       "../src/vaults/encryptvaultkey.ts": [
         "../node_modules/@types/node-forge/index.d.ts"
+      ],
+      "../src/vaults/encryptvaultmetadata.ts": [
+        "../src/vaults/encrypt.ts"
       ],
       "../src/vaults/generatekeypair.ts": [
         "../node_modules/@types/node-forge/index.d.ts"
@@ -1894,11 +1960,22 @@
         "../src/vaults/decryptsymmetrickey.ts",
         "../src/vaults/decryptvaultitem.ts",
         "../src/vaults/decryptvaultkey.ts",
+        "../src/vaults/decryptvaultmetadata.ts",
+        "../src/vaults/encrypt.ts",
         "../src/vaults/encryptprivatekey.ts",
         "../src/vaults/encryptsymmetrickey.ts",
         "../src/vaults/encryptvaultitem.ts",
         "../src/vaults/encryptvaultkey.ts",
-        "../src/vaults/generatekeypair.ts"
+        "../src/vaults/encryptvaultmetadata.ts",
+        "../src/vaults/generatekeypair.ts",
+        "../src/vaults/publickeyfromstring.ts",
+        "../src/vaults/publickeytostring.ts"
+      ],
+      "../src/vaults/publickeyfromstring.ts": [
+        "../node_modules/@types/node-forge/index.d.ts"
+      ],
+      "../src/vaults/publickeytostring.ts": [
+        "../node_modules/@types/node-forge/index.d.ts"
       ],
       "../../node_modules/@types/cacheable-request/index.d.ts": [
         "../../node_modules/@types/http-cache-semantics/index.d.ts",
@@ -2150,16 +2227,22 @@
       "../src/srp/server/index.ts",
       "../src/srp/sha256.ts",
       "../src/srp/types.ts",
+      "../src/vaults/decrypt.ts",
       "../src/vaults/decryptprivatekey.ts",
       "../src/vaults/decryptsymmetrickey.ts",
       "../src/vaults/decryptvaultitem.ts",
       "../src/vaults/decryptvaultkey.ts",
+      "../src/vaults/decryptvaultmetadata.ts",
+      "../src/vaults/encrypt.ts",
       "../src/vaults/encryptprivatekey.ts",
       "../src/vaults/encryptsymmetrickey.ts",
       "../src/vaults/encryptvaultitem.ts",
       "../src/vaults/encryptvaultkey.ts",
+      "../src/vaults/encryptvaultmetadata.ts",
       "../src/vaults/generatekeypair.ts",
       "../src/vaults/index.ts",
+      "../src/vaults/publickeyfromstring.ts",
+      "../src/vaults/publickeytostring.ts",
       "../../node_modules/@types/anymatch/index.d.ts",
       "../../node_modules/@types/cacheable-request/index.d.ts",
       "../../node_modules/@types/glob/index.d.ts",
