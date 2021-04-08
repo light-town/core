@@ -5,8 +5,7 @@ import vaultKey from './vaultKey';
 import vaultMetadata from './vaultMetadata';
 import teamKey from './teamKey';
 import teamMetadata from './teamMetadata';
-import { decryptVaultItem } from './decryptVaultItem';
-import { encryptVaultItem } from './encryptVaultItem';
+import vaultItem from './vaultItem';
 import { publicKeyToString } from './publicKeyToString';
 import { publicKeyFromString } from './publicKeyFromString';
 
@@ -15,10 +14,9 @@ export {
   symmetricKey,
   vaultKey,
   vaultMetadata,
+  vaultItem,
   teamKey,
   teamMetadata,
-  decryptVaultItem,
-  encryptVaultItem,
   generateKeyPair,
   publicKeyToString,
   publicKeyFromString,
@@ -28,10 +26,9 @@ export default {
   symmetricKey,
   vaultKey,
   vaultMetadata,
+  vaultItem,
   teamKey,
   teamMetadata,
-  decryptVaultItem,
-  encryptVaultItem,
   generateKeyPair,
   publicKeyToString,
   publicKeyFromString,

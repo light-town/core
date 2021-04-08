@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.publicKeyFromString = exports.publicKeyToString = exports.generateKeyPair = exports.encryptVaultItem = exports.decryptVaultItem = exports.teamMetadata = exports.teamKey = exports.vaultMetadata = exports.vaultKey = exports.symmetricKey = exports.privateKey = void 0;
+exports.publicKeyFromString = exports.publicKeyToString = exports.generateKeyPair = exports.teamMetadata = exports.teamKey = exports.vaultItem = exports.vaultMetadata = exports.vaultKey = exports.symmetricKey = exports.privateKey = void 0;
 const generateKeyPair_1 = require("./generateKeyPair");
 Object.defineProperty(exports, "generateKeyPair", { enumerable: true, get: function () { return generateKeyPair_1.generateKeyPair; } });
 const privateKey_1 = require("./privateKey");
@@ -15,10 +15,8 @@ const teamKey_1 = require("./teamKey");
 exports.teamKey = teamKey_1.default;
 const teamMetadata_1 = require("./teamMetadata");
 exports.teamMetadata = teamMetadata_1.default;
-const decryptVaultItem_1 = require("./decryptVaultItem");
-Object.defineProperty(exports, "decryptVaultItem", { enumerable: true, get: function () { return decryptVaultItem_1.decryptVaultItem; } });
-const encryptVaultItem_1 = require("./encryptVaultItem");
-Object.defineProperty(exports, "encryptVaultItem", { enumerable: true, get: function () { return encryptVaultItem_1.encryptVaultItem; } });
+const vaultItem_1 = require("./vaultItem");
+exports.vaultItem = vaultItem_1.default;
 const publicKeyToString_1 = require("./publicKeyToString");
 Object.defineProperty(exports, "publicKeyToString", { enumerable: true, get: function () { return publicKeyToString_1.publicKeyToString; } });
 const publicKeyFromString_1 = require("./publicKeyFromString");
@@ -28,10 +26,9 @@ exports.default = {
     symmetricKey: symmetricKey_1.default,
     vaultKey: vaultKey_1.default,
     vaultMetadata: vaultMetadata_1.default,
+    vaultItem: vaultItem_1.default,
     teamKey: teamKey_1.default,
     teamMetadata: teamMetadata_1.default,
-    decryptVaultItem: decryptVaultItem_1.decryptVaultItem,
-    encryptVaultItem: encryptVaultItem_1.encryptVaultItem,
     generateKeyPair: generateKeyPair_1.generateKeyPair,
     publicKeyToString: publicKeyToString_1.publicKeyToString,
     publicKeyFromString: publicKeyFromString_1.publicKeyFromString,

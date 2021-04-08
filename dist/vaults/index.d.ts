@@ -6,11 +6,10 @@ import vaultKey from './vaultKey';
 import vaultMetadata from './vaultMetadata';
 import teamKey from './teamKey';
 import teamMetadata from './teamMetadata';
-import { decryptVaultItem } from './decryptVaultItem';
-import { encryptVaultItem } from './encryptVaultItem';
+import vaultItem from './vaultItem';
 import { publicKeyToString } from './publicKeyToString';
 import { publicKeyFromString } from './publicKeyFromString';
-export { privateKey, symmetricKey, vaultKey, vaultMetadata, teamKey, teamMetadata, decryptVaultItem, encryptVaultItem, generateKeyPair, publicKeyToString, publicKeyFromString, };
+export { privateKey, symmetricKey, vaultKey, vaultMetadata, vaultItem, teamKey, teamMetadata, generateKeyPair, publicKeyToString, publicKeyFromString, };
 declare const _default: {
     privateKey: {
         encryptBySymmetricKey: (privateKey: import("node-forge").pki.PrivateKey, symmetricKey: string) => Promise<import("./privateKey/encryptBySymmetricKey").EncryptedPrivateKey>;
@@ -32,6 +31,14 @@ declare const _default: {
         encryptByVaultKey: (metadata: Record<string, any>, vaultKey: string) => Promise<import("../common/aes/encrypt").EncryptedData>;
         decryptByVaultKey: (metadata: import("../common/aes/encrypt").EncryptedData, vaultKey: string) => Promise<Record<string, any>>;
     };
+    vaultItem: {
+        encryptVaultItem: (overview: Record<string, any>, details: Record<string, any>, vaultKey: string) => Promise<import("./vaultItem/encryptByVaultKey").EncryptedVaultItem>;
+        encryptOverviewByVaultKey: (overview: Record<string, any>, vaultKey: string) => Promise<import("../common/aes/encrypt").EncryptedData>;
+        encryptDetailsByVaultKey: (details: Record<string, any>, vaultKey: string) => Promise<import("../common/aes/encrypt").EncryptedData>;
+        decryptVaultItem: (encryptedVaultItem: import("./vaultItem/encryptByVaultKey").EncryptedVaultItem, vaultKey: string) => Promise<import("./vaultItem/decryptByVaultKey").DecryptedVaultItem>;
+        decryptOverviewByVaultKey: (encryptedOverview: import("../common/aes/encrypt").EncryptedData, vaultKey: string) => Promise<Record<string, any>>;
+        decryptDetailsByVaultKey: (encryptedDetails: import("../common/aes/encrypt").EncryptedData, vaultKey: string) => Promise<Record<string, any>>;
+    };
     teamKey: {
         encryptBySecretKey: (teamKey: string, secretKey: string) => Promise<import("./teamKey/encryptBySecretKey").EncryptedTeamKey>;
         decryptBySecretKey: (encryptedTeamKey: import("./teamKey/encryptBySecretKey").EncryptedTeamKey, secretKey: string) => Promise<string>;
@@ -42,25 +49,6 @@ declare const _default: {
         encryptByTeamKey: (metadata: Record<string, any>, teamKey: string) => Promise<import("../common/aes/encrypt").EncryptedData>;
         decryptByTeamKey: (metadata: import("../common/aes/encrypt").EncryptedData, teamKey: string) => Promise<Record<string, any>>;
     };
-    decryptVaultItem: (options: import("./decryptVaultItem").Options) => Promise<any>;
-    encryptVaultItem: ({ details, overview, vaultKey }: {
-        details: any;
-        overview: any;
-        vaultKey: any;
-    }) => Promise<{
-        encDetails: {
-            tag: string;
-            data: string;
-            tagLength: number;
-            iv: string;
-        };
-        encOverview: {
-            tag: string;
-            data: string;
-            tagLength: number;
-            iv: string;
-        };
-    }>;
     generateKeyPair: () => Promise<import("node-forge").pki.rsa.KeyPair>;
     publicKeyToString: (publicKey: import("node-forge").pki.rsa.PublicKey) => string;
     publicKeyFromString: (pem: string) => import("node-forge").pki.rsa.PublicKey;
