@@ -4,25 +4,24 @@ import vaults from '../index';
 import * as faker from 'faker';
 
 describe('[Vaults] ...', () => {
-  it('should encrypt and decrypt private key of primary key set', async () => {
+  it('should encrypt and decrypt private key by symmetric key of primary key set', async () => {
     const { publicKey, privateKey } = await vaults.generateKeyPair();
+    const symmetricKey = common.generateCryptoRandomString(32);
 
     const data = JSON.stringify({ msg: 'test' });
     const encryptedData = publicKey.encrypt(data);
 
-    const symmetricKey = common.generateCryptoRandomString(32);
-
-    const encryptedPrivateKeyInfo = vaults.encryptPrivateKey(
+    const encryptedPrivateKey = await vaults.privateKey.encryptBySymmetricKey(
       privateKey,
       symmetricKey,
     );
 
-    expect(encryptedPrivateKeyInfo.kty).toStrictEqual('AES');
-    expect(encryptedPrivateKeyInfo.alg).toStrictEqual('AES-GCM-256');
-    expect(encryptedPrivateKeyInfo.key).toBeDefined();
+    expect(encryptedPrivateKey.kty).toStrictEqual('AES');
+    expect(encryptedPrivateKey.alg).toStrictEqual('AES-GCM-256');
+    expect(encryptedPrivateKey.key).toBeDefined();
 
-    const decryptedPrivateKey = vaults.decryptPrivateKey(
-      encryptedPrivateKeyInfo.key,
+    const decryptedPrivateKey = await vaults.privateKey.decryptBySymmetricKey(
+      encryptedPrivateKey,
       symmetricKey,
     );
 
@@ -33,46 +32,91 @@ describe('[Vaults] ...', () => {
     expect(decryptedPrivateKey.decrypt(encryptedData)).toStrictEqual(data);
   });
 
-  it('should encrypt and decrypt symmetric key', async () => {
+  it('should encrypt and decrypt symmetric key by master unlock key', async () => {
     const symmetricKey = common.generateCryptoRandomString(32);
     const masterUnlockKey = common.generateCryptoRandomString(32);
     const masterUnlockSalt = common.generateRandomSalt(32);
 
-    const encryptedSymmetricKeyInfo = vaults.encryptSymmetricKey({
+    const encryptedSymmetricKey = await vaults.symmetricKey.encryptBySecretKey(
       symmetricKey,
-      secretKey: masterUnlockKey,
-      salt: masterUnlockSalt,
-    });
+      masterUnlockKey,
+      masterUnlockSalt,
+    );
 
-    expect(encryptedSymmetricKeyInfo.kty).toStrictEqual('AES');
-    expect(encryptedSymmetricKeyInfo.alg).toStrictEqual('AES-GCM-256');
-    expect(encryptedSymmetricKeyInfo.iv).toBeDefined();
-    expect(typeof encryptedSymmetricKeyInfo.tagLength).toStrictEqual('number');
-    expect(encryptedSymmetricKeyInfo.tag).toBeDefined();
+    expect(encryptedSymmetricKey.kty).toStrictEqual('AES');
+    expect(encryptedSymmetricKey.alg).toStrictEqual('AES-GCM-256');
+    expect(encryptedSymmetricKey.iv).toBeDefined();
+    expect(typeof encryptedSymmetricKey.tagLength).toStrictEqual('number');
+    expect(encryptedSymmetricKey.tag).toBeDefined();
 
-    const decryptedSymmetricKey = await vaults.decryptSymmetricKey({
-      encryptedSymmetricKey: encryptedSymmetricKeyInfo.key,
-      secretKey: masterUnlockKey,
-      iv: encryptedSymmetricKeyInfo.iv,
-      tag: encryptedSymmetricKeyInfo.tag,
-      tagLength: encryptedSymmetricKeyInfo.tagLength,
-    });
+    const decryptedSymmetricKey = await vaults.symmetricKey.decryptBySecretKey(
+      encryptedSymmetricKey,
+      masterUnlockKey,
+    );
 
     expect(decryptedSymmetricKey).toStrictEqual(symmetricKey);
   });
 
-  it('should encrypt and decrypt vault key', async () => {
+  it('should encrypt and decrypt symmetric key by public and private keys of primary key set', async () => {
+    const { publicKey, privateKey } = await vaults.generateKeyPair();
+    const symmetricKey = common.generateCryptoRandomString(32);
+
+    const encryptedSymmetricKey = await vaults.symmetricKey.encryptByPublicKey(
+      symmetricKey,
+      publicKey,
+    );
+
+    expect(encryptedSymmetricKey).toStrictEqual({
+      kty: 'RSA',
+      alg: 'RSA-OAEP-256',
+      key: encryptedSymmetricKey.key,
+    });
+    expect(encryptedSymmetricKey.key).toBeDefined();
+
+    const decryptedSymmetricKey = await vaults.symmetricKey.decryptByPrivateKey(
+      encryptedSymmetricKey,
+      privateKey,
+    );
+
+    expect(decryptedSymmetricKey).toStrictEqual(symmetricKey);
+  });
+
+  it('should encrypt and decrypt vault key by public and private keys of primary key set', async () => {
     const { publicKey, privateKey } = await vaults.generateKeyPair();
     const vaultKey = common.generateCryptoRandomString(32);
 
-    const encryptVaultKeyInfo = vaults.encryptVaultKey(vaultKey, publicKey);
-    expect(encryptVaultKeyInfo.kty).toStrictEqual('RSA');
-    expect(encryptVaultKeyInfo.alg).toStrictEqual('RSA-OAEP-256');
-    expect(encryptVaultKeyInfo.key).toBeDefined();
+    const encryptVaultKey = await vaults.vaultKey.encryptByPublicKey(
+      vaultKey,
+      publicKey,
+    );
+    expect(encryptVaultKey.kty).toStrictEqual('RSA');
+    expect(encryptVaultKey.alg).toStrictEqual('RSA-OAEP-256');
+    expect(encryptVaultKey.key).toBeDefined();
 
-    const decryptedVaultKey = vaults.decryptVaultKey(
-      encryptVaultKeyInfo.key,
+    const decryptedVaultKey = await vaults.vaultKey.decryptByPrivateKey(
+      encryptVaultKey,
       privateKey,
+    );
+
+    expect(decryptedVaultKey).toStrictEqual(vaultKey);
+  });
+
+  it('should encrypt and decrypt vault key by secret key', async () => {
+    const secretKey = common.generateCryptoRandomString(32);
+
+    const vaultKey = common.generateCryptoRandomString(32);
+
+    const encryptVaultKey = await vaults.vaultKey.encryptBySecretKey(
+      vaultKey,
+      secretKey,
+    );
+    expect(encryptVaultKey.kty).toStrictEqual('AES');
+    expect(encryptVaultKey.alg).toStrictEqual('AES-GCM-256');
+    expect(encryptVaultKey.key).toBeDefined();
+
+    const decryptedVaultKey = await vaults.vaultKey.decryptBySecretKey(
+      encryptVaultKey,
+      secretKey,
     );
 
     expect(decryptedVaultKey).toStrictEqual(vaultKey);
@@ -97,16 +141,19 @@ describe('[Vaults] ...', () => {
     const symmetricKey = common.generateCryptoRandomString(32);
     const vaultKey = common.generateCryptoRandomString(32);
     const { publicKey, privateKey } = await vaults.generateKeyPair();
-    const encryptedVaultKey = vaults.encryptVaultKey(vaultKey, publicKey);
-    const encryptedPrivateKey = vaults.encryptPrivateKey(
+    const encryptedVaultKey = await vaults.vaultKey.encryptByPublicKey(
+      vaultKey,
+      publicKey,
+    );
+    const encryptedPrivateKey = await vaults.privateKey.encryptBySymmetricKey(
       privateKey,
       symmetricKey,
     );
-    const encryptedSymmetricKey = vaults.encryptSymmetricKey({
+    const encryptedSymmetricKey = await vaults.symmetricKey.encryptBySecretKey(
       symmetricKey,
-      secretKey: masterUnlockKey,
-      salt: masterUnlockSalt,
-    });
+      masterUnlockKey,
+      masterUnlockSalt,
+    );
 
     expect(
       common.deriveMasterUnlockKey(
@@ -121,23 +168,23 @@ describe('[Vaults] ...', () => {
     });
 
     expect(
-      await vaults.decryptSymmetricKey({
-        encryptedSymmetricKey: encryptedSymmetricKey.key,
-        secretKey: masterUnlockKey,
-        iv: encryptedSymmetricKey.iv,
-        tag: encryptedSymmetricKey.tag,
-        tagLength: encryptedSymmetricKey.tagLength,
-      }),
+      await vaults.symmetricKey.decryptBySecretKey(
+        encryptedSymmetricKey,
+        masterUnlockKey,
+      ),
     ).toStrictEqual(symmetricKey);
 
     expect(
       forge.pki.privateKeyToPem(
-        vaults.decryptPrivateKey(encryptedPrivateKey.key, symmetricKey),
+        await vaults.privateKey.decryptBySymmetricKey(
+          encryptedPrivateKey,
+          symmetricKey,
+        ),
       ),
     ).toStrictEqual(forge.pki.privateKeyToPem(privateKey));
 
     expect(
-      vaults.decryptVaultKey(encryptedVaultKey.key, privateKey),
+      await vaults.vaultKey.decryptByPrivateKey(encryptedVaultKey, privateKey),
     ).toStrictEqual(vaultKey);
   });
 
@@ -161,14 +208,14 @@ describe('[Vaults] ...', () => {
       description: faker.random.words(),
     };
 
-    const encryptedData = await vaults.encryptVaultMetadata(
-      TEST_VAULT_KEY,
+    const encryptedData = await vaults.vaultMetadata.encryptVaultMetadata(
       TEST_METADATA,
+      TEST_VAULT_KEY,
     );
 
-    const decryptedData = await vaults.decryptVaultMetadata(
-      TEST_VAULT_KEY,
+    const decryptedData = await vaults.vaultMetadata.decryptVaultMetadata(
       encryptedData,
+      TEST_VAULT_KEY,
     );
 
     expect(decryptedData).toStrictEqual(TEST_METADATA);

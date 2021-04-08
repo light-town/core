@@ -1,9 +1,9 @@
 import * as forge from 'node-forge';
-import base64 from '../common/base64';
+import base64 from '../../common/base64';
 
 export class EncryptedVaultKey {
-  kty: 'RSA';
-  alg: 'RSA-OAEP-256';
+  kty: string;
+  alg: string;
   key: string;
 }
 
@@ -13,19 +13,19 @@ export class EncryptedVaultKey {
  * @param {forge.pki.rsa.PublicKey} publicKey RSA Public key
  * @returns Encrypted Vault Key
  */
-export const encryptVaultKey = (
+export const encryptByPublicKey = async (
   vaultKey: string,
   publicKey: forge.pki.rsa.PublicKey,
-): EncryptedVaultKey => {
+): Promise<EncryptedVaultKey> => {
   const encryptedVaultKey = publicKey.encrypt(vaultKey, 'RSA-OAEP', {
     md: forge.md.sha256.create(),
   });
 
-  return {
+  return Promise.resolve({
     kty: 'RSA',
     alg: 'RSA-OAEP-256',
     key: base64.encode(encryptedVaultKey),
-  };
+  });
 };
 
-export default encryptVaultKey;
+export default encryptByPublicKey;

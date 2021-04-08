@@ -1,44 +1,32 @@
-import { decryptPrivateKey } from './decryptPrivateKey';
-import { decryptSymmetricKey } from './decryptSymmetricKey';
-import { decryptVaultItem } from './decryptVaultItem';
-import { decryptVaultKey } from './decryptVaultKey';
-import { encryptPrivateKey } from './encryptPrivateKey';
-import { encryptSymmetricKey } from './encryptSymmetricKey';
-import { encryptVaultItem } from './encryptVaultItem';
-import { encryptVaultKey } from './encryptVaultKey';
 import { generateKeyPair } from './generateKeyPair';
+import privateKey from './privateKey';
+import symmetricKey from './symmetricKey';
+import vaultKey from './vaultKey';
+import vaultMetadata from './vaultMetadata';
+import { decryptVaultItem } from './decryptVaultItem';
+import { encryptVaultItem } from './encryptVaultItem';
 import { publicKeyToString } from './publicKeyToString';
 import { publicKeyFromString } from './publicKeyFromString';
-import { encryptVaultMetadata } from './encryptVaultMetadata';
-import { decryptVaultMetadata } from './decryptVaultMetadata';
 
 export {
-  decryptPrivateKey,
-  decryptSymmetricKey,
+  privateKey,
+  symmetricKey,
+  vaultKey,
+  vaultMetadata,
   decryptVaultItem,
-  decryptVaultKey,
-  encryptPrivateKey,
-  encryptSymmetricKey,
   encryptVaultItem,
-  encryptVaultKey,
   generateKeyPair,
   publicKeyToString,
   publicKeyFromString,
-  encryptVaultMetadata,
-  decryptVaultMetadata,
 };
 export default {
-  decryptPrivateKey,
-  decryptSymmetricKey,
+  privateKey,
+  symmetricKey,
+  vaultKey,
+  vaultMetadata,
   decryptVaultItem,
-  decryptVaultKey,
-  encryptPrivateKey,
-  encryptSymmetricKey,
   encryptVaultItem,
-  encryptVaultKey,
   generateKeyPair,
   publicKeyToString,
   publicKeyFromString,
-  encryptVaultMetadata,
-  decryptVaultMetadata,
 };

@@ -13,7 +13,8 @@
     "test:watch": "npm run test -- --watch",
     "test:watch:cov": "npm run test:watch -- --coverage",
     "test:cov": "npm run test -- --coverage",
-    "test:coveralls": "npm run test:cov"
+    "test:coveralls": "npm run test:cov",
+    "test:prod": "npm run test:coveralls"
   },
   "repository": {
     "type": "git",

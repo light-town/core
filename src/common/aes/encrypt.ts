@@ -1,6 +1,6 @@
 import * as forge from 'node-forge';
-import base64 from '../common/base64';
-import { generateRandomSalt } from '../common';
+import base64 from '../base64';
+import { generateRandomSalt } from '..';
 
 export class EncryptedData {
   kty: string;
@@ -11,10 +11,7 @@ export class EncryptedData {
   iv: string;
 }
 
-export const encrypt = (
-  key: string,
-  data: Record<string, any>,
-): Promise<EncryptedData> => {
+export const encrypt = (data: string, key: string): Promise<EncryptedData> => {
   const iv = generateRandomSalt(12);
   const tagLength = 128;
 
@@ -26,7 +23,7 @@ export const encrypt = (
     iv,
     tagLength,
   });
-  cipher.update(forge.util.createBuffer(JSON.stringify(data)));
+  cipher.update(forge.util.createBuffer(data));
   cipher.finish();
 
   return Promise.resolve({
