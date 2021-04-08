@@ -208,16 +208,76 @@ describe('[Vaults] ...', () => {
       description: faker.random.words(),
     };
 
-    const encryptedData = await vaults.vaultMetadata.encryptVaultMetadata(
+    const encryptedData = await vaults.vaultMetadata.encryptByVaultKey(
       TEST_METADATA,
       TEST_VAULT_KEY,
     );
 
-    const decryptedData = await vaults.vaultMetadata.decryptVaultMetadata(
+    const decryptedData = await vaults.vaultMetadata.decryptByVaultKey(
       encryptedData,
       TEST_VAULT_KEY,
     );
 
     expect(decryptedData).toStrictEqual(TEST_METADATA);
+  });
+
+  it('should encrypt and decrypt team metadata of team key', async () => {
+    const TEST_TEAM_KEY = common.generateCryptoRandomString(32);
+    const TEST_METADATA = {
+      title: faker.random.word(),
+      desc: faker.random.words(),
+    };
+
+    const encryptedData = await vaults.teamMetadata.encryptByTeamKey(
+      TEST_METADATA,
+      TEST_TEAM_KEY,
+    );
+
+    const decryptedData = await vaults.teamMetadata.decryptByTeamKey(
+      encryptedData,
+      TEST_TEAM_KEY,
+    );
+
+    expect(decryptedData).toStrictEqual(TEST_METADATA);
+  });
+
+  it('should encrypt and decrypt team key by public/private keys of primary key set', async () => {
+    const { publicKey, privateKey } = await vaults.generateKeyPair();
+    const teamKey = common.generateCryptoRandomString(32);
+
+    const encryptTeamKey = await vaults.teamKey.encryptByPublicKey(
+      teamKey,
+      publicKey,
+    );
+    expect(encryptTeamKey.kty).toStrictEqual('RSA');
+    expect(encryptTeamKey.alg).toStrictEqual('RSA-OAEP-256');
+    expect(encryptTeamKey.key).toBeDefined();
+
+    const decryptedTeamKey = await vaults.teamKey.decryptByPrivateKey(
+      encryptTeamKey,
+      privateKey,
+    );
+
+    expect(decryptedTeamKey).toStrictEqual(teamKey);
+  });
+
+  it('should encrypt and decrypt team key by secret key', async () => {
+    const secretKey = common.generateCryptoRandomString(32);
+    const teamKey = common.generateCryptoRandomString(32);
+
+    const encryptTeamKey = await vaults.teamKey.encryptBySecretKey(
+      teamKey,
+      secretKey,
+    );
+    expect(encryptTeamKey.kty).toStrictEqual('AES');
+    expect(encryptTeamKey.alg).toStrictEqual('AES-GCM-256');
+    expect(encryptTeamKey.key).toBeDefined();
+
+    const decryptedTeamKey = await vaults.teamKey.decryptBySecretKey(
+      encryptTeamKey,
+      secretKey,
+    );
+
+    expect(decryptedTeamKey).toStrictEqual(teamKey);
   });
 });

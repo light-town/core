@@ -1,0 +1,1 @@
+{"version":3,"file":"decryptByTeamKey.js","sourceRoot":"","sources":["../../../src/vaults/teamMetadata/decryptByTeamKey.ts"],"names":[],"mappings":";;;;;;;;;;;;AACA,sDAA+C;AAExC,MAAM,gBAAgB,GAAG,CAC9B,QAAuB,EACvB,OAAe,EACe,EAAE;IAChC,OAAO,IAAI,CAAC,KAAK,CAAC,MAAM,iBAAO,CAAC,QAAQ,EAAE,OAAO,CAAC,CAAC,CAAC;AACtD,CAAC,CAAA,CAAC;AALW,QAAA,gBAAgB,oBAK3B;AAEF,kBAAe,wBAAgB,CAAC"}

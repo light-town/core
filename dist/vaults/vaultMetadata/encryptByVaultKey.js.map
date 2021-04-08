@@ -1,0 +1,1 @@
+{"version":3,"file":"encryptByVaultKey.js","sourceRoot":"","sources":["../../../src/vaults/vaultMetadata/encryptByVaultKey.ts"],"names":[],"mappings":";;;AAAA,sDAAkE;AAE3D,MAAM,iBAAiB,GAAG,CAC/B,QAA6B,EAC7B,QAAgB,EACQ,EAAE;IAC1B,OAAO,iBAAO,CAAC,IAAI,CAAC,SAAS,CAAC,QAAQ,CAAC,EAAE,QAAQ,CAAC,CAAC;AACrD,CAAC,CAAC;AALW,QAAA,iBAAiB,qBAK5B;AAEF,kBAAe,yBAAiB,CAAC"}

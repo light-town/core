@@ -1,9 +1,9 @@
-import { encryptVaultMetadata } from './encryptVaultMetadata';
-import { decryptVaultMetadata } from './decryptVaultMetadata';
+import { encryptByVaultKey } from './encryptByVaultKey';
+import { decryptByVaultKey } from './decryptByVaultKey';
 
-export { encryptVaultMetadata, decryptVaultMetadata };
+export { encryptByVaultKey, decryptByVaultKey };
 
 export default {
-  encryptVaultMetadata,
-  decryptVaultMetadata,
+  encryptByVaultKey,
+  decryptByVaultKey,
 };

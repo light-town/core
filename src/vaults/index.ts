@@ -3,6 +3,8 @@ import privateKey from './privateKey';
 import symmetricKey from './symmetricKey';
 import vaultKey from './vaultKey';
 import vaultMetadata from './vaultMetadata';
+import teamKey from './teamKey';
+import teamMetadata from './teamMetadata';
 import { decryptVaultItem } from './decryptVaultItem';
 import { encryptVaultItem } from './encryptVaultItem';
 import { publicKeyToString } from './publicKeyToString';
@@ -13,6 +15,8 @@ export {
   symmetricKey,
   vaultKey,
   vaultMetadata,
+  teamKey,
+  teamMetadata,
   decryptVaultItem,
   encryptVaultItem,
   generateKeyPair,
@@ -24,6 +28,8 @@ export default {
   symmetricKey,
   vaultKey,
   vaultMetadata,
+  teamKey,
+  teamMetadata,
   decryptVaultItem,
   encryptVaultItem,
   generateKeyPair,
