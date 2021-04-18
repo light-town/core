@@ -1,1 +1,0 @@
-{"version":3,"file":"encryptByTeamKey.js","sourceRoot":"","sources":["../../../src/vaults/teamMetadata/encryptByTeamKey.ts"],"names":[],"mappings":";;;AAAA,sDAAkE;AAE3D,MAAM,gBAAgB,GAAG,CAC9B,QAA6B,EAC7B,OAAe,EACS,EAAE;IAC1B,OAAO,iBAAO,CAAC,IAAI,CAAC,SAAS,CAAC,QAAQ,CAAC,EAAE,OAAO,CAAC,CAAC;AACpD,CAAC,CAAC;AALW,QAAA,gBAAgB,oBAK3B;AAEF,kBAAe,wBAAgB,CAAC"}

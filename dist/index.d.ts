@@ -1,36 +1,99 @@
-/// <reference types="node-forge" />
-import common from './common';
 import srp from './srp';
-import vaults from './vaults';
-import certificates from './certificates';
-export { common, srp, vaults, certificates };
+import encryption from './encryption';
+export { encryption, srp };
 declare const _default: {
-    common: {
-        hkdf: {
-            computeHKDF: ({ secret, salt }: {
-                secret: any;
-                salt: any;
-            }) => string;
+    encryption: {
+        common: {
+            hkdf: {
+                computeHKDF: ({ secret, salt }: {
+                    secret: any;
+                    salt: any;
+                }) => string;
+            };
+            pbkdf2: {
+                computeHash: ({ secretKey, salt, iterations }: {
+                    secretKey: any;
+                    salt: any;
+                    iterations: any;
+                }) => Uint8Array;
+            };
+            base64: {
+                encode: typeof import("./encryption/common/base64/encode").default;
+                decode: typeof import("./encryption/common/base64/decode").default;
+            };
+            rsa: {
+                definitions: typeof import("./encryption/common/rsa/definitions");
+                encrypt: typeof import("./encryption/common/rsa/encrypt").default;
+                decrypt: typeof import("./encryption/common/rsa/decrypt").default;
+                generateKeyPair: typeof import("./encryption/common/rsa/generateKeyPair").default;
+                publicKeyFromString: typeof import("./encryption/common/rsa/publicKeyFromString").default;
+                publicKeyToString: typeof import("./encryption/common/rsa/publicKeyToString").default;
+            };
+            generateAccountKey: typeof import("./encryption/common").generateAccountKey;
+            generateCryptoRandomString: (length: number) => string;
+            generateRandomSalt: (length: number) => string;
+            normalizeMasterPassword: (password: string) => string;
+            deriveMasterUnlockKey: typeof import("./encryption/common").deriveMasterUnlockKey;
+            MasterUnlockKey: typeof import("./encryption/common").MasterUnlockKey;
         };
-        pbkdf2: {
-            computeHash: ({ secretKey, salt, iterations }: {
-                secretKey: any;
-                salt: any;
-                iterations: any;
-            }) => Uint8Array;
+        keySets: {
+            privateKey: {
+                definitions: typeof import("./encryption/keySets/privateKey/definitions");
+                encryptBySymmetricKey: typeof import("./encryption/keySets/privateKey/encryptBySymmetricKey").default;
+                decryptBySymmetricKey: typeof import("./encryption/keySets/privateKey/decryptBySymmetricKey").default;
+            };
+            symmetricKey: {
+                definitions: typeof import("./encryption/keySets/symmetricKey/definitions");
+                encryptByPublicKey: typeof import("./encryption/keySets/symmetricKey/encryptByPublicKey").default;
+                decryptByPrivateKey: typeof import("./encryption/keySets/symmetricKey/decryptByPrivateKey").default;
+                encryptBySecretKey: typeof import("./encryption/keySets/symmetricKey/encryptBySecretKey").default;
+                decryptBySecretKey: typeof import("./encryption/keySets/symmetricKey/decryptBySecretKey").default;
+            };
         };
-        base64: {
-            encode: (bytes: string) => string;
-            decode: (bytes: string) => string;
+        teams: {
+            key: {
+                definitions: typeof import("./encryption/teams/key/definitions");
+                encryptBySecretKey: typeof import("./encryption/teams/key/encryptBySecretKey").default;
+                decryptBySecretKey: typeof import("./encryption/teams/key/decryptBySecretKey").default;
+                encryptByPublicKey: typeof import("./encryption/teams/key/encryptByPublicKey").default;
+                decryptByPrivateKey: typeof import("./encryption/teams/key/decryptByPrivateKey").default;
+            };
+            overview: {
+                encryptByTeamKey: (overview: Record<string, any>, teamKey: string) => Promise<import("./encryption/common/aes/definitions").EncryptedData>;
+                decryptByTeamKey: typeof import("./encryption/teams/overview/decryptByTeamKey").default;
+            };
         };
-        generateAccountKey: (options: import("./common/generateAccountKey").Options) => string;
-        generateCryptoRandomString: (length: number) => string;
-        generateRandomSalt: (length: number) => string;
-        normalizeMasterPassword: (password: string) => string;
-        deriveMasterUnlockKey: (accountKey: string, normalizedMasterPassword: string, salt?: string) => {
-            key: string;
-            iterations: number;
-            salt: string;
+        vaults: {
+            items: {
+                definitions: typeof import("./encryption/vaults/items/definitions");
+                encryptVaultItem: typeof import("./encryption/vaults/items/encryptByVaultKey").default;
+                encryptOverviewByVaultKey: typeof import("./encryption/vaults/items/encryptByVaultKey").encryptOverviewByVaultKey;
+                encryptDetailsByVaultKey: typeof import("./encryption/vaults/items/encryptByVaultKey").encryptDetailsByVaultKey;
+                decryptVaultItem: typeof import("./encryption/vaults/items/decryptByVaultKey").default;
+                decryptOverviewByVaultKey: typeof import("./encryption/vaults/items/decryptByVaultKey").decryptOverviewByVaultKey;
+                decryptDetailsByVaultKey: typeof import("./encryption/vaults/items/decryptByVaultKey").decryptDetailsByVaultKey;
+            };
+            key: {
+                definitions: typeof import("./encryption/vaults/key/definitions");
+                encryptBySecretKey: (vaultKey: string, secretKey: string) => Promise<import("./encryption/vaults/key/definitions").EncryptedVaultKeyBySecretKey>;
+                decryptBySecretKey: typeof import("./encryption/vaults/key/decryptBySecretKey").default;
+                encryptByPublicKey: typeof import("./encryption/vaults/key/encryptByPublicKey").default;
+                decryptByPrivateKey: typeof import("./encryption/vaults/key/decryptByPrivateKey").default;
+            };
+            overview: {
+                encryptByVaultKey: typeof import("./encryption/vaults/overview/encryptByVaultKey").default;
+                decryptByVaultKey: typeof import("./encryption/vaults/overview/decryptByVaultKey").default;
+            };
+            folders: {
+                definitions: typeof import("./encryption/vaults/folders/definitions");
+                encryptVaultFolder: typeof import("./encryption/vaults/folders/encryptByVaultKey").default;
+                decryptVaultFolder: typeof import("./encryption/vaults/folders/decryptByVaultKey").default;
+            };
+            categories: {
+                definitions: typeof import("./encryption/vaults/categories/definitions");
+                encryptVaultItemCategory: typeof import("./encryption/vaults/categories/encryptByVaultKey").default;
+                decryptVaultItemCategory: typeof import("./encryption/vaults/categories/decryptByVaultKey").default;
+            };
         };
     };
     srp: {
@@ -45,57 +108,6 @@ declare const _default: {
             generateEphemeralKeyPair(verifier: string): import("./srp/types").Ephemeral;
             deriveSession(serverSecretEphemeralKey: string, clientPublicEphemeralKey: string, salt: string, secretKey: string, verifier: string, clientSessionProofKey: string): import("./srp/types").Session;
         };
-    };
-    vaults: {
-        privateKey: {
-            encryptBySymmetricKey: (privateKey: import("node-forge").pki.PrivateKey, symmetricKey: string) => Promise<import("./vaults/privateKey/encryptBySymmetricKey").EncryptedPrivateKey>;
-            decryptBySymmetricKey: (encryptedPrivateKey: import("./vaults/privateKey/encryptBySymmetricKey").EncryptedPrivateKey, symmetricKey: string) => Promise<import("node-forge").pki.rsa.PrivateKey>;
-        };
-        symmetricKey: {
-            encryptBySecretKey: (symmetricKey: string, secretKey: string, salt: string) => Promise<import("./vaults/symmetricKey/encryptBySecretKey").EncryptedSymmetricKey>;
-            decryptBySecretKey: (encryptedSymmetricKey: import("./vaults/symmetricKey/encryptBySecretKey").EncryptedSymmetricKey, secretKey: string) => Promise<string>;
-            encryptByPublicKey: (symmetricKey: string, publicKey: import("node-forge").pki.rsa.PublicKey) => Promise<import("./vaults/symmetricKey/encryptByPublicKey").EncryptedSymmetricKey>;
-            decryptByPrivateKey: (encryptedSymmetricKey: import("./vaults/symmetricKey/encryptByPublicKey").EncryptedSymmetricKey, privateKey: import("node-forge").pki.rsa.PrivateKey) => Promise<string>;
-        };
-        vaultKey: {
-            encryptBySecretKey: (vaultKey: string, secretKey: string) => Promise<import("./vaults/vaultKey/encryptBySecretKey").EncryptedVaultKey>;
-            decryptBySecretKey: (encryptedVaultKey: import("./vaults/vaultKey/encryptBySecretKey").EncryptedVaultKey, secretKey: string) => Promise<string>;
-            encryptByPublicKey: (vaultKey: string, publicKey: import("node-forge").pki.rsa.PublicKey) => Promise<import("./vaults/vaultKey/encryptByPublicKey").EncryptedVaultKey>;
-            decryptByPrivateKey: (encryptedVaultKey: import("./vaults/vaultKey/encryptByPublicKey").EncryptedVaultKey, privateKey: import("node-forge").pki.rsa.PrivateKey) => Promise<string>;
-        };
-        vaultMetadata: {
-            encryptByVaultKey: (metadata: Record<string, any>, vaultKey: string) => Promise<import("./common/aes/encrypt").EncryptedData>;
-            decryptByVaultKey: (metadata: import("./common/aes/encrypt").EncryptedData, vaultKey: string) => Promise<Record<string, any>>;
-        };
-        vaultItem: {
-            encryptVaultItem: (overview: Record<string, any>, details: Record<string, any>, vaultKey: string) => Promise<import("./vaults/vaultItem/encryptByVaultKey").EncryptedVaultItem>;
-            encryptOverviewByVaultKey: (overview: Record<string, any>, vaultKey: string) => Promise<import("./common/aes/encrypt").EncryptedData>;
-            encryptDetailsByVaultKey: (details: Record<string, any>, vaultKey: string) => Promise<import("./common/aes/encrypt").EncryptedData>;
-            decryptVaultItem: (encryptedVaultItem: import("./vaults/vaultItem/encryptByVaultKey").EncryptedVaultItem, vaultKey: string) => Promise<import("./vaults/vaultItem/decryptByVaultKey").DecryptedVaultItem>;
-            decryptOverviewByVaultKey: (encryptedOverview: import("./common/aes/encrypt").EncryptedData, vaultKey: string) => Promise<Record<string, any>>;
-            decryptDetailsByVaultKey: (encryptedDetails: import("./common/aes/encrypt").EncryptedData, vaultKey: string) => Promise<Record<string, any>>;
-        };
-        teamKey: {
-            encryptBySecretKey: (teamKey: string, secretKey: string) => Promise<import("./vaults/teamKey/encryptBySecretKey").EncryptedTeamKey>;
-            decryptBySecretKey: (encryptedTeamKey: import("./vaults/teamKey/encryptBySecretKey").EncryptedTeamKey, secretKey: string) => Promise<string>;
-            encryptByPublicKey: (teamKey: string, publicKey: import("node-forge").pki.rsa.PublicKey) => Promise<import("./vaults/teamKey/encryptByPublicKey").EncryptedTeamKey>;
-            decryptByPrivateKey: (encryptedTeamKey: import("./vaults/teamKey/encryptByPublicKey").EncryptedTeamKey, privateKey: import("node-forge").pki.rsa.PrivateKey) => Promise<string>;
-        };
-        teamMetadata: {
-            encryptByTeamKey: (metadata: Record<string, any>, teamKey: string) => Promise<import("./common/aes/encrypt").EncryptedData>;
-            decryptByTeamKey: (metadata: import("./common/aes/encrypt").EncryptedData, teamKey: string) => Promise<Record<string, any>>;
-        };
-        generateKeyPair: () => Promise<import("node-forge").pki.rsa.KeyPair>;
-        publicKeyToString: (publicKey: import("node-forge").pki.rsa.PublicKey) => string;
-        publicKeyFromString: (pem: string) => import("node-forge").pki.rsa.PublicKey;
-    };
-    certificates: {
-        generateKeyPair: () => {
-            publicKey: import("node-forge").pki.ed25519.NativeBuffer;
-            privateKey: import("node-forge").pki.ed25519.NativeBuffer;
-        };
-        signCertificate: (privateKey: import("node-forge").pki.ed25519.BinaryBuffer, message: string, options?: import("./certificates/signCertificate").Options) => import("node-forge").pki.ed25519.NativeBuffer;
-        verifyCertificate: (publicKey: import("node-forge").pki.ed25519.NativeBuffer, signature: import("node-forge").pki.ed25519.BinaryBuffer, message: string, options?: import("./certificates/verifyCertificate").Options) => boolean;
     };
 };
 export default _default;

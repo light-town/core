@@ -1,7 +1,7 @@
 import client from './client';
 import server from './server';
 import * as Types from './types';
-import BigNumber from './big-number';
+import BigNumber from './bigNumber';
 
 export default {
   client: {

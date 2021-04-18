@@ -396,93 +396,23 @@
         "signature": "d55a6417fc4ff3af715099d426991a9b6b20ad136a238fe7cfebe4069990e064",
         "affectsGlobalScope": false
       },
-      "../src/common/generatecryptorandomstring.ts": {
-        "version": "66b9fe26edd83f7e8a14e57f3e232c5091bf88a592e6f3999e97ec83d64cae9f",
-        "signature": "6ba1b4983ffb6dfc8dd3f5f216e183836108961f5b48028810aafa2646246bb8",
-        "affectsGlobalScope": false
-      },
-      "../src/common/generateaccountkey.ts": {
-        "version": "40d7d6e66497c6c000528466ea943f95d92059fd259ee68c705bff5f56ff2d33",
-        "signature": "9a28daeecf09bb79eb3be932b6e84b40c0206f3b8009a9629e55c32eb6a2269c",
-        "affectsGlobalScope": false
-      },
-      "../src/common/generaterandomsalt.ts": {
-        "version": "87531213f9a52b77f008c3fe4c3595388f4ab63efa0c2f027f42a5a503dcf99e",
-        "signature": "63c0e3489164e606238e32cac56d1617eef67a04dede11c169ac736d9cbe954a",
-        "affectsGlobalScope": false
-      },
-      "../src/common/normalizemasterpassword.ts": {
-        "version": "83002427addc63d3e16b4d31054dc05536dd181289e2d5972728620f43d19d9b",
-        "signature": "74ffbda74470ecec2c5dada2e7c56c7b35935ba3113f2fb813b0b7960497547c",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/fast-sha256/sha256.d.ts": {
-        "version": "4c754320a6ff1e7ab0214c7ce852d236f33ed7b8540d611094f1ba663bfd1ef1",
-        "signature": "4c754320a6ff1e7ab0214c7ce852d236f33ed7b8540d611094f1ba663bfd1ef1",
-        "affectsGlobalScope": false
-      },
-      "../src/common/pbkdf2/computehash.ts": {
-        "version": "46f77711ba85b1833d9cae6f0e8f09636d8460df89a41a9f7052eac4702f62da",
-        "signature": "d56939be65fc2960f5f460aeaee4aecbaf02b0fffe5075401bb5febc2d0b1aee",
-        "affectsGlobalScope": false
-      },
-      "../src/common/hkdf/computehkdf.ts": {
-        "version": "5cbb586185405c2ad3d125925acb60188ad466898533e41f080b990ecd52255c",
-        "signature": "7fc8575092892e665dd0f27e211f58a454830dfeaf245397d5896b708c3e5407",
-        "affectsGlobalScope": false
-      },
-      "../src/common/hkdf/index.ts": {
-        "version": "73d27515a27f498a75dca510bda09fdca47936aefbf48f339d2fba2b5b9fdd08",
-        "signature": "859b014f33063af944d349e7ca3e76a5d46b3c11df5f54fcf4d1f7e7145333fe",
-        "affectsGlobalScope": false
-      },
-      "../src/common/base64/encode.ts": {
-        "version": "3237328dc6aa6b9be0cb58237892d1570069a0affb1639b5530a421d87a082ad",
-        "signature": "b8e743e76c452f976a71712bd88e5b35bdb535aab6fd9be560d52153c8174a5b",
-        "affectsGlobalScope": false
-      },
-      "../src/common/base64/decode.ts": {
-        "version": "5b9cb23a5ee53b2485307fa5fe605ce06ff0a3f32f9dc888bfedfcfad82dacd8",
-        "signature": "93792cc57385b33ebd8a71b18ff55bcd032e02f372f22b780818634d12d6799d",
-        "affectsGlobalScope": false
-      },
-      "../src/common/base64/index.ts": {
-        "version": "f48c5d61c67663dd9599ccb60268c387a2eb243797c12be938c0ca318bef0055",
-        "signature": "c35fa7a7784ac5dbb3d794d4f7d69d9f9ea55389924dedecd7c4d8f93104c4ab",
-        "affectsGlobalScope": false
-      },
-      "../src/common/derivemasterunlockkey.ts": {
-        "version": "73d1c42c7d6af0f3139d2caa56abacf0f192f8bb60f4b99b85f55723189121e8",
-        "signature": "9924815e699c9881e4c60425edf9994fedac0da4548f026758ce5c079d7ef531",
-        "affectsGlobalScope": false
-      },
-      "../src/common/pbkdf2/index.ts": {
-        "version": "d846df076eeab0c6dfd1eea14c89c01f5945fa5edd64360cce9a345f78b1329a",
-        "signature": "88e1519611dc7f0c05de8a900112e3dc2668f4faa86410fc5a63e11814c2adb5",
-        "affectsGlobalScope": false
-      },
-      "../src/common/index.ts": {
-        "version": "52f5f2dccb4cea83cc1660c1ee40a48b22352837d1909f196e35cf15994c68e2",
-        "signature": "31fe81a47ee657795490155764fb0833c19fd2f1b3b6c4bbc139a6dbf527de33",
-        "affectsGlobalScope": false
-      },
-      "../src/srp/big-number.ts": {
+      "../src/srp/bignumber.ts": {
         "version": "7b30fceba0750c174867a590c6faadf12c74019e8d3f0d2746f429e42bab96f8",
         "signature": "7150c0632bc09a66636a201201637287b1be386c9a0c1c0ce9194a04b6f1abb2",
         "affectsGlobalScope": false
       },
       "../src/srp/sha256.ts": {
-        "version": "b5c84fcfbe9faed0952007f76f9b254d45b4a0d57b99005f86c7432e6b224173",
-        "signature": "5edc17b13202307b3f169a26c2bc2261e8f70002f02370f6c3bb795529ba28eb",
+        "version": "db37efbe3c545138eef29ea9de08fd8d94a373f168025c087a0756d671a23b66",
+        "signature": "d90d45c655ce86809c5f80f911e895c68837ddadbd437b17cfdb75aefab3b771",
         "affectsGlobalScope": false
       },
       "../src/srp/params.ts": {
-        "version": "102633871d25b49141b865b79bdae761a6b0df95c7b34c7001eacdfd57ad5d2d",
-        "signature": "3060881db9fa1d5016c01ab4db01f01c8e4d241aef1b13cfc903dc24a152799f",
+        "version": "7fc4cfb9ee5e3c442f42872e197650653cf05c67e10e2e4f8323978977f774d7",
+        "signature": "a6e324a000cad0b9b1ace484e8a86b428ca29eaf1489406fc26a4eaf51ad0853",
         "affectsGlobalScope": false
       },
       "../src/srp/client/deriveverifier.ts": {
-        "version": "f444b4c8a6f65d041f065fe6f8ea4db3420be1bc17c15d0afaed4694d59108aa",
+        "version": "1dd27845c71b05bff0fecf42d7f815110debe8edac4acb85a0ba31b584a6f670",
         "signature": "c57bc05d2a3854d6bfc0d7871d071890535b9b2548e369c3a3eefca29366686e",
         "affectsGlobalScope": false
       },
@@ -492,17 +422,17 @@
         "affectsGlobalScope": false
       },
       "../src/srp/client/derivesession.ts": {
-        "version": "0909e3e90eb704b5e12edf509f09cec3beb4c52ea2f8a6397a37e305768141df",
+        "version": "2018d1b2bf77a839ef523ed591913aa3a00d9ef25de32f73f27d971c9cfe1c72",
         "signature": "0ce1517fd8ad4aa41d1e0bca4ef5aff0c6844f9aabeeb3d4603098b7821895aa",
         "affectsGlobalScope": false
       },
       "../src/srp/client/verifysession.ts": {
-        "version": "81d625391fa33405f22fc9dd71bfe5ceddc9a762612a3a1e879eae2f3fe14ff9",
+        "version": "eccb222771cccceb09822b595545473757a21de26821933092a372fd2e90fdce",
         "signature": "625dec9088cf180905ffb7bee60c3ead62a11c07044e71b5d06d9f434e2cd598",
         "affectsGlobalScope": false
       },
       "../src/srp/client/generateephemeralkeypair.ts": {
-        "version": "868ef2c3136e82ba47c916fd234cdcee56f4b95e045b7e13828237f0828df174",
+        "version": "a29fa17c03623169849814aeb8ea768975cd599e2a0f2a8c421d58dbae51eeb7",
         "signature": "61af49121ea4697559321fc3f93e6834c3c7a91a9595ec42683886f7078fd63b",
         "affectsGlobalScope": false
       },
@@ -517,12 +447,12 @@
         "affectsGlobalScope": false
       },
       "../src/srp/server/derivesession.ts": {
-        "version": "e68be4195c23104412d8cb5ea6110138abb00e88f9958c2f86627955ff74ce7d",
+        "version": "47c781c6718b6e3532d387bcc11bb2c5fb9536005e6deabaa2672dd99a369f85",
         "signature": "47a7fad92517741427cd6d7d2e26ccc7c51a6e30dfb938449aefc5c3fe1353b2",
         "affectsGlobalScope": false
       },
       "../src/srp/server/generateephemeralkeypair.ts": {
-        "version": "21ef712e558771594362efdafe0e5945867e85612d065d9a4127018a2399e1b3",
+        "version": "b8603475e9d9dcae1592fe73fd37009415e2e1119d599fe5726fe71fc82ab566",
         "signature": "9464a39aa25b295925d56ba03aa5297ee4a3d61a09ee842e790f64465888e4a0",
         "affectsGlobalScope": false
       },
@@ -532,208 +462,513 @@
         "affectsGlobalScope": false
       },
       "../src/srp/index.ts": {
-        "version": "a42ce905dd1bf57a438afb24cfb705ba42cf44edbd6c0f7f87d0e9693dde83de",
+        "version": "e7752c52be4da5eb559d12aa1817cfc1edbbf0047a6efa03e479cd2ae78cfc8d",
         "signature": "df65f94bec10e82460f1f09cf9147aabc2c9b6f791dc870f32cd2d8710da7ffa",
         "affectsGlobalScope": false
       },
-      "../src/vaults/generatekeypair.ts": {
-        "version": "fef5c5ebb8e51661d45323e36f48b8e2569798868877eb85ec692fd38320a78a",
-        "signature": "65f8141578d2be451a41684607ec0318509416a73fbd4186526953e0bd286628",
+      "../src/encryption/common/generatecryptorandomstring.ts": {
+        "version": "66b9fe26edd83f7e8a14e57f3e232c5091bf88a592e6f3999e97ec83d64cae9f",
+        "signature": "6ba1b4983ffb6dfc8dd3f5f216e183836108961f5b48028810aafa2646246bb8",
         "affectsGlobalScope": false
       },
-      "../src/vaults/privatekey/encryptbysymmetrickey.ts": {
-        "version": "b13b2dfd18ee0b8ded2d9ab4dd22352f93ba4172e4f15aea935c051770d321db",
-        "signature": "89f817f369038993acd6216a55b526b80e23a0ba1dc75492c7200390f5ab3557",
+      "../src/encryption/common/generateaccountkey.ts": {
+        "version": "2d13cb99311b8811adc671a2b636ba44b6dc85ffc26e1b7bf0f85a8e04461fb3",
+        "signature": "658f782a758a461e16c5c508b1f4c79228c50f21fc4926b0a647d36c723693e4",
         "affectsGlobalScope": false
       },
-      "../src/vaults/privatekey/decryptbysymmetrickey.ts": {
-        "version": "7be35483a1d8b30a157be869bfdf4886962ee61747607a31e9c957aecc774cf3",
-        "signature": "7457f952271bde70c029a171ec89d7937eaa7c9c4b419e04df7f42211a2c2fea",
+      "../src/encryption/common/generaterandomsalt.ts": {
+        "version": "87531213f9a52b77f008c3fe4c3595388f4ab63efa0c2f027f42a5a503dcf99e",
+        "signature": "63c0e3489164e606238e32cac56d1617eef67a04dede11c169ac736d9cbe954a",
         "affectsGlobalScope": false
       },
-      "../src/vaults/privatekey/index.ts": {
-        "version": "17f9573d6fcdcf731150345736640e62249618dfb7b2a77a7dc344049b4e7e49",
-        "signature": "59bf7951ba4a2ed92a8ce5e3ac6175dbdb8d1431df64de1432394a6897c86098",
+      "../src/encryption/common/normalizemasterpassword.ts": {
+        "version": "83002427addc63d3e16b4d31054dc05536dd181289e2d5972728620f43d19d9b",
+        "signature": "74ffbda74470ecec2c5dada2e7c56c7b35935ba3113f2fb813b0b7960497547c",
         "affectsGlobalScope": false
       },
-      "../src/common/aes/encrypt.ts": {
-        "version": "6e43e0851defcf5d5498b28db63c4fc5569a938dc1f6f815865c1d17a25ca396",
-        "signature": "183f5fa7405916259420d9afad7be6795d2a292b095fc3a1642574a2a1e8500e",
+      "../node_modules/fast-sha256/sha256.d.ts": {
+        "version": "4c754320a6ff1e7ab0214c7ce852d236f33ed7b8540d611094f1ba663bfd1ef1",
+        "signature": "4c754320a6ff1e7ab0214c7ce852d236f33ed7b8540d611094f1ba663bfd1ef1",
         "affectsGlobalScope": false
       },
-      "../src/vaults/symmetrickey/encryptbysecretkey.ts": {
-        "version": "223bdd0016ea4f279fc31acfd5683135b3ca1e36b359964655f6252fcd5b17ad",
-        "signature": "c2dc8ec0cb4ef25795968dc7cdae0854e9fd2c9a54ad30e8708f8306d1bfec00",
+      "../src/encryption/common/pbkdf2/computehash.ts": {
+        "version": "46f77711ba85b1833d9cae6f0e8f09636d8460df89a41a9f7052eac4702f62da",
+        "signature": "d56939be65fc2960f5f460aeaee4aecbaf02b0fffe5075401bb5febc2d0b1aee",
         "affectsGlobalScope": false
       },
-      "../src/common/aes/decrypt.ts": {
-        "version": "9bd8d355a949805a091ef6198311e0f9ee05329b385ced27e2ea616ca59d1a36",
-        "signature": "7bf5031f5f13fd5fa6858da52d4523e201d5ad22ed891c0b40fb36ed5e6a9fc4",
+      "../src/encryption/common/hkdf/computehkdf.ts": {
+        "version": "5cbb586185405c2ad3d125925acb60188ad466898533e41f080b990ecd52255c",
+        "signature": "7fc8575092892e665dd0f27e211f58a454830dfeaf245397d5896b708c3e5407",
         "affectsGlobalScope": false
       },
-      "../src/vaults/symmetrickey/decryptbysecretkey.ts": {
-        "version": "588a5dccf4d0db54f5ccfdd941ab737aba01461145e03049511710e61324bcc6",
-        "signature": "0b14d076a4056b11241307ef03d854135d9773a169267a337d94f5c4a6cbd214",
+      "../src/encryption/common/hkdf/index.ts": {
+        "version": "73d27515a27f498a75dca510bda09fdca47936aefbf48f339d2fba2b5b9fdd08",
+        "signature": "859b014f33063af944d349e7ca3e76a5d46b3c11df5f54fcf4d1f7e7145333fe",
         "affectsGlobalScope": false
       },
-      "../src/common/rsa/encrypt.ts": {
-        "version": "950d795af33e05b16cafa6794d171254756ad798da4d766f5f09ebf841b3936d",
-        "signature": "a841f3d0d6d99fb5e57b54ad576c76493307e1d2116e8243c09a162df6bbe882",
+      "../src/encryption/common/base64/encode.ts": {
+        "version": "3c76e12288fb7fae51be4e4e197b7520ac33b5fe2a98b6ff6c75f27b5dff6d2a",
+        "signature": "673b30da518c8593cdfe00eb832a8900af4aaf119299cf5582ce984917fb0769",
         "affectsGlobalScope": false
       },
-      "../src/vaults/symmetrickey/encryptbypublickey.ts": {
-        "version": "1efe6258f0f7125a612dea142678d3147e4df5b23790a07f2dd0f36a32cb6e4e",
-        "signature": "5b23295ccf2aa886d2fdb32d4e28c2996394e4dd1d356d7d8b6d0f741c540bbe",
+      "../src/encryption/common/base64/decode.ts": {
+        "version": "a43f8bfc197c5aa4919148acc8b1e190bb1ba2125251b25176120d8764ee0f12",
+        "signature": "20457337015cc3c41a7e2376c17e0bab855a8150cc3a5aa10db9435cfa7fc24f",
         "affectsGlobalScope": false
       },
-      "../src/common/rsa/decrypt.ts": {
-        "version": "6fde523b3fc7c4f8c9ea9166c15ffc97b536f8d3362e9f6603311cc6d371b5c1",
-        "signature": "4be601ac8e6b4a932592d785b1c801f55deab868d687e8ba22435fb515a1be04",
+      "../src/encryption/common/base64/index.ts": {
+        "version": "5407ba6fed5a84ecb14af882a53d8a9f2b5f5a0861cb6438c1081a88621bb538",
+        "signature": "f3ccb1933dd6ed3ab63bb6a93aa79c573d10c578a54aaa9b028afd098f824f80",
         "affectsGlobalScope": false
       },
-      "../src/vaults/symmetrickey/decryptbyprivatekey.ts": {
-        "version": "d7a2cde716b659a34b936a7ef521de8e9356118f54162f09c3b21faf1f4f02a5",
-        "signature": "a6f3ebe3403e92f5b5072e56ae3b4904347cf0bc6c6f548896ece0455906fb9a",
+      "../src/encryption/common/derivemasterunlockkey.ts": {
+        "version": "a3a41004277d92ddcab7dac79ddf8c9a89eb70656d4aba9ee5afdf65384716df",
+        "signature": "5f08cca6cbb7e2e1a59da6596ebf3ea5b57c0aba07104b3ba91b609ef359a5ba",
         "affectsGlobalScope": false
       },
-      "../src/vaults/symmetrickey/index.ts": {
-        "version": "62021ace0bea6dafdfd7b10dd4a3ce977bbf95778471171c8e68b1c8cbe66b33",
-        "signature": "603d5adc45bf95fcfee576da94f46c57d207f70000f189ed118fb8b1de8afc14",
+      "../src/encryption/common/pbkdf2/index.ts": {
+        "version": "d846df076eeab0c6dfd1eea14c89c01f5945fa5edd64360cce9a345f78b1329a",
+        "signature": "88e1519611dc7f0c05de8a900112e3dc2668f4faa86410fc5a63e11814c2adb5",
         "affectsGlobalScope": false
       },
-      "../src/vaults/vaultkey/encryptbysecretkey.ts": {
-        "version": "9ddb6d237389c03a4213208ca812a6c06122236a819c9f0c0fad0152b99ba265",
-        "signature": "8388db2c011b8677d2e0ab344cc7c8069512baec820c808c068b812b795e96cc",
+      "../src/encryption/common/rsa/definitions.ts": {
+        "version": "c52b4d944145b215fcadae396d1c1d40304287db1da8547213e105f359e8d5d8",
+        "signature": "d75a669c77f017a895930faa7e5555b11ee4a4d10efe58bd797fdb89a1925c46",
         "affectsGlobalScope": false
       },
-      "../src/vaults/vaultkey/decryptbysecretkey.ts": {
-        "version": "c885815129e7a9468fed22c8d9be15e93f17e06e60e3bc59a89c16b1ba874ec8",
-        "signature": "36cb2045715dadca5b41e4d58ad63cc26c07d4efbdcff92b0ba27044b5f42340",
+      "../src/encryption/common/rsa/encrypt.ts": {
+        "version": "c0ccd7f2dafc28f72f800f47be8c21a46e3817ef1cc296593afba30137f8317f",
+        "signature": "5fcd2087d13070708acc40821ab1809507df7eb05f7a72f6704e50d959dd5865",
         "affectsGlobalScope": false
       },
-      "../src/vaults/vaultkey/encryptbypublickey.ts": {
-        "version": "e2ed162c1bf502dfc9998561e9c8c7935de55e4a98f87de2e563b5a367669383",
-        "signature": "b6a3d6b2578eeb01be2e66958c87462380179edc9d1ac3efb29d6967b9aee04a",
+      "../src/encryption/common/rsa/decrypt.ts": {
+        "version": "1eaa17b1e101ec5de78c72675a1396af6d0e3c0ed099bf319fb5341cc9153ab7",
+        "signature": "a422c820f9659b3cea6f3ef8b4ff6840b0a3016de908f0cd08ad8c85256c1993",
         "affectsGlobalScope": false
       },
-      "../src/vaults/vaultkey/decryptbyprivatekey.ts": {
-        "version": "6b9ab23436692306b97c9c2397d8f2242cfbf5418b365a6019f0c0d4d0cc3b30",
-        "signature": "2a354f036e94021496cd49c3c5a63d9b75cc2fc03db1470321a222041baef819",
+      "../src/encryption/common/rsa/generatekeypair.ts": {
+        "version": "88fa030e76067336d91ddd9117d494457f380c300e3da3c134a6a6c8bb44089f",
+        "signature": "fd16b15ecb091a9169b34e904d0f47fcbbccaddcc51e18402adade85357fcb52",
         "affectsGlobalScope": false
       },
-      "../src/vaults/vaultkey/index.ts": {
-        "version": "62021ace0bea6dafdfd7b10dd4a3ce977bbf95778471171c8e68b1c8cbe66b33",
-        "signature": "389c36774bb25db5fb9b8ac3681c1b72d74cacb1584d02a550e1ed344fff6102",
+      "../src/encryption/common/rsa/publickeyfromstring.ts": {
+        "version": "2016cfd9311b6df2937d6cfc1d3a088516f408ca808faa7fe0e7327d47f5b235",
+        "signature": "600606c4849604899efc271629b97f9535f96b6b2531ca500af13a4b3f541be1",
         "affectsGlobalScope": false
       },
-      "../src/vaults/vaultmetadata/encryptbyvaultkey.ts": {
-        "version": "a906443597d9648cde20a80252cf6b5419be2bc977a8fb55a02c4cf7933a5398",
-        "signature": "0f47ca7d4bb242983bf527f8e718e6757a8d864820249fd5cd1244dbdfac3411",
+      "../src/encryption/common/rsa/publickeytostring.ts": {
+        "version": "e8c4158cd830c326a03ea512c35336a419ffa3af25e2c0c178660b1a98617d3c",
+        "signature": "ff9027d88cd6fe282bb42fdefbc655014dbd2129eaddc6852ef5cd607a572d5c",
         "affectsGlobalScope": false
       },
-      "../src/vaults/vaultmetadata/decryptbyvaultkey.ts": {
-        "version": "2b324d5847cbcb9e2e13eba9f84de208573c29fdc273b64f28de5d248724ff60",
-        "signature": "755b3cbf9d0529898e81a8b2ce053bf7896b0cbb44bfd1a55e5276ef722e48ae",
+      "../src/encryption/common/rsa/index.ts": {
+        "version": "ffc3012d1dc91d20ad3d64decbeeb94a9f6f57f3e840b93d8a9e93ff4633acba",
+        "signature": "824fd117063d59f0041e1dd95a0f62646caa5643957c3059b74546de3f1d23a2",
         "affectsGlobalScope": false
       },
-      "../src/vaults/vaultmetadata/index.ts": {
-        "version": "1cd10597bbaa0c147a6487cd912b6e35443b77ad7a36c14da10ff4cd7854b0b1",
-        "signature": "9833d2a2ae7f236e00b9f87ba06766f4f78b817f46f306c8f322d38b24cc5a23",
+      "../src/encryption/common/index.ts": {
+        "version": "9946e3fc0b39229bfb062ecdbdd0316dd0f741b0b9f970121869ffcf0e44e610",
+        "signature": "c40cd85bc0b052c9c86010203ce2ad856cd74bd243383ebc4cf7abdf94afc810",
         "affectsGlobalScope": false
       },
-      "../src/vaults/teamkey/encryptbysecretkey.ts": {
-        "version": "12b22a367e10074cbb452f323c5d739540a2baced4abfd9e337fb45b1ef60dec",
-        "signature": "783e7e1ae404b965f4729fdb09710e6e2c30ce958ad53a16659b4eab50ea49d2",
+      "../src/encryption/keysets/privatekey/definitions.ts": {
+        "version": "fbc6bbf1f53c35cc7178aa96d66052ab7b71e25550e68c68a978f642ae1bb4e0",
+        "signature": "ac87dbf604190ecd78d102ca05aff77ceb525d5f2fc7fdab74764149238d56ce",
         "affectsGlobalScope": false
       },
-      "../src/vaults/teamkey/decryptbysecretkey.ts": {
-        "version": "606eefd55f07bcfda7dd2541d55592221c52b2d73e3281ea6fa7a57b0bbf6628",
-        "signature": "d33bccbb58131477af721fe1d0d7af256ef31e3211d0c9602f9fd3350ae8674e",
+      "../src/encryption/keysets/privatekey/encryptbysymmetrickey.ts": {
+        "version": "76bbb45f2e9c753d56cd49b515eba46e7cd12af4040f6c6f5dc9a18912dcd228",
+        "signature": "30bfe2ac30639c08beb540653b2481f5cb43bc69d7a805cf3c040b5fa0db0507",
         "affectsGlobalScope": false
       },
-      "../src/vaults/teamkey/encryptbypublickey.ts": {
-        "version": "875c8f100ee311c0c2f1b2876c5e6830d82e5117511df335ec7169c0a0a1207b",
-        "signature": "a1f809c8dcbaed4c52277375bdc57ea209192319e4c2c89438bc10c3c47725a0",
+      "../src/encryption/keysets/privatekey/decryptbysymmetrickey.ts": {
+        "version": "69331cb464196dc4e5a39da90a0a7c919c0a91e4455b0f7457cbd914d62852b5",
+        "signature": "37b56a457ffdc6eeb156e97955e2d6f80dfda64953b51cbc7c9d798d72e62375",
         "affectsGlobalScope": false
       },
-      "../src/vaults/teamkey/decryptbyprivatekey.ts": {
-        "version": "af41566eeee339de5cfd24d14cf764d9cd6d714066f4d1fe03fb5d1c4127bf63",
-        "signature": "6348abc81598a983b579a96b9dee04a79bcca44de343da94f4ebc49d09c51d4a",
+      "../src/encryption/keysets/privatekey/index.ts": {
+        "version": "65df7ac8a4cfcef0d772a6c2ad97010531dca840a9d2d707cdac1a93aa93b45e",
+        "signature": "b12a732b362d5ad40e37b3764a7a6b88e30e753a5baff71e1549d6060d8e66c5",
         "affectsGlobalScope": false
       },
-      "../src/vaults/teamkey/index.ts": {
-        "version": "62021ace0bea6dafdfd7b10dd4a3ce977bbf95778471171c8e68b1c8cbe66b33",
-        "signature": "557ebefb0cb1ea6a2d312e4ec2e9d8a44670faefde7bc9255e48e93249ea70e6",
+      "../src/encryption/keysets/symmetrickey/definitions.ts": {
+        "version": "7e2d19ea49f33f86733d18537025b20b60a7f9b75aaedaf79b5037f37467670f",
+        "signature": "2b549e2954abfbb6c887b5b74587cd4e3f9245639820a1cf893243bd27ba7317",
         "affectsGlobalScope": false
       },
-      "../src/vaults/teammetadata/encryptbyteamkey.ts": {
-        "version": "12186c111e98efd4e5b7822a64dd6194193dbd5ea3ca609542b244e3b283233d",
-        "signature": "9cb632708d47455b408e9fc0e5f4f9fac6b7b9a367eada9254228b51562f8841",
+      "../src/encryption/keysets/symmetrickey/encryptbypublickey.ts": {
+        "version": "e74f0198c6265b89b91b83deaa0181e20388df33ab4b5ff536f7283b2c909b75",
+        "signature": "48bde6f309cb42d5864f6831d0353644c69caa772c3e4e952ee3602e4e18a2b6",
         "affectsGlobalScope": false
       },
-      "../src/vaults/teammetadata/decryptbyteamkey.ts": {
-        "version": "1decc37744d7b1262f34f202124df889cb7abe8091e2582767c8262a8ecc425d",
-        "signature": "0c1119bce04d37d7aa270a2ab70cf9bae858a2e2c7e6922ed5f7772e414fd6fc",
+      "../src/encryption/keysets/symmetrickey/decryptbyprivatekey.ts": {
+        "version": "2ed871bc836894bb858e43fba747a401ff250f293563253aa731d18f76adbe58",
+        "signature": "d05d21d71180eae6c5ad59638d7ab2ed49b225ac7e4628dab12e3bfbceb67950",
         "affectsGlobalScope": false
       },
-      "../src/vaults/teammetadata/index.ts": {
-        "version": "bb1bb0f83c16779ffca424e0aead716817800f8ac5c62b71dddf0f0cde730151",
-        "signature": "4c45e67d99e806af820d609df70de644ea2394f81ddff1dbcb997a3f3e5b30c3",
+      "../src/encryption/common/aes/definitions.ts": {
+        "version": "546c68988f83d14feed7a0ccec660a56cd6a5a3b0f6183aef395cfc1a4ac1167",
+        "signature": "ccb809f05b1e26d51e8be92bb8dbc2305d1973e9e0fa303981f1849aab5c8c0d",
         "affectsGlobalScope": false
       },
-      "../src/vaults/vaultitem/encryptbyvaultkey.ts": {
-        "version": "7929d1104fb2c81100146a7c79591210cc9c4c184764ea34d6a6cdd14a598b5a",
-        "signature": "15ea6674d86c47e5a41a2d0f8ca965b0f2d1361e00d05b7312ed912fee64251d",
+      "../src/encryption/common/aes/decrypt.ts": {
+        "version": "a3c5f4b91d282d4a37157791ef97cea100cff1ccc9fdaf6b9e508f5eb36e9bcb",
+        "signature": "4b062316089ea326767bdc4f5e88ee61e9dce675728775fc454d8c0deb521d52",
         "affectsGlobalScope": false
       },
-      "../src/vaults/vaultitem/decryptbyvaultkey.ts": {
-        "version": "c312266c88c45807693f956fff60c6cca815b51e7b2595f1a945587f333ff656",
-        "signature": "0cd7d43f1eb9534d0ffd3bd90b58a2135a6fc1bde72f43cf2350585f8a4ffb19",
+      "../src/encryption/common/aes/encrypt.ts": {
+        "version": "50176425dd97eacdd19f6f1fff26317be9bb6899594b452c1a7a1e2366ccf9a1",
+        "signature": "9908a97a693dd5327a254f5ccde165261e87884cbf90731dd390debf2ca69024",
         "affectsGlobalScope": false
       },
-      "../src/vaults/vaultitem/index.ts": {
-        "version": "361eabd154e96901c6449c82abe119078d6538e799189517f58118c230736c59",
-        "signature": "c531777cf6e3d6e765b51c268516e868421eb920d02a053647f080d4aeb99a29",
+      "../src/encryption/common/aes/index.ts": {
+        "version": "ee235ec647c6c14815ecf538d1e06647b997e7881c133f0d5e2a30c8b757781a",
+        "signature": "5fab361244bc70e41a4852873e742bea85331efe74333ff6e6ea3fe60219291c",
         "affectsGlobalScope": false
       },
-      "../src/vaults/publickeytostring.ts": {
-        "version": "344adc5a7f3a248ff819d5492b55824bd9c962618a38f01d310b930e1e509a13",
-        "signature": "c26d567fb8ce4781e6a08bee9aa6ca175ed7171e8f452aa0e043133f08394905",
+      "../src/encryption/keysets/symmetrickey/encryptbysecretkey.ts": {
+        "version": "02b9298e52ff53881b8c9e79b645976a0bd7f1159b0f4e1a2abde7a3096ebe71",
+        "signature": "526416e5d69057cc14db15873bd8c08870e504a4ab896708c8f14703ae5feb8b",
         "affectsGlobalScope": false
       },
-      "../src/vaults/publickeyfromstring.ts": {
-        "version": "bfed6d8a62ccd0be3173b1ccbf36f76cae045cd3a578f6c74f3454cf5601477d",
-        "signature": "beccd44faa0333351a7827c2ac7cf0ca56069b7baf5e9e48065b166bb68b6c59",
+      "../src/encryption/keysets/symmetrickey/decryptbysecretkey.ts": {
+        "version": "22b16efe659eb8bc5908043a32d95a2d97bf4e513695b16a503ecda4dbbcbdfe",
+        "signature": "8d67b7d4913e4b5cf3369e0440820a5f86d1cbf3c7578a6a314f054fe9dfd5bb",
         "affectsGlobalScope": false
       },
-      "../src/vaults/index.ts": {
-        "version": "3ba089ca6177676a028a2d8469ba8298731b0983ce3eb5208af60a9f62aa96c0",
-        "signature": "1686663097326f82adeedcc78a0bbb8f5e7682cb7724cce7b41deeed85018e91",
+      "../src/encryption/keysets/symmetrickey/index.ts": {
+        "version": "aa8182310f20300ea23098fac283ee952c04a04f495fa0b1ed575c8c8632b4e9",
+        "signature": "804e49946e9994cb7d3f2e004ac3402d81e7ce39b430431441c5f674c5d597d7",
         "affectsGlobalScope": false
       },
-      "../src/certificates/generatekeypair.ts": {
-        "version": "e68172bcabf9e8be2679d38ef2e9f3cd977216c1159275ecd45ef625cbc01ed3",
+      "../src/encryption/keysets/index.ts": {
+        "version": "73993ee32f621af08c9028580497a730692a70c3420bf4b3c1dc3acd295945b4",
+        "signature": "c92b43223387f6282a659a50995c11ebd8f7541976f06848d412f34acfb568df",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/teams/key/definitions.ts": {
+        "version": "28fd100c7f2b571a7da49031b2c547c0e2064ebba56477fd735469c02187a69d",
+        "signature": "dd9591843f80c2e9424c529e23cee4e7764c88f3f1779937baf8df0d626e0021",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/teams/key/encryptbysecretkey.ts": {
+        "version": "6ec577d8a7b8ef3b7c133a4eb30cf5f8caa4be74dbcae196fc92ddd2bd488a23",
+        "signature": "737dc1666bdc30764b9c44a527d38d65baf18eb03ef6342569dc23c0ffb6c0ff",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/teams/key/decryptbysecretkey.ts": {
+        "version": "175497fcd0c4d4e1da73e4be6660d2cc9604f808782f5d6295d104c714178b55",
+        "signature": "1e61bdbf08604ac220257de5f3ee591a5f5375039c653a3037df215fe75d63e9",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/teams/key/encryptbypublickey.ts": {
+        "version": "3e8a002c1bf6fb15765f7dedc5a1e841ec345d0875c593e7cb2b7e5dec612af7",
+        "signature": "e2cce6396e1f70a196f68436c1d345bbdc7adc6626235c187d8eae471f7fdda5",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/teams/key/decryptbyprivatekey.ts": {
+        "version": "5e7187dbc518200c8c91a02d0ef0c9e02d632f3a8e001de52a54e063d098a13c",
+        "signature": "760e80d91b69d94e843820aabbe8771a80c7feb7b3fb944bab63c4d9921a9871",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/teams/key/index.ts": {
+        "version": "c54ae81dd8bf7ab2e91379105ffc303bb565ffb8f5144df20731574620e93002",
+        "signature": "82982f34fd6863b7e92cf1342de5c80d0066e4e2dbda6dde0b1f26900e43c4bf",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/teams/overview/encryptbyteamkey.ts": {
+        "version": "d43339e2dcbecbb2677b67760f8b8f0d658306b668ed30414e627c79aff912e7",
+        "signature": "8492e70637f435a59560e612d2d21513c3ce688465fe3b845d7b1f5ba7c48348",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/teams/overview/decryptbyteamkey.ts": {
+        "version": "d3c76292a786bf273e575746096bf263caf4acefd3e2194c927982fa3743ac27",
+        "signature": "0a84d721496cdafaa6a61fdd2bc977fc7e3a03df635a6d14cadde723ed8a0307",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/teams/overview/index.ts": {
+        "version": "ad72d53d4b5ac74b3aba95e985de04125dffea858abe6641cd2bae1313100662",
+        "signature": "0e5c8960bde33bc4cdb1fd488115a44c2caeb1330673d9ab8ffc8ac0d7acdedf",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/teams/index.ts": {
+        "version": "95b7256a79f205d2edbf5fdff11614fb7678fe51cf8b879dc93c618afe37b81f",
+        "signature": "273a47d32b181a6fb60f069ae0d26dea0c81770f2577a7fcb24c789a02407e39",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/vaults/items/definitions.ts": {
+        "version": "4321d73928d5567e9c37b9d031908cb6746f77a6cc88e168486d35253bd4c96b",
+        "signature": "2931c79d43417250f3ceb8f33b5520d684e6626952e13ae8196952cc8996629b",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/vaults/items/encryptbyvaultkey.ts": {
+        "version": "f8cdbec06cece4b1c29a2b05dee50b14745094d5fceafe97452b639674451197",
+        "signature": "f3659671ab6766588051e546ef93c16c06d338b803a285d6bdd02b35dff53382",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/vaults/items/decryptbyvaultkey.ts": {
+        "version": "fd881eac96ee23482eaa0a6b11353ae019c9c486a244b82afaaa776560122882",
+        "signature": "29770480c7477d3c6818ebf7abe675da4bb2af5f0d896c02e75fd09d366fa0cc",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/vaults/items/index.ts": {
+        "version": "9728ae1b9cd55cce99ed226bba35c2383a3b11295870a139caa1c2e3a04859a5",
+        "signature": "656c730514734c859280f276b185efef1f382225ba7c747f74bc75355a65e180",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/vaults/key/definitions.ts": {
+        "version": "0521c95245457f878216c6f5768e356bbcf97a75757d1e3437685e8d77fd319e",
+        "signature": "866d42bcdaa5f41a7e1c926ba49e20676cdef59b0eb1a45de55c9252f594166c",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/vaults/key/encryptbysecretkey.ts": {
+        "version": "fa538e94d7f5c88bc902caee0ce7cbd8daad40487a32e8a81ad4368cd9eb2ccc",
+        "signature": "09ad6aa641baa8f2ae11f960ecefd3b6e89816f6009d087b4fa0e1cf7aea4131",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/vaults/key/decryptbysecretkey.ts": {
+        "version": "76b766796eb2ca18ee237d0ae058cdf3eab57d59179dab08ca5788f3dc38ee9d",
+        "signature": "1a14c3edbcfdda0a3ba8057814595e84fe436c1ac0cd7600ab37ba68df985efe",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/vaults/key/encryptbypublickey.ts": {
+        "version": "086c6344f0a687a122737d13ba000072065086aed9ad31a2307b6b4f43a893db",
+        "signature": "360d244ff1485b7a78dd9dbc614f7587ee110ec39fa4cb1f9f1900f6bf5f2eeb",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/vaults/key/decryptbyprivatekey.ts": {
+        "version": "224371960c1a3532e858685d85bfab1b26c9afc5e418e395cc204742e82a9eb1",
+        "signature": "9369f3c40df646ee517614c45ffdd182a02d55e1dc2613d5d1a66d49fff3abea",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/vaults/key/index.ts": {
+        "version": "c54ae81dd8bf7ab2e91379105ffc303bb565ffb8f5144df20731574620e93002",
+        "signature": "aa7f1bf4353360292fc41e4c94947d69e378e0013c0e00cb28e4a7b4aa7fe662",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/vaults/overview/encryptbyvaultkey.ts": {
+        "version": "eb02f58a91c89f162174c76d5eacc89446883a2cdfa27ece03c412159d2f6988",
+        "signature": "34b47f2cab80440a62ecfa313afa12708c3a4809c1ec99ed5007bb0555597863",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/vaults/overview/decryptbyvaultkey.ts": {
+        "version": "9d8eeb19f529c7c721f123f3fe50d65d0ae37dcae896ff0ac567ef7336babc5a",
+        "signature": "3c905aff9984f619a4bf3a8f5a74e460250ffb2ef83d11addd2dc1a0c77772a1",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/vaults/overview/index.ts": {
+        "version": "23d9008337eacb7b44ae4a27e8c5a190284b0fe87e554119a3b116155651ccb4",
+        "signature": "501eca403bcf68ede4286b7defcb75c54cd9f5fdd2d9d2a2f719514943e8f858",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/vaults/folders/definitions.ts": {
+        "version": "10c0e95a5d2d4d0e5b25026ed5a8e4beed78fa0607c27bac63bf2eca9acf443b",
+        "signature": "d9799f2a51d384720aa47ef33a3d3adfb4017db9242fb88dd465f14c9adfbd05",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/vaults/folders/encryptbyvaultkey.ts": {
+        "version": "87141336c822d9452b76b51a7f37d8574167b0f84b11d7cf8da57aae77b9bb52",
+        "signature": "7fe986f9e738057d3b679a63fbf86a516aee616e5f466ff65ef027cdaa5c603e",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/vaults/folders/decryptbyvaultkey.ts": {
+        "version": "636d587013ed006f6f8f6a1b772389923523a677fef00b4990a45bbee05b465c",
+        "signature": "4a20165ebb805a49159454f7e7bc56d91c36a09b41ea7dc062021a931b7203a3",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/vaults/folders/index.ts": {
+        "version": "287b3bfa2971269e9455acf3f37811bdd04a5ebbab825636691dd9f62dcd0cec",
+        "signature": "805d3e5fed8208f7cebfed17b20b522c99aa2205958174f90fb2c727753955a8",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/vaults/categories/definitions.ts": {
+        "version": "030da10004cb9545a6cb455f9d33b3b48b395ac101b8f6392adeccfe564a93bf",
+        "signature": "d9790b9e01dc959a7f0077f47f8d131e7a14634542ad02600245e49a3c18a5f5",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/vaults/categories/encryptbyvaultkey.ts": {
+        "version": "f78d07cf8aac7ff4b1643d818b1d5e3ae1aaa6fc9e37651c0a0d2f8b19058be2",
+        "signature": "865b81e6ee9e5992d1deb1f76d6d5afb44cb5dcef57f7403bf69a69e30a0c9a1",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/vaults/categories/decryptbyvaultkey.ts": {
+        "version": "66b8b3071bf42692f0815e8b054b5a21a5a22f80f76bc5d94d16318c85fb8d6f",
+        "signature": "9f8469c5cb0530022a313aa9a5befedbb0e645e32a4c214857cb6fc2002ecfce",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/vaults/categories/index.ts": {
+        "version": "c9606fd03195e652c0182ce535eaf5cea7b92df1bd4aed9de1a4e3e44c379a9a",
+        "signature": "dcd0314a31c11eaa9db7258f4729ce77759ad3793608f1183b591d01e595756a",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/vaults/index.ts": {
+        "version": "747040244957e95efb6d85c18b1c22ca6d3310d3a3bb86273ec1e9a853f9313e",
+        "signature": "6d0e0bcb9071f1aadc8be35ba2ed619eb30c7a45df3812af9f7e4d3de28ac7d0",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/index.ts": {
+        "version": "e7988601f1755544a2d44f39cb0a0c4212229579e194d246018fbcc81cff3097",
+        "signature": "eb9d44bf808ff34ea750dc7e9f6d7838ec0dd3de63f6271d850b360a1f931595",
+        "affectsGlobalScope": false
+      },
+      "../src/index.ts": {
+        "version": "c46e8354031c59ee902eef5dd7e4430573ea9a3d6428cd72b4b2615a6d12b2d3",
+        "signature": "055b9e98fd93472b7e7a0e724f6567554a47424204f5a394b8667cdff6f58453",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/common/certificates/generatekeypair.ts": {
+        "version": "c616e18c3941102a8bf1e450d21880b7a4517a320255373bc63a780eca0b44da",
         "signature": "9f626bd9e4ecebb691b32410b0f9a5cb8588e38030230ee54e4bb33a8c045df9",
         "affectsGlobalScope": false
       },
-      "../src/certificates/signcertificate.ts": {
+      "../src/encryption/common/certificates/signcertificate.ts": {
         "version": "d15b15c07581830412c1cfe11de0d6345e17bdde657e4ba402651a30630dc1f3",
         "signature": "a7a33a49601c0fe58dae05fc3648b6d550ec1c6580065fb222821611d1883fc9",
         "affectsGlobalScope": false
       },
-      "../src/certificates/verifycertificate.ts": {
+      "../src/encryption/common/certificates/verifycertificate.ts": {
         "version": "7a66f331fe5fd45c904249146821a78077e505536ab927880ff5376b1c456455",
         "signature": "d8ab4f2067347c0b8d102ee7c188fc33362205d11a0529d071b7403dd9fcad0c",
         "affectsGlobalScope": false
       },
-      "../src/certificates/index.ts": {
+      "../src/encryption/common/certificates/index.ts": {
         "version": "0e37aa3cbab70a83020731accef31a3ca9ab1da2dc82b620fba88766e31f35a9",
         "signature": "a2ed125cf9047acafe17b83fa467ac73b41c606660463dd9e83db4251ddc0c48",
         "affectsGlobalScope": false
       },
-      "../src/index.ts": {
-        "version": "14ca303197956aee40450b0b9d39326c1bb1df1cf559da3ba04a2f4f8c37e365",
-        "signature": "bcfa37a1256c7753857c318e76ad73435bdaa570e7366cc3c2a73c633b0b6d06",
+      "../src/helpers/key-sets/definitions.ts": {
+        "version": "013782fda2cade4b432b053d72e19544b27c3e4141975bb376e300184c20e322",
+        "signature": "58641045e2f96813895f5c6367eb907e09731c511d6c5db0329e854b45bb5b84",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/key-sets/create-key-set.helper.ts": {
+        "version": "aec48c9f69bfe44a6b6e322e56f66819fc311f74a0abb2e6b21a5112ab7118e7",
+        "signature": "9616ae2a427d4b450e3d4734d5bbe1ab4985d2e774e686d54443760cf26cdf4d",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/key-sets/create-primary-key-set.helper.ts": {
+        "version": "6d9bb92bff649044fec922dea694b0197df551237162d3f38d7029b9d8f0f53b",
+        "signature": "98243698cb16bfd2c544475121971f2897372cce34cdb3458b501a14da20ff3a",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/key-sets/decrypt-key-set.helper.ts": {
+        "version": "ed552a2ef0cdccc4d6c5ed3d4d7de0a52a013ef471073d78c0d6779617a77741",
+        "signature": "bf8bc38236ce762619e918bb8187c1da7a65d9a554540951477c2e7826209884",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/key-sets/decrypt-primary-key-set.helper.ts": {
+        "version": "522cc675d6641370d039b970b1f38292f2d94827b2677241f9ea38000ca638dd",
+        "signature": "877995920ded0815a9a6bc0584333f51e48cd025f9cd7b31f5d74fa7cbb9cde7",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/key-sets/index.ts": {
+        "version": "144e69ed637c9c18cbd8dc3817a87c58dd758314b9530baf78c5171cc8db6b51",
+        "signature": "449bdcd4a6fb8c47490b7b85386453dc89857f9994ff2cb8314e4321f3b27fa8",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/master-unlock-key/index.ts": {
+        "version": "ef63bd893a3cdd24608cba9409a1e102f76a9d71819d9e7d241574ba6f6526f8",
+        "signature": "6e2edb6ec82710f72ff1272528f54875821e09def06ded64a0a65d039c9381b3",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/vault-folders/definitions.ts": {
+        "version": "46c590f46227a53aa4e57d61b30a11b27400b40b8696540357eafae2295e7c34",
+        "signature": "2016d7a449d191560df730419c84e4b3153c9815dc2dd7d17abbbd64c1bf1edc",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/vault-folders/create-vault-folder.helper.ts": {
+        "version": "e43dea41026ddaea24a9ea7a06d98919acb5feaf2a5856498705e2cdd0a33f25",
+        "signature": "85e65f0b196898a36fadea2e19e7a4fac3b0959856a9fa3e146439602c0d7055",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/vault-folders/decrypt-vault-folder.helper.ts": {
+        "version": "69690dabfcf50c7802147c2e245c70a4be75a34be39e846d46293e9b718cc4a1",
+        "signature": "44b9403becc2b21e99b9294060eb56ec4c7cf4134caae7ebe5cc2036a4c04e91",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/vault-folders/decrypt-vault-folders.helper.ts": {
+        "version": "6f69d2dd5394af0a350c0fdd49d93214f52e9a423fe2eb0ce4ee4826804a9185",
+        "signature": "8bda14333f0410c5fc21e34bfd5e8ff8142c5b6726c36ba9c0b8c67f023f8a23",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/vault-folders/index.ts": {
+        "version": "d574b855fa2bbe489de20dd35d034d9a40b8e4233444d01ab84469731cd69e4c",
+        "signature": "456760e05295639c8dc927cc0f543660209eacef7c936d65ba25c471191a2005",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/vault-item-categories/definitions.ts": {
+        "version": "e7966f348835e2433ed3f03ef178984adcf477631fcc5db7e3612176a56190c6",
+        "signature": "321223dfa478d8ad27ddb73b188b63135717ed45073ac79b46de5e7af13dc542",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/vault-item-categories/create-vault-item-category.helper.ts": {
+        "version": "12344b7c05ac117b737e7798c9accbb5461f08c99bb97e5a128034fd72acacbd",
+        "signature": "87a231c9ac9b4cfb876022ef9c161558ba621768f5e6040afbc6a7aac414b853",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/vault-item-categories/decrypt-vault-item-categories.helper.ts": {
+        "version": "1b2deff7523eae09fa65f754584d798256c64aaf215efc47607b5e8b0a356205",
+        "signature": "36a2b9c4adb214b242647c36306a0dc9a8f99476f513b74908987418e1c92b2e",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/vault-item-categories/decrypt-vault-item-category.helper.ts": {
+        "version": "506cf761aff5af79fb8b6518d59b5b4c1becdb0c7c302277ad804b12d816b26e",
+        "signature": "98a082886b64e94a88ce9e5ab8b226bbaf3e3f0152a7f475137bbb7b64c1d844",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/vault-item-categories/index.ts": {
+        "version": "1a0f0cdd73fa01da5db4dc96bde585c63dbf0ba9b306bd02703df6cc355605e7",
+        "signature": "903442520a999f86f89be39edcb527ab8ea8866003aed917383d26304447828a",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/vault-items/definitions.ts": {
+        "version": "3a91cada6939922fafea275d22614060c54a1ea1187323a8977cb57f8329947c",
+        "signature": "afd35d4b105998839abe24559420c0c34b6011ccf2361c8e595ee0cc0f27e29a",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/vault-items/create-vault-item.helper.ts": {
+        "version": "d36eb6c21322d02f0f63ff65898e71986057d5b7faecfb47511e6bf8581e7a58",
+        "signature": "8ab9ba86a46b8f4cccee112f4a784787f49b7e265cc21876fead68b8c965c742",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/vault-items/decrypt-vault-item.helper.ts": {
+        "version": "aa763ce586b02c5533ba7908f776b72de5f65da4332cd537f0538b0dab41cdff",
+        "signature": "839191f003bbcd870efb817189dfa90613edef8b9e513d1c0795141fff8b5a03",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/vault-items/decrypt-vault-items.helper.ts": {
+        "version": "57bbeec8905363694bc4c0a9cceca66a232b2b33fff716cea7fbb83f5e6c1b8a",
+        "signature": "2649cd9c6ddbf745f3a6d1b1b75cca0a931fc12de48cf3e94fc13dfd8a384623",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/vault-items/index.ts": {
+        "version": "9b5c98c7e65aad46f50a6716c4764b1a769513e2a91a444a929331bd717d38bc",
+        "signature": "e484e550286ff765183ed94d7c50c91de1aff24fe59916160124a900ff297569",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/vaults/definitions.ts": {
+        "version": "ce25ee0ea994d11ea6e1fca9f23c278955420310651f02bcd26e6a0075b2d99a",
+        "signature": "bfe72875f34d110dfa272aa31f92f8a4142acb0a2e753d4a307250c16148cc8a",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/vaults/create-vault.helper.ts": {
+        "version": "b56dc80a5b8c3befe40958d9d6f10d25a65c6f60fc46328e20371b5f8a1f3877",
+        "signature": "7996a559572b254fa3272d1e62c928155acfcdff402b5d287ba8246e847db3fa",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/vaults/decrypt-vault-by-private-key.helper.ts": {
+        "version": "8b7eee398ed57fbdfdbe2cb8300ae361278f582bf10a11e9155f5cf505ab25e3",
+        "signature": "0094e8e11ca86a7134055596e1499b9fde344a036815642bc525e384161a1fb4",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/vaults/decrypt-vault-by-secret-key.helper.ts": {
+        "version": "4649f0c221512d8642aff5858d2c415f743e64c9655eafdb2723c9a4d421c8c9",
+        "signature": "40a76677e86bc0054aafae5489e35fed7758d0552c2fbf8be9f13136b03cc50c",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/vaults/index.ts": {
+        "version": "cdc000f21ccf6f348d905ae6ca0d0b2999e0da088ed5c481a4e21143e7569805",
+        "signature": "f919d6bc490e74c2431b9607e088dfc7cda0473941d12e42c87f6ab7dbd416fb",
         "affectsGlobalScope": false
       },
       "../node_modules/@babel/types/lib/index.d.ts": {
@@ -1361,111 +1596,455 @@
       "../node_modules/pretty-format/build/index.d.ts": [
         "../node_modules/pretty-format/build/types.d.ts"
       ],
-      "../src/certificates/generatekeypair.ts": [
+      "../src/encryption/common/aes/decrypt.ts": [
         "../node_modules/@types/node-forge/index.d.ts",
-        "../src/common/index.ts"
+        "../src/encryption/common/aes/definitions.ts",
+        "../src/encryption/common/base64/index.ts"
       ],
-      "../src/certificates/index.ts": [
-        "../src/certificates/generatekeypair.ts",
-        "../src/certificates/signcertificate.ts",
-        "../src/certificates/verifycertificate.ts"
-      ],
-      "../src/certificates/signcertificate.ts": [
-        "../node_modules/@types/node-forge/index.d.ts"
-      ],
-      "../src/certificates/verifycertificate.ts": [
-        "../node_modules/@types/node-forge/index.d.ts"
-      ],
-      "../src/common/aes/decrypt.ts": [
+      "../src/encryption/common/aes/encrypt.ts": [
         "../node_modules/@types/node-forge/index.d.ts",
-        "../src/common/aes/encrypt.ts",
-        "../src/common/base64/index.ts"
+        "../src/encryption/common/aes/definitions.ts",
+        "../src/encryption/common/base64/index.ts",
+        "../src/encryption/common/generaterandomsalt.ts"
       ],
-      "../src/common/aes/encrypt.ts": [
+      "../src/encryption/common/aes/index.ts": [
+        "../src/encryption/common/aes/decrypt.ts",
+        "../src/encryption/common/aes/definitions.ts",
+        "../src/encryption/common/aes/encrypt.ts"
+      ],
+      "../src/encryption/common/base64/decode.ts": [
+        "../node_modules/@types/node-forge/index.d.ts"
+      ],
+      "../src/encryption/common/base64/encode.ts": [
+        "../node_modules/@types/node-forge/index.d.ts"
+      ],
+      "../src/encryption/common/base64/index.ts": [
+        "../src/encryption/common/base64/decode.ts",
+        "../src/encryption/common/base64/encode.ts"
+      ],
+      "../src/encryption/common/certificates/generatekeypair.ts": [
         "../node_modules/@types/node-forge/index.d.ts",
-        "../src/common/base64/index.ts",
-        "../src/common/index.ts"
+        "../src/encryption/common/index.ts"
       ],
-      "../src/common/base64/decode.ts": [
+      "../src/encryption/common/certificates/index.ts": [
+        "../src/encryption/common/certificates/generatekeypair.ts",
+        "../src/encryption/common/certificates/signcertificate.ts",
+        "../src/encryption/common/certificates/verifycertificate.ts"
+      ],
+      "../src/encryption/common/certificates/signcertificate.ts": [
         "../node_modules/@types/node-forge/index.d.ts"
       ],
-      "../src/common/base64/encode.ts": [
+      "../src/encryption/common/certificates/verifycertificate.ts": [
         "../node_modules/@types/node-forge/index.d.ts"
       ],
-      "../src/common/base64/index.ts": [
-        "../src/common/base64/decode.ts",
-        "../src/common/base64/encode.ts"
-      ],
-      "../src/common/derivemasterunlockkey.ts": [
+      "../src/encryption/common/derivemasterunlockkey.ts": [
         "../node_modules/@types/node-forge/index.d.ts",
-        "../src/common/base64/index.ts",
-        "../src/common/generaterandomsalt.ts",
-        "../src/common/hkdf/index.ts",
-        "../src/common/pbkdf2/computehash.ts"
+        "../src/encryption/common/base64/index.ts",
+        "../src/encryption/common/generaterandomsalt.ts",
+        "../src/encryption/common/hkdf/index.ts",
+        "../src/encryption/common/pbkdf2/computehash.ts"
       ],
-      "../src/common/generateaccountkey.ts": [
-        "../src/common/generatecryptorandomstring.ts"
+      "../src/encryption/common/generateaccountkey.ts": [
+        "../src/encryption/common/generatecryptorandomstring.ts"
       ],
-      "../src/common/generatecryptorandomstring.ts": [
+      "../src/encryption/common/generatecryptorandomstring.ts": [
         "../node_modules/@types/node-forge/index.d.ts"
       ],
-      "../src/common/generaterandomsalt.ts": [
+      "../src/encryption/common/generaterandomsalt.ts": [
         "../node_modules/@types/node-forge/index.d.ts"
       ],
-      "../src/common/hkdf/computehkdf.ts": [
+      "../src/encryption/common/hkdf/computehkdf.ts": [
         "../node_modules/@types/node-forge/index.d.ts"
       ],
-      "../src/common/hkdf/index.ts": [
-        "../src/common/hkdf/computehkdf.ts"
+      "../src/encryption/common/hkdf/index.ts": [
+        "../src/encryption/common/hkdf/computehkdf.ts"
       ],
-      "../src/common/index.ts": [
-        "../src/common/base64/index.ts",
-        "../src/common/derivemasterunlockkey.ts",
-        "../src/common/generateaccountkey.ts",
-        "../src/common/generatecryptorandomstring.ts",
-        "../src/common/generaterandomsalt.ts",
-        "../src/common/hkdf/index.ts",
-        "../src/common/normalizemasterpassword.ts",
-        "../src/common/pbkdf2/index.ts"
+      "../src/encryption/common/index.ts": [
+        "../src/encryption/common/base64/index.ts",
+        "../src/encryption/common/derivemasterunlockkey.ts",
+        "../src/encryption/common/generateaccountkey.ts",
+        "../src/encryption/common/generatecryptorandomstring.ts",
+        "../src/encryption/common/generaterandomsalt.ts",
+        "../src/encryption/common/hkdf/index.ts",
+        "../src/encryption/common/normalizemasterpassword.ts",
+        "../src/encryption/common/pbkdf2/index.ts",
+        "../src/encryption/common/rsa/index.ts"
       ],
-      "../src/common/pbkdf2/computehash.ts": [
+      "../src/encryption/common/pbkdf2/computehash.ts": [
         "../node_modules/fast-sha256/sha256.d.ts"
       ],
-      "../src/common/pbkdf2/index.ts": [
-        "../src/common/pbkdf2/computehash.ts"
+      "../src/encryption/common/pbkdf2/index.ts": [
+        "../src/encryption/common/pbkdf2/computehash.ts"
       ],
-      "../src/common/rsa/decrypt.ts": [
+      "../src/encryption/common/rsa/decrypt.ts": [
         "../node_modules/@types/node-forge/index.d.ts",
-        "../src/common/base64/index.ts",
-        "../src/common/rsa/encrypt.ts"
+        "../src/encryption/common/base64/index.ts",
+        "../src/encryption/common/rsa/definitions.ts"
       ],
-      "../src/common/rsa/encrypt.ts": [
+      "../src/encryption/common/rsa/definitions.ts": [
+        "../node_modules/@types/node-forge/index.d.ts"
+      ],
+      "../src/encryption/common/rsa/encrypt.ts": [
         "../node_modules/@types/node-forge/index.d.ts",
-        "../src/common/base64/index.ts"
+        "../src/encryption/common/base64/index.ts",
+        "../src/encryption/common/rsa/definitions.ts"
+      ],
+      "../src/encryption/common/rsa/generatekeypair.ts": [
+        "../node_modules/@types/node-forge/index.d.ts"
+      ],
+      "../src/encryption/common/rsa/index.ts": [
+        "../src/encryption/common/rsa/decrypt.ts",
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/common/rsa/encrypt.ts",
+        "../src/encryption/common/rsa/generatekeypair.ts",
+        "../src/encryption/common/rsa/publickeyfromstring.ts",
+        "../src/encryption/common/rsa/publickeytostring.ts"
+      ],
+      "../src/encryption/common/rsa/publickeyfromstring.ts": [
+        "../node_modules/@types/node-forge/index.d.ts",
+        "../src/encryption/common/base64/index.ts",
+        "../src/encryption/common/rsa/definitions.ts"
+      ],
+      "../src/encryption/common/rsa/publickeytostring.ts": [
+        "../node_modules/@types/node-forge/index.d.ts",
+        "../src/encryption/common/base64/index.ts",
+        "../src/encryption/common/rsa/definitions.ts"
+      ],
+      "../src/encryption/index.ts": [
+        "../src/encryption/common/index.ts",
+        "../src/encryption/keysets/index.ts",
+        "../src/encryption/teams/index.ts",
+        "../src/encryption/vaults/index.ts"
+      ],
+      "../src/encryption/keysets/index.ts": [
+        "../src/encryption/keysets/privatekey/index.ts",
+        "../src/encryption/keysets/symmetrickey/index.ts"
+      ],
+      "../src/encryption/keysets/privatekey/decryptbysymmetrickey.ts": [
+        "../node_modules/@types/node-forge/index.d.ts",
+        "../src/encryption/common/base64/index.ts",
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/keysets/privatekey/definitions.ts"
+      ],
+      "../src/encryption/keysets/privatekey/encryptbysymmetrickey.ts": [
+        "../node_modules/@types/node-forge/index.d.ts",
+        "../src/encryption/common/base64/index.ts",
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/keysets/privatekey/definitions.ts"
+      ],
+      "../src/encryption/keysets/privatekey/index.ts": [
+        "../src/encryption/keysets/privatekey/decryptbysymmetrickey.ts",
+        "../src/encryption/keysets/privatekey/definitions.ts",
+        "../src/encryption/keysets/privatekey/encryptbysymmetrickey.ts"
+      ],
+      "../src/encryption/keysets/symmetrickey/decryptbyprivatekey.ts": [
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/common/rsa/index.ts",
+        "../src/encryption/keysets/symmetrickey/definitions.ts"
+      ],
+      "../src/encryption/keysets/symmetrickey/decryptbysecretkey.ts": [
+        "../src/encryption/common/aes/index.ts",
+        "../src/encryption/keysets/symmetrickey/definitions.ts"
+      ],
+      "../src/encryption/keysets/symmetrickey/encryptbypublickey.ts": [
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/common/rsa/index.ts",
+        "../src/encryption/keysets/symmetrickey/definitions.ts"
+      ],
+      "../src/encryption/keysets/symmetrickey/encryptbysecretkey.ts": [
+        "../src/encryption/common/aes/index.ts",
+        "../src/encryption/keysets/symmetrickey/definitions.ts"
+      ],
+      "../src/encryption/keysets/symmetrickey/index.ts": [
+        "../src/encryption/keysets/symmetrickey/decryptbyprivatekey.ts",
+        "../src/encryption/keysets/symmetrickey/decryptbysecretkey.ts",
+        "../src/encryption/keysets/symmetrickey/definitions.ts",
+        "../src/encryption/keysets/symmetrickey/encryptbypublickey.ts",
+        "../src/encryption/keysets/symmetrickey/encryptbysecretkey.ts"
+      ],
+      "../src/encryption/teams/index.ts": [
+        "../src/encryption/teams/key/index.ts",
+        "../src/encryption/teams/overview/index.ts"
+      ],
+      "../src/encryption/teams/key/decryptbyprivatekey.ts": [
+        "../node_modules/@types/node-forge/index.d.ts",
+        "../src/encryption/common/base64/index.ts",
+        "../src/encryption/teams/key/definitions.ts"
+      ],
+      "../src/encryption/teams/key/decryptbysecretkey.ts": [
+        "../src/encryption/common/aes/decrypt.ts",
+        "../src/encryption/teams/key/definitions.ts"
+      ],
+      "../src/encryption/teams/key/encryptbypublickey.ts": [
+        "../node_modules/@types/node-forge/index.d.ts",
+        "../src/encryption/common/base64/index.ts",
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/teams/key/definitions.ts"
+      ],
+      "../src/encryption/teams/key/encryptbysecretkey.ts": [
+        "../src/encryption/common/aes/index.ts",
+        "../src/encryption/teams/key/definitions.ts"
+      ],
+      "../src/encryption/teams/key/index.ts": [
+        "../src/encryption/teams/key/decryptbyprivatekey.ts",
+        "../src/encryption/teams/key/decryptbysecretkey.ts",
+        "../src/encryption/teams/key/definitions.ts",
+        "../src/encryption/teams/key/encryptbypublickey.ts",
+        "../src/encryption/teams/key/encryptbysecretkey.ts"
+      ],
+      "../src/encryption/teams/overview/decryptbyteamkey.ts": [
+        "../src/encryption/common/aes/definitions.ts",
+        "../src/encryption/common/aes/index.ts"
+      ],
+      "../src/encryption/teams/overview/encryptbyteamkey.ts": [
+        "../src/encryption/common/aes/definitions.ts",
+        "../src/encryption/common/aes/index.ts"
+      ],
+      "../src/encryption/teams/overview/index.ts": [
+        "../src/encryption/teams/overview/decryptbyteamkey.ts",
+        "../src/encryption/teams/overview/encryptbyteamkey.ts"
+      ],
+      "../src/encryption/vaults/categories/decryptbyvaultkey.ts": [
+        "../src/encryption/common/aes/index.ts",
+        "../src/encryption/vaults/categories/definitions.ts"
+      ],
+      "../src/encryption/vaults/categories/definitions.ts": [
+        "../src/encryption/common/aes/definitions.ts"
+      ],
+      "../src/encryption/vaults/categories/encryptbyvaultkey.ts": [
+        "../src/encryption/common/aes/index.ts",
+        "../src/encryption/vaults/categories/definitions.ts"
+      ],
+      "../src/encryption/vaults/categories/index.ts": [
+        "../src/encryption/vaults/categories/decryptbyvaultkey.ts",
+        "../src/encryption/vaults/categories/definitions.ts",
+        "../src/encryption/vaults/categories/encryptbyvaultkey.ts"
+      ],
+      "../src/encryption/vaults/folders/decryptbyvaultkey.ts": [
+        "../src/encryption/common/aes/index.ts",
+        "../src/encryption/vaults/folders/definitions.ts"
+      ],
+      "../src/encryption/vaults/folders/definitions.ts": [
+        "../src/encryption/common/aes/definitions.ts"
+      ],
+      "../src/encryption/vaults/folders/encryptbyvaultkey.ts": [
+        "../src/encryption/common/aes/index.ts",
+        "../src/encryption/vaults/folders/definitions.ts"
+      ],
+      "../src/encryption/vaults/folders/index.ts": [
+        "../src/encryption/vaults/folders/decryptbyvaultkey.ts",
+        "../src/encryption/vaults/folders/definitions.ts",
+        "../src/encryption/vaults/folders/encryptbyvaultkey.ts"
+      ],
+      "../src/encryption/vaults/index.ts": [
+        "../src/encryption/vaults/categories/index.ts",
+        "../src/encryption/vaults/folders/index.ts",
+        "../src/encryption/vaults/items/index.ts",
+        "../src/encryption/vaults/key/index.ts",
+        "../src/encryption/vaults/overview/index.ts"
+      ],
+      "../src/encryption/vaults/items/decryptbyvaultkey.ts": [
+        "../src/encryption/common/aes/decrypt.ts",
+        "../src/encryption/common/aes/definitions.ts",
+        "../src/encryption/vaults/items/definitions.ts"
+      ],
+      "../src/encryption/vaults/items/definitions.ts": [
+        "../src/encryption/common/aes/definitions.ts"
+      ],
+      "../src/encryption/vaults/items/encryptbyvaultkey.ts": [
+        "../src/encryption/common/aes/definitions.ts",
+        "../src/encryption/common/aes/index.ts",
+        "../src/encryption/vaults/items/definitions.ts"
+      ],
+      "../src/encryption/vaults/items/index.ts": [
+        "../src/encryption/vaults/items/decryptbyvaultkey.ts",
+        "../src/encryption/vaults/items/definitions.ts",
+        "../src/encryption/vaults/items/encryptbyvaultkey.ts"
+      ],
+      "../src/encryption/vaults/key/decryptbyprivatekey.ts": [
+        "../node_modules/@types/node-forge/index.d.ts",
+        "../src/encryption/common/base64/index.ts",
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/vaults/key/definitions.ts"
+      ],
+      "../src/encryption/vaults/key/decryptbysecretkey.ts": [
+        "../src/encryption/common/aes/index.ts",
+        "../src/encryption/vaults/key/definitions.ts"
+      ],
+      "../src/encryption/vaults/key/encryptbypublickey.ts": [
+        "../node_modules/@types/node-forge/index.d.ts",
+        "../src/encryption/common/base64/index.ts",
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/vaults/key/definitions.ts"
+      ],
+      "../src/encryption/vaults/key/encryptbysecretkey.ts": [
+        "../src/encryption/common/aes/index.ts",
+        "../src/encryption/vaults/key/definitions.ts"
+      ],
+      "../src/encryption/vaults/key/index.ts": [
+        "../src/encryption/vaults/key/decryptbyprivatekey.ts",
+        "../src/encryption/vaults/key/decryptbysecretkey.ts",
+        "../src/encryption/vaults/key/definitions.ts",
+        "../src/encryption/vaults/key/encryptbypublickey.ts",
+        "../src/encryption/vaults/key/encryptbysecretkey.ts"
+      ],
+      "../src/encryption/vaults/overview/decryptbyvaultkey.ts": [
+        "../src/encryption/common/aes/definitions.ts",
+        "../src/encryption/common/aes/index.ts"
+      ],
+      "../src/encryption/vaults/overview/encryptbyvaultkey.ts": [
+        "../src/encryption/common/aes/definitions.ts",
+        "../src/encryption/common/aes/index.ts"
+      ],
+      "../src/encryption/vaults/overview/index.ts": [
+        "../src/encryption/vaults/overview/decryptbyvaultkey.ts",
+        "../src/encryption/vaults/overview/encryptbyvaultkey.ts"
+      ],
+      "../src/helpers/key-sets/create-key-set.helper.ts": [
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/index.ts",
+        "../src/helpers/key-sets/definitions.ts"
+      ],
+      "../src/helpers/key-sets/create-primary-key-set.helper.ts": [
+        "../src/encryption/common/derivemasterunlockkey.ts",
+        "../src/encryption/index.ts",
+        "../src/helpers/key-sets/definitions.ts"
+      ],
+      "../src/helpers/key-sets/decrypt-key-set.helper.ts": [
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/index.ts",
+        "../src/helpers/key-sets/definitions.ts"
+      ],
+      "../src/helpers/key-sets/decrypt-primary-key-set.helper.ts": [
+        "../src/encryption/common/derivemasterunlockkey.ts",
+        "../src/encryption/index.ts",
+        "../src/helpers/key-sets/definitions.ts"
+      ],
+      "../src/helpers/key-sets/definitions.ts": [
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/keysets/privatekey/definitions.ts",
+        "../src/encryption/keysets/symmetrickey/definitions.ts"
+      ],
+      "../src/helpers/key-sets/index.ts": [
+        "../src/helpers/key-sets/create-key-set.helper.ts",
+        "../src/helpers/key-sets/create-primary-key-set.helper.ts",
+        "../src/helpers/key-sets/decrypt-key-set.helper.ts",
+        "../src/helpers/key-sets/decrypt-primary-key-set.helper.ts",
+        "../src/helpers/key-sets/definitions.ts"
+      ],
+      "../src/helpers/master-unlock-key/index.ts": [
+        "../src/encryption/common/derivemasterunlockkey.ts",
+        "../src/encryption/common/normalizemasterpassword.ts"
+      ],
+      "../src/helpers/vault-folders/create-vault-folder.helper.ts": [
+        "../src/encryption/index.ts",
+        "../src/helpers/vault-folders/definitions.ts"
+      ],
+      "../src/helpers/vault-folders/decrypt-vault-folder.helper.ts": [
+        "../src/encryption/index.ts",
+        "../src/helpers/vault-folders/definitions.ts"
+      ],
+      "../src/helpers/vault-folders/decrypt-vault-folders.helper.ts": [
+        "../src/encryption/index.ts",
+        "../src/helpers/vault-folders/definitions.ts"
+      ],
+      "../src/helpers/vault-folders/definitions.ts": [
+        "../src/encryption/vaults/folders/definitions.ts"
+      ],
+      "../src/helpers/vault-folders/index.ts": [
+        "../src/helpers/vault-folders/create-vault-folder.helper.ts",
+        "../src/helpers/vault-folders/decrypt-vault-folder.helper.ts",
+        "../src/helpers/vault-folders/decrypt-vault-folders.helper.ts",
+        "../src/helpers/vault-folders/definitions.ts"
+      ],
+      "../src/helpers/vault-item-categories/create-vault-item-category.helper.ts": [
+        "../src/encryption/index.ts",
+        "../src/helpers/vault-item-categories/definitions.ts"
+      ],
+      "../src/helpers/vault-item-categories/decrypt-vault-item-categories.helper.ts": [
+        "../src/encryption/index.ts",
+        "../src/helpers/vault-item-categories/definitions.ts"
+      ],
+      "../src/helpers/vault-item-categories/decrypt-vault-item-category.helper.ts": [
+        "../src/encryption/index.ts",
+        "../src/helpers/vault-item-categories/definitions.ts"
+      ],
+      "../src/helpers/vault-item-categories/definitions.ts": [
+        "../src/encryption/vaults/categories/definitions.ts"
+      ],
+      "../src/helpers/vault-item-categories/index.ts": [
+        "../src/helpers/vault-item-categories/create-vault-item-category.helper.ts",
+        "../src/helpers/vault-item-categories/decrypt-vault-item-categories.helper.ts",
+        "../src/helpers/vault-item-categories/decrypt-vault-item-category.helper.ts",
+        "../src/helpers/vault-item-categories/definitions.ts"
+      ],
+      "../src/helpers/vault-items/create-vault-item.helper.ts": [
+        "../src/encryption/index.ts",
+        "../src/helpers/vault-items/definitions.ts"
+      ],
+      "../src/helpers/vault-items/decrypt-vault-item.helper.ts": [
+        "../src/encryption/index.ts",
+        "../src/helpers/vault-items/definitions.ts"
+      ],
+      "../src/helpers/vault-items/decrypt-vault-items.helper.ts": [
+        "../src/encryption/index.ts",
+        "../src/helpers/vault-items/definitions.ts"
+      ],
+      "../src/helpers/vault-items/definitions.ts": [
+        "../src/encryption/vaults/items/definitions.ts"
+      ],
+      "../src/helpers/vault-items/index.ts": [
+        "../src/helpers/vault-items/create-vault-item.helper.ts",
+        "../src/helpers/vault-items/decrypt-vault-item.helper.ts",
+        "../src/helpers/vault-items/decrypt-vault-items.helper.ts",
+        "../src/helpers/vault-items/definitions.ts"
+      ],
+      "../src/helpers/vaults/create-vault.helper.ts": [
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/index.ts",
+        "../src/helpers/vaults/definitions.ts"
+      ],
+      "../src/helpers/vaults/decrypt-vault-by-private-key.helper.ts": [
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/index.ts",
+        "../src/helpers/vaults/definitions.ts"
+      ],
+      "../src/helpers/vaults/decrypt-vault-by-secret-key.helper.ts": [
+        "../src/encryption/index.ts",
+        "../src/encryption/vaults/key/definitions.ts",
+        "../src/helpers/vaults/definitions.ts"
+      ],
+      "../src/helpers/vaults/definitions.ts": [
+        "../src/encryption/common/aes/definitions.ts",
+        "../src/encryption/vaults/key/definitions.ts"
+      ],
+      "../src/helpers/vaults/index.ts": [
+        "../src/helpers/vaults/create-vault.helper.ts",
+        "../src/helpers/vaults/decrypt-vault-by-private-key.helper.ts",
+        "../src/helpers/vaults/decrypt-vault-by-secret-key.helper.ts",
+        "../src/helpers/vaults/definitions.ts"
       ],
       "../src/index.ts": [
-        "../src/certificates/index.ts",
-        "../src/common/index.ts",
-        "../src/srp/index.ts",
-        "../src/vaults/index.ts"
+        "../src/encryption/index.ts",
+        "../src/srp/index.ts"
       ],
-      "../src/srp/big-number.ts": [
+      "../src/srp/bignumber.ts": [
         "../node_modules/@types/node-forge/index.d.ts"
       ],
       "../src/srp/client/deriveprivatekey.ts": [
         "../src/srp/params.ts"
       ],
       "../src/srp/client/derivesession.ts": [
-        "../src/srp/big-number.ts",
+        "../src/srp/bignumber.ts",
         "../src/srp/params.ts",
         "../src/srp/types.ts"
       ],
       "../src/srp/client/deriveverifier.ts": [
-        "../src/srp/big-number.ts",
+        "../src/srp/bignumber.ts",
         "../src/srp/params.ts"
       ],
       "../src/srp/client/generateephemeralkeypair.ts": [
-        "../src/srp/big-number.ts",
+        "../src/srp/bignumber.ts",
         "../src/srp/params.ts",
         "../src/srp/types.ts"
       ],
@@ -1477,27 +2056,27 @@
         "../src/srp/client/verifysession.ts"
       ],
       "../src/srp/client/verifysession.ts": [
-        "../src/srp/big-number.ts",
+        "../src/srp/bignumber.ts",
         "../src/srp/params.ts",
         "../src/srp/types.ts"
       ],
       "../src/srp/index.ts": [
-        "../src/srp/big-number.ts",
+        "../src/srp/bignumber.ts",
         "../src/srp/client/index.ts",
         "../src/srp/server/index.ts",
         "../src/srp/types.ts"
       ],
       "../src/srp/params.ts": [
-        "../src/srp/big-number.ts",
+        "../src/srp/bignumber.ts",
         "../src/srp/sha256.ts"
       ],
       "../src/srp/server/derivesession.ts": [
-        "../src/srp/big-number.ts",
+        "../src/srp/bignumber.ts",
         "../src/srp/params.ts",
         "../src/srp/types.ts"
       ],
       "../src/srp/server/generateephemeralkeypair.ts": [
-        "../src/srp/big-number.ts",
+        "../src/srp/bignumber.ts",
         "../src/srp/params.ts",
         "../src/srp/types.ts"
       ],
@@ -1507,141 +2086,7 @@
       ],
       "../src/srp/sha256.ts": [
         "../node_modules/@types/node-forge/index.d.ts",
-        "../src/srp/big-number.ts"
-      ],
-      "../src/vaults/generatekeypair.ts": [
-        "../node_modules/@types/node-forge/index.d.ts"
-      ],
-      "../src/vaults/index.ts": [
-        "../src/vaults/generatekeypair.ts",
-        "../src/vaults/privatekey/index.ts",
-        "../src/vaults/publickeyfromstring.ts",
-        "../src/vaults/publickeytostring.ts",
-        "../src/vaults/symmetrickey/index.ts",
-        "../src/vaults/teamkey/index.ts",
-        "../src/vaults/teammetadata/index.ts",
-        "../src/vaults/vaultitem/index.ts",
-        "../src/vaults/vaultkey/index.ts",
-        "../src/vaults/vaultmetadata/index.ts"
-      ],
-      "../src/vaults/privatekey/decryptbysymmetrickey.ts": [
-        "../node_modules/@types/node-forge/index.d.ts",
-        "../src/common/base64/index.ts",
-        "../src/vaults/privatekey/encryptbysymmetrickey.ts"
-      ],
-      "../src/vaults/privatekey/encryptbysymmetrickey.ts": [
-        "../node_modules/@types/node-forge/index.d.ts",
-        "../src/common/base64/index.ts"
-      ],
-      "../src/vaults/privatekey/index.ts": [
-        "../src/vaults/privatekey/decryptbysymmetrickey.ts",
-        "../src/vaults/privatekey/encryptbysymmetrickey.ts"
-      ],
-      "../src/vaults/publickeyfromstring.ts": [
-        "../node_modules/@types/node-forge/index.d.ts",
-        "../src/common/base64/index.ts"
-      ],
-      "../src/vaults/publickeytostring.ts": [
-        "../node_modules/@types/node-forge/index.d.ts",
-        "../src/common/base64/index.ts"
-      ],
-      "../src/vaults/symmetrickey/decryptbyprivatekey.ts": [
-        "../src/common/rsa/decrypt.ts",
-        "../src/vaults/symmetrickey/encryptbypublickey.ts"
-      ],
-      "../src/vaults/symmetrickey/decryptbysecretkey.ts": [
-        "../src/common/aes/decrypt.ts",
-        "../src/vaults/symmetrickey/encryptbysecretkey.ts"
-      ],
-      "../src/vaults/symmetrickey/encryptbypublickey.ts": [
-        "../src/common/rsa/encrypt.ts"
-      ],
-      "../src/vaults/symmetrickey/encryptbysecretkey.ts": [
-        "../src/common/aes/encrypt.ts"
-      ],
-      "../src/vaults/symmetrickey/index.ts": [
-        "../src/vaults/symmetrickey/decryptbyprivatekey.ts",
-        "../src/vaults/symmetrickey/decryptbysecretkey.ts",
-        "../src/vaults/symmetrickey/encryptbypublickey.ts",
-        "../src/vaults/symmetrickey/encryptbysecretkey.ts"
-      ],
-      "../src/vaults/teamkey/decryptbyprivatekey.ts": [
-        "../node_modules/@types/node-forge/index.d.ts",
-        "../src/common/base64/index.ts",
-        "../src/vaults/teamkey/encryptbypublickey.ts"
-      ],
-      "../src/vaults/teamkey/decryptbysecretkey.ts": [
-        "../src/common/aes/decrypt.ts",
-        "../src/vaults/teamkey/encryptbysecretkey.ts"
-      ],
-      "../src/vaults/teamkey/encryptbypublickey.ts": [
-        "../node_modules/@types/node-forge/index.d.ts",
-        "../src/common/base64/index.ts"
-      ],
-      "../src/vaults/teamkey/encryptbysecretkey.ts": [
-        "../src/common/aes/encrypt.ts"
-      ],
-      "../src/vaults/teamkey/index.ts": [
-        "../src/vaults/teamkey/decryptbyprivatekey.ts",
-        "../src/vaults/teamkey/decryptbysecretkey.ts",
-        "../src/vaults/teamkey/encryptbypublickey.ts",
-        "../src/vaults/teamkey/encryptbysecretkey.ts"
-      ],
-      "../src/vaults/teammetadata/decryptbyteamkey.ts": [
-        "../src/common/aes/decrypt.ts",
-        "../src/common/aes/encrypt.ts"
-      ],
-      "../src/vaults/teammetadata/encryptbyteamkey.ts": [
-        "../src/common/aes/encrypt.ts"
-      ],
-      "../src/vaults/teammetadata/index.ts": [
-        "../src/vaults/teammetadata/decryptbyteamkey.ts",
-        "../src/vaults/teammetadata/encryptbyteamkey.ts"
-      ],
-      "../src/vaults/vaultitem/decryptbyvaultkey.ts": [
-        "../src/common/aes/decrypt.ts",
-        "../src/common/aes/encrypt.ts",
-        "../src/vaults/vaultitem/encryptbyvaultkey.ts"
-      ],
-      "../src/vaults/vaultitem/encryptbyvaultkey.ts": [
-        "../src/common/aes/encrypt.ts"
-      ],
-      "../src/vaults/vaultitem/index.ts": [
-        "../src/vaults/vaultitem/decryptbyvaultkey.ts",
-        "../src/vaults/vaultitem/encryptbyvaultkey.ts"
-      ],
-      "../src/vaults/vaultkey/decryptbyprivatekey.ts": [
-        "../node_modules/@types/node-forge/index.d.ts",
-        "../src/common/base64/index.ts",
-        "../src/vaults/vaultkey/encryptbypublickey.ts"
-      ],
-      "../src/vaults/vaultkey/decryptbysecretkey.ts": [
-        "../src/common/aes/decrypt.ts",
-        "../src/vaults/vaultkey/encryptbysecretkey.ts"
-      ],
-      "../src/vaults/vaultkey/encryptbypublickey.ts": [
-        "../node_modules/@types/node-forge/index.d.ts",
-        "../src/common/base64/index.ts"
-      ],
-      "../src/vaults/vaultkey/encryptbysecretkey.ts": [
-        "../src/common/aes/encrypt.ts"
-      ],
-      "../src/vaults/vaultkey/index.ts": [
-        "../src/vaults/vaultkey/decryptbyprivatekey.ts",
-        "../src/vaults/vaultkey/decryptbysecretkey.ts",
-        "../src/vaults/vaultkey/encryptbypublickey.ts",
-        "../src/vaults/vaultkey/encryptbysecretkey.ts"
-      ],
-      "../src/vaults/vaultmetadata/decryptbyvaultkey.ts": [
-        "../src/common/aes/decrypt.ts",
-        "../src/common/aes/encrypt.ts"
-      ],
-      "../src/vaults/vaultmetadata/encryptbyvaultkey.ts": [
-        "../src/common/aes/encrypt.ts"
-      ],
-      "../src/vaults/vaultmetadata/index.ts": [
-        "../src/vaults/vaultmetadata/decryptbyvaultkey.ts",
-        "../src/vaults/vaultmetadata/encryptbyvaultkey.ts"
+        "../src/srp/bignumber.ts"
       ],
       "../../node_modules/@types/cacheable-request/index.d.ts": [
         "../../node_modules/@types/http-cache-semantics/index.d.ts",
@@ -2051,72 +2496,462 @@
       "../node_modules/pretty-format/build/index.d.ts": [
         "../node_modules/pretty-format/build/types.d.ts"
       ],
-      "../src/certificates/generatekeypair.ts": [
+      "../src/encryption/common/aes/decrypt.ts": [
+        "../src/encryption/common/aes/definitions.ts"
+      ],
+      "../src/encryption/common/aes/encrypt.ts": [
+        "../src/encryption/common/aes/definitions.ts"
+      ],
+      "../src/encryption/common/aes/index.ts": [
+        "../src/encryption/common/aes/decrypt.ts",
+        "../src/encryption/common/aes/definitions.ts",
+        "../src/encryption/common/aes/encrypt.ts"
+      ],
+      "../src/encryption/common/base64/index.ts": [
+        "../src/encryption/common/base64/decode.ts",
+        "../src/encryption/common/base64/encode.ts"
+      ],
+      "../src/encryption/common/certificates/generatekeypair.ts": [
         "../node_modules/@types/node-forge/index.d.ts"
       ],
-      "../src/certificates/index.ts": [
+      "../src/encryption/common/certificates/index.ts": [
         "../node_modules/@types/node-forge/index.d.ts",
-        "../src/certificates/generatekeypair.ts",
-        "../src/certificates/signcertificate.ts",
-        "../src/certificates/verifycertificate.ts"
+        "../src/encryption/common/certificates/generatekeypair.ts",
+        "../src/encryption/common/certificates/signcertificate.ts",
+        "../src/encryption/common/certificates/verifycertificate.ts"
       ],
-      "../src/certificates/signcertificate.ts": [
+      "../src/encryption/common/certificates/signcertificate.ts": [
         "../node_modules/@types/node-forge/index.d.ts"
       ],
-      "../src/certificates/verifycertificate.ts": [
+      "../src/encryption/common/certificates/verifycertificate.ts": [
         "../node_modules/@types/node-forge/index.d.ts"
       ],
-      "../src/common/aes/decrypt.ts": [
+      "../src/encryption/common/hkdf/index.ts": [
+        "../src/encryption/common/hkdf/computehkdf.ts"
+      ],
+      "../src/encryption/common/index.ts": [
+        "../src/encryption/common/base64/decode.ts",
+        "../src/encryption/common/base64/encode.ts",
+        "../src/encryption/common/base64/index.ts",
+        "../src/encryption/common/derivemasterunlockkey.ts",
+        "../src/encryption/common/generateaccountkey.ts",
+        "../src/encryption/common/generatecryptorandomstring.ts",
+        "../src/encryption/common/generaterandomsalt.ts",
+        "../src/encryption/common/hkdf/index.ts",
+        "../src/encryption/common/normalizemasterpassword.ts",
+        "../src/encryption/common/pbkdf2/index.ts",
+        "../src/encryption/common/rsa/decrypt.ts",
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/common/rsa/encrypt.ts",
+        "../src/encryption/common/rsa/generatekeypair.ts",
+        "../src/encryption/common/rsa/index.ts",
+        "../src/encryption/common/rsa/publickeyfromstring.ts",
+        "../src/encryption/common/rsa/publickeytostring.ts"
+      ],
+      "../src/encryption/common/pbkdf2/index.ts": [
+        "../src/encryption/common/pbkdf2/computehash.ts"
+      ],
+      "../src/encryption/common/rsa/decrypt.ts": [
+        "../src/encryption/common/rsa/definitions.ts"
+      ],
+      "../src/encryption/common/rsa/definitions.ts": [
+        "../node_modules/@types/node-forge/index.d.ts"
+      ],
+      "../src/encryption/common/rsa/encrypt.ts": [
+        "../src/encryption/common/rsa/definitions.ts"
+      ],
+      "../src/encryption/common/rsa/generatekeypair.ts": [
+        "../node_modules/@types/node-forge/index.d.ts"
+      ],
+      "../src/encryption/common/rsa/index.ts": [
+        "../src/encryption/common/rsa/decrypt.ts",
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/common/rsa/encrypt.ts",
+        "../src/encryption/common/rsa/generatekeypair.ts",
+        "../src/encryption/common/rsa/publickeyfromstring.ts",
+        "../src/encryption/common/rsa/publickeytostring.ts"
+      ],
+      "../src/encryption/common/rsa/publickeyfromstring.ts": [
+        "../src/encryption/common/rsa/definitions.ts"
+      ],
+      "../src/encryption/common/rsa/publickeytostring.ts": [
+        "../src/encryption/common/rsa/definitions.ts"
+      ],
+      "../src/encryption/index.ts": [
+        "../src/encryption/common/aes/definitions.ts",
+        "../src/encryption/common/base64/decode.ts",
+        "../src/encryption/common/base64/encode.ts",
+        "../src/encryption/common/index.ts",
+        "../src/encryption/common/rsa/decrypt.ts",
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/common/rsa/encrypt.ts",
+        "../src/encryption/common/rsa/generatekeypair.ts",
+        "../src/encryption/common/rsa/publickeyfromstring.ts",
+        "../src/encryption/common/rsa/publickeytostring.ts",
+        "../src/encryption/keysets/index.ts",
+        "../src/encryption/keysets/privatekey/decryptbysymmetrickey.ts",
+        "../src/encryption/keysets/privatekey/definitions.ts",
+        "../src/encryption/keysets/privatekey/encryptbysymmetrickey.ts",
+        "../src/encryption/keysets/symmetrickey/decryptbyprivatekey.ts",
+        "../src/encryption/keysets/symmetrickey/decryptbysecretkey.ts",
+        "../src/encryption/keysets/symmetrickey/definitions.ts",
+        "../src/encryption/keysets/symmetrickey/encryptbypublickey.ts",
+        "../src/encryption/keysets/symmetrickey/encryptbysecretkey.ts",
+        "../src/encryption/teams/index.ts",
+        "../src/encryption/teams/key/decryptbyprivatekey.ts",
+        "../src/encryption/teams/key/decryptbysecretkey.ts",
+        "../src/encryption/teams/key/definitions.ts",
+        "../src/encryption/teams/key/encryptbypublickey.ts",
+        "../src/encryption/teams/key/encryptbysecretkey.ts",
+        "../src/encryption/teams/overview/decryptbyteamkey.ts",
+        "../src/encryption/vaults/categories/decryptbyvaultkey.ts",
+        "../src/encryption/vaults/categories/definitions.ts",
+        "../src/encryption/vaults/categories/encryptbyvaultkey.ts",
+        "../src/encryption/vaults/folders/decryptbyvaultkey.ts",
+        "../src/encryption/vaults/folders/definitions.ts",
+        "../src/encryption/vaults/folders/encryptbyvaultkey.ts",
+        "../src/encryption/vaults/index.ts",
+        "../src/encryption/vaults/items/decryptbyvaultkey.ts",
+        "../src/encryption/vaults/items/definitions.ts",
+        "../src/encryption/vaults/items/encryptbyvaultkey.ts",
+        "../src/encryption/vaults/key/decryptbyprivatekey.ts",
+        "../src/encryption/vaults/key/decryptbysecretkey.ts",
+        "../src/encryption/vaults/key/definitions.ts",
+        "../src/encryption/vaults/key/encryptbypublickey.ts",
+        "../src/encryption/vaults/overview/decryptbyvaultkey.ts",
+        "../src/encryption/vaults/overview/encryptbyvaultkey.ts"
+      ],
+      "../src/encryption/keysets/index.ts": [
+        "../src/encryption/keysets/privatekey/decryptbysymmetrickey.ts",
+        "../src/encryption/keysets/privatekey/definitions.ts",
+        "../src/encryption/keysets/privatekey/encryptbysymmetrickey.ts",
+        "../src/encryption/keysets/symmetrickey/decryptbyprivatekey.ts",
+        "../src/encryption/keysets/symmetrickey/decryptbysecretkey.ts",
+        "../src/encryption/keysets/symmetrickey/definitions.ts",
+        "../src/encryption/keysets/symmetrickey/encryptbypublickey.ts",
+        "../src/encryption/keysets/symmetrickey/encryptbysecretkey.ts"
+      ],
+      "../src/encryption/keysets/privatekey/decryptbysymmetrickey.ts": [
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/keysets/privatekey/definitions.ts"
+      ],
+      "../src/encryption/keysets/privatekey/encryptbysymmetrickey.ts": [
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/keysets/privatekey/definitions.ts"
+      ],
+      "../src/encryption/keysets/privatekey/index.ts": [
+        "../src/encryption/keysets/privatekey/decryptbysymmetrickey.ts",
+        "../src/encryption/keysets/privatekey/definitions.ts",
+        "../src/encryption/keysets/privatekey/encryptbysymmetrickey.ts"
+      ],
+      "../src/encryption/keysets/symmetrickey/decryptbyprivatekey.ts": [
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/keysets/symmetrickey/definitions.ts"
+      ],
+      "../src/encryption/keysets/symmetrickey/decryptbysecretkey.ts": [
+        "../src/encryption/keysets/symmetrickey/definitions.ts"
+      ],
+      "../src/encryption/keysets/symmetrickey/encryptbypublickey.ts": [
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/keysets/symmetrickey/definitions.ts"
+      ],
+      "../src/encryption/keysets/symmetrickey/encryptbysecretkey.ts": [
+        "../src/encryption/keysets/symmetrickey/definitions.ts"
+      ],
+      "../src/encryption/keysets/symmetrickey/index.ts": [
+        "../src/encryption/keysets/symmetrickey/decryptbyprivatekey.ts",
+        "../src/encryption/keysets/symmetrickey/decryptbysecretkey.ts",
+        "../src/encryption/keysets/symmetrickey/definitions.ts",
+        "../src/encryption/keysets/symmetrickey/encryptbypublickey.ts",
+        "../src/encryption/keysets/symmetrickey/encryptbysecretkey.ts"
+      ],
+      "../src/encryption/teams/index.ts": [
+        "../src/encryption/common/aes/definitions.ts",
+        "../src/encryption/teams/key/decryptbyprivatekey.ts",
+        "../src/encryption/teams/key/decryptbysecretkey.ts",
+        "../src/encryption/teams/key/definitions.ts",
+        "../src/encryption/teams/key/encryptbypublickey.ts",
+        "../src/encryption/teams/key/encryptbysecretkey.ts",
+        "../src/encryption/teams/key/index.ts",
+        "../src/encryption/teams/overview/decryptbyteamkey.ts",
+        "../src/encryption/teams/overview/index.ts"
+      ],
+      "../src/encryption/teams/key/decryptbyprivatekey.ts": [
         "../node_modules/@types/node-forge/index.d.ts",
-        "../src/common/aes/encrypt.ts"
+        "../src/encryption/teams/key/definitions.ts"
       ],
-      "../src/common/base64/index.ts": [
-        "../src/common/base64/decode.ts",
-        "../src/common/base64/encode.ts"
+      "../src/encryption/teams/key/decryptbysecretkey.ts": [
+        "../src/encryption/teams/key/definitions.ts"
       ],
-      "../src/common/hkdf/index.ts": [
-        "../src/common/hkdf/computehkdf.ts"
+      "../src/encryption/teams/key/encryptbypublickey.ts": [
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/teams/key/definitions.ts"
       ],
-      "../src/common/index.ts": [
-        "../src/common/base64/index.ts",
-        "../src/common/derivemasterunlockkey.ts",
-        "../src/common/generateaccountkey.ts",
-        "../src/common/generatecryptorandomstring.ts",
-        "../src/common/generaterandomsalt.ts",
-        "../src/common/hkdf/index.ts",
-        "../src/common/normalizemasterpassword.ts",
-        "../src/common/pbkdf2/index.ts"
+      "../src/encryption/teams/key/encryptbysecretkey.ts": [
+        "../src/encryption/teams/key/definitions.ts"
       ],
-      "../src/common/pbkdf2/index.ts": [
-        "../src/common/pbkdf2/computehash.ts"
+      "../src/encryption/teams/key/index.ts": [
+        "../src/encryption/teams/key/decryptbyprivatekey.ts",
+        "../src/encryption/teams/key/decryptbysecretkey.ts",
+        "../src/encryption/teams/key/definitions.ts",
+        "../src/encryption/teams/key/encryptbypublickey.ts",
+        "../src/encryption/teams/key/encryptbysecretkey.ts"
       ],
-      "../src/common/rsa/decrypt.ts": [
-        "../node_modules/@types/node-forge/index.d.ts",
-        "../src/common/rsa/encrypt.ts"
+      "../src/encryption/teams/overview/decryptbyteamkey.ts": [
+        "../src/encryption/common/aes/definitions.ts"
       ],
-      "../src/common/rsa/encrypt.ts": [
-        "../node_modules/@types/node-forge/index.d.ts"
+      "../src/encryption/teams/overview/encryptbyteamkey.ts": [
+        "../src/encryption/common/aes/definitions.ts"
+      ],
+      "../src/encryption/teams/overview/index.ts": [
+        "../src/encryption/common/aes/definitions.ts",
+        "../src/encryption/teams/overview/decryptbyteamkey.ts"
+      ],
+      "../src/encryption/vaults/categories/decryptbyvaultkey.ts": [
+        "../src/encryption/vaults/categories/definitions.ts"
+      ],
+      "../src/encryption/vaults/categories/definitions.ts": [
+        "../src/encryption/common/aes/definitions.ts"
+      ],
+      "../src/encryption/vaults/categories/encryptbyvaultkey.ts": [
+        "../src/encryption/vaults/categories/definitions.ts"
+      ],
+      "../src/encryption/vaults/categories/index.ts": [
+        "../src/encryption/vaults/categories/decryptbyvaultkey.ts",
+        "../src/encryption/vaults/categories/definitions.ts",
+        "../src/encryption/vaults/categories/encryptbyvaultkey.ts"
+      ],
+      "../src/encryption/vaults/folders/decryptbyvaultkey.ts": [
+        "../src/encryption/vaults/folders/definitions.ts"
+      ],
+      "../src/encryption/vaults/folders/definitions.ts": [
+        "../src/encryption/common/aes/definitions.ts"
+      ],
+      "../src/encryption/vaults/folders/encryptbyvaultkey.ts": [
+        "../src/encryption/vaults/folders/definitions.ts"
+      ],
+      "../src/encryption/vaults/folders/index.ts": [
+        "../src/encryption/vaults/folders/decryptbyvaultkey.ts",
+        "../src/encryption/vaults/folders/definitions.ts",
+        "../src/encryption/vaults/folders/encryptbyvaultkey.ts"
+      ],
+      "../src/encryption/vaults/index.ts": [
+        "../src/encryption/vaults/categories/decryptbyvaultkey.ts",
+        "../src/encryption/vaults/categories/definitions.ts",
+        "../src/encryption/vaults/categories/encryptbyvaultkey.ts",
+        "../src/encryption/vaults/categories/index.ts",
+        "../src/encryption/vaults/folders/decryptbyvaultkey.ts",
+        "../src/encryption/vaults/folders/definitions.ts",
+        "../src/encryption/vaults/folders/encryptbyvaultkey.ts",
+        "../src/encryption/vaults/folders/index.ts",
+        "../src/encryption/vaults/items/decryptbyvaultkey.ts",
+        "../src/encryption/vaults/items/definitions.ts",
+        "../src/encryption/vaults/items/encryptbyvaultkey.ts",
+        "../src/encryption/vaults/items/index.ts",
+        "../src/encryption/vaults/key/decryptbyprivatekey.ts",
+        "../src/encryption/vaults/key/decryptbysecretkey.ts",
+        "../src/encryption/vaults/key/definitions.ts",
+        "../src/encryption/vaults/key/encryptbypublickey.ts",
+        "../src/encryption/vaults/key/index.ts",
+        "../src/encryption/vaults/overview/decryptbyvaultkey.ts",
+        "../src/encryption/vaults/overview/encryptbyvaultkey.ts",
+        "../src/encryption/vaults/overview/index.ts"
+      ],
+      "../src/encryption/vaults/items/decryptbyvaultkey.ts": [
+        "../src/encryption/common/aes/definitions.ts",
+        "../src/encryption/vaults/items/definitions.ts"
+      ],
+      "../src/encryption/vaults/items/definitions.ts": [
+        "../src/encryption/common/aes/definitions.ts"
+      ],
+      "../src/encryption/vaults/items/encryptbyvaultkey.ts": [
+        "../src/encryption/common/aes/definitions.ts",
+        "../src/encryption/vaults/items/definitions.ts"
+      ],
+      "../src/encryption/vaults/items/index.ts": [
+        "../src/encryption/vaults/items/decryptbyvaultkey.ts",
+        "../src/encryption/vaults/items/definitions.ts",
+        "../src/encryption/vaults/items/encryptbyvaultkey.ts"
+      ],
+      "../src/encryption/vaults/key/decryptbyprivatekey.ts": [
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/vaults/key/definitions.ts"
+      ],
+      "../src/encryption/vaults/key/decryptbysecretkey.ts": [
+        "../src/encryption/vaults/key/definitions.ts"
+      ],
+      "../src/encryption/vaults/key/encryptbypublickey.ts": [
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/vaults/key/definitions.ts"
+      ],
+      "../src/encryption/vaults/key/encryptbysecretkey.ts": [
+        "../src/encryption/vaults/key/definitions.ts"
+      ],
+      "../src/encryption/vaults/key/index.ts": [
+        "../src/encryption/vaults/key/decryptbyprivatekey.ts",
+        "../src/encryption/vaults/key/decryptbysecretkey.ts",
+        "../src/encryption/vaults/key/definitions.ts",
+        "../src/encryption/vaults/key/encryptbypublickey.ts"
+      ],
+      "../src/encryption/vaults/overview/decryptbyvaultkey.ts": [
+        "../src/encryption/common/aes/definitions.ts"
+      ],
+      "../src/encryption/vaults/overview/encryptbyvaultkey.ts": [
+        "../src/encryption/common/aes/definitions.ts"
+      ],
+      "../src/encryption/vaults/overview/index.ts": [
+        "../src/encryption/vaults/overview/decryptbyvaultkey.ts",
+        "../src/encryption/vaults/overview/encryptbyvaultkey.ts"
+      ],
+      "../src/helpers/key-sets/create-key-set.helper.ts": [
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/helpers/key-sets/definitions.ts"
+      ],
+      "../src/helpers/key-sets/create-primary-key-set.helper.ts": [
+        "../src/encryption/common/derivemasterunlockkey.ts",
+        "../src/helpers/key-sets/definitions.ts"
+      ],
+      "../src/helpers/key-sets/decrypt-key-set.helper.ts": [
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/helpers/key-sets/definitions.ts"
+      ],
+      "../src/helpers/key-sets/decrypt-primary-key-set.helper.ts": [
+        "../src/encryption/common/derivemasterunlockkey.ts",
+        "../src/helpers/key-sets/definitions.ts"
+      ],
+      "../src/helpers/key-sets/definitions.ts": [
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/keysets/privatekey/definitions.ts",
+        "../src/encryption/keysets/symmetrickey/definitions.ts"
+      ],
+      "../src/helpers/key-sets/index.ts": [
+        "../src/helpers/key-sets/create-key-set.helper.ts",
+        "../src/helpers/key-sets/create-primary-key-set.helper.ts",
+        "../src/helpers/key-sets/decrypt-key-set.helper.ts",
+        "../src/helpers/key-sets/decrypt-primary-key-set.helper.ts",
+        "../src/helpers/key-sets/definitions.ts"
+      ],
+      "../src/helpers/master-unlock-key/index.ts": [
+        "../src/encryption/common/derivemasterunlockkey.ts"
+      ],
+      "../src/helpers/vault-folders/create-vault-folder.helper.ts": [
+        "../src/helpers/vault-folders/definitions.ts"
+      ],
+      "../src/helpers/vault-folders/decrypt-vault-folder.helper.ts": [
+        "../src/helpers/vault-folders/definitions.ts"
+      ],
+      "../src/helpers/vault-folders/decrypt-vault-folders.helper.ts": [
+        "../src/helpers/vault-folders/definitions.ts"
+      ],
+      "../src/helpers/vault-folders/definitions.ts": [
+        "../src/encryption/vaults/folders/definitions.ts"
+      ],
+      "../src/helpers/vault-folders/index.ts": [
+        "../src/helpers/vault-folders/create-vault-folder.helper.ts",
+        "../src/helpers/vault-folders/decrypt-vault-folder.helper.ts",
+        "../src/helpers/vault-folders/decrypt-vault-folders.helper.ts",
+        "../src/helpers/vault-folders/definitions.ts"
+      ],
+      "../src/helpers/vault-item-categories/create-vault-item-category.helper.ts": [
+        "../src/helpers/vault-item-categories/definitions.ts"
+      ],
+      "../src/helpers/vault-item-categories/decrypt-vault-item-categories.helper.ts": [
+        "../src/helpers/vault-item-categories/definitions.ts"
+      ],
+      "../src/helpers/vault-item-categories/decrypt-vault-item-category.helper.ts": [
+        "../src/helpers/vault-item-categories/definitions.ts"
+      ],
+      "../src/helpers/vault-item-categories/definitions.ts": [
+        "../src/encryption/vaults/categories/definitions.ts"
+      ],
+      "../src/helpers/vault-item-categories/index.ts": [
+        "../src/helpers/vault-item-categories/create-vault-item-category.helper.ts",
+        "../src/helpers/vault-item-categories/decrypt-vault-item-categories.helper.ts",
+        "../src/helpers/vault-item-categories/decrypt-vault-item-category.helper.ts",
+        "../src/helpers/vault-item-categories/definitions.ts"
+      ],
+      "../src/helpers/vault-items/create-vault-item.helper.ts": [
+        "../src/helpers/vault-items/definitions.ts"
+      ],
+      "../src/helpers/vault-items/decrypt-vault-item.helper.ts": [
+        "../src/helpers/vault-items/definitions.ts"
+      ],
+      "../src/helpers/vault-items/decrypt-vault-items.helper.ts": [
+        "../src/helpers/vault-items/definitions.ts"
+      ],
+      "../src/helpers/vault-items/definitions.ts": [
+        "../src/encryption/vaults/items/definitions.ts"
+      ],
+      "../src/helpers/vault-items/index.ts": [
+        "../src/helpers/vault-items/create-vault-item.helper.ts",
+        "../src/helpers/vault-items/decrypt-vault-item.helper.ts",
+        "../src/helpers/vault-items/decrypt-vault-items.helper.ts",
+        "../src/helpers/vault-items/definitions.ts"
+      ],
+      "../src/helpers/vaults/create-vault.helper.ts": [
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/helpers/vaults/definitions.ts"
+      ],
+      "../src/helpers/vaults/decrypt-vault-by-private-key.helper.ts": [
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/helpers/vaults/definitions.ts"
+      ],
+      "../src/helpers/vaults/decrypt-vault-by-secret-key.helper.ts": [
+        "../src/helpers/vaults/definitions.ts"
+      ],
+      "../src/helpers/vaults/definitions.ts": [
+        "../src/encryption/common/aes/definitions.ts",
+        "../src/encryption/vaults/key/definitions.ts"
+      ],
+      "../src/helpers/vaults/index.ts": [
+        "../src/helpers/vaults/create-vault.helper.ts",
+        "../src/helpers/vaults/decrypt-vault-by-private-key.helper.ts",
+        "../src/helpers/vaults/decrypt-vault-by-secret-key.helper.ts",
+        "../src/helpers/vaults/definitions.ts"
       ],
       "../src/index.ts": [
-        "../node_modules/@types/node-forge/index.d.ts",
-        "../src/certificates/index.ts",
-        "../src/certificates/signcertificate.ts",
-        "../src/certificates/verifycertificate.ts",
-        "../src/common/aes/encrypt.ts",
-        "../src/common/generateaccountkey.ts",
-        "../src/common/index.ts",
+        "../src/encryption/common/aes/definitions.ts",
+        "../src/encryption/common/base64/decode.ts",
+        "../src/encryption/common/base64/encode.ts",
+        "../src/encryption/common/index.ts",
+        "../src/encryption/common/rsa/decrypt.ts",
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/common/rsa/encrypt.ts",
+        "../src/encryption/common/rsa/generatekeypair.ts",
+        "../src/encryption/common/rsa/publickeyfromstring.ts",
+        "../src/encryption/common/rsa/publickeytostring.ts",
+        "../src/encryption/index.ts",
+        "../src/encryption/keysets/privatekey/decryptbysymmetrickey.ts",
+        "../src/encryption/keysets/privatekey/definitions.ts",
+        "../src/encryption/keysets/privatekey/encryptbysymmetrickey.ts",
+        "../src/encryption/keysets/symmetrickey/decryptbyprivatekey.ts",
+        "../src/encryption/keysets/symmetrickey/decryptbysecretkey.ts",
+        "../src/encryption/keysets/symmetrickey/definitions.ts",
+        "../src/encryption/keysets/symmetrickey/encryptbypublickey.ts",
+        "../src/encryption/keysets/symmetrickey/encryptbysecretkey.ts",
+        "../src/encryption/teams/key/decryptbyprivatekey.ts",
+        "../src/encryption/teams/key/decryptbysecretkey.ts",
+        "../src/encryption/teams/key/definitions.ts",
+        "../src/encryption/teams/key/encryptbypublickey.ts",
+        "../src/encryption/teams/key/encryptbysecretkey.ts",
+        "../src/encryption/teams/overview/decryptbyteamkey.ts",
+        "../src/encryption/vaults/categories/decryptbyvaultkey.ts",
+        "../src/encryption/vaults/categories/definitions.ts",
+        "../src/encryption/vaults/categories/encryptbyvaultkey.ts",
+        "../src/encryption/vaults/folders/decryptbyvaultkey.ts",
+        "../src/encryption/vaults/folders/definitions.ts",
+        "../src/encryption/vaults/folders/encryptbyvaultkey.ts",
+        "../src/encryption/vaults/items/decryptbyvaultkey.ts",
+        "../src/encryption/vaults/items/definitions.ts",
+        "../src/encryption/vaults/items/encryptbyvaultkey.ts",
+        "../src/encryption/vaults/key/decryptbyprivatekey.ts",
+        "../src/encryption/vaults/key/decryptbysecretkey.ts",
+        "../src/encryption/vaults/key/definitions.ts",
+        "../src/encryption/vaults/key/encryptbypublickey.ts",
+        "../src/encryption/vaults/overview/decryptbyvaultkey.ts",
+        "../src/encryption/vaults/overview/encryptbyvaultkey.ts",
         "../src/srp/index.ts",
-        "../src/srp/types.ts",
-        "../src/vaults/index.ts",
-        "../src/vaults/privatekey/encryptbysymmetrickey.ts",
-        "../src/vaults/symmetrickey/encryptbypublickey.ts",
-        "../src/vaults/symmetrickey/encryptbysecretkey.ts",
-        "../src/vaults/teamkey/encryptbypublickey.ts",
-        "../src/vaults/teamkey/encryptbysecretkey.ts",
-        "../src/vaults/vaultitem/decryptbyvaultkey.ts",
-        "../src/vaults/vaultitem/encryptbyvaultkey.ts",
-        "../src/vaults/vaultkey/encryptbypublickey.ts",
-        "../src/vaults/vaultkey/encryptbysecretkey.ts"
+        "../src/srp/types.ts"
       ],
       "../src/srp/client/derivesession.ts": [
         "../src/srp/types.ts"
@@ -2139,7 +2974,7 @@
         "../src/srp/types.ts"
       ],
       "../src/srp/params.ts": [
-        "../src/srp/big-number.ts"
+        "../src/srp/bignumber.ts"
       ],
       "../src/srp/server/derivesession.ts": [
         "../src/srp/types.ts"
@@ -2153,136 +2988,7 @@
         "../src/srp/types.ts"
       ],
       "../src/srp/sha256.ts": [
-        "../src/srp/big-number.ts"
-      ],
-      "../src/vaults/generatekeypair.ts": [
-        "../node_modules/@types/node-forge/index.d.ts"
-      ],
-      "../src/vaults/index.ts": [
-        "../node_modules/@types/node-forge/index.d.ts",
-        "../src/common/aes/encrypt.ts",
-        "../src/vaults/generatekeypair.ts",
-        "../src/vaults/privatekey/encryptbysymmetrickey.ts",
-        "../src/vaults/privatekey/index.ts",
-        "../src/vaults/publickeyfromstring.ts",
-        "../src/vaults/publickeytostring.ts",
-        "../src/vaults/symmetrickey/encryptbypublickey.ts",
-        "../src/vaults/symmetrickey/encryptbysecretkey.ts",
-        "../src/vaults/symmetrickey/index.ts",
-        "../src/vaults/teamkey/encryptbypublickey.ts",
-        "../src/vaults/teamkey/encryptbysecretkey.ts",
-        "../src/vaults/teamkey/index.ts",
-        "../src/vaults/teammetadata/index.ts",
-        "../src/vaults/vaultitem/decryptbyvaultkey.ts",
-        "../src/vaults/vaultitem/encryptbyvaultkey.ts",
-        "../src/vaults/vaultitem/index.ts",
-        "../src/vaults/vaultkey/encryptbypublickey.ts",
-        "../src/vaults/vaultkey/encryptbysecretkey.ts",
-        "../src/vaults/vaultkey/index.ts",
-        "../src/vaults/vaultmetadata/index.ts"
-      ],
-      "../src/vaults/privatekey/decryptbysymmetrickey.ts": [
-        "../node_modules/@types/node-forge/index.d.ts",
-        "../src/vaults/privatekey/encryptbysymmetrickey.ts"
-      ],
-      "../src/vaults/privatekey/encryptbysymmetrickey.ts": [
-        "../node_modules/@types/node-forge/index.d.ts"
-      ],
-      "../src/vaults/privatekey/index.ts": [
-        "../node_modules/@types/node-forge/index.d.ts",
-        "../src/vaults/privatekey/decryptbysymmetrickey.ts",
-        "../src/vaults/privatekey/encryptbysymmetrickey.ts"
-      ],
-      "../src/vaults/publickeyfromstring.ts": [
-        "../node_modules/@types/node-forge/index.d.ts"
-      ],
-      "../src/vaults/publickeytostring.ts": [
-        "../node_modules/@types/node-forge/index.d.ts"
-      ],
-      "../src/vaults/symmetrickey/decryptbyprivatekey.ts": [
-        "../src/common/rsa/decrypt.ts",
-        "../src/vaults/symmetrickey/encryptbypublickey.ts"
-      ],
-      "../src/vaults/symmetrickey/decryptbysecretkey.ts": [
-        "../src/vaults/symmetrickey/encryptbysecretkey.ts"
-      ],
-      "../src/vaults/symmetrickey/encryptbypublickey.ts": [
-        "../src/common/rsa/encrypt.ts"
-      ],
-      "../src/vaults/symmetrickey/index.ts": [
-        "../node_modules/@types/node-forge/index.d.ts",
-        "../src/vaults/symmetrickey/decryptbyprivatekey.ts",
-        "../src/vaults/symmetrickey/decryptbysecretkey.ts",
-        "../src/vaults/symmetrickey/encryptbypublickey.ts",
-        "../src/vaults/symmetrickey/encryptbysecretkey.ts"
-      ],
-      "../src/vaults/teamkey/decryptbyprivatekey.ts": [
-        "../node_modules/@types/node-forge/index.d.ts",
-        "../src/vaults/teamkey/encryptbypublickey.ts"
-      ],
-      "../src/vaults/teamkey/decryptbysecretkey.ts": [
-        "../src/vaults/teamkey/encryptbysecretkey.ts"
-      ],
-      "../src/vaults/teamkey/encryptbypublickey.ts": [
-        "../node_modules/@types/node-forge/index.d.ts"
-      ],
-      "../src/vaults/teamkey/index.ts": [
-        "../node_modules/@types/node-forge/index.d.ts",
-        "../src/vaults/teamkey/decryptbyprivatekey.ts",
-        "../src/vaults/teamkey/decryptbysecretkey.ts",
-        "../src/vaults/teamkey/encryptbypublickey.ts",
-        "../src/vaults/teamkey/encryptbysecretkey.ts"
-      ],
-      "../src/vaults/teammetadata/decryptbyteamkey.ts": [
-        "../src/common/aes/encrypt.ts"
-      ],
-      "../src/vaults/teammetadata/encryptbyteamkey.ts": [
-        "../src/common/aes/encrypt.ts"
-      ],
-      "../src/vaults/teammetadata/index.ts": [
-        "../src/common/aes/encrypt.ts",
-        "../src/vaults/teammetadata/decryptbyteamkey.ts",
-        "../src/vaults/teammetadata/encryptbyteamkey.ts"
-      ],
-      "../src/vaults/vaultitem/decryptbyvaultkey.ts": [
-        "../src/common/aes/encrypt.ts",
-        "../src/vaults/vaultitem/encryptbyvaultkey.ts"
-      ],
-      "../src/vaults/vaultitem/encryptbyvaultkey.ts": [
-        "../src/common/aes/encrypt.ts"
-      ],
-      "../src/vaults/vaultitem/index.ts": [
-        "../src/common/aes/encrypt.ts",
-        "../src/vaults/vaultitem/decryptbyvaultkey.ts",
-        "../src/vaults/vaultitem/encryptbyvaultkey.ts"
-      ],
-      "../src/vaults/vaultkey/decryptbyprivatekey.ts": [
-        "../node_modules/@types/node-forge/index.d.ts",
-        "../src/vaults/vaultkey/encryptbypublickey.ts"
-      ],
-      "../src/vaults/vaultkey/decryptbysecretkey.ts": [
-        "../src/vaults/vaultkey/encryptbysecretkey.ts"
-      ],
-      "../src/vaults/vaultkey/encryptbypublickey.ts": [
-        "../node_modules/@types/node-forge/index.d.ts"
-      ],
-      "../src/vaults/vaultkey/index.ts": [
-        "../node_modules/@types/node-forge/index.d.ts",
-        "../src/vaults/vaultkey/decryptbyprivatekey.ts",
-        "../src/vaults/vaultkey/decryptbysecretkey.ts",
-        "../src/vaults/vaultkey/encryptbypublickey.ts",
-        "../src/vaults/vaultkey/encryptbysecretkey.ts"
-      ],
-      "../src/vaults/vaultmetadata/decryptbyvaultkey.ts": [
-        "../src/common/aes/encrypt.ts"
-      ],
-      "../src/vaults/vaultmetadata/encryptbyvaultkey.ts": [
-        "../src/common/aes/encrypt.ts"
-      ],
-      "../src/vaults/vaultmetadata/index.ts": [
-        "../src/common/aes/encrypt.ts",
-        "../src/vaults/vaultmetadata/decryptbyvaultkey.ts",
-        "../src/vaults/vaultmetadata/encryptbyvaultkey.ts"
+        "../src/srp/bignumber.ts"
       ],
       "../../node_modules/@types/cacheable-request/index.d.ts": [
         "../../node_modules/@types/http-cache-semantics/index.d.ts",
@@ -2505,29 +3211,107 @@
       "../node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "../node_modules/typescript/lib/lib.scripthost.d.ts",
       "../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
-      "../src/certificates/generatekeypair.ts",
-      "../src/certificates/index.ts",
-      "../src/certificates/signcertificate.ts",
-      "../src/certificates/verifycertificate.ts",
-      "../src/common/aes/decrypt.ts",
-      "../src/common/aes/encrypt.ts",
-      "../src/common/base64/decode.ts",
-      "../src/common/base64/encode.ts",
-      "../src/common/base64/index.ts",
-      "../src/common/derivemasterunlockkey.ts",
-      "../src/common/generateaccountkey.ts",
-      "../src/common/generatecryptorandomstring.ts",
-      "../src/common/generaterandomsalt.ts",
-      "../src/common/hkdf/computehkdf.ts",
-      "../src/common/hkdf/index.ts",
-      "../src/common/index.ts",
-      "../src/common/normalizemasterpassword.ts",
-      "../src/common/pbkdf2/computehash.ts",
-      "../src/common/pbkdf2/index.ts",
-      "../src/common/rsa/decrypt.ts",
-      "../src/common/rsa/encrypt.ts",
+      "../src/encryption/common/aes/decrypt.ts",
+      "../src/encryption/common/aes/definitions.ts",
+      "../src/encryption/common/aes/encrypt.ts",
+      "../src/encryption/common/aes/index.ts",
+      "../src/encryption/common/base64/decode.ts",
+      "../src/encryption/common/base64/encode.ts",
+      "../src/encryption/common/base64/index.ts",
+      "../src/encryption/common/certificates/generatekeypair.ts",
+      "../src/encryption/common/certificates/index.ts",
+      "../src/encryption/common/certificates/signcertificate.ts",
+      "../src/encryption/common/certificates/verifycertificate.ts",
+      "../src/encryption/common/derivemasterunlockkey.ts",
+      "../src/encryption/common/generateaccountkey.ts",
+      "../src/encryption/common/generatecryptorandomstring.ts",
+      "../src/encryption/common/generaterandomsalt.ts",
+      "../src/encryption/common/hkdf/computehkdf.ts",
+      "../src/encryption/common/hkdf/index.ts",
+      "../src/encryption/common/index.ts",
+      "../src/encryption/common/normalizemasterpassword.ts",
+      "../src/encryption/common/pbkdf2/computehash.ts",
+      "../src/encryption/common/pbkdf2/index.ts",
+      "../src/encryption/common/rsa/decrypt.ts",
+      "../src/encryption/common/rsa/definitions.ts",
+      "../src/encryption/common/rsa/encrypt.ts",
+      "../src/encryption/common/rsa/generatekeypair.ts",
+      "../src/encryption/common/rsa/index.ts",
+      "../src/encryption/common/rsa/publickeyfromstring.ts",
+      "../src/encryption/common/rsa/publickeytostring.ts",
+      "../src/encryption/index.ts",
+      "../src/encryption/keysets/index.ts",
+      "../src/encryption/keysets/privatekey/decryptbysymmetrickey.ts",
+      "../src/encryption/keysets/privatekey/definitions.ts",
+      "../src/encryption/keysets/privatekey/encryptbysymmetrickey.ts",
+      "../src/encryption/keysets/privatekey/index.ts",
+      "../src/encryption/keysets/symmetrickey/decryptbyprivatekey.ts",
+      "../src/encryption/keysets/symmetrickey/decryptbysecretkey.ts",
+      "../src/encryption/keysets/symmetrickey/definitions.ts",
+      "../src/encryption/keysets/symmetrickey/encryptbypublickey.ts",
+      "../src/encryption/keysets/symmetrickey/encryptbysecretkey.ts",
+      "../src/encryption/keysets/symmetrickey/index.ts",
+      "../src/encryption/teams/index.ts",
+      "../src/encryption/teams/key/decryptbyprivatekey.ts",
+      "../src/encryption/teams/key/decryptbysecretkey.ts",
+      "../src/encryption/teams/key/definitions.ts",
+      "../src/encryption/teams/key/encryptbypublickey.ts",
+      "../src/encryption/teams/key/encryptbysecretkey.ts",
+      "../src/encryption/teams/key/index.ts",
+      "../src/encryption/teams/overview/decryptbyteamkey.ts",
+      "../src/encryption/teams/overview/encryptbyteamkey.ts",
+      "../src/encryption/teams/overview/index.ts",
+      "../src/encryption/vaults/categories/decryptbyvaultkey.ts",
+      "../src/encryption/vaults/categories/definitions.ts",
+      "../src/encryption/vaults/categories/encryptbyvaultkey.ts",
+      "../src/encryption/vaults/categories/index.ts",
+      "../src/encryption/vaults/folders/decryptbyvaultkey.ts",
+      "../src/encryption/vaults/folders/definitions.ts",
+      "../src/encryption/vaults/folders/encryptbyvaultkey.ts",
+      "../src/encryption/vaults/folders/index.ts",
+      "../src/encryption/vaults/index.ts",
+      "../src/encryption/vaults/items/decryptbyvaultkey.ts",
+      "../src/encryption/vaults/items/definitions.ts",
+      "../src/encryption/vaults/items/encryptbyvaultkey.ts",
+      "../src/encryption/vaults/items/index.ts",
+      "../src/encryption/vaults/key/decryptbyprivatekey.ts",
+      "../src/encryption/vaults/key/decryptbysecretkey.ts",
+      "../src/encryption/vaults/key/definitions.ts",
+      "../src/encryption/vaults/key/encryptbypublickey.ts",
+      "../src/encryption/vaults/key/encryptbysecretkey.ts",
+      "../src/encryption/vaults/key/index.ts",
+      "../src/encryption/vaults/overview/decryptbyvaultkey.ts",
+      "../src/encryption/vaults/overview/encryptbyvaultkey.ts",
+      "../src/encryption/vaults/overview/index.ts",
+      "../src/helpers/key-sets/create-key-set.helper.ts",
+      "../src/helpers/key-sets/create-primary-key-set.helper.ts",
+      "../src/helpers/key-sets/decrypt-key-set.helper.ts",
+      "../src/helpers/key-sets/decrypt-primary-key-set.helper.ts",
+      "../src/helpers/key-sets/definitions.ts",
+      "../src/helpers/key-sets/index.ts",
+      "../src/helpers/master-unlock-key/index.ts",
+      "../src/helpers/vault-folders/create-vault-folder.helper.ts",
+      "../src/helpers/vault-folders/decrypt-vault-folder.helper.ts",
+      "../src/helpers/vault-folders/decrypt-vault-folders.helper.ts",
+      "../src/helpers/vault-folders/definitions.ts",
+      "../src/helpers/vault-folders/index.ts",
+      "../src/helpers/vault-item-categories/create-vault-item-category.helper.ts",
+      "../src/helpers/vault-item-categories/decrypt-vault-item-categories.helper.ts",
+      "../src/helpers/vault-item-categories/decrypt-vault-item-category.helper.ts",
+      "../src/helpers/vault-item-categories/definitions.ts",
+      "../src/helpers/vault-item-categories/index.ts",
+      "../src/helpers/vault-items/create-vault-item.helper.ts",
+      "../src/helpers/vault-items/decrypt-vault-item.helper.ts",
+      "../src/helpers/vault-items/decrypt-vault-items.helper.ts",
+      "../src/helpers/vault-items/definitions.ts",
+      "../src/helpers/vault-items/index.ts",
+      "../src/helpers/vaults/create-vault.helper.ts",
+      "../src/helpers/vaults/decrypt-vault-by-private-key.helper.ts",
+      "../src/helpers/vaults/decrypt-vault-by-secret-key.helper.ts",
+      "../src/helpers/vaults/definitions.ts",
+      "../src/helpers/vaults/index.ts",
       "../src/index.ts",
-      "../src/srp/big-number.ts",
+      "../src/srp/bignumber.ts",
       "../src/srp/client/deriveprivatekey.ts",
       "../src/srp/client/derivesession.ts",
       "../src/srp/client/deriveverifier.ts",
@@ -2541,37 +3325,6 @@
       "../src/srp/server/index.ts",
       "../src/srp/sha256.ts",
       "../src/srp/types.ts",
-      "../src/vaults/generatekeypair.ts",
-      "../src/vaults/index.ts",
-      "../src/vaults/privatekey/decryptbysymmetrickey.ts",
-      "../src/vaults/privatekey/encryptbysymmetrickey.ts",
-      "../src/vaults/privatekey/index.ts",
-      "../src/vaults/publickeyfromstring.ts",
-      "../src/vaults/publickeytostring.ts",
-      "../src/vaults/symmetrickey/decryptbyprivatekey.ts",
-      "../src/vaults/symmetrickey/decryptbysecretkey.ts",
-      "../src/vaults/symmetrickey/encryptbypublickey.ts",
-      "../src/vaults/symmetrickey/encryptbysecretkey.ts",
-      "../src/vaults/symmetrickey/index.ts",
-      "../src/vaults/teamkey/decryptbyprivatekey.ts",
-      "../src/vaults/teamkey/decryptbysecretkey.ts",
-      "../src/vaults/teamkey/encryptbypublickey.ts",
-      "../src/vaults/teamkey/encryptbysecretkey.ts",
-      "../src/vaults/teamkey/index.ts",
-      "../src/vaults/teammetadata/decryptbyteamkey.ts",
-      "../src/vaults/teammetadata/encryptbyteamkey.ts",
-      "../src/vaults/teammetadata/index.ts",
-      "../src/vaults/vaultitem/decryptbyvaultkey.ts",
-      "../src/vaults/vaultitem/encryptbyvaultkey.ts",
-      "../src/vaults/vaultitem/index.ts",
-      "../src/vaults/vaultkey/decryptbyprivatekey.ts",
-      "../src/vaults/vaultkey/decryptbysecretkey.ts",
-      "../src/vaults/vaultkey/encryptbypublickey.ts",
-      "../src/vaults/vaultkey/encryptbysecretkey.ts",
-      "../src/vaults/vaultkey/index.ts",
-      "../src/vaults/vaultmetadata/decryptbyvaultkey.ts",
-      "../src/vaults/vaultmetadata/encryptbyvaultkey.ts",
-      "../src/vaults/vaultmetadata/index.ts",
       "../../node_modules/@types/anymatch/index.d.ts",
       "../../node_modules/@types/cacheable-request/index.d.ts",
       "../../node_modules/@types/glob/index.d.ts",

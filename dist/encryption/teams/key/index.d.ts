@@ -1,0 +1,13 @@
+import * as definitions from './definitions';
+import encryptBySecretKey from './encryptBySecretKey';
+import decryptBySecretKey from './decryptBySecretKey';
+import encryptByPublicKey from './encryptByPublicKey';
+import decryptByPrivateKey from './decryptByPrivateKey';
+declare const _default: {
+    definitions: typeof definitions;
+    encryptBySecretKey: typeof encryptBySecretKey;
+    decryptBySecretKey: typeof decryptBySecretKey;
+    encryptByPublicKey: typeof encryptByPublicKey;
+    decryptByPrivateKey: typeof decryptByPrivateKey;
+};
+export default _default;

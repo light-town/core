@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.H = exports.k = exports.g = exports.N = void 0;
 const sha256_1 = require("./sha256");
-const big_number_1 = require("./big-number");
+const bigNumber_1 = require("./bigNumber");
 const LARGE_SAFE_PRIME_NUMBER = `
     AC6BDB41 324A9A9B F166DE5E 1389582F AF72B665 1987EE07 FC319294
     3DB56050 A37329CB B4A099ED 8193E075 7767A13D D52312AB 4B03310D
@@ -15,8 +15,8 @@ const LARGE_SAFE_PRIME_NUMBER = `
     94B5C803 D89F7AE4 35DE236D 525F5475 9B65E372 FCD68EF2 0FA7111F
     9E4AFF73
 `;
-exports.N = big_number_1.default.fromHex(LARGE_SAFE_PRIME_NUMBER.replace(/\s+/g, ''));
-exports.g = big_number_1.default.fromHex('02'.replace(/\s+/g, ''));
+exports.N = bigNumber_1.default.fromHex(LARGE_SAFE_PRIME_NUMBER.replace(/\s+/g, ''));
+exports.g = bigNumber_1.default.fromHex('02'.replace(/\s+/g, ''));
 exports.k = sha256_1.default(exports.N, exports.g);
 exports.H = sha256_1.default;
 //# sourceMappingURL=params.js.map

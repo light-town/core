@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const client_1 = require("./client");
 const server_1 = require("./server");
-const big_number_1 = require("./big-number");
+const bigNumber_1 = require("./bigNumber");
 exports.default = {
     client: {
         derivePrivateKey(secretKey, password, salt) {
@@ -12,7 +12,7 @@ exports.default = {
             return client_1.default.generateEphemeralKeyPair();
         },
         deriveVerifier(secretKey, password) {
-            const salt = big_number_1.default.randomInteger(256 / 8).toHex();
+            const salt = bigNumber_1.default.randomInteger(256 / 8).toHex();
             const privateKey = client_1.default.derivePrivateKey(secretKey, password, salt);
             const verifier = client_1.default.deriveVerifier(privateKey);
             return {

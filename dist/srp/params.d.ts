@@ -1,4 +1,4 @@
-import BigNumber from './big-number';
+import BigNumber from './bigNumber';
 export declare const N: BigNumber;
 export declare const g: BigNumber;
 export declare const k: BigNumber;

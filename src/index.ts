@@ -1,7 +1,5 @@
-import common from './common';
 import srp from './srp';
-import vaults from './vaults';
-import certificates from './certificates';
+import encryption from './encryption';
 
-export { common, srp, vaults, certificates };
-export default { common, srp, vaults, certificates };
+export { encryption, srp };
+export default { encryption, srp };

@@ -1,5 +1,5 @@
 import { N, g } from '../params';
-import BigNumber from '../big-number';
+import BigNumber from '../bigNumber';
 import * as Types from '../types';
 
 /**

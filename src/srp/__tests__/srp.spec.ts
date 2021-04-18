@@ -1,6 +1,6 @@
 import srp from '../index';
 import * as faker from 'faker';
-import { generateAccountKey } from '../../common';
+import { generateAccountKey } from '../../encryption/common';
 
 describe('[SRP] ...', () => {
   it('should correct generate verifier in the client', () => {
@@ -10,10 +10,7 @@ describe('[SRP] ...', () => {
       .join('')
       .toUpperCase();
     const ACCOUNT_VERSION = 'A1';
-    const TEST_ACCOUNT_ID = generateAccountKey({
-      versionCode: ACCOUNT_VERSION,
-      secret: TEST_USER_ID,
-    });
+    const TEST_ACCOUNT_ID = generateAccountKey(ACCOUNT_VERSION, TEST_USER_ID);
     const TEST_PASSWORD = faker.internet.password();
 
     const verifier = srp.client.deriveVerifier(TEST_ACCOUNT_ID, TEST_PASSWORD);
@@ -35,10 +32,7 @@ describe('[SRP] ...', () => {
     // client
     const USER_ID = faker.datatype.uuid().split('-').join('').toUpperCase();
     const ACCOUNT_VERSION = 'A1';
-    const TEST_ACCOUNT_ID = generateAccountKey({
-      versionCode: ACCOUNT_VERSION,
-      secret: USER_ID,
-    });
+    const TEST_ACCOUNT_ID = generateAccountKey(ACCOUNT_VERSION, USER_ID);
     const TEST_PASSWORD = faker.internet.password();
 
     const { salt, verifier, privateKey } = srp.client.deriveVerifier(
@@ -98,10 +92,8 @@ describe('[SRP] ...', () => {
     // client
     const USER_ID = faker.datatype.uuid().split('-').join('').toUpperCase();
     const ACCOUNT_VERSION = 'A1';
-    const TEST_ACCOUNT_ID = generateAccountKey({
-      versionCode: ACCOUNT_VERSION,
-      secret: USER_ID,
-    });
+    const TEST_ACCOUNT_ID = generateAccountKey(ACCOUNT_VERSION, USER_ID);
+
     const TEST_PASSWORD = faker.internet.password();
 
     const { salt, verifier, privateKey } = srp.client.deriveVerifier(
