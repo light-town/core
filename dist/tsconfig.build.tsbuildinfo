@@ -811,31 +811,6 @@
         "signature": "5c3ae207d4e0db1d02f9643dcc46d5bb7cb10e378946543db88e79377e96cb7f",
         "affectsGlobalScope": false
       },
-      "../src/index.ts": {
-        "version": "c46e8354031c59ee902eef5dd7e4430573ea9a3d6428cd72b4b2615a6d12b2d3",
-        "signature": "97e3f2a739b6eec682b8ab1a3cb32560b5487b10b7c57264c6f49d785c05847b",
-        "affectsGlobalScope": false
-      },
-      "../src/encryption/common/certificates/generate-key-pair.ts": {
-        "version": "62e08ee257783add1b8a6600eca0eba5f6a16343e1180235aec52ddcda82dcee",
-        "signature": "9f626bd9e4ecebb691b32410b0f9a5cb8588e38030230ee54e4bb33a8c045df9",
-        "affectsGlobalScope": false
-      },
-      "../src/encryption/common/certificates/sign-certificate.ts": {
-        "version": "d15b15c07581830412c1cfe11de0d6345e17bdde657e4ba402651a30630dc1f3",
-        "signature": "a7a33a49601c0fe58dae05fc3648b6d550ec1c6580065fb222821611d1883fc9",
-        "affectsGlobalScope": false
-      },
-      "../src/encryption/common/certificates/verify-certificate.ts": {
-        "version": "7a66f331fe5fd45c904249146821a78077e505536ab927880ff5376b1c456455",
-        "signature": "d8ab4f2067347c0b8d102ee7c188fc33362205d11a0529d071b7403dd9fcad0c",
-        "affectsGlobalScope": false
-      },
-      "../src/encryption/common/certificates/index.ts": {
-        "version": "1e043a4a003fd9a09bd66597ea633c13e44eea16343e8cb0ccc878e275e79dc5",
-        "signature": "42ed5170ea892c0d7f43443e23fa2eb442dcf2e4934fc2fd9cdd76ca7e2b8c8e",
-        "affectsGlobalScope": false
-      },
       "../src/helpers/key-sets/definitions.ts": {
         "version": "820348c24be22f168360eaa47c86b55e7bb57d76898b2bb604254f21b570e2c7",
         "signature": "874ff233100e964c8598931f4a7b2f402f6a60a86214b8e4d506845628ca57b6",
@@ -906,6 +881,16 @@
         "signature": "68065dc8f7cea1495b0f40b0dbb601ec0bc7c7a856daa1239eaea657efe25bd6",
         "affectsGlobalScope": false
       },
+      "../src/helpers/vault-item-categories/decrypt-vault-item-categories.helper.ts": {
+        "version": "1b2deff7523eae09fa65f754584d798256c64aaf215efc47607b5e8b0a356205",
+        "signature": "36a2b9c4adb214b242647c36306a0dc9a8f99476f513b74908987418e1c92b2e",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/vault-item-categories/decrypt-vault-item-category.helper.ts": {
+        "version": "506cf761aff5af79fb8b6518d59b5b4c1becdb0c7c302277ad804b12d816b26e",
+        "signature": "98a082886b64e94a88ce9e5ab8b226bbaf3e3f0152a7f475137bbb7b64c1d844",
+        "affectsGlobalScope": false
+      },
       "../src/helpers/vault-item-categories/default-categories.ts": {
         "version": "e63c6c2d526a5ec86c7cc367046eff13fd3fba43fe2c32a2356ba3104ec05f0c",
         "signature": "0ed9ba75cc2ea7d5e7c79ae23056c0f416fe7d67920f51bd0eae39cbb1c2dd38",
@@ -926,16 +911,6 @@
         "signature": "f1e7704d4fbb99de8126b869024ab6d900c3aa4093b3e8e7dc13ae1c13b23c7b",
         "affectsGlobalScope": false
       },
-      "../src/helpers/vault-item-categories/decrypt-vault-item-categories.helper.ts": {
-        "version": "1b2deff7523eae09fa65f754584d798256c64aaf215efc47607b5e8b0a356205",
-        "signature": "36a2b9c4adb214b242647c36306a0dc9a8f99476f513b74908987418e1c92b2e",
-        "affectsGlobalScope": false
-      },
-      "../src/helpers/vault-item-categories/decrypt-vault-item-category.helper.ts": {
-        "version": "506cf761aff5af79fb8b6518d59b5b4c1becdb0c7c302277ad804b12d816b26e",
-        "signature": "98a082886b64e94a88ce9e5ab8b226bbaf3e3f0152a7f475137bbb7b64c1d844",
-        "affectsGlobalScope": false
-      },
       "../src/helpers/vault-item-categories/index.ts": {
         "version": "c6947ba6541884e78beba468d4223fb28b5f6f6bdb54567e020f63264d50443a",
         "signature": "e0018a7df063fe178799729d679ab97bd1bd65fa476bf4eddc766e0c200b10ae",
@@ -946,11 +921,6 @@
         "signature": "049d2fe63e5c4fbe6837bbc27f06f5ed983df64252074d99f57341615005b179",
         "affectsGlobalScope": false
       },
-      "../src/helpers/vault-items/create-vault-item.helper.ts": {
-        "version": "d36eb6c21322d02f0f63ff65898e71986057d5b7faecfb47511e6bf8581e7a58",
-        "signature": "8ab9ba86a46b8f4cccee112f4a784787f49b7e265cc21876fead68b8c965c742",
-        "affectsGlobalScope": false
-      },
       "../src/helpers/vault-items/decrypt-vault-item.helper.ts": {
         "version": "aa763ce586b02c5533ba7908f776b72de5f65da4332cd537f0538b0dab41cdff",
         "signature": "839191f003bbcd870efb817189dfa90613edef8b9e513d1c0795141fff8b5a03",
@@ -959,6 +929,11 @@
       "../src/helpers/vault-items/decrypt-vault-items.helper.ts": {
         "version": "57bbeec8905363694bc4c0a9cceca66a232b2b33fff716cea7fbb83f5e6c1b8a",
         "signature": "2649cd9c6ddbf745f3a6d1b1b75cca0a931fc12de48cf3e94fc13dfd8a384623",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/vault-items/create-vault-item.helper.ts": {
+        "version": "d36eb6c21322d02f0f63ff65898e71986057d5b7faecfb47511e6bf8581e7a58",
+        "signature": "8ab9ba86a46b8f4cccee112f4a784787f49b7e265cc21876fead68b8c965c742",
         "affectsGlobalScope": false
       },
       "../src/helpers/vault-items/index.ts": {
@@ -994,6 +969,36 @@
       "../src/helpers/vaults/index.ts": {
         "version": "17c3604a5ca1e929cdaacd6af5a1ff835413e9f0490e059b2f6c3fe53fbb12c0",
         "signature": "f0277c52bf10410485ec099bbfaf642b91b032d90e7c48f09db0e6e0be2c06aa",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/index.ts": {
+        "version": "2f35b6959b241cf3fe30828ee804f178e8f53785065d10fd77e80cc45ecc6ae0",
+        "signature": "f5c059cf5036ad4890e59b675200e562cd5ca22daeb8383d77cd06292f014a1e",
+        "affectsGlobalScope": false
+      },
+      "../src/index.ts": {
+        "version": "b8785c9df33134b14ab0f8cccc07300692aa4e93c6072d02bfeb4097c29fb467",
+        "signature": "b256395c463eb13354ec52df734285d80482e2c4c305fa1649042a5084b97f2d",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/common/certificates/generate-key-pair.ts": {
+        "version": "62e08ee257783add1b8a6600eca0eba5f6a16343e1180235aec52ddcda82dcee",
+        "signature": "9f626bd9e4ecebb691b32410b0f9a5cb8588e38030230ee54e4bb33a8c045df9",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/common/certificates/sign-certificate.ts": {
+        "version": "d15b15c07581830412c1cfe11de0d6345e17bdde657e4ba402651a30630dc1f3",
+        "signature": "a7a33a49601c0fe58dae05fc3648b6d550ec1c6580065fb222821611d1883fc9",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/common/certificates/verify-certificate.ts": {
+        "version": "7a66f331fe5fd45c904249146821a78077e505536ab927880ff5376b1c456455",
+        "signature": "d8ab4f2067347c0b8d102ee7c188fc33362205d11a0529d071b7403dd9fcad0c",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/common/certificates/index.ts": {
+        "version": "1e043a4a003fd9a09bd66597ea633c13e44eea16343e8cb0ccc878e275e79dc5",
+        "signature": "42ed5170ea892c0d7f43443e23fa2eb442dcf2e4934fc2fd9cdd76ca7e2b8c8e",
         "affectsGlobalScope": false
       },
       "../node_modules/@babel/types/lib/index.d.ts": {
@@ -1927,6 +1932,14 @@
         "../src/encryption/vaults/overview/decrypt-by-vault-key.ts",
         "../src/encryption/vaults/overview/encrypt-by-vault-key.ts"
       ],
+      "../src/helpers/index.ts": [
+        "../src/helpers/key-sets/index.ts",
+        "../src/helpers/master-unlock-key/index.ts",
+        "../src/helpers/vault-folders/index.ts",
+        "../src/helpers/vault-item-categories/index.ts",
+        "../src/helpers/vault-items/index.ts",
+        "../src/helpers/vaults/index.ts"
+      ],
       "../src/helpers/key-sets/create-key-set.helper.ts": [
         "../src/encryption/common/rsa/definitions.ts",
         "../src/encryption/index.ts",
@@ -2068,6 +2081,7 @@
       ],
       "../src/index.ts": [
         "../src/encryption/index.ts",
+        "../src/helpers/index.ts",
         "../src/srp/index.ts"
       ],
       "../src/srp/big-number.ts": [
@@ -2847,6 +2861,32 @@
         "../src/encryption/vaults/overview/decrypt-by-vault-key.ts",
         "../src/encryption/vaults/overview/encrypt-by-vault-key.ts"
       ],
+      "../src/helpers/index.ts": [
+        "../src/helpers/key-sets/create-key-set.helper.ts",
+        "../src/helpers/key-sets/create-primary-key-set.helper.ts",
+        "../src/helpers/key-sets/decrypt-key-set.helper.ts",
+        "../src/helpers/key-sets/decrypt-primary-key-set.helper.ts",
+        "../src/helpers/key-sets/definitions.ts",
+        "../src/helpers/master-unlock-key/index.ts",
+        "../src/helpers/vault-folders/create-vault-folder.helper.ts",
+        "../src/helpers/vault-folders/decrypt-vault-folder.helper.ts",
+        "../src/helpers/vault-folders/decrypt-vault-folders.helper.ts",
+        "../src/helpers/vault-folders/definitions.ts",
+        "../src/helpers/vault-item-categories/create-default-vault-item-categories.helper.ts",
+        "../src/helpers/vault-item-categories/create-vault-item-category.helper.ts",
+        "../src/helpers/vault-item-categories/decrypt-vault-item-categories.helper.ts",
+        "../src/helpers/vault-item-categories/decrypt-vault-item-category.helper.ts",
+        "../src/helpers/vault-item-categories/definitions.ts",
+        "../src/helpers/vault-items/create-vault-item.helper.ts",
+        "../src/helpers/vault-items/decrypt-vault-item.helper.ts",
+        "../src/helpers/vault-items/decrypt-vault-items.helper.ts",
+        "../src/helpers/vault-items/definitions.ts",
+        "../src/helpers/vaults/create-vault.helper.ts",
+        "../src/helpers/vaults/decrypt-vault-by-private-key.helper.ts",
+        "../src/helpers/vaults/decrypt-vault-by-secret-key.helper.ts",
+        "../src/helpers/vaults/definitions.ts",
+        "../src/helpers/vaults/share-vault.helper.ts"
+      ],
       "../src/helpers/key-sets/create-key-set.helper.ts": [
         "../src/encryption/common/rsa/definitions.ts",
         "../src/helpers/key-sets/definitions.ts"
@@ -3002,6 +3042,31 @@
         "../src/encryption/vaults/key/encrypt-by-public-key.ts",
         "../src/encryption/vaults/overview/decrypt-by-vault-key.ts",
         "../src/encryption/vaults/overview/encrypt-by-vault-key.ts",
+        "../src/helpers/index.ts",
+        "../src/helpers/key-sets/create-key-set.helper.ts",
+        "../src/helpers/key-sets/create-primary-key-set.helper.ts",
+        "../src/helpers/key-sets/decrypt-key-set.helper.ts",
+        "../src/helpers/key-sets/decrypt-primary-key-set.helper.ts",
+        "../src/helpers/key-sets/definitions.ts",
+        "../src/helpers/master-unlock-key/index.ts",
+        "../src/helpers/vault-folders/create-vault-folder.helper.ts",
+        "../src/helpers/vault-folders/decrypt-vault-folder.helper.ts",
+        "../src/helpers/vault-folders/decrypt-vault-folders.helper.ts",
+        "../src/helpers/vault-folders/definitions.ts",
+        "../src/helpers/vault-item-categories/create-default-vault-item-categories.helper.ts",
+        "../src/helpers/vault-item-categories/create-vault-item-category.helper.ts",
+        "../src/helpers/vault-item-categories/decrypt-vault-item-categories.helper.ts",
+        "../src/helpers/vault-item-categories/decrypt-vault-item-category.helper.ts",
+        "../src/helpers/vault-item-categories/definitions.ts",
+        "../src/helpers/vault-items/create-vault-item.helper.ts",
+        "../src/helpers/vault-items/decrypt-vault-item.helper.ts",
+        "../src/helpers/vault-items/decrypt-vault-items.helper.ts",
+        "../src/helpers/vault-items/definitions.ts",
+        "../src/helpers/vaults/create-vault.helper.ts",
+        "../src/helpers/vaults/decrypt-vault-by-private-key.helper.ts",
+        "../src/helpers/vaults/decrypt-vault-by-secret-key.helper.ts",
+        "../src/helpers/vaults/definitions.ts",
+        "../src/helpers/vaults/share-vault.helper.ts",
         "../src/srp/index.ts",
         "../src/srp/types.ts"
       ],
@@ -3335,6 +3400,7 @@
       "../src/encryption/vaults/overview/decrypt-by-vault-key.ts",
       "../src/encryption/vaults/overview/encrypt-by-vault-key.ts",
       "../src/encryption/vaults/overview/index.ts",
+      "../src/helpers/index.ts",
       "../src/helpers/key-sets/create-key-set.helper.ts",
       "../src/helpers/key-sets/create-primary-key-set.helper.ts",
       "../src/helpers/key-sets/decrypt-key-set.helper.ts",
