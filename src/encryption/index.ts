@@ -1,5 +1,5 @@
 import common from './common';
-import keySets from './keySets';
+import keySets from './key-sets';
 import teams from './teams';
 import vaults from './vaults';
 

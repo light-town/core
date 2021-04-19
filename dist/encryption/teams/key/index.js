@@ -1,15 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const definitions = require("./definitions");
-const encryptBySecretKey_1 = require("./encryptBySecretKey");
-const decryptBySecretKey_1 = require("./decryptBySecretKey");
-const encryptByPublicKey_1 = require("./encryptByPublicKey");
-const decryptByPrivateKey_1 = require("./decryptByPrivateKey");
+const encrypt_by_secret_key_1 = require("./encrypt-by-secret-key");
+const decrypt_by_secret_key_1 = require("./decrypt-by-secret-key");
+const encrypt_by_public_key_1 = require("./encrypt-by-public-key");
+const decrypt_by_private_key_1 = require("./decrypt-by-private-key");
 exports.default = {
     definitions,
-    encryptBySecretKey: encryptBySecretKey_1.default,
-    decryptBySecretKey: decryptBySecretKey_1.default,
-    encryptByPublicKey: encryptByPublicKey_1.default,
-    decryptByPrivateKey: decryptByPrivateKey_1.default,
+    encryptBySecretKey: encrypt_by_secret_key_1.default,
+    decryptBySecretKey: decrypt_by_secret_key_1.default,
+    encryptByPublicKey: encrypt_by_public_key_1.default,
+    decryptByPrivateKey: decrypt_by_private_key_1.default,
 };
 //# sourceMappingURL=index.js.map

@@ -25,9 +25,9 @@ declare const _default: {
                 definitions: typeof import("./encryption/common/rsa/definitions");
                 encrypt: typeof import("./encryption/common/rsa/encrypt").default;
                 decrypt: typeof import("./encryption/common/rsa/decrypt").default;
-                generateKeyPair: typeof import("./encryption/common/rsa/generateKeyPair").default;
-                publicKeyFromString: typeof import("./encryption/common/rsa/publicKeyFromString").default;
-                publicKeyToString: typeof import("./encryption/common/rsa/publicKeyToString").default;
+                generateKeyPair: typeof import("./encryption/common/rsa/generate-key-pair").default;
+                publicKeyFromString: typeof import("./encryption/common/rsa/public-key-from-string").default;
+                publicKeyToString: typeof import("./encryption/common/rsa/public-key-to-string").default;
             };
             generateAccountKey: typeof import("./encryption/common").generateAccountKey;
             generateCryptoRandomString: (length: number) => string;
@@ -38,61 +38,61 @@ declare const _default: {
         };
         keySets: {
             privateKey: {
-                definitions: typeof import("./encryption/keySets/privateKey/definitions");
-                encryptBySymmetricKey: typeof import("./encryption/keySets/privateKey/encryptBySymmetricKey").default;
-                decryptBySymmetricKey: typeof import("./encryption/keySets/privateKey/decryptBySymmetricKey").default;
+                definitions: typeof import("./encryption/key-sets/private-key/definitions");
+                encryptBySymmetricKey: typeof import("./encryption/key-sets/private-key/encrypt-by-symmetric-key").default;
+                decryptBySymmetricKey: typeof import("./encryption/key-sets/private-key/decrypt-by-symmetric-key").default;
             };
             symmetricKey: {
-                definitions: typeof import("./encryption/keySets/symmetricKey/definitions");
-                encryptByPublicKey: typeof import("./encryption/keySets/symmetricKey/encryptByPublicKey").default;
-                decryptByPrivateKey: typeof import("./encryption/keySets/symmetricKey/decryptByPrivateKey").default;
-                encryptBySecretKey: typeof import("./encryption/keySets/symmetricKey/encryptBySecretKey").default;
-                decryptBySecretKey: typeof import("./encryption/keySets/symmetricKey/decryptBySecretKey").default;
+                definitions: typeof import("./encryption/key-sets/symmetric-key/definitions");
+                encryptByPublicKey: typeof import("./encryption/key-sets/symmetric-key/encrypt-by-public-key").default;
+                decryptByPrivateKey: typeof import("./encryption/key-sets/symmetric-key/decrypt-by-private-key").default;
+                encryptBySecretKey: typeof import("./encryption/key-sets/symmetric-key/encrypt-by-secret-key").default;
+                decryptBySecretKey: typeof import("./encryption/key-sets/symmetric-key/decrypt-by-secret-key").default;
             };
         };
         teams: {
             key: {
                 definitions: typeof import("./encryption/teams/key/definitions");
-                encryptBySecretKey: typeof import("./encryption/teams/key/encryptBySecretKey").default;
-                decryptBySecretKey: typeof import("./encryption/teams/key/decryptBySecretKey").default;
-                encryptByPublicKey: typeof import("./encryption/teams/key/encryptByPublicKey").default;
-                decryptByPrivateKey: typeof import("./encryption/teams/key/decryptByPrivateKey").default;
+                encryptBySecretKey: typeof import("./encryption/teams/key/encrypt-by-secret-key").default;
+                decryptBySecretKey: typeof import("./encryption/teams/key/decrypt-by-secret-key").default;
+                encryptByPublicKey: typeof import("./encryption/teams/key/encrypt-by-public-key").default;
+                decryptByPrivateKey: typeof import("./encryption/teams/key/decrypt-by-private-key").default;
             };
             overview: {
                 encryptByTeamKey: (overview: Record<string, any>, teamKey: string) => Promise<import("./encryption/common/aes/definitions").EncryptedData>;
-                decryptByTeamKey: typeof import("./encryption/teams/overview/decryptByTeamKey").default;
+                decryptByTeamKey: typeof import("./encryption/teams/overview/decrypt-by-team-key").default;
             };
         };
         vaults: {
             items: {
                 definitions: typeof import("./encryption/vaults/items/definitions");
-                encryptVaultItem: typeof import("./encryption/vaults/items/encryptByVaultKey").default;
-                encryptOverviewByVaultKey: typeof import("./encryption/vaults/items/encryptByVaultKey").encryptOverviewByVaultKey;
-                encryptDetailsByVaultKey: typeof import("./encryption/vaults/items/encryptByVaultKey").encryptDetailsByVaultKey;
-                decryptVaultItem: typeof import("./encryption/vaults/items/decryptByVaultKey").default;
-                decryptOverviewByVaultKey: typeof import("./encryption/vaults/items/decryptByVaultKey").decryptOverviewByVaultKey;
-                decryptDetailsByVaultKey: typeof import("./encryption/vaults/items/decryptByVaultKey").decryptDetailsByVaultKey;
+                encryptVaultItem: typeof import("./encryption/vaults/items/encrypt-by-vault-key").default;
+                encryptOverviewByVaultKey: typeof import("./encryption/vaults/items/encrypt-by-vault-key").encryptOverviewByVaultKey;
+                encryptDetailsByVaultKey: typeof import("./encryption/vaults/items/encrypt-by-vault-key").encryptDetailsByVaultKey;
+                decryptVaultItem: typeof import("./encryption/vaults/items/decrypt-by-vault-key").default;
+                decryptOverviewByVaultKey: typeof import("./encryption/vaults/items/decrypt-by-vault-key").decryptOverviewByVaultKey;
+                decryptDetailsByVaultKey: typeof import("./encryption/vaults/items/decrypt-by-vault-key").decryptDetailsByVaultKey;
             };
             key: {
                 definitions: typeof import("./encryption/vaults/key/definitions");
                 encryptBySecretKey: (vaultKey: string, secretKey: string) => Promise<import("./encryption/vaults/key/definitions").EncryptedVaultKeyBySecretKey>;
-                decryptBySecretKey: typeof import("./encryption/vaults/key/decryptBySecretKey").default;
-                encryptByPublicKey: typeof import("./encryption/vaults/key/encryptByPublicKey").default;
-                decryptByPrivateKey: typeof import("./encryption/vaults/key/decryptByPrivateKey").default;
+                decryptBySecretKey: typeof import("./encryption/vaults/key/decrypt-by-secret-key").default;
+                encryptByPublicKey: typeof import("./encryption/vaults/key/encrypt-by-public-key").default;
+                decryptByPrivateKey: typeof import("./encryption/vaults/key/decrypt-by-private-key").default;
             };
             overview: {
-                encryptByVaultKey: typeof import("./encryption/vaults/overview/encryptByVaultKey").default;
-                decryptByVaultKey: typeof import("./encryption/vaults/overview/decryptByVaultKey").default;
+                encryptByVaultKey: typeof import("./encryption/vaults/overview/encrypt-by-vault-key").default;
+                decryptByVaultKey: typeof import("./encryption/vaults/overview/decrypt-by-vault-key").default;
             };
             folders: {
                 definitions: typeof import("./encryption/vaults/folders/definitions");
-                encryptVaultFolder: typeof import("./encryption/vaults/folders/encryptByVaultKey").default;
-                decryptVaultFolder: typeof import("./encryption/vaults/folders/decryptByVaultKey").default;
+                encryptVaultFolder: typeof import("./encryption/vaults/folders/encrypt-by-vault-key").default;
+                decryptVaultFolder: typeof import("./encryption/vaults/folders/decrypt-by-vault-key").default;
             };
             categories: {
                 definitions: typeof import("./encryption/vaults/categories/definitions");
-                encryptVaultItemCategory: typeof import("./encryption/vaults/categories/encryptByVaultKey").default;
-                decryptVaultItemCategory: typeof import("./encryption/vaults/categories/decryptByVaultKey").default;
+                encryptVaultItemCategory: typeof import("./encryption/vaults/categories/encrypt-by-vault-key").default;
+                decryptVaultItemCategory: typeof import("./encryption/vaults/categories/decrypt-by-vault-key").default;
             };
         };
     };

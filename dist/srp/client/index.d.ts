@@ -1,8 +1,8 @@
-import { deriveVerifier } from './deriveVerifier';
-import { deriveSession } from './deriveSession';
-import { verifySession } from './verifySession';
-import { generateEphemeralKeyPair } from './generateEphemeralKeyPair';
-import { derivePrivateKey } from './derivePrivateKey';
+import { deriveVerifier } from './derive-verifier';
+import { deriveSession } from './derive-session';
+import { verifySession } from './verify-session';
+import { generateEphemeralKeyPair } from './generate-ephemeral-key-pair';
+import { derivePrivateKey } from './derive-private-key';
 export { deriveVerifier, deriveSession, verifySession, generateEphemeralKeyPair, derivePrivateKey, };
 declare const _default: {
     deriveVerifier: (privateKey: string) => string;

@@ -1,4 +1,4 @@
-import { computeHash } from './computeHash';
+import { computeHash } from './compute-hash';
 
 export { computeHash };
 export default { computeHash };

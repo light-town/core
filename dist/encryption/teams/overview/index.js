@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const encryptByTeamKey_1 = require("./encryptByTeamKey");
-const decryptByTeamKey_1 = require("./decryptByTeamKey");
+const encrypt_by_team_key_1 = require("./encrypt-by-team-key");
+const decrypt_by_team_key_1 = require("./decrypt-by-team-key");
 exports.default = {
-    encryptByTeamKey: encryptByTeamKey_1.default,
-    decryptByTeamKey: decryptByTeamKey_1.default,
+    encryptByTeamKey: encrypt_by_team_key_1.default,
+    decryptByTeamKey: decrypt_by_team_key_1.default,
 };
 //# sourceMappingURL=index.js.map

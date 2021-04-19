@@ -1,6 +1,6 @@
 import * as forge from 'node-forge';
 import base64 from '../base64';
-import generateRandomSalt from '../generateRandomSalt';
+import generateRandomSalt from '../generate-random-salt';
 import { EncryptedData } from './definitions';
 
 export default function encrypt(

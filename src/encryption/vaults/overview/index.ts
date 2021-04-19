@@ -1,5 +1,5 @@
-import encryptByVaultKey from './encryptByVaultKey';
-import decryptByVaultKey from './decryptByVaultKey';
+import encryptByVaultKey from './encrypt-by-vault-key';
+import decryptByVaultKey from './decrypt-by-vault-key';
 
 export default {
   encryptByVaultKey,

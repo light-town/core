@@ -1,5 +1,5 @@
 import encryption from '../../encryption';
-import { MasterUnlockKey } from '../../encryption/common/deriveMasterUnlockKey';
+import { MasterUnlockKey } from '../../encryption/common/derive-master-unlock-key';
 import { EncryptedPrimaryKeySet } from './definitions';
 
 export default async function createPrimaryKeySetHelper(

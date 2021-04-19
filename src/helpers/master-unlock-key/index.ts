@@ -1,7 +1,7 @@
 import deriveMasterUnlockKey, {
   MasterUnlockKey,
-} from '../../encryption/common/deriveMasterUnlockKey';
-import normalizeMasterPassword from '../../encryption/common/normalizeMasterPassword';
+} from '../../encryption/common/derive-master-unlock-key';
+import normalizeMasterPassword from '../../encryption/common/normalize-master-password';
 
 export function deriveMasterUnlockKeyHelper(
   accountKey: string,

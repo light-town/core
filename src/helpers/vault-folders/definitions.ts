@@ -5,5 +5,5 @@ export {
 
 export class VaultFolderOverview {
   name: string;
-  desc: string;
+  desc?: string;
 }

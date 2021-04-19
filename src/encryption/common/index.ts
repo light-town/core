@@ -1,10 +1,10 @@
-import generateCryptoRandomString from './generateCryptoRandomString';
-import generateAccountKey from './generateAccountKey';
-import generateRandomSalt from './generateRandomSalt';
-import normalizeMasterPassword from './normalizeMasterPassword';
+import generateCryptoRandomString from './generate-crypto-random-string';
+import generateAccountKey from './generate-account-key';
+import generateRandomSalt from './generate-random-salt';
+import normalizeMasterPassword from './normalize-master-password';
 import deriveMasterUnlockKey, {
   MasterUnlockKey,
-} from './deriveMasterUnlockKey';
+} from './derive-master-unlock-key';
 import pbkdf2 from './pbkdf2';
 import hkdf from './hkdf';
 import base64 from './base64';

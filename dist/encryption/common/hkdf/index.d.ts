@@ -1,4 +1,4 @@
-import { computeHKDF } from './computeHKDF';
+import { computeHKDF } from './compute-hkdf';
 export { computeHKDF };
 declare const _default: {
     computeHKDF: ({ secret, salt }: {

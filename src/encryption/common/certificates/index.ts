@@ -1,6 +1,6 @@
-import { generateKeyPair } from './generateKeyPair';
-import { signCertificate } from './signCertificate';
-import { verifyCertificate } from './verifyCertificate';
+import { generateKeyPair } from './generate-key-pair';
+import { signCertificate } from './sign-certificate';
+import { verifyCertificate } from './verify-certificate';
 
 export { generateKeyPair, signCertificate, verifyCertificate };
 

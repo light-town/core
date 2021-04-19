@@ -1,5 +1,5 @@
-import { deriveSession } from './deriveSession';
-import { generateEphemeralKeyPair } from './generateEphemeralKeyPair';
+import { deriveSession } from './derive-session';
+import { generateEphemeralKeyPair } from './generate-ephemeral-key-pair';
 
 export { deriveSession, generateEphemeralKeyPair };
 

@@ -1,0 +1,1 @@
+{"version":3,"file":"decrypt-by-vault-key.js","sourceRoot":"","sources":["../../../../src/encryption/vaults/folders/decrypt-by-vault-key.ts"],"names":[],"mappings":";;;;;;;;;;;AAAA,0CAAmC;AAGnC,SAA8B,kBAAkB,CAC9C,oBAA0C,EAC1C,QAAgB;;QAEhB,OAAO;YACL,QAAQ,EAAE,IAAI,CAAC,KAAK,CAClB,MAAM,aAAG,CAAC,OAAO,CAAC,oBAAoB,CAAC,WAAW,EAAE,QAAQ,CAAC,CAC9D;SACF,CAAC;IACJ,CAAC;CAAA;AATD,qCASC"}

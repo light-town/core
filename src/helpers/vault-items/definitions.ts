@@ -5,12 +5,11 @@ export {
 
 export class VaultItemOverview {
   name: string;
-  desc: string;
+  desc?: string;
 }
 
 export class VaultItemField {
-  name: string;
-  type: string;
+  fieldName: string;
   value: string;
 }
 

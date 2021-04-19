@@ -1,6 +1,6 @@
 import * as definitions from './definitions';
-import encryptVaultItemCategory from './encryptByVaultKey';
-import decryptVaultItemCategory from './decryptByVaultKey';
+import encryptVaultItemCategory from './encrypt-by-vault-key';
+import decryptVaultItemCategory from './decrypt-by-vault-key';
 declare const _default: {
     definitions: typeof definitions;
     encryptVaultItemCategory: typeof encryptVaultItemCategory;

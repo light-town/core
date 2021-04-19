@@ -2,11 +2,11 @@ import * as definitions from './definitions';
 import encryptVaultItem, {
   encryptOverviewByVaultKey,
   encryptDetailsByVaultKey,
-} from './encryptByVaultKey';
+} from './encrypt-by-vault-key';
 import decryptVaultItem, {
   decryptOverviewByVaultKey,
   decryptDetailsByVaultKey,
-} from './decryptByVaultKey';
+} from './decrypt-by-vault-key';
 
 export default {
   definitions,

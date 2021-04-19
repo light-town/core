@@ -1,1 +1,0 @@
-{"version":3,"file":"decryptByTeamKey.js","sourceRoot":"","sources":["../../../../src/encryption/teams/overview/decryptByTeamKey.ts"],"names":[],"mappings":";;;;;;;;;;;AACA,0CAAmC;AAEnC,SAA8B,gBAAgB,CAC5C,QAAuB,EACvB,OAAe;;QAEf,OAAO,IAAI,CAAC,KAAK,CAAC,MAAM,aAAG,CAAC,OAAO,CAAC,QAAQ,EAAE,OAAO,CAAC,CAAC,CAAC;IAC1D,CAAC;CAAA;AALD,mCAKC"}

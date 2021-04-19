@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const forge = require("node-forge");
 const base64_1 = require("../base64");
-const generateRandomSalt_1 = require("../generateRandomSalt");
+const generate_random_salt_1 = require("../generate-random-salt");
 function encrypt(data, key) {
-    const iv = generateRandomSalt_1.default(12);
+    const iv = generate_random_salt_1.default(12);
     const tagLength = 128;
     const cipher = forge.cipher.createCipher('AES-GCM', forge.util.createBuffer(forge.util.hexToBytes(key)));
     cipher.start({

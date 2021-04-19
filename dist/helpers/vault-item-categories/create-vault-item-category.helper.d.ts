@@ -1,2 +1,2 @@
-import { EncryptedVaultItemCategory, VaultCategoryOverview } from './definitions';
-export default function createVaultItemCategoryHelper(overview: VaultCategoryOverview, vaultKey: string): Promise<EncryptedVaultItemCategory>;
+import { EncryptedVaultItemCategory, VaultCategoryOverview, VaultCategoryDetails } from './definitions';
+export default function createVaultItemCategoryHelper(overview: VaultCategoryOverview, details: VaultCategoryDetails, vaultKey: string): Promise<EncryptedVaultItemCategory>;

@@ -3,16 +3,21 @@ import common from '../../../common';
 import categories from '../index';
 
 describe('[Vaults] [Categories] ...', () => {
-  it('should encrypt and decrypt vault item category overview', async () => {
+  it('should encrypt and decrypt vault item category', async () => {
     const vaultKey = common.generateCryptoRandomString(32);
 
     const overview = {
-      title: faker.random.word(),
+      name: faker.random.word(),
       desc: faker.random.word(),
+    };
+
+    const details = {
+      schema: {},
     };
 
     const encryptedVaultItemCategory = await categories.encryptVaultItemCategory(
       overview,
+      details,
       vaultKey,
     );
 

@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../../src/encryption/vaults/folders/index.ts"],"names":[],"mappings":";;AAAA,6CAA6C;AAC7C,2DAAqD;AACrD,2DAAqD;AAErD,kBAAe;IACb,WAAW;IACX,kBAAkB,EAAlB,2BAAkB;IAClB,kBAAkB,EAAlB,2BAAkB;CACnB,CAAC"}
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../../src/encryption/vaults/folders/index.ts"],"names":[],"mappings":";;AAAA,6CAA6C;AAC7C,iEAAwD;AACxD,iEAAwD;AAExD,kBAAe;IACb,WAAW;IACX,kBAAkB,EAAlB,8BAAkB;IAClB,kBAAkB,EAAlB,8BAAkB;CACnB,CAAC"}

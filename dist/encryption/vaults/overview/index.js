@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const encryptByVaultKey_1 = require("./encryptByVaultKey");
-const decryptByVaultKey_1 = require("./decryptByVaultKey");
+const encrypt_by_vault_key_1 = require("./encrypt-by-vault-key");
+const decrypt_by_vault_key_1 = require("./decrypt-by-vault-key");
 exports.default = {
-    encryptByVaultKey: encryptByVaultKey_1.default,
-    decryptByVaultKey: decryptByVaultKey_1.default,
+    encryptByVaultKey: encrypt_by_vault_key_1.default,
+    decryptByVaultKey: decrypt_by_vault_key_1.default,
 };
 //# sourceMappingURL=index.js.map

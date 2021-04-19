@@ -1,4 +1,4 @@
-import { computeHash } from './computeHash';
+import { computeHash } from './compute-hash';
 export { computeHash };
 declare const _default: {
     computeHash: ({ secretKey, salt, iterations }: {

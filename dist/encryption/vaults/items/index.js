@@ -1,15 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const definitions = require("./definitions");
-const encryptByVaultKey_1 = require("./encryptByVaultKey");
-const decryptByVaultKey_1 = require("./decryptByVaultKey");
+const encrypt_by_vault_key_1 = require("./encrypt-by-vault-key");
+const decrypt_by_vault_key_1 = require("./decrypt-by-vault-key");
 exports.default = {
     definitions,
-    encryptVaultItem: encryptByVaultKey_1.default,
-    encryptOverviewByVaultKey: encryptByVaultKey_1.encryptOverviewByVaultKey,
-    encryptDetailsByVaultKey: encryptByVaultKey_1.encryptDetailsByVaultKey,
-    decryptVaultItem: decryptByVaultKey_1.default,
-    decryptOverviewByVaultKey: decryptByVaultKey_1.decryptOverviewByVaultKey,
-    decryptDetailsByVaultKey: decryptByVaultKey_1.decryptDetailsByVaultKey,
+    encryptVaultItem: encrypt_by_vault_key_1.default,
+    encryptOverviewByVaultKey: encrypt_by_vault_key_1.encryptOverviewByVaultKey,
+    encryptDetailsByVaultKey: encrypt_by_vault_key_1.encryptDetailsByVaultKey,
+    decryptVaultItem: decrypt_by_vault_key_1.default,
+    decryptOverviewByVaultKey: decrypt_by_vault_key_1.decryptOverviewByVaultKey,
+    decryptDetailsByVaultKey: decrypt_by_vault_key_1.decryptDetailsByVaultKey,
 };
 //# sourceMappingURL=index.js.map

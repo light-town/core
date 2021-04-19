@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.deriveMasterUnlockKeyHelper = void 0;
-const deriveMasterUnlockKey_1 = require("../../encryption/common/deriveMasterUnlockKey");
-const normalizeMasterPassword_1 = require("../../encryption/common/normalizeMasterPassword");
+const derive_master_unlock_key_1 = require("../../encryption/common/derive-master-unlock-key");
+const normalize_master_password_1 = require("../../encryption/common/normalize-master-password");
 function deriveMasterUnlockKeyHelper(accountKey, masterPassword, salt) {
-    return deriveMasterUnlockKey_1.default(accountKey, normalizeMasterPassword_1.default(masterPassword), salt);
+    return derive_master_unlock_key_1.default(accountKey, normalize_master_password_1.default(masterPassword), salt);
 }
 exports.deriveMasterUnlockKeyHelper = deriveMasterUnlockKeyHelper;
 exports.default = {

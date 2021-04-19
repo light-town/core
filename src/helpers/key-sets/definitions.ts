@@ -1,9 +1,9 @@
 import { PublicKey, PrivateKey } from '../../encryption/common/rsa/definitions';
-import { EncryptedPrivateKeyBySymmetricKey } from '../../encryption/keySets/privateKey/definitions';
+import { EncryptedPrivateKeyBySymmetricKey } from '../../encryption/key-sets/private-key/definitions';
 import {
   EncryptedSymmetricKeyByPublicKey,
   EncryptedSymmetricKeyBySecretKey,
-} from '../../encryption/keySets/symmetricKey/definitions';
+} from '../../encryption/key-sets/symmetric-key/definitions';
 
 export class EncryptedKeySet {
   encSymmetricKey: EncryptedSymmetricKeyByPublicKey;

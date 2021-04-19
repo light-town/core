@@ -5,5 +5,25 @@ export {
 
 export class VaultCategoryOverview {
   name: string;
-  desc: string;
+  desc?: string;
+  default?: boolean;
+}
+
+export class AbstractField {
+  name: string;
+  view: {
+    element: string;
+  };
+  editor: {
+    element: string;
+  };
+  position?: number;
+  frequency?: number;
+  required?: boolean;
+}
+
+export class VaultCategoryDetails {
+  schema: {
+    fields: AbstractField[];
+  };
 }

@@ -1,8 +1,8 @@
-import generateCryptoRandomString from './generateCryptoRandomString';
-import generateAccountKey from './generateAccountKey';
-import generateRandomSalt from './generateRandomSalt';
-import normalizeMasterPassword from './normalizeMasterPassword';
-import deriveMasterUnlockKey, { MasterUnlockKey } from './deriveMasterUnlockKey';
+import generateCryptoRandomString from './generate-crypto-random-string';
+import generateAccountKey from './generate-account-key';
+import generateRandomSalt from './generate-random-salt';
+import normalizeMasterPassword from './normalize-master-password';
+import deriveMasterUnlockKey, { MasterUnlockKey } from './derive-master-unlock-key';
 import pbkdf2 from './pbkdf2';
 import hkdf from './hkdf';
 import base64 from './base64';
@@ -30,9 +30,9 @@ declare const _default: {
         definitions: typeof import("./rsa/definitions");
         encrypt: typeof import("./rsa/encrypt").default;
         decrypt: typeof import("./rsa/decrypt").default;
-        generateKeyPair: typeof import("./rsa/generateKeyPair").default;
-        publicKeyFromString: typeof import("./rsa/publicKeyFromString").default;
-        publicKeyToString: typeof import("./rsa/publicKeyToString").default;
+        generateKeyPair: typeof import("./rsa/generate-key-pair").default;
+        publicKeyFromString: typeof import("./rsa/public-key-from-string").default;
+        publicKeyToString: typeof import("./rsa/public-key-to-string").default;
     };
     generateAccountKey: typeof generateAccountKey;
     generateCryptoRandomString: (length: number) => string;

@@ -1,1 +1,1 @@
-{"version":3,"file":"definitions.js","sourceRoot":"","sources":["../../../src/helpers/vault-item-categories/definitions.ts"],"names":[],"mappings":";;;AAAA,8EAGwD;AAFtD,yHAAA,0BAA0B,OAAA;AAC1B,yHAAA,0BAA0B,OAAA;AAG5B,MAAa,qBAAqB;CAGjC;AAHD,sDAGC"}
+{"version":3,"file":"definitions.js","sourceRoot":"","sources":["../../../src/helpers/vault-item-categories/definitions.ts"],"names":[],"mappings":";;;AAAA,8EAGwD;AAFtD,yHAAA,0BAA0B,OAAA;AAC1B,yHAAA,0BAA0B,OAAA;AAG5B,MAAa,qBAAqB;CAIjC;AAJD,sDAIC;AAED,MAAa,aAAa;CAWzB;AAXD,sCAWC;AAED,MAAa,oBAAoB;CAIhC;AAJD,oDAIC"}
