@@ -6,7 +6,8 @@ import {
 
 export class VaultOverview {
   name: string;
-  desc: string;
+  desc?: string;
+  [key: string]: any;
 }
 
 export class EncryptedVault {

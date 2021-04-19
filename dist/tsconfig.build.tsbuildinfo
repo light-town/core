@@ -872,8 +872,8 @@
         "affectsGlobalScope": false
       },
       "../src/helpers/vault-item-categories/definitions.ts": {
-        "version": "e916af57ccdc19e9b613d101e8cbb06feb7c138c528e96c52213c5dd1e71b0ed",
-        "signature": "95a99c29820d5edb53eb63b7ebb3582d8ecfa59aea8515179c7c258b1cf8e339",
+        "version": "66e61c04cf3af4e2e76958892b16803f983dabcfa5c47f1d74527a4d018081cf",
+        "signature": "188d72f307855b110c26bf07d4a1cd553b7d82011a52140d6edbbda5c227733d",
         "affectsGlobalScope": false
       },
       "../src/helpers/vault-item-categories/create-vault-item-category.helper.ts": {
@@ -917,8 +917,8 @@
         "affectsGlobalScope": false
       },
       "../src/helpers/vault-items/definitions.ts": {
-        "version": "f4ee19852520c8ec937214693346ad8e75079d55293e9e971afaa42acfe85662",
-        "signature": "049d2fe63e5c4fbe6837bbc27f06f5ed983df64252074d99f57341615005b179",
+        "version": "82358f3af73beeba7f0db2f29bb6687425d7ce193c6e7cf7d6cb031df172d928",
+        "signature": "42abcee21da7821fd1b07ba4893a7e17fbaeff7c8d2f1d69dac55e12fabd7092",
         "affectsGlobalScope": false
       },
       "../src/helpers/vault-items/decrypt-vault-item.helper.ts": {
@@ -942,8 +942,8 @@
         "affectsGlobalScope": false
       },
       "../src/helpers/vaults/definitions.ts": {
-        "version": "ce25ee0ea994d11ea6e1fca9f23c278955420310651f02bcd26e6a0075b2d99a",
-        "signature": "bfe72875f34d110dfa272aa31f92f8a4142acb0a2e753d4a307250c16148cc8a",
+        "version": "99aafe575b4a8e84a444e6ec87e28e6748d587584c46426e1bd2e5bbb28b86e5",
+        "signature": "56a26f2462941cf588c8d68d35d27db351b0cfc52a49f2fae672afa584a169a9",
         "affectsGlobalScope": false
       },
       "../src/helpers/vaults/create-vault.helper.ts": {

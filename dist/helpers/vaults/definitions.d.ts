@@ -2,7 +2,8 @@ import { EncryptedData } from '../../encryption/common/aes/definitions';
 import { EncryptedVaultKeyByPublicKey, EncryptedVaultKeyBySecretKey } from '../../encryption/vaults/key/definitions';
 export declare class VaultOverview {
     name: string;
-    desc: string;
+    desc?: string;
+    [key: string]: any;
 }
 export declare class EncryptedVault {
     encKey: EncryptedVaultKeyByPublicKey | EncryptedVaultKeyBySecretKey;
