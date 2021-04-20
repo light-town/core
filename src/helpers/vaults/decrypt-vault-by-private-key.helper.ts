@@ -14,8 +14,14 @@ export default async function decryptVaultByPrivateKeyHelper(
     encVault.encOverview,
     key,
   );
-  return {
+  const result = {
     key,
     overview: <VaultOverview>overview,
+    ...encVault,
   };
+
+  delete result.encKey;
+  delete result.encOverview;
+
+  return result;
 }

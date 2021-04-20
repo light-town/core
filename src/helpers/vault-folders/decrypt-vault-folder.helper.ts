@@ -6,8 +6,19 @@ export default async function decryptVaultFoldersHelper(
   vaultKey: string,
 ): Promise<DecryptedVaultFolder[]> {
   return Promise.all(
-    encVaultFolders.map((f) =>
-      encryption.vaults.folders.decryptVaultFolder(f, vaultKey),
+    encVaultFolders.map((encVaultFolder) =>
+      encryption.vaults.folders
+        .decryptVaultFolder(encVaultFolder, vaultKey)
+        .then((vaultFolder) => {
+          const result = {
+            ...vaultFolder,
+            ...encVaultFolder,
+          };
+
+          delete result.encOverview;
+
+          return result;
+        }),
     ),
   );
 }

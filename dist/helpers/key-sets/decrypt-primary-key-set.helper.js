@@ -14,11 +14,11 @@ function decryptPrimaryKeySetHelper(encKeySet, muk) {
     return __awaiter(this, void 0, void 0, function* () {
         const symmetricKey = yield encryption_1.default.keySets.symmetricKey.decryptBySecretKey(encKeySet.encSymmetricKey, muk.key);
         const privateKey = yield encryption_1.default.keySets.privateKey.decryptBySymmetricKey(encKeySet.encPrivateKey, symmetricKey);
-        return {
-            publicKey: encryption_1.default.common.rsa.publicKeyFromString(encKeySet.publicKey),
-            privateKey,
-            symmetricKey,
-        };
+        const result = Object.assign(Object.assign({}, encKeySet), { privateKey,
+            symmetricKey, publicKey: encryption_1.default.common.rsa.publicKeyFromString(encKeySet.publicKey) });
+        delete result.encPrivateKey;
+        delete result.encSymmetricKey;
+        return result;
     });
 }
 exports.default = decryptPrimaryKeySetHelper;

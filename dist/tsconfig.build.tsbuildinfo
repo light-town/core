@@ -827,12 +827,12 @@
         "affectsGlobalScope": false
       },
       "../src/helpers/key-sets/decrypt-key-set.helper.ts": {
-        "version": "ed552a2ef0cdccc4d6c5ed3d4d7de0a52a013ef471073d78c0d6779617a77741",
+        "version": "8e2b9a9a463c58c48caef7b52cbd1bb3a75a9bb3cd6509ef5898d99317403e55",
         "signature": "bf8bc38236ce762619e918bb8187c1da7a65d9a554540951477c2e7826209884",
         "affectsGlobalScope": false
       },
       "../src/helpers/key-sets/decrypt-primary-key-set.helper.ts": {
-        "version": "049209c8289b40d2ff9d1f0335b311f766a5943f6b9176a3e0f52c7fff450cce",
+        "version": "db02c41612fd39a3932a5b079872981c92cfa92d3bfb988f524f55aeb1d6f460",
         "signature": "06be5edca5b8c6f397e4837f32487ae5579cc1b4084f5c895b520b36291e8b34",
         "affectsGlobalScope": false
       },
@@ -857,12 +857,12 @@
         "affectsGlobalScope": false
       },
       "../src/helpers/vault-folders/decrypt-vault-folder.helper.ts": {
-        "version": "69690dabfcf50c7802147c2e245c70a4be75a34be39e846d46293e9b718cc4a1",
+        "version": "e704b689a2f746059827788359f3a6cfa089166a9dcbf3286520be9011ad65b0",
         "signature": "44b9403becc2b21e99b9294060eb56ec4c7cf4134caae7ebe5cc2036a4c04e91",
         "affectsGlobalScope": false
       },
       "../src/helpers/vault-folders/decrypt-vault-folders.helper.ts": {
-        "version": "6f69d2dd5394af0a350c0fdd49d93214f52e9a423fe2eb0ce4ee4826804a9185",
+        "version": "f0f1114c4af83c39a29eb67a493ef5dfe3a122a16abee8b2f3d3ecca2b39096d",
         "signature": "8bda14333f0410c5fc21e34bfd5e8ff8142c5b6726c36ba9c0b8c67f023f8a23",
         "affectsGlobalScope": false
       },
@@ -882,13 +882,13 @@
         "affectsGlobalScope": false
       },
       "../src/helpers/vault-item-categories/decrypt-vault-item-categories.helper.ts": {
-        "version": "1b2deff7523eae09fa65f754584d798256c64aaf215efc47607b5e8b0a356205",
+        "version": "eaec4e47e99d3af44e2ed18305296ca4099e35926873874056501fd750a82725",
         "signature": "36a2b9c4adb214b242647c36306a0dc9a8f99476f513b74908987418e1c92b2e",
         "affectsGlobalScope": false
       },
       "../src/helpers/vault-item-categories/decrypt-vault-item-category.helper.ts": {
-        "version": "506cf761aff5af79fb8b6518d59b5b4c1becdb0c7c302277ad804b12d816b26e",
-        "signature": "98a082886b64e94a88ce9e5ab8b226bbaf3e3f0152a7f475137bbb7b64c1d844",
+        "version": "06cf985114de4305c40cffb50f79eef01fad53237be9bdb874f75b960718d46e",
+        "signature": "1ba6b4cad621edcb455fbc504eae75d72a884c2956737ead9c1668ebbbcecacf",
         "affectsGlobalScope": false
       },
       "../src/helpers/vault-item-categories/default-categories.ts": {
@@ -922,12 +922,12 @@
         "affectsGlobalScope": false
       },
       "../src/helpers/vault-items/decrypt-vault-item.helper.ts": {
-        "version": "aa763ce586b02c5533ba7908f776b72de5f65da4332cd537f0538b0dab41cdff",
+        "version": "8e97b8e353b92b18f4e975eb240b1fa95b3843c64eaf802a6cda879b386c9eae",
         "signature": "839191f003bbcd870efb817189dfa90613edef8b9e513d1c0795141fff8b5a03",
         "affectsGlobalScope": false
       },
       "../src/helpers/vault-items/decrypt-vault-items.helper.ts": {
-        "version": "57bbeec8905363694bc4c0a9cceca66a232b2b33fff716cea7fbb83f5e6c1b8a",
+        "version": "b2ffda032b528315797b43fe0a7b0be0ee07c80f28320a568cf97294356c81f7",
         "signature": "2649cd9c6ddbf745f3a6d1b1b75cca0a931fc12de48cf3e94fc13dfd8a384623",
         "affectsGlobalScope": false
       },
@@ -952,12 +952,12 @@
         "affectsGlobalScope": false
       },
       "../src/helpers/vaults/decrypt-vault-by-private-key.helper.ts": {
-        "version": "8b7eee398ed57fbdfdbe2cb8300ae361278f582bf10a11e9155f5cf505ab25e3",
+        "version": "4ee78acedd8595278a0670eee6bd4f1bb6799bfbcfc1287ee977b972671f89d3",
         "signature": "0094e8e11ca86a7134055596e1499b9fde344a036815642bc525e384161a1fb4",
         "affectsGlobalScope": false
       },
       "../src/helpers/vaults/decrypt-vault-by-secret-key.helper.ts": {
-        "version": "4649f0c221512d8642aff5858d2c415f743e64c9655eafdb2723c9a4d421c8c9",
+        "version": "29adbf736571b6525a4bbd772e52f9ab6c4478a746262db009f858129298385c",
         "signature": "40a76677e86bc0054aafae5489e35fed7758d0552c2fbf8be9f13136b03cc50c",
         "affectsGlobalScope": false
       },

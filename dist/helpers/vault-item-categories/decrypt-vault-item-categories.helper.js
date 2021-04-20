@@ -12,7 +12,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const encryption_1 = require("../../encryption");
 function decryptVaultItemCategoryHelper(encVaultCategories, vaultKey) {
     return __awaiter(this, void 0, void 0, function* () {
-        return Promise.all(encVaultCategories.map((c) => encryption_1.default.vaults.categories.decryptVaultItemCategory(c, vaultKey)));
+        return Promise.all(encVaultCategories.map((encVaultItemCategory) => encryption_1.default.vaults.categories
+            .decryptVaultItemCategory(encVaultItemCategory, vaultKey)
+            .then((vaultItemCategory) => {
+            const result = Object.assign(Object.assign({}, vaultItemCategory), encVaultItemCategory);
+            delete result.encOverview;
+            delete result.encDetails;
+            return result;
+        })));
     });
 }
 exports.default = decryptVaultItemCategoryHelper;

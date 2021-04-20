@@ -13,9 +13,9 @@ const encryption_1 = require("../../encryption");
 function decryptKeySetHelper(encKeySet, privateKey) {
     return __awaiter(this, void 0, void 0, function* () {
         const symmetricKey = yield encryption_1.default.keySets.symmetricKey.decryptByPrivateKey(encKeySet.encSymmetricKey, privateKey);
-        return {
-            symmetricKey,
-        };
+        const result = Object.assign({ symmetricKey }, encKeySet);
+        delete result.encSymmetricKey;
+        return result;
     });
 }
 exports.default = decryptKeySetHelper;

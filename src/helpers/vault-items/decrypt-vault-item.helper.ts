@@ -5,5 +5,18 @@ export default async function decryptVaultItemHelper(
   encVaultItem: EncryptedVaultItem,
   vaultKey: string,
 ): Promise<DecryptedVaultItem> {
-  return encryption.vaults.items.decryptVaultItem(encVaultItem, vaultKey);
+  const vaultItem = await encryption.vaults.items.decryptVaultItem(
+    encVaultItem,
+    vaultKey,
+  );
+
+  const result = {
+    ...vaultItem,
+    ...encVaultItem,
+  };
+
+  delete result.encOverview;
+  delete result.encDetails;
+
+  return result;
 }

@@ -12,7 +12,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const encryption_1 = require("../../encryption");
 function decryptVaultFoldersHelper(encVaultFolders, vaultKey) {
     return __awaiter(this, void 0, void 0, function* () {
-        return Promise.all(encVaultFolders.map((f) => encryption_1.default.vaults.folders.decryptVaultFolder(f, vaultKey)));
+        return Promise.all(encVaultFolders.map((encVaultFolder) => encryption_1.default.vaults.folders
+            .decryptVaultFolder(encVaultFolder, vaultKey)
+            .then((vaultFolder) => {
+            const result = Object.assign(Object.assign({}, vaultFolder), encVaultFolder);
+            delete result.encOverview;
+            return result;
+        })));
     });
 }
 exports.default = decryptVaultFoldersHelper;

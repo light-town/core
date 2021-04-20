@@ -11,7 +11,12 @@ export default async function decryptKeySetHelper(
     privateKey,
   );
 
-  return {
+  const result = {
     symmetricKey,
+    ...encKeySet,
   };
+
+  delete result.encSymmetricKey;
+
+  return result;
 }

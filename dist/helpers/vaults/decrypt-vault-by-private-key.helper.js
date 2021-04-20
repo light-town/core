@@ -14,10 +14,10 @@ function decryptVaultByPrivateKeyHelper(encVault, privateKey) {
     return __awaiter(this, void 0, void 0, function* () {
         const key = yield encryption_1.default.vaults.key.decryptByPrivateKey(encVault.encKey, privateKey);
         const overview = yield encryption_1.default.vaults.overview.decryptByVaultKey(encVault.encOverview, key);
-        return {
-            key,
-            overview: overview,
-        };
+        const result = Object.assign({ key, overview: overview }, encVault);
+        delete result.encKey;
+        delete result.encOverview;
+        return result;
     });
 }
 exports.default = decryptVaultByPrivateKeyHelper;

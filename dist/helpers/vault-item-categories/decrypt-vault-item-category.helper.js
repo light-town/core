@@ -10,9 +10,13 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const encryption_1 = require("../../encryption");
-function decryptVaultItemCategoryHelper(encVaultCategory, vaultKey) {
+function decryptVaultItemCategoryHelper(encVaultItemCategories, vaultKey) {
     return __awaiter(this, void 0, void 0, function* () {
-        return encryption_1.default.vaults.categories.decryptVaultItemCategory(encVaultCategory, vaultKey);
+        const vaultItemCategory = yield encryption_1.default.vaults.categories.decryptVaultItemCategory(encVaultItemCategories, vaultKey);
+        const result = Object.assign(Object.assign({}, vaultItemCategory), encVaultItemCategories);
+        delete result.encOverview;
+        delete result.encDetails;
+        return result;
     });
 }
 exports.default = decryptVaultItemCategoryHelper;

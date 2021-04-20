@@ -5,11 +5,21 @@ import {
 } from './definitions';
 
 export default async function decryptVaultItemCategoryHelper(
-  encVaultCategory: EncryptedVaultItemCategory,
+  encVaultItemCategories: EncryptedVaultItemCategory,
   vaultKey: string,
 ): Promise<DecryptedVaultItemCategory> {
-  return encryption.vaults.categories.decryptVaultItemCategory(
-    encVaultCategory,
+  const vaultItemCategory = await encryption.vaults.categories.decryptVaultItemCategory(
+    encVaultItemCategories,
     vaultKey,
   );
+
+  const result = {
+    ...vaultItemCategory,
+    ...encVaultItemCategories,
+  };
+
+  delete result.encOverview;
+  delete result.encDetails;
+
+  return result;
 }

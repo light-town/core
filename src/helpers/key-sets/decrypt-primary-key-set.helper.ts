@@ -14,9 +14,16 @@ export default async function decryptPrimaryKeySetHelper(
     encKeySet.encPrivateKey,
     symmetricKey,
   );
-  return {
-    publicKey: encryption.common.rsa.publicKeyFromString(encKeySet.publicKey),
+
+  const result = {
+    ...encKeySet,
     privateKey,
     symmetricKey,
+    publicKey: encryption.common.rsa.publicKeyFromString(encKeySet.publicKey),
   };
+
+  delete result.encPrivateKey;
+  delete result.encSymmetricKey;
+
+  return <any>result;
 }
