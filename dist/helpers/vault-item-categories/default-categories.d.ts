@@ -1,1 +1,1 @@
-export declare const PASSWORD = "password";
+export declare const PASSWORD = "Password";

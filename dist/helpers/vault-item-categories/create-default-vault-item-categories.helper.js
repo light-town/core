@@ -11,20 +11,19 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.defaultSchemas = void 0;
 const create_vault_item_category_helper_1 = require("./create-vault-item-category.helper");
-const categories = require("./default-categories");
-const schemas = require("./default-schemas");
-exports.defaultSchemas = [
-    {
-        name: categories.PASSWORD,
-        schema: schemas.PASSWORD_SCHEMA,
+const default_schemas_1 = require("./default-schemas");
+exports.defaultSchemas = Object.values(default_schemas_1.default).map((s) => ({
+    name: s.name,
+    schema: {
+        fields: s.fields,
     },
-];
+}));
 function createDefaultVaultItemCategories(vaultKey) {
     return __awaiter(this, void 0, void 0, function* () {
-        return yield Promise.all(exports.defaultSchemas.map((c) => create_vault_item_category_helper_1.default({
-            name: c.name,
+        return yield Promise.all(exports.defaultSchemas.map((s) => create_vault_item_category_helper_1.default({
+            name: s.name,
             default: true,
-        }, { schema: c.schema }, vaultKey)));
+        }, { schema: s.schema }, vaultKey)));
     });
 }
 exports.default = createDefaultVaultItemCategories;

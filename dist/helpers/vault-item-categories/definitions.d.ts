@@ -16,13 +16,19 @@ export declare class AbstractField {
         [key: string]: any;
     };
     position?: number;
-    frequency?: number;
+    count?: {
+        min: number;
+        max: number;
+    };
     required?: boolean;
+    pinned?: boolean;
     [key: string]: any;
 }
 export declare class VaultCategoryDetails {
     schema: {
-        fields: AbstractField[];
+        fields: {
+            [key: string]: AbstractField;
+        };
         [key: string]: any;
     };
     [key: string]: any;

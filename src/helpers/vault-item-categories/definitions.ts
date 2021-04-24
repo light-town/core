@@ -6,7 +6,7 @@ export {
 export class VaultCategoryOverview {
   name: string;
   desc?: string;
-  default?: boolean;
+  default?: boolean = false;
   [key: string]: any;
 }
 
@@ -21,14 +21,18 @@ export class AbstractField {
     [key: string]: any;
   };
   position?: number;
-  frequency?: number;
+  count?: {
+    min: number;
+    max: number;
+  };
   required?: boolean;
+  pinned?: boolean;
   [key: string]: any;
 }
 
 export class VaultCategoryDetails {
   schema: {
-    fields: AbstractField[];
+    fields: { [key: string]: AbstractField };
     [key: string]: any;
   };
   [key: string]: any;

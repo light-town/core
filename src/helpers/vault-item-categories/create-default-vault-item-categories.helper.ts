@@ -1,26 +1,25 @@
 import createVaultItemCategoryHelper from './create-vault-item-category.helper';
-import * as categories from './default-categories';
-import * as schemas from './default-schemas';
+import schemas from './default-schemas';
 import { EncryptedVaultItemCategory } from './definitions';
 
-export const defaultSchemas = [
-  {
-    name: categories.PASSWORD,
-    schema: schemas.PASSWORD_SCHEMA,
+export const defaultSchemas = Object.values(schemas).map((s) => ({
+  name: s.name,
+  schema: {
+    fields: s.fields,
   },
-];
+}));
 
 export default async function createDefaultVaultItemCategories(
   vaultKey: string,
 ): Promise<EncryptedVaultItemCategory[]> {
   return await Promise.all(
-    defaultSchemas.map((c) =>
+    defaultSchemas.map((s) =>
       createVaultItemCategoryHelper(
         {
-          name: c.name,
+          name: s.name,
           default: true,
         },
-        { schema: c.schema },
+        { schema: s.schema },
         vaultKey,
       ),
     ),

@@ -2,29 +2,51 @@ import { EncryptedVaultItemCategory } from './definitions';
 export declare const defaultSchemas: {
     name: string;
     schema: {
-        fields: ({
-            name: string;
-            view: {
-                element: string;
+        fields: {
+            Username: {
+                name: string;
+                view: {
+                    element: string;
+                };
+                editor: {
+                    element: string;
+                };
+                position: number;
+                count: {
+                    max: number;
+                    min: number;
+                };
+                required: boolean;
+                pinned: boolean;
             };
-            editor: {
-                element: string;
+            Password: {
+                name: string;
+                view: {
+                    element: string;
+                };
+                editor: {
+                    element: string;
+                };
+                position: number;
+                count: {
+                    max: number;
+                    min: number;
+                };
+                required: boolean;
+                pinned: boolean;
             };
-            position: number;
-            frequency: number;
-            required: boolean;
-        } | {
-            name: string;
-            view: {
-                element: string;
+            'Website URL': {
+                name: string;
+                view: {
+                    element: string;
+                };
+                editor: {
+                    element: string;
+                };
+                required: boolean;
+                pinned: boolean;
             };
-            editor: {
-                element: string;
-            };
-            required: boolean;
-            position?: undefined;
-            frequency?: undefined;
-        })[];
+        };
     };
 }[];
 export default function createDefaultVaultItemCategories(vaultKey: string): Promise<EncryptedVaultItemCategory[]>;

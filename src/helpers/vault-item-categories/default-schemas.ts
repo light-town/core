@@ -1,40 +1,53 @@
+import * as defaultCategories from './default-categories';
 import * as fields from './fields';
 
-export const PASSWORD_SCHEMA = {
-  fields: [
-    {
-      name: 'username',
-      view: {
-        element: fields.TEXT_FIELD,
+export default {
+  [defaultCategories.PASSWORD]: {
+    name: defaultCategories.PASSWORD,
+    fields: {
+      Username: {
+        name: 'Username',
+        view: {
+          element: fields.TEXT_VIEW_FIELD,
+        },
+        editor: {
+          element: fields.TEXT_EDIT_FIELD,
+        },
+        position: 1,
+        count: {
+          max: 1,
+          min: 1,
+        },
+        required: true,
+        pinned: true,
       },
-      editor: {
-        element: fields.INPUT_TEXT_FIELD,
+      Password: {
+        name: 'Password',
+        view: {
+          element: fields.PASSWORD_VIEW_FIELD,
+        },
+        editor: {
+          element: fields.PASSWORD_EDIT_FIELD,
+        },
+        position: 2,
+        count: {
+          max: 1,
+          min: 1,
+        },
+        required: true,
+        pinned: true,
       },
-      position: 1,
-      frequency: 1,
-      required: true,
+      'Website URL': {
+        name: 'Website URL',
+        view: {
+          element: fields.LINK_VIEW_FIELD,
+        },
+        editor: {
+          element: fields.LINK_EDIT_FIELD,
+        },
+        required: false,
+        pinned: false,
+      },
     },
-    {
-      name: 'password',
-      view: {
-        element: fields.PASSWORD_FIELD,
-      },
-      editor: {
-        element: fields.INPUT_PASSWORD_FIELD,
-      },
-      position: 2,
-      frequency: 1,
-      required: true,
-    },
-    {
-      name: 'website',
-      view: {
-        element: fields.LINK_FIELD,
-      },
-      editor: {
-        element: fields.INPUT_TEXT_FIELD,
-      },
-      required: false,
-    },
-  ],
+  },
 };

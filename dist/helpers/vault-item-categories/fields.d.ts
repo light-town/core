@@ -1,5 +1,6 @@
-export declare const TEXT_FIELD = "TEXT_FIELD";
-export declare const LINK_FIELD = "LINK_FIELD";
-export declare const PASSWORD_FIELD = "PASSWORD_FIELD";
-export declare const INPUT_TEXT_FIELD = "INPUT_TEXT_FIELD";
-export declare const INPUT_PASSWORD_FIELD = "INPUT_PASSWORD_FIELD";
+export declare const TEXT_VIEW_FIELD = "text";
+export declare const PASSWORD_VIEW_FIELD = "password";
+export declare const LINK_VIEW_FIELD = "link";
+export declare const TEXT_EDIT_FIELD = "text";
+export declare const PASSWORD_EDIT_FIELD = "password";
+export declare const LINK_EDIT_FIELD = "link";

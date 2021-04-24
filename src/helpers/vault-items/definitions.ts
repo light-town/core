@@ -10,7 +10,9 @@ export class VaultItemOverview {
 }
 
 export class VaultItemField {
+  position: number;
   fieldName: string;
+  name: string;
   value: string;
   [key: string]: any;
 }

@@ -1,5 +1,7 @@
-export const TEXT_FIELD = 'TEXT_FIELD';
-export const LINK_FIELD = 'LINK_FIELD';
-export const PASSWORD_FIELD = 'PASSWORD_FIELD';
-export const INPUT_TEXT_FIELD = 'INPUT_TEXT_FIELD';
-export const INPUT_PASSWORD_FIELD = 'INPUT_PASSWORD_FIELD';
+export const TEXT_VIEW_FIELD = 'text';
+export const PASSWORD_VIEW_FIELD = 'password';
+export const LINK_VIEW_FIELD = 'link';
+
+export const TEXT_EDIT_FIELD = 'text';
+export const PASSWORD_EDIT_FIELD = 'password';
+export const LINK_EDIT_FIELD = 'link';

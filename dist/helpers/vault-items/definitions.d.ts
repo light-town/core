@@ -5,7 +5,9 @@ export declare class VaultItemOverview {
     [key: string]: any;
 }
 export declare class VaultItemField {
+    position: number;
     fieldName: string;
+    name: string;
     value: string;
     [key: string]: any;
 }

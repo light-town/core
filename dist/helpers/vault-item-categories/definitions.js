@@ -5,6 +5,9 @@ var definitions_1 = require("../../encryption/vaults/categories/definitions");
 Object.defineProperty(exports, "EncryptedVaultItemCategory", { enumerable: true, get: function () { return definitions_1.EncryptedVaultItemCategory; } });
 Object.defineProperty(exports, "DecryptedVaultItemCategory", { enumerable: true, get: function () { return definitions_1.DecryptedVaultItemCategory; } });
 class VaultCategoryOverview {
+    constructor() {
+        this.default = false;
+    }
 }
 exports.VaultCategoryOverview = VaultCategoryOverview;
 class AbstractField {

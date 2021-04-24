@@ -4,14 +4,8 @@ import keySets from '../../key-sets';
 import vaults from '../../vaults';
 import vaultItemCategories from '../index';
 import { VaultCategoryDetails, VaultCategoryOverview } from '../definitions';
+import schemas from '../default-schemas';
 import { PASSWORD } from '../default-categories';
-import {
-  INPUT_PASSWORD_FIELD,
-  INPUT_TEXT_FIELD,
-  LINK_FIELD,
-  PASSWORD_FIELD,
-  TEXT_FIELD,
-} from '../fields';
 
 describe('[Helpers] [Vault Categories] ...', () => {
   it('should create a vault item category', async () => {
@@ -48,7 +42,7 @@ describe('[Helpers] [Vault Categories] ...', () => {
 
     const details: VaultCategoryDetails = {
       schema: {
-        fields: [],
+        fields: schemas.Password.fields,
       },
     };
 
@@ -84,47 +78,12 @@ describe('[Helpers] [Vault Categories] ...', () => {
     expect(defaultVaultItemCategories).toStrictEqual([
       {
         overview: {
-          name: PASSWORD,
+          name: 'Password',
           default: true,
         },
         details: {
           schema: {
-            fields: [
-              {
-                name: 'username',
-                view: {
-                  element: TEXT_FIELD,
-                },
-                editor: {
-                  element: INPUT_TEXT_FIELD,
-                },
-                position: 1,
-                required: true,
-                frequency: 1,
-              },
-              {
-                name: 'password',
-                view: {
-                  element: PASSWORD_FIELD,
-                },
-                editor: {
-                  element: INPUT_PASSWORD_FIELD,
-                },
-                position: 2,
-                required: true,
-                frequency: 1,
-              },
-              {
-                name: 'website',
-                view: {
-                  element: LINK_FIELD,
-                },
-                editor: {
-                  element: INPUT_TEXT_FIELD,
-                },
-                required: false,
-              },
-            ],
+            fields: schemas.Password.fields,
           },
         },
       },
