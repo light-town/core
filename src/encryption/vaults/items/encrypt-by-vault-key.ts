@@ -1,4 +1,5 @@
 import aes from '../../common/aes';
+import utf8 from '../../common/utf-8';
 import { EncryptedData } from '../../common/aes/definitions';
 import { EncryptedVaultItem } from './definitions';
 
@@ -6,14 +7,14 @@ export function encryptOverviewByVaultKey(
   overview: Record<string, any>,
   vaultKey: string,
 ): Promise<EncryptedData> {
-  return aes.encrypt(JSON.stringify(overview), vaultKey);
+  return aes.encrypt(utf8.encode(JSON.stringify(overview)), vaultKey);
 }
 
 export function encryptDetailsByVaultKey(
   details: Record<string, any>,
   vaultKey: string,
 ): Promise<EncryptedData> {
-  return aes.encrypt(JSON.stringify(details), vaultKey);
+  return aes.encrypt(utf8.encode(JSON.stringify(details)), vaultKey);
 }
 
 export default async function encryptVaultItem(

@@ -1,4 +1,5 @@
 import aes from '../../common/aes';
+import utf8 from '../../common/utf-8';
 import { EncryptedVaultFolder, DecryptedVaultFolder } from './definitions';
 
 export default async function decryptVaultFolder(
@@ -7,7 +8,9 @@ export default async function decryptVaultFolder(
 ): Promise<DecryptedVaultFolder> {
   return {
     overview: JSON.parse(
-      await aes.decrypt(encryptedVaultFolder.encOverview, vaultKey),
+      utf8.decode(
+        await aes.decrypt(encryptedVaultFolder.encOverview, vaultKey),
+      ),
     ),
   };
 }

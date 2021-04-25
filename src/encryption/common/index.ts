@@ -8,12 +8,14 @@ import deriveMasterUnlockKey, {
 import pbkdf2 from './pbkdf2';
 import hkdf from './hkdf';
 import base64 from './base64';
+import utf8 from './utf-8';
 import rsa from './rsa';
 
 export {
   hkdf,
   pbkdf2,
   base64,
+  utf8,
   rsa,
   generateAccountKey,
   generateCryptoRandomString,
@@ -27,6 +29,7 @@ export default {
   hkdf,
   pbkdf2,
   base64,
+  utf8,
   rsa,
   generateAccountKey,
   generateCryptoRandomString,

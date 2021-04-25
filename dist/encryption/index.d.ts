@@ -22,6 +22,10 @@ declare const _default: {
             encode: typeof import("./common/base64/encode").default;
             decode: typeof import("./common/base64/decode").default;
         };
+        utf8: {
+            encode: typeof import("./common/utf-8/encode").default;
+            decode: typeof import("./common/utf-8/decode").default;
+        };
         rsa: {
             definitions: typeof import("./common/rsa/definitions");
             encrypt: typeof import("./common/rsa/encrypt").default;

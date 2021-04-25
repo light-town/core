@@ -10,9 +10,10 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const aes_1 = require("../../common/aes");
+const utf_8_1 = require("../../common/utf-8");
 function decryptByVaultKey(overview, vaultKey) {
     return __awaiter(this, void 0, void 0, function* () {
-        return JSON.parse(yield aes_1.default.decrypt(overview, vaultKey));
+        return JSON.parse(utf_8_1.default.decode(yield aes_1.default.decrypt(overview, vaultKey)));
     });
 }
 exports.default = decryptByVaultKey;

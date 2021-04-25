@@ -1,4 +1,5 @@
 import aes from '../../common/aes';
+import utf8 from '../../common/utf-8';
 import { EncryptedVaultFolder } from './definitions';
 
 export default async function encryptVaultFolder(
@@ -6,6 +7,9 @@ export default async function encryptVaultFolder(
   vaultKey: string,
 ): Promise<EncryptedVaultFolder> {
   return {
-    encOverview: await aes.encrypt(JSON.stringify(overview), vaultKey),
+    encOverview: await aes.encrypt(
+      utf8.encode(JSON.stringify(overview)),
+      vaultKey,
+    ),
   };
 }

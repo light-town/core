@@ -10,10 +10,11 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const aes_1 = require("../../common/aes");
+const utf_8_1 = require("../../common/utf-8");
 function encryptVaultFolder(overview, vaultKey) {
     return __awaiter(this, void 0, void 0, function* () {
         return {
-            encOverview: yield aes_1.default.encrypt(JSON.stringify(overview), vaultKey),
+            encOverview: yield aes_1.default.encrypt(utf_8_1.default.encode(JSON.stringify(overview)), vaultKey),
         };
     });
 }
