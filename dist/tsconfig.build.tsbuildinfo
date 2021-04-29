@@ -871,19 +871,19 @@
         "signature": "85e65f0b196898a36fadea2e19e7a4fac3b0959856a9fa3e146439602c0d7055",
         "affectsGlobalScope": false
       },
-      "../src/helpers/vault-folders/decrypt-vault-folder.helper.ts": {
+      "../src/helpers/vault-folders/decrypt-vault-folders.helper.ts": {
         "version": "e704b689a2f746059827788359f3a6cfa089166a9dcbf3286520be9011ad65b0",
         "signature": "44b9403becc2b21e99b9294060eb56ec4c7cf4134caae7ebe5cc2036a4c04e91",
         "affectsGlobalScope": false
       },
-      "../src/helpers/vault-folders/decrypt-vault-folders.helper.ts": {
+      "../src/helpers/vault-folders/decrypt-vault-folder.helper.ts": {
         "version": "f0f1114c4af83c39a29eb67a493ef5dfe3a122a16abee8b2f3d3ecca2b39096d",
         "signature": "8bda14333f0410c5fc21e34bfd5e8ff8142c5b6726c36ba9c0b8c67f023f8a23",
         "affectsGlobalScope": false
       },
       "../src/helpers/vault-folders/index.ts": {
-        "version": "d574b855fa2bbe489de20dd35d034d9a40b8e4233444d01ab84469731cd69e4c",
-        "signature": "456760e05295639c8dc927cc0f543660209eacef7c936d65ba25c471191a2005",
+        "version": "a71d1625963ec895c1f0e8670a9ddcbc43da7972c8f78c90f05ac306d80bc33e",
+        "signature": "0b691e7956253dd726bd7897def71e1a4e2fb1886f1b43145c86bf8a960d6015",
         "affectsGlobalScope": false
       },
       "../src/helpers/vault-item-categories/definitions.ts": {
@@ -977,7 +977,7 @@
         "affectsGlobalScope": false
       },
       "../src/helpers/vaults/share-vault.helper.ts": {
-        "version": "b203fb5b2c3e0b168bb3a4b27d1b6c7c6ee3cbbec4b13c022438dec4647116bd",
+        "version": "f5341b0e44aeae3b2cdfc1601fa0b6e594d869b35a1933bcd416b75a262d67be",
         "signature": "1203a1b587f3bb380d906492570dffd14668923ae9b7f2fbb39f8d0e3b364ea9",
         "affectsGlobalScope": false
       },
@@ -988,12 +988,12 @@
       },
       "../src/helpers/index.ts": {
         "version": "2f35b6959b241cf3fe30828ee804f178e8f53785065d10fd77e80cc45ecc6ae0",
-        "signature": "f5c059cf5036ad4890e59b675200e562cd5ca22daeb8383d77cd06292f014a1e",
+        "signature": "20421f8e90badd74600fb8f4c13905cd7f5b16f73c55f5c119b78dca464003d5",
         "affectsGlobalScope": false
       },
       "../src/index.ts": {
         "version": "b8785c9df33134b14ab0f8cccc07300692aa4e93c6072d02bfeb4097c29fb467",
-        "signature": "8621cb8b14b7f5b8c28e334841af9cd038ee1d6ee4082a89ed9e90fc7191c320",
+        "signature": "f2b5cab0edf67eb27d55a7255a6d9a67a1ccafdc9a4cec0f006a010bda28724d",
         "affectsGlobalScope": false
       },
       "../src/encryption/common/certificates/generate-key-pair.ts": {
@@ -1014,6 +1014,46 @@
       "../src/encryption/common/certificates/index.ts": {
         "version": "1e043a4a003fd9a09bd66597ea633c13e44eea16343e8cb0ccc878e275e79dc5",
         "signature": "42ed5170ea892c0d7f43443e23fa2eb442dcf2e4934fc2fd9cdd76ca7e2b8c8e",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/teams/definitions.ts": {
+        "version": "754d3051947a9b9dda616d251046392776588248d67719a80a071d2ede81fc42",
+        "signature": "d8905fa55de1c4e0fa2228b872a2fa512b1078367749617bae31f34ef5207535",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/teams/create-team.helper.ts": {
+        "version": "f255a0100fb0890592bba3f1372d7b5fc4ea5b453ac4e0c06f8fd219bb5ae6c6",
+        "signature": "c87b1e4a9771a3e472cab8c17052688e366c3548eb4734740baadde42538f2a5",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/teams/decrypt-team-by-private-key.helper.ts": {
+        "version": "2f708cdd7cac9b8cc725ee47ca92f80726131fa27777cd60518f80c9418b5b9e",
+        "signature": "3b9d27131be5f97ee4e7eab871056b03a8a80776c126504e9ab5ffc6e08590ef",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/teams/decrypt-team-by-secret-key.helper.ts": {
+        "version": "4bd468b4e2b62c465e83ce66a15d4004bdd5324b85c05fc1f3d208518ebd7ef6",
+        "signature": "c33f380e720aae7e51eec7e4f1eef52a05ef5b17a0c3930e45e728ebbc02183c",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/teams/decrypt-teams-by-private-key.helper.ts": {
+        "version": "75aac0848f912755bcc2e114202d0d027668115248fde989308151ec26e7ffc6",
+        "signature": "6419a3a5d809cea45561eb0562e0afb966f735ca95596651ec4106b1f7701e44",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/teams/decrypt-teams-by-secret-key.helper.ts": {
+        "version": "0e467cdee9f77fa5c7873f75f76295376530fcaa12d98e888c86817cd4da53e9",
+        "signature": "8ca62d44fe883b586fcf551fbab2e930ba712b38933ade70d47e5f5b7646be8c",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/teams/share-team.helper.ts": {
+        "version": "6d6837699da980a76c9c42d90eee4a82d7efe6401cf9a1ba4588f1be96b93aa9",
+        "signature": "55c2c3cfb194d414ada067f7516a864770ac0862ec541895215dd84e6a7f0d6a",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/teams/index.ts": {
+        "version": "422c63b2fb87dc0383ee546e86e31bc45fb72494d63832a773e79e5255b9c56b",
+        "signature": "f59e9b69dc7cd8ffd9353782262098f3acb8387b8b293d598ee5d2b24dcd312c",
         "affectsGlobalScope": false
       },
       "../node_modules/@babel/types/lib/index.d.ts": {
@@ -2012,6 +2052,47 @@
         "../src/encryption/common/derive-master-unlock-key.ts",
         "../src/encryption/common/normalize-master-password.ts"
       ],
+      "../src/helpers/teams/create-team.helper.ts": [
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/index.ts",
+        "../src/helpers/teams/definitions.ts"
+      ],
+      "../src/helpers/teams/decrypt-team-by-private-key.helper.ts": [
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/encryption/index.ts",
+        "../src/helpers/teams/definitions.ts"
+      ],
+      "../src/helpers/teams/decrypt-team-by-secret-key.helper.ts": [
+        "../src/encryption/index.ts",
+        "../src/encryption/teams/key/definitions.ts",
+        "../src/helpers/teams/definitions.ts"
+      ],
+      "../src/helpers/teams/decrypt-teams-by-private-key.helper.ts": [
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/helpers/teams/decrypt-team-by-private-key.helper.ts",
+        "../src/helpers/teams/definitions.ts"
+      ],
+      "../src/helpers/teams/decrypt-teams-by-secret-key.helper.ts": [
+        "../src/helpers/teams/decrypt-team-by-secret-key.helper.ts",
+        "../src/helpers/teams/definitions.ts"
+      ],
+      "../src/helpers/teams/definitions.ts": [
+        "../src/encryption/common/aes/definitions.ts",
+        "../src/encryption/teams/key/definitions.ts"
+      ],
+      "../src/helpers/teams/index.ts": [
+        "../src/helpers/teams/create-team.helper.ts",
+        "../src/helpers/teams/decrypt-team-by-private-key.helper.ts",
+        "../src/helpers/teams/decrypt-team-by-secret-key.helper.ts",
+        "../src/helpers/teams/decrypt-teams-by-private-key.helper.ts",
+        "../src/helpers/teams/decrypt-teams-by-secret-key.helper.ts",
+        "../src/helpers/teams/definitions.ts",
+        "../src/helpers/teams/share-team.helper.ts"
+      ],
+      "../src/helpers/teams/share-team.helper.ts": [
+        "../src/encryption/index.ts",
+        "../src/helpers/teams/definitions.ts"
+      ],
       "../src/helpers/vault-folders/create-vault-folder.helper.ts": [
         "../src/encryption/index.ts",
         "../src/helpers/vault-folders/definitions.ts"
@@ -2963,6 +3044,40 @@
       "../src/helpers/master-unlock-key/index.ts": [
         "../src/encryption/common/derive-master-unlock-key.ts"
       ],
+      "../src/helpers/teams/create-team.helper.ts": [
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/helpers/teams/definitions.ts"
+      ],
+      "../src/helpers/teams/decrypt-team-by-private-key.helper.ts": [
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/helpers/teams/definitions.ts"
+      ],
+      "../src/helpers/teams/decrypt-team-by-secret-key.helper.ts": [
+        "../src/helpers/teams/definitions.ts"
+      ],
+      "../src/helpers/teams/decrypt-teams-by-private-key.helper.ts": [
+        "../src/encryption/common/rsa/definitions.ts",
+        "../src/helpers/teams/definitions.ts"
+      ],
+      "../src/helpers/teams/decrypt-teams-by-secret-key.helper.ts": [
+        "../src/helpers/teams/definitions.ts"
+      ],
+      "../src/helpers/teams/definitions.ts": [
+        "../src/encryption/common/aes/definitions.ts",
+        "../src/encryption/teams/key/definitions.ts"
+      ],
+      "../src/helpers/teams/index.ts": [
+        "../src/helpers/teams/create-team.helper.ts",
+        "../src/helpers/teams/decrypt-team-by-private-key.helper.ts",
+        "../src/helpers/teams/decrypt-team-by-secret-key.helper.ts",
+        "../src/helpers/teams/decrypt-teams-by-private-key.helper.ts",
+        "../src/helpers/teams/decrypt-teams-by-secret-key.helper.ts",
+        "../src/helpers/teams/definitions.ts",
+        "../src/helpers/teams/share-team.helper.ts"
+      ],
+      "../src/helpers/teams/share-team.helper.ts": [
+        "../src/helpers/teams/definitions.ts"
+      ],
       "../src/helpers/vault-folders/create-vault-folder.helper.ts": [
         "../src/helpers/vault-folders/definitions.ts"
       ],
@@ -3458,6 +3573,14 @@
       "../src/helpers/key-sets/definitions.ts",
       "../src/helpers/key-sets/index.ts",
       "../src/helpers/master-unlock-key/index.ts",
+      "../src/helpers/teams/create-team.helper.ts",
+      "../src/helpers/teams/decrypt-team-by-private-key.helper.ts",
+      "../src/helpers/teams/decrypt-team-by-secret-key.helper.ts",
+      "../src/helpers/teams/decrypt-teams-by-private-key.helper.ts",
+      "../src/helpers/teams/decrypt-teams-by-secret-key.helper.ts",
+      "../src/helpers/teams/definitions.ts",
+      "../src/helpers/teams/index.ts",
+      "../src/helpers/teams/share-team.helper.ts",
       "../src/helpers/vault-folders/create-vault-folder.helper.ts",
       "../src/helpers/vault-folders/decrypt-vault-folder.helper.ts",
       "../src/helpers/vault-folders/decrypt-vault-folders.helper.ts",

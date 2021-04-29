@@ -17,5 +17,4 @@ export default async function shareVaultHelper(
     encKey,
     encOverview,
   };
-  return;
 }

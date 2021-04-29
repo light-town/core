@@ -18,7 +18,6 @@ function shareVaultHelper(vault, secretKey) {
             encKey,
             encOverview,
         };
-        return;
     });
 }
 exports.default = shareVaultHelper;

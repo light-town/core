@@ -9,17 +9,11 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const encryption_1 = require("../../encryption");
-function decryptVaultFoldersHelper(encVaultFolders, vaultKey) {
+const decrypt_team_by_private_key_helper_1 = require("./decrypt-team-by-private-key.helper");
+function decryptTeamsByPrivateKeyHelper(encTeams, privateKey) {
     return __awaiter(this, void 0, void 0, function* () {
-        return Promise.all(encVaultFolders.map((encVaultFolder) => encryption_1.default.vaults.folders
-            .decryptVaultFolder(encVaultFolder, vaultKey)
-            .then((vaultFolder) => {
-            const result = Object.assign(Object.assign({}, vaultFolder), encVaultFolder);
-            delete result.encOverview;
-            return result;
-        })));
+        return Promise.all(encTeams.map((encTeam) => decrypt_team_by_private_key_helper_1.default(encTeam, privateKey)));
     });
 }
-exports.default = decryptVaultFoldersHelper;
-//# sourceMappingURL=decrypt-vault-folders.helper.js.map
+exports.default = decryptTeamsByPrivateKeyHelper;
+//# sourceMappingURL=decrypt-teams-by-private-key.helper.js.map

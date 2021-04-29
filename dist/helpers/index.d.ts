@@ -12,8 +12,8 @@ declare const _default: {
     vaultFolders: {
         definitions: typeof import("./vault-folders/definitions");
         createVaultFolderHelper: typeof import("./vault-folders/create-vault-folder.helper").default;
-        decryptVaultFoldersHelper: typeof import("./vault-folders/decrypt-vault-folder.helper").default;
-        decryptVaultFolderHelper: typeof import("./vault-folders/decrypt-vault-folders.helper").default;
+        decryptVaultFoldersHelper: typeof import("./vault-folders/decrypt-vault-folders.helper").default;
+        decryptVaultFolderHelper: typeof import("./vault-folders/decrypt-vault-folder.helper").default;
     };
     vaultItemCategories: {
         definitions: typeof import("./vault-item-categories/definitions");

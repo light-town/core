@@ -10,16 +10,15 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const encryption_1 = require("../../encryption");
-function decryptVaultFoldersHelper(encVaultFolders, vaultKey) {
+function decryptTeamBySecretKeyHelper(encTeam, secretKey) {
     return __awaiter(this, void 0, void 0, function* () {
-        return Promise.all(encVaultFolders.map((encVaultFolder) => encryption_1.default.vaults.folders
-            .decryptVaultFolder(encVaultFolder, vaultKey)
-            .then((vaultFolder) => {
-            const result = Object.assign(Object.assign({}, vaultFolder), encVaultFolder);
-            delete result.encOverview;
-            return result;
-        })));
+        const key = yield encryption_1.default.teams.key.decryptBySecretKey(encTeam.encKey, secretKey);
+        const overview = yield encryption_1.default.teams.overview.decryptByTeamKey(encTeam.encOverview, key);
+        const result = Object.assign({ key, overview: overview }, encTeam);
+        delete result.encKey;
+        delete result.encOverview;
+        return result;
     });
 }
-exports.default = decryptVaultFoldersHelper;
-//# sourceMappingURL=decrypt-vault-folders.helper.js.map
+exports.default = decryptTeamBySecretKeyHelper;
+//# sourceMappingURL=decrypt-team-by-secret-key.helper.js.map
