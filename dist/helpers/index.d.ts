@@ -35,5 +35,14 @@ declare const _default: {
         createVaultHelper: typeof import("./vaults/create-vault.helper").default;
         shareVaultHelper: typeof import("./vaults/share-vault.helper").default;
     };
+    teams: {
+        definitions: typeof import("./teams/definitions");
+        createTeamHelper: typeof import("./teams/create-team.helper").default;
+        decryptTeamByPrivateKeyHelper: typeof import("./teams/decrypt-team-by-private-key.helper").default;
+        decryptTeamBySecretKeyHelper: typeof import("./teams/decrypt-team-by-secret-key.helper").default;
+        decryptTeamsByPrivateKeyHelper: typeof import("./teams/decrypt-teams-by-private-key.helper").default;
+        decryptTeamsBySecretKeyHelper: typeof import("./teams/decrypt-teams-by-secret-key.helper").default;
+        shareTeamHelper: typeof import("./teams/share-team.helper").default;
+    };
 };
 export default _default;

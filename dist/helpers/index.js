@@ -6,6 +6,7 @@ const vault_folders_1 = require("./vault-folders");
 const vault_item_categories_1 = require("./vault-item-categories");
 const vault_items_1 = require("./vault-items");
 const vaults_1 = require("./vaults");
+const teams_1 = require("./teams");
 exports.default = {
     keySets: key_sets_1.default,
     masterUnlockKey: master_unlock_key_1.default,
@@ -13,5 +14,6 @@ exports.default = {
     vaultItemCategories: vault_item_categories_1.default,
     vaultItems: vault_items_1.default,
     vaults: vaults_1.default,
+    teams: teams_1.default,
 };
 //# sourceMappingURL=index.js.map

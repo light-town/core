@@ -986,36 +986,6 @@
         "signature": "f0277c52bf10410485ec099bbfaf642b91b032d90e7c48f09db0e6e0be2c06aa",
         "affectsGlobalScope": false
       },
-      "../src/helpers/index.ts": {
-        "version": "2f35b6959b241cf3fe30828ee804f178e8f53785065d10fd77e80cc45ecc6ae0",
-        "signature": "20421f8e90badd74600fb8f4c13905cd7f5b16f73c55f5c119b78dca464003d5",
-        "affectsGlobalScope": false
-      },
-      "../src/index.ts": {
-        "version": "b8785c9df33134b14ab0f8cccc07300692aa4e93c6072d02bfeb4097c29fb467",
-        "signature": "f2b5cab0edf67eb27d55a7255a6d9a67a1ccafdc9a4cec0f006a010bda28724d",
-        "affectsGlobalScope": false
-      },
-      "../src/encryption/common/certificates/generate-key-pair.ts": {
-        "version": "62e08ee257783add1b8a6600eca0eba5f6a16343e1180235aec52ddcda82dcee",
-        "signature": "9f626bd9e4ecebb691b32410b0f9a5cb8588e38030230ee54e4bb33a8c045df9",
-        "affectsGlobalScope": false
-      },
-      "../src/encryption/common/certificates/sign-certificate.ts": {
-        "version": "d15b15c07581830412c1cfe11de0d6345e17bdde657e4ba402651a30630dc1f3",
-        "signature": "a7a33a49601c0fe58dae05fc3648b6d550ec1c6580065fb222821611d1883fc9",
-        "affectsGlobalScope": false
-      },
-      "../src/encryption/common/certificates/verify-certificate.ts": {
-        "version": "7a66f331fe5fd45c904249146821a78077e505536ab927880ff5376b1c456455",
-        "signature": "d8ab4f2067347c0b8d102ee7c188fc33362205d11a0529d071b7403dd9fcad0c",
-        "affectsGlobalScope": false
-      },
-      "../src/encryption/common/certificates/index.ts": {
-        "version": "1e043a4a003fd9a09bd66597ea633c13e44eea16343e8cb0ccc878e275e79dc5",
-        "signature": "42ed5170ea892c0d7f43443e23fa2eb442dcf2e4934fc2fd9cdd76ca7e2b8c8e",
-        "affectsGlobalScope": false
-      },
       "../src/helpers/teams/definitions.ts": {
         "version": "754d3051947a9b9dda616d251046392776588248d67719a80a071d2ede81fc42",
         "signature": "d8905fa55de1c4e0fa2228b872a2fa512b1078367749617bae31f34ef5207535",
@@ -1054,6 +1024,36 @@
       "../src/helpers/teams/index.ts": {
         "version": "422c63b2fb87dc0383ee546e86e31bc45fb72494d63832a773e79e5255b9c56b",
         "signature": "f59e9b69dc7cd8ffd9353782262098f3acb8387b8b293d598ee5d2b24dcd312c",
+        "affectsGlobalScope": false
+      },
+      "../src/helpers/index.ts": {
+        "version": "4658e338e2ac13e55d8ea265ee4bd7b740b3f401641bd07f7a7e33f34606bcf6",
+        "signature": "06f93e1bf0fc561b6e722cb2817ce822cb4fd735685bef4beeeb72cf539fa45f",
+        "affectsGlobalScope": false
+      },
+      "../src/index.ts": {
+        "version": "b8785c9df33134b14ab0f8cccc07300692aa4e93c6072d02bfeb4097c29fb467",
+        "signature": "dc656ac9db63edca3209866072e63aac9bb4fd61305888f5a0b94689763b1a4b",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/common/certificates/generate-key-pair.ts": {
+        "version": "62e08ee257783add1b8a6600eca0eba5f6a16343e1180235aec52ddcda82dcee",
+        "signature": "9f626bd9e4ecebb691b32410b0f9a5cb8588e38030230ee54e4bb33a8c045df9",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/common/certificates/sign-certificate.ts": {
+        "version": "d15b15c07581830412c1cfe11de0d6345e17bdde657e4ba402651a30630dc1f3",
+        "signature": "a7a33a49601c0fe58dae05fc3648b6d550ec1c6580065fb222821611d1883fc9",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/common/certificates/verify-certificate.ts": {
+        "version": "7a66f331fe5fd45c904249146821a78077e505536ab927880ff5376b1c456455",
+        "signature": "d8ab4f2067347c0b8d102ee7c188fc33362205d11a0529d071b7403dd9fcad0c",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/common/certificates/index.ts": {
+        "version": "1e043a4a003fd9a09bd66597ea633c13e44eea16343e8cb0ccc878e275e79dc5",
+        "signature": "42ed5170ea892c0d7f43443e23fa2eb442dcf2e4934fc2fd9cdd76ca7e2b8c8e",
         "affectsGlobalScope": false
       },
       "../node_modules/@babel/types/lib/index.d.ts": {
@@ -2011,6 +2011,7 @@
       "../src/helpers/index.ts": [
         "../src/helpers/key-sets/index.ts",
         "../src/helpers/master-unlock-key/index.ts",
+        "../src/helpers/teams/index.ts",
         "../src/helpers/vault-folders/index.ts",
         "../src/helpers/vault-item-categories/index.ts",
         "../src/helpers/vault-items/index.ts",
@@ -2994,6 +2995,13 @@
         "../src/helpers/key-sets/decrypt-primary-key-set.helper.ts",
         "../src/helpers/key-sets/definitions.ts",
         "../src/helpers/master-unlock-key/index.ts",
+        "../src/helpers/teams/create-team.helper.ts",
+        "../src/helpers/teams/decrypt-team-by-private-key.helper.ts",
+        "../src/helpers/teams/decrypt-team-by-secret-key.helper.ts",
+        "../src/helpers/teams/decrypt-teams-by-private-key.helper.ts",
+        "../src/helpers/teams/decrypt-teams-by-secret-key.helper.ts",
+        "../src/helpers/teams/definitions.ts",
+        "../src/helpers/teams/share-team.helper.ts",
         "../src/helpers/vault-folders/create-vault-folder.helper.ts",
         "../src/helpers/vault-folders/decrypt-vault-folder.helper.ts",
         "../src/helpers/vault-folders/decrypt-vault-folders.helper.ts",
@@ -3211,6 +3219,13 @@
         "../src/helpers/key-sets/decrypt-primary-key-set.helper.ts",
         "../src/helpers/key-sets/definitions.ts",
         "../src/helpers/master-unlock-key/index.ts",
+        "../src/helpers/teams/create-team.helper.ts",
+        "../src/helpers/teams/decrypt-team-by-private-key.helper.ts",
+        "../src/helpers/teams/decrypt-team-by-secret-key.helper.ts",
+        "../src/helpers/teams/decrypt-teams-by-private-key.helper.ts",
+        "../src/helpers/teams/decrypt-teams-by-secret-key.helper.ts",
+        "../src/helpers/teams/definitions.ts",
+        "../src/helpers/teams/share-team.helper.ts",
         "../src/helpers/vault-folders/create-vault-folder.helper.ts",
         "../src/helpers/vault-folders/decrypt-vault-folder.helper.ts",
         "../src/helpers/vault-folders/decrypt-vault-folders.helper.ts",

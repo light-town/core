@@ -4,6 +4,7 @@ import vaultFolders from './vault-folders';
 import vaultItemCategories from './vault-item-categories';
 import vaultItems from './vault-items';
 import vaults from './vaults';
+import teams from './teams';
 
 export default {
   keySets,
@@ -12,4 +13,5 @@ export default {
   vaultItemCategories,
   vaultItems,
   vaults,
+  teams,
 };
