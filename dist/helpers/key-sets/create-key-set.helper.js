@@ -10,7 +10,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const encryption_1 = require("../../encryption");
-function createKeySetHelper(publicKey, symmetricKey) {
+function createKeySetHelper(symmetricKey, publicKey) {
     return __awaiter(this, void 0, void 0, function* () {
         return {
             encSymmetricKey: yield encryption_1.default.keySets.symmetricKey.encryptByPublicKey(symmetricKey, publicKey),
