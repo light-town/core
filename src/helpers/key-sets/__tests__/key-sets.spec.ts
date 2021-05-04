@@ -47,8 +47,8 @@ describe('[Helpers] [Key Sets] ...', () => {
 
     const vaultKey = encryption.common.generateCryptoRandomString(8);
     const encKeySet = await keySets.createKeySetHelper(
-      primaryKeySet.publicKey,
       vaultKey,
+      primaryKeySet.publicKey,
     );
 
     expect(encKeySet.encSymmetricKey).toBeDefined();
