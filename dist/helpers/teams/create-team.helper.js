@@ -10,10 +10,10 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const encryption_1 = require("../../encryption");
-function createTeamHelper(overview, publicKey) {
+function createTeamHelper(overview, secretKey) {
     return __awaiter(this, void 0, void 0, function* () {
         const key = encryption_1.default.common.generateCryptoRandomString(32);
-        const encKey = yield encryption_1.default.teams.key.encryptByPublicKey(key, publicKey);
+        const encKey = yield encryption_1.default.teams.key.encryptBySecretKey(key, secretKey);
         const encOverview = yield encryption_1.default.teams.overview.encryptByTeamKey(overview, key);
         return {
             encKey,

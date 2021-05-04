@@ -992,8 +992,8 @@
         "affectsGlobalScope": false
       },
       "../src/helpers/teams/create-team.helper.ts": {
-        "version": "f255a0100fb0890592bba3f1372d7b5fc4ea5b453ac4e0c06f8fd219bb5ae6c6",
-        "signature": "c87b1e4a9771a3e472cab8c17052688e366c3548eb4734740baadde42538f2a5",
+        "version": "c65ae07421b9b5fa9f62df894fac93980abedcbe9e05aad6f30264725142a210",
+        "signature": "23b46189ff2689eb7d14cf453173ec26703cbd826fe994b19e80acfa096185cd",
         "affectsGlobalScope": false
       },
       "../src/helpers/teams/decrypt-team-by-private-key.helper.ts": {
@@ -2054,7 +2054,6 @@
         "../src/encryption/common/normalize-master-password.ts"
       ],
       "../src/helpers/teams/create-team.helper.ts": [
-        "../src/encryption/common/rsa/definitions.ts",
         "../src/encryption/index.ts",
         "../src/helpers/teams/definitions.ts"
       ],
@@ -3053,7 +3052,6 @@
         "../src/encryption/common/derive-master-unlock-key.ts"
       ],
       "../src/helpers/teams/create-team.helper.ts": [
-        "../src/encryption/common/rsa/definitions.ts",
         "../src/helpers/teams/definitions.ts"
       ],
       "../src/helpers/teams/decrypt-team-by-private-key.helper.ts": [
