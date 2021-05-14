@@ -2,6 +2,23 @@ declare const _default: {
     Password: {
         name: string;
         fields: {
+            Avatar: {
+                name: string;
+                view: {
+                    element: string;
+                };
+                editor: {
+                    element: string;
+                };
+                position: number;
+                count: {
+                    max: number;
+                    min: number;
+                };
+                required: boolean;
+                pinned: boolean;
+                useInOverview: boolean;
+            };
             Username: {
                 name: string;
                 view: {
@@ -17,6 +34,7 @@ declare const _default: {
                 };
                 required: boolean;
                 pinned: boolean;
+                useInOverview: boolean;
             };
             Password: {
                 name: string;
@@ -33,6 +51,7 @@ declare const _default: {
                 };
                 required: boolean;
                 pinned: boolean;
+                useInOverview: boolean;
             };
             'Website URL': {
                 name: string;
@@ -44,6 +63,7 @@ declare const _default: {
                 };
                 required: boolean;
                 pinned: boolean;
+                useInOverview: boolean;
             };
         };
     };

@@ -3,6 +3,23 @@ export declare const defaultSchemas: {
     name: string;
     schema: {
         fields: {
+            Avatar: {
+                name: string;
+                view: {
+                    element: string;
+                };
+                editor: {
+                    element: string;
+                };
+                position: number;
+                count: {
+                    max: number;
+                    min: number;
+                };
+                required: boolean;
+                pinned: boolean;
+                useInOverview: boolean;
+            };
             Username: {
                 name: string;
                 view: {
@@ -18,6 +35,7 @@ export declare const defaultSchemas: {
                 };
                 required: boolean;
                 pinned: boolean;
+                useInOverview: boolean;
             };
             Password: {
                 name: string;
@@ -34,6 +52,7 @@ export declare const defaultSchemas: {
                 };
                 required: boolean;
                 pinned: boolean;
+                useInOverview: boolean;
             };
             'Website URL': {
                 name: string;
@@ -45,6 +64,7 @@ export declare const defaultSchemas: {
                 };
                 required: boolean;
                 pinned: boolean;
+                useInOverview: boolean;
             };
         };
     };

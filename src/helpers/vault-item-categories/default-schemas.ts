@@ -5,13 +5,13 @@ export default {
   [defaultCategories.PASSWORD]: {
     name: defaultCategories.PASSWORD,
     fields: {
-      Username: {
-        name: 'Username',
+      Avatar: {
+        name: 'Avatar',
         view: {
-          element: fields.TEXT_VIEW_FIELD,
+          element: fields.AVATAR_VIEW_FIELD,
         },
         editor: {
-          element: fields.TEXT_EDIT_FIELD,
+          element: fields.AVATAR_EDIT_FIELD,
         },
         position: 1,
         count: {
@@ -20,6 +20,24 @@ export default {
         },
         required: true,
         pinned: true,
+        useInOverview: true,
+      },
+      Username: {
+        name: 'Username',
+        view: {
+          element: fields.TEXT_VIEW_FIELD,
+        },
+        editor: {
+          element: fields.TEXT_EDIT_FIELD,
+        },
+        position: 2,
+        count: {
+          max: 1,
+          min: 1,
+        },
+        required: true,
+        pinned: true,
+        useInOverview: true,
       },
       Password: {
         name: 'Password',
@@ -29,13 +47,14 @@ export default {
         editor: {
           element: fields.PASSWORD_EDIT_FIELD,
         },
-        position: 2,
+        position: 3,
         count: {
           max: 1,
           min: 1,
         },
         required: true,
         pinned: true,
+        useInOverview: false,
       },
       'Website URL': {
         name: 'Website URL',
@@ -47,6 +66,7 @@ export default {
         },
         required: false,
         pinned: false,
+        useInOverview: true,
       },
     },
   },

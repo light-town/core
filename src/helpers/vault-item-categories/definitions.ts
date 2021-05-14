@@ -27,6 +27,7 @@ export class AbstractField {
   };
   required?: boolean;
   pinned?: boolean;
+  useInOverview?: boolean;
   [key: string]: any;
 }
 

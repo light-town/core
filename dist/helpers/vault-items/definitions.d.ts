@@ -2,16 +2,15 @@ export { EncryptedVaultItem, DecryptedVaultItem, } from '../../encryption/vaults
 export declare class VaultItemOverview {
     name: string;
     desc?: string;
-    [key: string]: any;
+    fields?: VaultItemField[];
 }
 export declare class VaultItemField {
+    id: string;
     position: number;
     fieldName: string;
     name: string;
     value: string;
-    [key: string]: any;
 }
 export declare class VaultItemDetails {
     fields: VaultItemField[];
-    [key: string]: any;
 }

@@ -5,10 +5,9 @@ import {
   VaultItemOverview,
 } from './definitions';
 
-export default async function createVaultItemHelper(
-  overview: VaultItemOverview,
-  details: VaultItemDetails,
-  vaultKey: string,
-): Promise<EncryptedVaultItem> {
+export default async function createVaultItemHelper<
+  O = VaultItemOverview,
+  D = VaultItemDetails
+>(overview: O, details: D, vaultKey: string): Promise<EncryptedVaultItem> {
   return encryption.vaults.items.encryptVaultItem(overview, details, vaultKey);
 }
