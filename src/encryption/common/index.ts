@@ -33,6 +33,7 @@ export default {
   base64,
   utf8,
   rsa,
+  aes,
   generateAccountKey,
   generateCryptoRandomString,
   generateRandomSalt,

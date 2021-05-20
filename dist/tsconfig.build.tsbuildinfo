@@ -581,9 +581,29 @@
         "signature": "554c7de6c3faed204a91b791c46912b7306cceb0133e63fe59424d6e8553efb7",
         "affectsGlobalScope": false
       },
+      "../src/encryption/common/aes/definitions.ts": {
+        "version": "546c68988f83d14feed7a0ccec660a56cd6a5a3b0f6183aef395cfc1a4ac1167",
+        "signature": "ccb809f05b1e26d51e8be92bb8dbc2305d1973e9e0fa303981f1849aab5c8c0d",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/common/aes/decrypt.ts": {
+        "version": "a3c5f4b91d282d4a37157791ef97cea100cff1ccc9fdaf6b9e508f5eb36e9bcb",
+        "signature": "4b062316089ea326767bdc4f5e88ee61e9dce675728775fc454d8c0deb521d52",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/common/aes/encrypt.ts": {
+        "version": "31e5d5a3eac57d1e2951b1f1878490417ebe3ae228581479353a8649eadfcff7",
+        "signature": "9908a97a693dd5327a254f5ccde165261e87884cbf90731dd390debf2ca69024",
+        "affectsGlobalScope": false
+      },
+      "../src/encryption/common/aes/index.ts": {
+        "version": "ee235ec647c6c14815ecf538d1e06647b997e7881c133f0d5e2a30c8b757781a",
+        "signature": "5fab361244bc70e41a4852873e742bea85331efe74333ff6e6ea3fe60219291c",
+        "affectsGlobalScope": false
+      },
       "../src/encryption/common/index.ts": {
-        "version": "c24d5aa944ab3f5928935c8cc65387f348f440b88e37692bab8b45709b604f5d",
-        "signature": "76d5424accdde58d084de09dca1eac47cf97f5d01920baa91d527e8d0b9ef900",
+        "version": "82af756b31f10b58afbef245b1325313dfa0aad835d3b820268e19adb6719279",
+        "signature": "be5b63de72433553bd1b77270e53faeeaf0549328c796432e544c27474ebda29",
         "affectsGlobalScope": false
       },
       "../src/encryption/key-sets/private-key/definitions.ts": {
@@ -619,26 +639,6 @@
       "../src/encryption/key-sets/symmetric-key/decrypt-by-private-key.ts": {
         "version": "2ed871bc836894bb858e43fba747a401ff250f293563253aa731d18f76adbe58",
         "signature": "d05d21d71180eae6c5ad59638d7ab2ed49b225ac7e4628dab12e3bfbceb67950",
-        "affectsGlobalScope": false
-      },
-      "../src/encryption/common/aes/definitions.ts": {
-        "version": "546c68988f83d14feed7a0ccec660a56cd6a5a3b0f6183aef395cfc1a4ac1167",
-        "signature": "ccb809f05b1e26d51e8be92bb8dbc2305d1973e9e0fa303981f1849aab5c8c0d",
-        "affectsGlobalScope": false
-      },
-      "../src/encryption/common/aes/decrypt.ts": {
-        "version": "a3c5f4b91d282d4a37157791ef97cea100cff1ccc9fdaf6b9e508f5eb36e9bcb",
-        "signature": "4b062316089ea326767bdc4f5e88ee61e9dce675728775fc454d8c0deb521d52",
-        "affectsGlobalScope": false
-      },
-      "../src/encryption/common/aes/encrypt.ts": {
-        "version": "31e5d5a3eac57d1e2951b1f1878490417ebe3ae228581479353a8649eadfcff7",
-        "signature": "9908a97a693dd5327a254f5ccde165261e87884cbf90731dd390debf2ca69024",
-        "affectsGlobalScope": false
-      },
-      "../src/encryption/common/aes/index.ts": {
-        "version": "ee235ec647c6c14815ecf538d1e06647b997e7881c133f0d5e2a30c8b757781a",
-        "signature": "5fab361244bc70e41a4852873e742bea85331efe74333ff6e6ea3fe60219291c",
         "affectsGlobalScope": false
       },
       "../src/encryption/key-sets/symmetric-key/encrypt-by-secret-key.ts": {
@@ -823,7 +823,7 @@
       },
       "../src/encryption/index.ts": {
         "version": "1ca08e27788230f72455b72b0921e15f13ec4d541da56690b8a43f9500a02545",
-        "signature": "8e39ad5649fb4c6d9e4f39cc0ecc34c17695dcbd90b3fb9c1e9f78eb1fb66f49",
+        "signature": "bde8b58f932f6f006fe4aa775404e2ac7a5ea0b8c53760049ebde22393cae0a8",
         "affectsGlobalScope": false
       },
       "../src/helpers/key-sets/definitions.ts": {
@@ -1033,7 +1033,7 @@
       },
       "../src/index.ts": {
         "version": "b8785c9df33134b14ab0f8cccc07300692aa4e93c6072d02bfeb4097c29fb467",
-        "signature": "dc656ac9db63edca3209866072e63aac9bb4fd61305888f5a0b94689763b1a4b",
+        "signature": "9c57abea8a7349451c5ca1aadaebad85abcaa207aba3c25049a2b0f12a8d53aa",
         "affectsGlobalScope": false
       },
       "../src/encryption/common/certificates/generate-key-pair.ts": {
@@ -1745,6 +1745,7 @@
         "../src/encryption/common/hkdf/compute-hkdf.ts"
       ],
       "../src/encryption/common/index.ts": [
+        "../src/encryption/common/aes/index.ts",
         "../src/encryption/common/base64/index.ts",
         "../src/encryption/common/derive-master-unlock-key.ts",
         "../src/encryption/common/generate-account-key.ts",
@@ -2703,6 +2704,10 @@
         "../src/encryption/common/hkdf/compute-hkdf.ts"
       ],
       "../src/encryption/common/index.ts": [
+        "../src/encryption/common/aes/decrypt.ts",
+        "../src/encryption/common/aes/definitions.ts",
+        "../src/encryption/common/aes/encrypt.ts",
+        "../src/encryption/common/aes/index.ts",
         "../src/encryption/common/base64/decode.ts",
         "../src/encryption/common/base64/encode.ts",
         "../src/encryption/common/base64/index.ts",
@@ -2758,7 +2763,9 @@
         "../src/encryption/common/utf-8/encode.ts"
       ],
       "../src/encryption/index.ts": [
+        "../src/encryption/common/aes/decrypt.ts",
         "../src/encryption/common/aes/definitions.ts",
+        "../src/encryption/common/aes/encrypt.ts",
         "../src/encryption/common/base64/decode.ts",
         "../src/encryption/common/base64/encode.ts",
         "../src/encryption/common/index.ts",
@@ -3168,7 +3175,9 @@
         "../src/helpers/vaults/definitions.ts"
       ],
       "../src/index.ts": [
+        "../src/encryption/common/aes/decrypt.ts",
         "../src/encryption/common/aes/definitions.ts",
+        "../src/encryption/common/aes/encrypt.ts",
         "../src/encryption/common/base64/decode.ts",
         "../src/encryption/common/base64/encode.ts",
         "../src/encryption/common/index.ts",

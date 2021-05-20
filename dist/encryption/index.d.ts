@@ -34,6 +34,11 @@ declare const _default: {
             publicKeyFromString: typeof import("./common/rsa/public-key-from-string").default;
             publicKeyToString: typeof import("./common/rsa/public-key-to-string").default;
         };
+        aes: {
+            decrypt: typeof import("./common/aes/decrypt").default;
+            encrypt: typeof import("./common/aes/encrypt").default;
+            definitions: typeof import("./common/aes/definitions");
+        };
         generateAccountKey: typeof import("./common").generateAccountKey;
         generateCryptoRandomString: (length: number) => string;
         generateRandomSalt: (length: number) => string;

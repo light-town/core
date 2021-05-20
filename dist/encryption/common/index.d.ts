@@ -8,7 +8,8 @@ import hkdf from './hkdf';
 import base64 from './base64';
 import utf8 from './utf-8';
 import rsa from './rsa';
-export { hkdf, pbkdf2, base64, utf8, rsa, generateAccountKey, generateCryptoRandomString, generateRandomSalt, normalizeMasterPassword, deriveMasterUnlockKey, MasterUnlockKey, };
+import aes from './aes';
+export { hkdf, pbkdf2, base64, utf8, rsa, aes, generateAccountKey, generateCryptoRandomString, generateRandomSalt, normalizeMasterPassword, deriveMasterUnlockKey, MasterUnlockKey, };
 declare const _default: {
     hkdf: {
         computeHKDF: ({ secret, salt }: {
@@ -38,6 +39,11 @@ declare const _default: {
         generateKeyPair: typeof import("./rsa/generate-key-pair").default;
         publicKeyFromString: typeof import("./rsa/public-key-from-string").default;
         publicKeyToString: typeof import("./rsa/public-key-to-string").default;
+    };
+    aes: {
+        decrypt: typeof import("./aes/decrypt").default;
+        encrypt: typeof import("./aes/encrypt").default;
+        definitions: typeof import("./aes/definitions");
     };
     generateAccountKey: typeof generateAccountKey;
     generateCryptoRandomString: (length: number) => string;
