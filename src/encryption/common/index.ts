@@ -10,6 +10,7 @@ import hkdf from './hkdf';
 import base64 from './base64';
 import utf8 from './utf-8';
 import rsa from './rsa';
+import aes from './aes';
 
 export {
   hkdf,
@@ -17,6 +18,7 @@ export {
   base64,
   utf8,
   rsa,
+  aes,
   generateAccountKey,
   generateCryptoRandomString,
   generateRandomSalt,
