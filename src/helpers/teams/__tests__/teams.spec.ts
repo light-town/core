@@ -10,10 +10,13 @@ describe('[Helpers] [Teams] ...', () => {
       desc: faker.random.words(),
     };
 
-    const secretKey = encryption.common.generateCryptoRandomString(32);
+    const {
+      publicKey,
+      privateKey,
+    } = await encryption.common.rsa.generateKeyPair();
 
-    const encTeam = await teams.createTeamHelper(TEST_OVERVIEW, secretKey);
-    const team = await teams.decryptTeamBySecretKeyHelper(encTeam, secretKey);
+    const encTeam = await teams.createTeamHelper(TEST_OVERVIEW, publicKey);
+    const team = await teams.decryptTeamByPrivateKeyHelper(encTeam, privateKey);
 
     expect(team.overview).toStrictEqual(TEST_OVERVIEW);
   });
@@ -24,10 +27,13 @@ describe('[Helpers] [Teams] ...', () => {
       desc: faker.random.words(),
     };
 
-    const secretKey = encryption.common.generateCryptoRandomString(32);
+    const {
+      publicKey,
+      privateKey,
+    } = await encryption.common.rsa.generateKeyPair();
 
-    const encTeam = await teams.createTeamHelper(TEST_OVERVIEW, secretKey);
-    const team = await teams.decryptTeamBySecretKeyHelper(encTeam, secretKey);
+    const encTeam = await teams.createTeamHelper(TEST_OVERVIEW, publicKey);
+    const team = await teams.decryptTeamByPrivateKeyHelper(encTeam, privateKey);
 
     const newSecretKey = encryption.common.generateCryptoRandomString(32);
     const encSharedTeam = await teams.shareTeamHelper(team, newSecretKey);
@@ -43,7 +49,10 @@ describe('[Helpers] [Teams] ...', () => {
     const TEST_ENC_TEAMS = [];
     const TEST_OVERVIEWS = [];
 
-    const secretKey = encryption.common.generateCryptoRandomString(32);
+    const {
+      publicKey,
+      privateKey,
+    } = await encryption.common.rsa.generateKeyPair();
 
     for (let i = 0; i < 10; ++i) {
       const overview = {
@@ -51,36 +60,30 @@ describe('[Helpers] [Teams] ...', () => {
         desc: faker.random.words(),
       };
 
-      TEST_ENC_TEAMS.push(await teams.createTeamHelper(overview, secretKey));
+      TEST_ENC_TEAMS.push(await teams.createTeamHelper(overview, publicKey));
       TEST_OVERVIEWS.push(overview);
     }
 
-    const decrTeams = await teams.decryptTeamsBySecretKeyHelper(
+    const decrTeams = await teams.decryptTeamsByPrivateKeyHelper(
       TEST_ENC_TEAMS,
-      secretKey,
+      privateKey,
     );
 
     expect(decrTeams.map((t) => t.overview)).toStrictEqual(TEST_OVERVIEWS);
   });
 
-  it('should correctly create a team and some key sets', async () => {
+  it('should correctly create a team and team primary key set', async () => {
     const { publicKey } = await encryption.common.rsa.generateKeyPair();
 
-    const symmKey = encryption.common.generateCryptoRandomString(32);
-    const overview = {
-      name: faker.random.word(),
-      desc: faker.random.words(),
-    };
-
-    const encTeam = await teams.createTeamHelper(overview, symmKey);
-    const team = await teams.decryptTeamBySecretKeyHelper(encTeam, symmKey);
+    const FAKE_TEAM_KEY = encryption.common.generateCryptoRandomString(32);
+    const FAKE_SYMM_KEY = encryption.common.generateCryptoRandomString(32);
 
     const muk = helpers.masterUnlockKey.deriveMasterUnlockKeyHelper(
-      team.key,
-      team.key,
+      FAKE_TEAM_KEY,
+      FAKE_TEAM_KEY,
     );
 
     await helpers.keySets.createPrimaryKeySetHelper(muk);
-    await helpers.keySets.createKeySetHelper(symmKey, publicKey);
+    await helpers.keySets.createKeySetHelper(FAKE_SYMM_KEY, publicKey);
   });
 });
