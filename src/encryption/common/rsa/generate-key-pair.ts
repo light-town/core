@@ -6,7 +6,7 @@ export default async function generateKeyPair(): Promise<forge.pki.rsa.KeyPair> 
       {
         bits: 2048,
         workers: -1,
-        workerScript: '../../../../node_modules/node-forge/lib/prime.worker.js',
+        workerScript: '/forge/prime.worker.min.js',
       },
       function (err, keyPair) {
         if (err) {

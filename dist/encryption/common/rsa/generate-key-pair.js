@@ -16,7 +16,7 @@ function generateKeyPair() {
             forge.pki.rsa.generateKeyPair({
                 bits: 2048,
                 workers: -1,
-                workerScript: '../../../../node_modules/node-forge/lib/prime.worker.js',
+                workerScript: '/forge/prime.worker.min.js',
             }, function (err, keyPair) {
                 if (err) {
                     rej(err);
