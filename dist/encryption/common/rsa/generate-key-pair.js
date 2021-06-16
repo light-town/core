@@ -13,7 +13,11 @@ const forge = require("node-forge");
 function generateKeyPair() {
     return __awaiter(this, void 0, void 0, function* () {
         return new Promise((res, rej) => {
-            forge.pki.rsa.generateKeyPair({ bits: 2048, workers: 2 }, function (err, keyPair) {
+            forge.pki.rsa.generateKeyPair({
+                bits: 2048,
+                workers: -1,
+                workerScript: '../../../../node_modules/node-forge/lib/prime.worker.js',
+            }, function (err, keyPair) {
                 if (err) {
                     rej(err);
                     return;
